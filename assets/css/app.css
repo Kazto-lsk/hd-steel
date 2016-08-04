@@ -1,3 +1,58 @@
 .bar .title .logo {
   height: 25px
 }
+
+/*footer*/
+
+
+/* intro */
+
+.hd-intro {
+  background-color: #fff
+}
+.hd-intro .cover-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.hd-intro .cover-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hd-intro .cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.hd-intro .hd-loader {
+  width: 75%;
+  margin: 40px auto 0;
+  text-align: center;
+}
+.hd-intro .hd-loader .progress {
+  margin-bottom: .5rem
+}
+.hd-intro .hd-loader small {
+  color: #999
+}
+
+.hd-intro .cover-inner {
+    padding: 0 1.5rem;
+}
+.hd-intro .bar-footer {
+  height: 4rem;
+  border-top: none
+}
+.hd-intro .bar-footer .list-inline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  font-size: 11px;
+  text-align: center;
+}
+.hd-intro .bar-footer .logo {
+  height: 20px
+}
