@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>설비관리 | 현대제철 스마트팩토리 마크업</title>
@@ -15,6 +15,8 @@
     .table th,
     .table td {
       vertical-align: middle;
+    }
+    .table th {
       text-align: center;
     }
     .table-active {
@@ -26,15 +28,16 @@
     </style>
   </head>
   <body>
-    <header class="bar bar-nav bar-light bg-faded">
+    <header class="bar bar-nav bar-dark bg-inverse">
+      <a class="icon icon-left-nav pull-left" href="../index.html"></a>
       <h1 class="title">설비관리</h1>
     </header>
     <div class="content">
+      <div class="">
 
-      <div class="content-padded">
         <div class="table-responsive">
-          <table class="table table-bordered table-sm">
-            <thead class="thead-inverse">
+          <table class="table table-bordered table-sm table-hover">
+            <thead class="thead-default">
               <tr>
                 <th>#</th>
                 <th>1차메뉴</th>
@@ -47,65 +50,127 @@
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td rowspan="22">기준정보</td>
-                <td rowspan="4">위치 마스터</td>
+                <td rowspan="8" class="text-xs-center">공통화면</td>
+                <td rowspan="2" class="text-xs-center">인트로</td>
+                <td>Type A <span class="badge badge-pill">진행중</span></td>
+                <td><a href="./U_EQ_00001_a.html" target="_blank">U_EQ_00001_a</a></td>
+                <td><a href="./U_EQ_00001_a.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Type B <span class="badge badge-pill">진행중</span></td>
+                <td><a href="./U_EQ_00001_b.html" target="_blank">U_EQ_00001_b</a></td>
+                <td><a href="./U_EQ_00001_b.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2" class="text-xs-center">메인 <span class="badge badge-pill">진행중</span></td>
+                <td><a href="./U_EQ_00000.html" target="_blank">U_EQ_00000</a></td>
+                <td><a href="./U_EQ_00000.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td colspan="2" class="text-xs-center">로그인 <span class="badge badge-pill">진행중</span></td>
+                <td><a href="./U_EQ_00002.html" target="_blank">U_EQ_00002</a></td>
+                <td><a href="./U_EQ_00002.html" target="_blank">CODE</a></td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">5</th>
+                <td class="text-xs-center" rowspan="2">Sub Page</td>
+                <td>공통_ 서브페이지</td>
+                <td><a href="./U_EQ_00005.html" target="_blank">U_EQ_00005</a></td>
+                <td><a href="./U_EQ_00005.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>풋터</td>
+                <td><a href="./U_EQ_00006.html" target="_blank">U_EQ_00006</a></td>
+                <td><a href="./U_EQ_00006.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td rowspan="2" class="text-xs-center">Total Page</td>
+                <td>전체메뉴</td>
+                <td><a href="./U_EQ_00003.html" target="_blank">U_EQ_00003</a></td>
+                <td><a href="./U_EQ_00003.html" target="_blank">CODE</a></td>
+              </tr>
+
+              <tr>
+                <th scope="row">8</th>
+                <td>임시저장_작업오더</td>
+                <td><a href="./U_EQ_00004.html" target="_blank">U_EQ_00004</a></td>
+                <td><a href="./U_EQ_00004.html" target="_blank">CODE</a></td>
+              </tr>
+
+              <tr>
+                <th scope="row">9</th>
+                <td rowspan="23" class="text-xs-center">기준정보</td>
+                <td colspan="2" class="text-xs-center">메인</td>
+                <td><a href="./U_EQ_10000.html" target="_blank">U_EQ_10000</a></td>
+                <td><a href="./U_EQ_10000.html" target="_blank">CODE</a></td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td rowspan="4" class="text-xs-center">위치 마스터</td>
                 <td>위치마스터_검색 <span class="badge badge-pill">진행중</span></td>
                 <td><a href="./U_EQ_10100.html" target="_blank">U_EQ_10100</a></td>
                 <td><a href="./U_EQ_10100.html" target="_blank">CODE</a></td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row">11</th>
                 <td>위치마스터_결과목록 <span class="badge badge-pill">진행중</span></td>
                 <td><a href="./U_EQ_10101.html" target="_blank">U_EQ_10101</a></td>
                 <td><a href="./U_EQ_10100.html" target="_blank">CODE</a></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">12</th>
                 <td>위치마스터_상세 <span class="badge badge-pill">진행중</span></td>
                 <td><a href="./U_EQ_10102.html" target="_blank">U_EQ_10102</a></td>
                 <td><a href="./U_EQ_10100.html" target="_blank">CODE</a></td>
               </tr>
               <tr>
-                <th scope="row">4</th>
+                <th scope="row">13</th>
                 <td>위치마스터_하위설비목록 <span class="badge badge-pill">진행중</span></td>
                 <td><a href="./U_EQ_10103.html" target="_blank">U_EQ_10103</a></td>
                 <td><a href="./U_EQ_10100.html" target="_blank">CODE</a></td>
               </tr>
 
               <tr class="table-active">
-                <th scope="row">5</th>
-                <td rowspan="6">설비 마스터</td>
+                <th scope="row">14</th>
+                <td rowspan="6" class="text-xs-center">설비 마스터</td>
                 <td>설비마스터_검색</td>
                 <td><a href="./U_EQ_10200.html" target="_blank">U_EQ_10200</a></td>
                 <td><a href="./U_EQ_10200.html" target="_blank">CODE</a></td>
               </tr>
               <tr class="table-active">
-                <th scope="row">6</th>
+                <th scope="row">15</th>
                 <td>설비마스터_결과목록</td>
                 <td><a href="./U_EQ_10201.html" target="_blank">U_EQ_10201</a></td>
                 <td><a href="./U_EQ_10201.html" target="_blank">CODE</a></td>
               </tr>
               <tr class="table-active">
-                <th scope="row">7</th>
+                <th scope="row">16</th>
                 <td>설비마스터_상세</td>
                 <td><a href="./U_EQ_10202.html" target="_blank">U_EQ_10202</a></td>
                 <td><a href="./U_EQ_10202.html" target="_blank">CODE</a></td>
               </tr>
               <tr class="table-active">
-                <th scope="row">8</th>
+                <th scope="row">17</th>
                 <td>측정지점_점검결과등록& 수정</td>
                 <td><a href="./U_EQ_10203.html" target="_blank">U_EQ_10203</a></td>
                 <td><a href="./U_EQ_10203.html" target="_blank">CODE</a></td>
               </tr>
 
               <tr class="table-active">
-                <th scope="row">8</th>
+                <th scope="row">18</th>
                 <td>측정지점_점검결과상세</td>
                 <td><a href="./U_EQ_10204.html" target="_blank">U_EQ_10204</a></td>
                 <td><a href="./U_EQ_10204.html" target="_blank">CODE</a></td>
               </tr>
               <tr class="table-active">
-                <th scope="row">8</th>
+                <th scope="row">19</th>
                 <td>점검결과_이력조회</td>
                 <td><a href="./U_EQ_10205.html" target="_blank">U_EQ_10205</a></td>
                 <td><a href="./U_EQ_10205.html" target="_blank">CODE</a></td>
@@ -113,9 +178,8 @@
             </tbody>
           </table>
         </div>
+
       </div>
-
-
     </div>
 
     <!-- jQuery first, then Ratchet plus JS. -->
