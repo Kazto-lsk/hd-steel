@@ -1,9 +1,48 @@
+/*header*/
+.bar {
+    height: 50px;
+}
+.bar .btn .icon {
+  top:0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.bar .title {
+  position: static;
+  padding-left: 95px;
+  font-size: 18px;
+  line-height: 49px;
+  text-align: left;
+}
 .bar .title .logo {
   height: 25px
 }
+.bar .btn .logo {
+  height: 20px
+}
+.bar-nav .btn-nav{
+  width: 3.125rem;
+  height: 50px
+}
+.bar-nav .btn-nav.logo{
+  width: 100px;
+}
+.bar .btn-nav.pull-left{
+  margin-left: -.625rem;
+}
+.bar .btn-nav.pull-right{
+  margin-right: -.625rem;
+}
 
 /*footer*/
-
+.bar-footer .copyright {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 17px 0;
+  font-size: 11px;
+  text-align: center;
+}
 
 /* intro */
 
