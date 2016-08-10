@@ -52,7 +52,7 @@ body {
   padding-bottom: 13px;
 }
 .bar .title {
-  /*position: static;*/
+  position: static;
   padding-left: 95px;
   line-height: 49px;
   text-align: left;
