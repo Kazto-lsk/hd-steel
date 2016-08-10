@@ -31,6 +31,10 @@ body {
     font-size: 23px
 }
 
+.bar-dark .icon {
+    color: rgba(255, 255, 255, 1);
+}
+
 
 .bar-nav ~ .content {
   padding-top: 50px;
