@@ -7,6 +7,10 @@ body {
   color: #222;
 }
 
+.bg-primary {
+    background-color: #1C74D5 !important;
+}
+
 
 .bar .btn {
   top: 7px;
@@ -48,10 +52,11 @@ body {
   padding-bottom: 13px;
 }
 .bar .title {
-  position: static;
+  /*position: static;*/
   padding-left: 95px;
   line-height: 49px;
   text-align: left;
+  font-size: 1.2rem
 }
 
 .bar .title.hd-center {
@@ -96,6 +101,7 @@ body {
 .hd-sub .bar .title {
   margin-left: -.625rem;
   padding-left: 50px;
+  padding-top: .125rem
 }
 
 
@@ -117,11 +123,19 @@ body {
 
 /*Tab bar*/
 .bar-tab .tab-item {
-  font-size: .95rem
+  font-size: .95rem;
+  border-right: 0.0312rem solid #000;
+  letter-spacing: -.5px
 }
 
+.bar-tab .tab-item:last-child {
+  border-right: none
+}
+
+
+
 .bar-dark .icon {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .bar .btn:focus,
 .bar .btn.focus,
