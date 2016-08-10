@@ -124,7 +124,8 @@ body {
 /*Tab bar*/
 .bar-tab .tab-item {
   font-size: .95rem;
-  border-right: 0.0312rem solid #000;
+  background-color: #3A444D;
+  border-right: 0.0312rem solid #303840;
   letter-spacing: -.5px
 }
 
