@@ -14,6 +14,13 @@
   line-height: 49px;
   text-align: left;
 }
+
+.bar .title.hd-center {
+  position: absolute;;
+  padding-left: 0;
+  text-align: center;;
+}
+
 .bar .title .logo {
   height: 25px
 }
