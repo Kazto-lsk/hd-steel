@@ -1,7 +1,92 @@
+html {
+    font-size: 18px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  color: #222;
+}
+
 /*header*/
 .bar {
     height: 50px;
 }
+
+.bar.hd-bar-white {
+  background-color: #fff
+}
+
+/*hd-sub*/
+.hd-sub .bar-nav .btn-nav.logo {
+  width: 50px;
+}
+.hd-sub .bar .title {
+  padding-left: 50px;
+}
+
+.bar-header-secondary .btn .icon {
+    top: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 23px
+}
+
+
+.bar-nav ~ .content {
+  padding-top: 50px;
+}
+
+.bar-header-secondary ~ .content {
+  padding-top: 100px;
+}
+
+.bar-tab ~ .content {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.bar-footer ~ .content {
+  padding-bottom: 50px;
+}
+.bar-footer-secondary ~ .content {
+  padding-bottom: 100px;
+}
+
+
+.bar .btn {
+  top: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bar .btn-link {
+  top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 49px;
+}
+.bar .btn-link .icon {
+  top: 2px;
+  padding: 0;
+}
+
+.bar .btn-block {
+  top: 4px;
+}
+
+.bar .segmented-control {
+  top: 7px;
+}
+
+.bar .icon {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.bar .title .icon {
+  padding: 0;
+}
+
 .bar .btn .icon {
   top:0;
   padding-top: 13px;
@@ -50,6 +135,15 @@
   font-size: 11px;
   text-align: center;
 }
+
+/*content*/
+.bar-header-secondary ~ .content {
+  padding-top: 100px;
+}
+.content {
+  background-color: #f2f2f2;
+}
+
 
 /* intro */
 
