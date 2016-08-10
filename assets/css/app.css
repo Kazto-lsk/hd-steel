@@ -52,7 +52,7 @@ body {
   padding-bottom: 13px;
 }
 .bar .title {
-  position: static;
+  /*position: static;*/
   padding-left: 95px;
   line-height: 49px;
   text-align: left;
@@ -101,7 +101,7 @@ body {
 .hd-sub .bar .title {
   margin-left: -.625rem;
   padding-left: 50px;
-  /*padding-top: .125rem*/
+  padding-top: .1875rem
 }
 
 
