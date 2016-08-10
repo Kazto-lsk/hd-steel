@@ -34,7 +34,14 @@ body {
 .bar-dark .icon {
     color: rgba(255, 255, 255, 1);
 }
-
+.bar .btn:focus,
+.bar .btn.focus,
+.bar .btn:active:focus,
+.bar .btn:active.focus,
+.bar .btn.active:focus,
+.bar .btn.active.focus {
+  outline: none;
+}
 
 .bar-nav ~ .content {
   padding-top: 50px;
