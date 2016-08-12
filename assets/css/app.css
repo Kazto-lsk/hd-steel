@@ -1,15 +1,14 @@
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 22px;
+  /*font-family: "Roboto", sans-serif;*/
+  /*line-height: 22px;*/
   color: #222;
 }
 
 
 /*전용 아이콘 폰트*/
-
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?jv7rdg');
@@ -78,114 +77,60 @@ body {
     background-color: #1C74D5 !important;
 }
 
-
-.bar .btn {
-  top: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.bar .btn-link {
-  top: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 40px;
-}
-.bar .btn-link .icon {
-  top: 2px;
-  padding: 0;
-}
-
-.bar .btn-block {
-  top: 4px;
-}
-
-.bar .segmented-control {
-  top: 7px;
-}
-
-.bar .icon {
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-.bar .title .icon {
-  padding: 0;
-}
-
-.bar .btn .icon {
-  top:0;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-.bar .title {
-  /*position: static;*/
-  padding-left: 95px;
-  line-height: 49px;
-  text-align: left;
-  /*font-size: 1.2rem*/
-}
-
-.bar .title.hd-center {
-  position: absolute;;
-  padding-left: 0;
-  text-align: center;;
-}
-
-.bar .title .logo {
-  height: 25px
-}
-.bar .btn .logo {
-  height: 20px
-}
-.bar-nav .btn-nav{
-  width: 2.8rem;
-  height: 50px
-}
-.bar-nav .btn-nav.logo{
-  width: 100px;
-}
-.bar .btn-nav.pull-left{
-  margin-left: -.625rem;
-}
-.bar .btn-nav.pull-right{
-  margin-right: -.625rem;
-}
-
-/*header*/
+/*bar*/
 .bar {
-    height: 50px;
+  height: 2.8125rem;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
 }
 
-.bar.hd-bar-white {
-  background-color: #fff
+.title {
+  position: static;;
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 2.9rem;
+  text-align: left;
+  letter-spacing: -.0625px
+}
+.bar-nav .icon {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  font-size: 1.5rem;
+  color: #373a3c;
+  text-align: center
+}
+.bar-nav .icon:active {
+  background-color: #025aa5
 }
 
-/*hd-sub*/
-.hd-sub .bar-nav .btn-nav.logo {
-  width: 50px;
+.bar .icon.pull-left {
+  width: 2.5rem
 }
-.hd-sub .bar .title {
-  margin-left: -.625rem;
-  padding-left: 50px;
-  padding-top: .1875rem
+.bar .icon.pull-right {
+  padding-left: .5625rem;
+  padding-right: .5625rem;
 }
 
 
 /* Secondary bar*/
-
-.bar-header-secondary .btn .icon {
-    top: 0;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-right: 10px;
-    font-size: 23px;
-    color: rgba(0, 0, 0, .5);
+.bar-header-secondary {
+    top: 2.8125rem;
+    height: 2.34375rem;
+    background-color: #fff
 }
-
-.bar-header-secondary .btn-nav.pull-left {
-    margin-left: .25rem;
-    color: #000
+.bar-header-secondary .btn {
+  line-height: 2.4rem;
+  font-size: .9375rem;
+  font-weight: 700;
+  letter-spacing: -.0625px
+}
+.bar-header-secondary .btn .icon-left-nav {
+  top: .3rem;
+  left: .3rem;
+  width: 2.7rem;
+  color: #848896
 }
 
 /*Tab bar*/
@@ -201,7 +146,6 @@ body {
 }
 
 
-
 .bar-dark .icon {
   color: rgba(255, 255, 255, 1);
 }
@@ -214,26 +158,6 @@ body {
   outline: none;
 }
 
-.bar-nav ~ .content {
-  padding-top: 50px;
-}
-
-.bar-header-secondary ~ .content {
-  padding-top: 100px;
-}
-
-.bar-tab ~ .content {
-  padding-top: 50px;
-  padding-bottom: 0;
-}
-
-
-.bar-footer ~ .content {
-  padding-bottom: 50px;
-}
-.bar-footer-secondary ~ .content {
-  padding-bottom: 100px;
-}
 
 
 
@@ -251,11 +175,9 @@ body {
 
 
 /*content*/
-.bar-header-secondary ~ .content {
-  padding-top: 100px;
-}
+
 .content {
-  background-color: #f2f2f2;
+  background-color: #eeeef2;
 }
 
 /*floating button*/
@@ -270,6 +192,14 @@ body {
 .floating-br {
     right: 0;
     bottom: 0;
+}
+.btn-circle-primary {
+    height: 3.125rem;
+    min-width: 3.125rem;
+    width: 3.125rem;
+}
+.floating .icon-search {
+  font-size: 1.25rem
 }
 
 
