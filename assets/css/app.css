@@ -77,6 +77,26 @@ body {
     background-color: #1C74D5 !important;
 }
 
+
+.navigate-left:after,
+.navigate-right:after,
+.push-left:after,
+.push-right:after {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #bbb;
+}
+.navigate-right:after,
+.push-right:after {
+    right: .9375rem;
+    content: '\e905';
+}
+
+
 /*bar*/
 .bar {
   height: 2.8125rem;
@@ -140,11 +160,25 @@ body {
   border-right: 0.0312rem solid #303840;
   letter-spacing: -.5px
 }
-
 .bar-tab .tab-item:last-child {
   border-right: none
 }
 
+
+/*card*/
+.card {
+  margin: 1.25rem;
+  margin-bottom: 0.75rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  /*border: 1px solid #b4b8c4;*/
+}
+
+/*table-view*/
+.table-view {
+    border-top: 0.0625rem solid #b4b8c4;
+    border-bottom: 0.0625rem solid #b4b8c4;
+}
 
 .bar-dark .icon {
   color: rgba(255, 255, 255, 1);
