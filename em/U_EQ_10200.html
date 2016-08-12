@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>설비마스터_검색 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- title bar -->
+    <header class="bar bar-nav bar-dark bg-primary">
+
+      <a class="icon icon-simbol pull-left"></a>
+
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title">기준정보</h1>
+    </header>
+
+    <!-- header-secondary bar-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        설비마스터_검색
+      </button>
+    </div>
+
+    <!-- tab bar -->
+    <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" href="#">
+        설비마스터
+      </a>
+      <a class="tab-item" href="#">
+        작업오더
+      </a>
+      <a class="tab-item" href="#">
+        측정지점
+      </a>
+      <a class="tab-item" href="#">
+        작업표준
+      </a>
+    </nav>
+
+    <!-- main content -->
+    <div class="content">
+
+      <form class="input-group">
+
+        <div class="input-row">
+          <label>설비번호</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <span class="icon icon-search"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label>내역</label>
+           <input class="form-control" type="text" value="">
+        </div>
+
+        <div class="input-row">
+          <label>위치코드</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <span class="icon icon-search"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label>대분류</label>
+          <select class="form-control">
+            <option>[FA]건물</option>
+            <option>[FA]건물</option>
+            <option>[FA]건물</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <label>설비유형</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <span class="icon icon-search"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label>사이트</label>
+          <select class="form-control">
+            <option>JECHUL</option>
+            <option>JECHUL</option>
+            <option>JECHUL</option>
+          </select>
+        </div>
+
+      </form>
+
+      <div class="content-padded">
+        <button type="button" class="btn btn-primary btn-lg btn-block">검색</button>
+      </div>
+
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

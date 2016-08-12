@@ -70,11 +70,13 @@ body {
 }
 
 
-
-
-
-.bg-primary {
+/*color*/
+.bg-primary,
+.btn-primary {
     background-color: #1C74D5 !important;
+}
+.btn-primary {
+  border-color: #0275d8;
 }
 
 
@@ -155,10 +157,12 @@ body {
 
 /*Tab bar*/
 .bar-tab .tab-item {
-  font-size: .95rem;
+  height: inherit;
+  font-size: .78125rem;
   background-color: #3A444D;
   border-right: 0.0312rem solid #303840;
-  letter-spacing: -.5px
+  letter-spacing: -.5px;
+  line-height: 2.6875rem
 }
 .bar-tab .tab-item:last-child {
   border-right: none
@@ -180,6 +184,8 @@ body {
     border-bottom: 0.0625rem solid #b4b8c4;
 }
 
+
+
 .bar-dark .icon {
   color: rgba(255, 255, 255, 1);
 }
@@ -192,6 +198,11 @@ body {
   outline: none;
 }
 
+
+
+form {
+  background-color: #fff
+}
 
 
 
