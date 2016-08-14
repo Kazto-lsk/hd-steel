@@ -145,7 +145,13 @@ body {
   padding-left: .5625rem;
   padding-right: .5625rem;
 }
-
+.bar-dark .btn-link {
+  padding-left: .625rem;
+  color: rgba(255, 255, 255, 1);
+}
+.bar-dark .btn-link .icon {
+  padding-right: .3125rem
+}
 
 /* Secondary bar*/
 .bar-header-secondary {
