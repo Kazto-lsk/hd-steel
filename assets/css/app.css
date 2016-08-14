@@ -69,6 +69,23 @@ body {
 }
 
 
+/*theme*/
+
+.hd-sub-01 .bar-header-secondary {
+  border-bottom: none
+}
+.hd-sub-01 .container {
+  background-color: #fff
+}
+
+
+@media (max-width: 543px) {
+  .container {
+    padding: .655rem;
+  }
+}
+
+
 /*color*/
 .bg-primary,
 .btn-primary {
@@ -77,7 +94,7 @@ body {
 .btn-primary {
   border-color: #0275d8;
 }
-.btn-secondary {
+.btn-info {
     color: #fff;
     background-color: #848896;
     border-color: #848896;
@@ -254,14 +271,11 @@ body {
 
 
 
-form {
-  background-color: #fff
-}
+/**
+ * footer
+ * ----------------------------------------------------------------------------
+ */
 
-
-
-
-/*footer*/
 .bar-footer .copyright {
   position: absolute;
   left: 0;
@@ -271,9 +285,52 @@ form {
   text-align: center;
 }
 
+/**
+ * forms
+ * ----------------------------------------------------------------------------
+ */
+
+.container {
+  background-color: #fff
+}
+
+.form-control {
+  text-align: center;
+}
+
+/*input-group*/
+.input-group-btn > .btn {
+  padding: 0.3rem 0.75rem;
+}
+
+/*form-group*/
+.form-group {
+    margin-bottom: .5rem;
+}
+.form-group .col-form-label {
+  color: #626470;
+  font-weight: 300
+}
+
+.form-group .col-form-label:before {
+  padding-right: 5px;
+  content : "·";
+  color: #9a9eac
+}
 
 
-/*content*/
+
+
+
+
+/**
+ * content
+ * ----------------------------------------------------------------------------
+ */
+
+ .bar-header-secondary ~ .content {
+    padding-top: 5.2rem;
+}
 
 .content {
   background-color: #eeeef2;
@@ -283,7 +340,10 @@ p {
   line-height: 1.2
 }
 
-
+hr {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
 /*floating button*/
 .floating {
     box-sizing: border-box;

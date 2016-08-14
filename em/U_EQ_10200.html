@@ -17,7 +17,7 @@
     <script src="../assets/js/rc.js"></script>
 
   </head>
-  <body class="hd-sub">
+  <body class="hd-sub-01">
 
     <!-- title bar -->
     <header class="bar bar-nav bar-dark bg-primary">
@@ -57,73 +57,84 @@
     <!-- main content -->
     <div class="content">
 
-      <form class="input-group">
+      <form>
+        <div class="container">
 
-        <div class="input-row">
-          <label>설비번호</label>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">
-                <span class="icon icon-search"></span>
-              </button>
-            </span>
-          </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-xs-3 col-form-label">설비번호</label>
+              <div class="col-sm-10 col-xs-9">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="" value="H1030376">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">
+                      <span class="icon icon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-2 col-xs-3 col-form-label">내역</label>
+              <div class="col-sm-10 col-xs-9">
+                <input type="text" class="form-control" id="" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-xs-3 col-form-label">위치코드</label>
+              <div class="col-sm-10 col-xs-9">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="" value="H1030376">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">
+                      <span class="icon icon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-2 col-xs-3 col-form-label">대분류</label>
+              <div class="col-sm-10 col-xs-9">
+                <select class="form-control">
+                  <option>[FA]건물</option>
+                  <option>[FA]건물</option>
+                  <option>[FA]건물</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-xs-3 col-form-label">설비유형</label>
+              <div class="col-sm-10 col-xs-9">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="임파" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">
+                      <span class="icon icon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-2 col-xs-3 col-form-label">사이트</label>
+              <div class="col-sm-10 col-xs-9">
+                <select class="form-control" disabled>
+                  <option>JECHUL</option>
+                  <option>JECHUL</option>
+                  <option>JECHUL</option>
+                </select>
+              </div>
+            </div>
         </div>
 
-        <div class="input-row">
-          <label>내역</label>
-           <input class="form-control" type="text" value="">
-        </div>
-
-        <div class="input-row">
-          <label>위치코드</label>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">
-                <span class="icon icon-search"></span>
-              </button>
-            </span>
-          </div>
-        </div>
-
-        <div class="input-row">
-          <label>대분류</label>
-          <select class="form-control">
-            <option>[FA]건물</option>
-            <option>[FA]건물</option>
-            <option>[FA]건물</option>
-          </select>
-        </div>
-
-        <div class="input-row">
-          <label>설비유형</label>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">
-                <span class="icon icon-search"></span>
-              </button>
-            </span>
-          </div>
-        </div>
-
-        <div class="input-row">
-          <label>사이트</label>
-          <select class="form-control">
-            <option>JECHUL</option>
-            <option>JECHUL</option>
-            <option>JECHUL</option>
-          </select>
+        <div class="content-padded">
+          <button type="button" class="btn btn-primary btn-lg btn-block">검색</button>
         </div>
 
       </form>
-
-      <div class="content-padded">
-        <button type="button" class="btn btn-primary btn-lg btn-block">검색</button>
-      </div>
-
     </div>
 
     <script src="../assets/js/app.js"></script>
