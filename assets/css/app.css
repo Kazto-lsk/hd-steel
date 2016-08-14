@@ -234,49 +234,6 @@ body {
   -webkit-line-clamp: 2;
 }
 
-.table-view-cell.checkbox {
-  padding-left: 3.125rem
-}
-.table-view-cell.checkbox > a:not(.btn) {
-  margin-left: -3.125rem
-}
-
-.table-view-cell.checkbox .custom-control {
-  position: absolute;
-  top: 50%;
-  left: .625rem;
-  z-index: 15
-}
-.table-view-cell.checkbox .custom-control .custom-control-indicator {
-  top: 0;
-  left: 0;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
-/*custom-checkbox*/
-.custom-checkbox .custom-control-input {
-  width: 30px;
-  left: 0;
-  top: -30px;
-  height: 60px;
-}
-.custom-checkbox .custom-control-indicator {
-  border-radius: 3.6rem;
-}
-.custom-checkbox .custom-control-indicator {
-  width: 1.8rem;
-  height: 1.8rem;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
-}
-.custom-control-input:checked ~ .custom-control-indicator {
-  border: none
-}
 
 
 
