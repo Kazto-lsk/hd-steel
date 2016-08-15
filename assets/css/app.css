@@ -113,6 +113,11 @@ body {
     background-color: #848896;
     border-color: #848896;
 }
+.btn-white {
+  color: #666;
+  background-color: #fff;
+  border-color: #b4b8c4;
+}
 .text-danger {
   color: #f22258 !important
 }
