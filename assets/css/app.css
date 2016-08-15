@@ -151,9 +151,9 @@ body {
   letter-spacing: -.0625px
 }
 .bar-nav .icon {
-  padding-top: .625rem;
-  padding-bottom: .625rem;
-  font-size: 1.5rem;
+  padding-top: .525rem;
+  padding-bottom: .525rem;
+  font-size: 1.8rem;
   color: #373a3c;
   text-align: center
 }
@@ -184,7 +184,6 @@ body {
 }
 .bar-header-secondary .btn {
   line-height: 2.4rem;
-  font-size: .9375rem;
   font-weight: 700;
   letter-spacing: -.0625px
 }
@@ -208,6 +207,9 @@ body {
   border-right: none
 }
 
+.bar-tab.bar-dark .tab-item {
+    color: #fff;
+}
 
 /*card*/
 .card {
@@ -374,7 +376,7 @@ hr {
     width: 3.125rem;
 }
 .floating .icon-search {
-  font-size: 1.25rem
+  font-size: 1.8rem
 }
 
 
