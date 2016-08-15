@@ -100,7 +100,7 @@ body {
 .btn-primary {
   border-color: #0275d8;
 }
-.btn-info {
+.btn-secondary {
     color: #fff;
     background-color: #848896;
     border-color: #848896;
@@ -221,6 +221,14 @@ body {
   border-top: 1px solid #b4b8c4
 }
 
+.card.card-full {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none
+}
 
 /**
  * search
@@ -322,6 +330,10 @@ body {
   font-weight: 300
 }
 
+.card.hd-search-detail .badge-inverted {
+  font-size: 95%;
+  font-weight: normal;
+}
 
 
 
@@ -453,6 +465,18 @@ body {
  * ----------------------------------------------------------------------------
  */
 
+.hd-heading:before {
+  padding-right: .312rem;
+  font-family: 'icomoon' !important;
+  content: "\e900";
+  color: #626470;
+}
+
+h5.hd-heading {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
  .bar-header-secondary ~ .content {
     padding-top: 5.2rem;
 }
@@ -474,6 +498,16 @@ hr {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
+
+
+/*button group*/
+
+.btn-group .col-xs-6 + .col-xs-6 {
+  padding-left: 0;
+}
+
+
+
 /*floating button*/
 .floating {
     box-sizing: border-box;
