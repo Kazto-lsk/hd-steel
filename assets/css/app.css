@@ -499,6 +499,9 @@ hr {
   margin-bottom: .5rem;
 }
 
+.spacing-m1 {
+  letter-spacing: -.0625rem
+}
 
 /*button group*/
 
