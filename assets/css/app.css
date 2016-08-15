@@ -221,7 +221,8 @@ body {
   border-top: 1px solid #b4b8c4
 }
 
-.card.full {
+/*search result*/
+.card.hd-search-result {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -230,35 +231,38 @@ body {
   border-right: none;
 }
 
-.card.full .card-header {
+.card.hd-search-result .card-header {
   padding: 0;
   color: #626470;
   font-weight: 300;
   border-bottom: none
 }
 
-.card.full .card-header .meta {
+.card.hd-search-result .card-header .meta {
   font-size: .875rem
 }
-.card.full .card-header .meta-site {
-  padding-left: 1.25rem;
+.card.hd-search-result .card-header .meta-site {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-.card.full .card-header,
-.card.full .card-footer {
+.card.hd-search-result .card-header,
+.card.hd-search-result .card-footer {
   background-color: #fff
 }
 
-.card.full .card-block {
+.card.hd-search-result .card-block {
     padding: 0 .625rem;
 }
-.card.full .card-block .card-block-inner {
+.card.hd-search-result .card-block .card-block-inner {
   padding: .9375rem .3125rem;
   border-top: 1px dotted #d8dce2;
   border-bottom: 1px solid #d8dce2;
 }
 
-.card.full .card-block .card-text {
+.card.hd-search-result .card-block .card-text {
   overflow: hidden;
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
@@ -267,25 +271,25 @@ body {
   -webkit-line-clamp: 1;
 }
 
-.card.full .card-footer {
+.card.hd-search-result .card-footer {
   border-top: none;
 }
-.card.full .card-footer dl {
+.card.hd-search-result .card-footer dl {
   margin-bottom: 0;
   font-weight: normal;
   font-size: .8125rem
 }
-.card.full .card-footer dt {
+.card.hd-search-result .card-footer dt {
   margin-left: -5px;
   color: #626470;
   font-weight: 300
 }
-.card.full .card-footer dt:before {
+.card.hd-search-result .card-footer dt:before {
   padding-right: 5px;
   content : "·";
   color: #9a9eac
 }
-.card.full .card-footer dd {
+.card.hd-search-result .card-footer dd {
   margin-left: -15px;
   margin-bottom: 0
 }
