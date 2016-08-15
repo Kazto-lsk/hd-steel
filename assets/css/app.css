@@ -240,7 +240,8 @@ body {
 .card.hd-search dt {
   margin-left: -5px;
   color: #626470;
-  font-weight: 300
+  font-weight: 300;
+  letter-spacing: -.5px
 }
 .card.hd-search dt:before {
   padding-right: 5px;
