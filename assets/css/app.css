@@ -500,7 +500,7 @@ hr {
 }
 
 .spacing-m1 {
-  letter-spacing: -.0625rem
+  letter-spacing: -.0625rem !important
 }
 
 /*button group*/
