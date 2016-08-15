@@ -178,9 +178,9 @@ body {
 
 /* Secondary bar*/
 .bar-header-secondary {
-    top: 2.8125rem;
-    height: 2.34375rem;
-    background-color: #fff
+  top: 2.8125rem;
+  height: 2.34375rem;
+  background-color: #fff
 }
 .bar-header-secondary .btn {
   line-height: 2.4rem;
@@ -218,7 +218,78 @@ body {
   background-color: #fff;
   border-radius: 0.25rem;
   /*border: 1px solid #b4b8c4;*/
+  border-top: 1px solid #b4b8c4
 }
+
+.card.full {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.card.full .card-header {
+  padding: 0;
+  color: #626470;
+  font-weight: 300;
+  border-bottom: none
+}
+
+.card.full .card-header .meta {
+  font-size: .875rem
+}
+.card.full .card-header .meta-site {
+  padding-left: 1.25rem;
+}
+
+.card.full .card-header,
+.card.full .card-footer {
+  background-color: #fff
+}
+
+.card.full .card-block {
+    padding: 0 .625rem;
+}
+.card.full .card-block .card-block-inner {
+  padding: .9375rem .3125rem;
+  border-top: 1px dotted #d8dce2;
+  border-bottom: 1px solid #d8dce2;
+}
+
+.card.full .card-block .card-text {
+  overflow: hidden;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.card.full .card-footer {
+  border-top: none;
+}
+.card.full .card-footer dl {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: .8125rem
+}
+.card.full .card-footer dt {
+  margin-left: -5px;
+  color: #626470;
+  font-weight: 300
+}
+.card.full .card-footer dt:before {
+  padding-right: 5px;
+  content : "·";
+  color: #9a9eac
+}
+.card.full .card-footer dd {
+  margin-left: -15px;
+  margin-bottom: 0
+}
+
 
 /*table-view*/
 .table-view {
@@ -260,8 +331,19 @@ body {
 }
 
 
-
-
+/*badge*/
+.badge.badge-outline {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  border-radius: 10rem;
+  background-color: transparent;
+  font-weight: 300
+}
+.badge-primary.badge-outline {
+  color: #74a9e3;
+  border: 1px solid #74a9e3;
+  border-radius: 20px
+}
 
 
 
@@ -360,7 +442,7 @@ hr {
 /*floating button*/
 .floating {
     box-sizing: border-box;
-    margin: 15px 15px 75px 15px;
+    margin: 15px 15px 60px 15px;
     position: fixed;
     white-space: nowrap;
     z-index: 16;
