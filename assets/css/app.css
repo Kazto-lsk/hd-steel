@@ -249,7 +249,8 @@ body {
   margin-left: -5px;
   color: #626470;
   font-weight: 300;
-  letter-spacing: -.5px
+  letter-spacing: -.5px;
+  white-space: nowrap;
 }
 .card.hd-search dt:before {
   padding-right: 5px;
