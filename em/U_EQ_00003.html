@@ -11,6 +11,8 @@
     <!-- kimsQ RC CSS -->
     <link rel="stylesheet" href="../assets/css/rc.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -19,23 +21,82 @@
   </head>
   <body class="hd-sub">
 
-    <!-- header -->
-    <header class="bar bar-nav bar-dark bg-primary">
-      <a class="icon icon-simbol pull-left"></a>
-      <a class="icon icon-bars pull-right"></a>
-      <a class="icon icon-qrcode pull-right"></a>
-      <a class="icon icon-power-off pull-right"></a>
-      <h1 class="title left">기준정보</h1>
-    </header>
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left" id="drawer">
+        <header class="bar bar-nav bar-light bg-faded">
+          <h1 class="title">홍길동/정보운영관리부</h1>
+        </header>
+        <div class="content">
+          <ul class="table-view">
+  				  <li class="table-view-divider">설비관리시스템</li>
+  					<li class="table-view-cell">
+  				    <a class="navigate-right">
+  				      기준정보
+  				    </a>
+  				  </li>
+  				  <li class="table-view-cell">
+  				    <a class="navigate-right">
+  				      작업오더
+  				    </a>
+  				  </li>
+  				  <li class="table-view-cell">
+  				    <a class="navigate-right">
+  				      QR CODE
+  				    </a>
+  				  </li>
+            <li class="table-view-cell">
+  				    <a class="navigate-right">
+  				      표준 메뉴얼
+  				    </a>
+  				  </li>
+  				</ul>
 
+          <ul class="table-view">
+  					<li class="table-view-cell">
+  				    <a class="navigate-right">
+  				      임시저장목록
+  				    </a>
+  				  </li>
+  				</ul>
 
-    <!-- main content -->
-    <div class="content">
-      <div class="content-padded">
-        내용
+        </div>
+
       </div>
     </div>
 
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" href="#drawer" data-toggle="drawer"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">기준정보</h1>
+      </header>
+
+      <!-- main content -->
+      <div class="content">
+        <div class="content-padded">
+          내용
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script>
+			// Initialize drawer
+      RC_initDrawer();
+			$('#myButton').tap(function() {
+			  $('#myDrawer').drawer('toggle');
+			});
+    </script>
+
     <script src="../assets/js/app.js"></script>
+
+
+
   </body>
 </html>
