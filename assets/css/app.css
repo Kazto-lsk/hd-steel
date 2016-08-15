@@ -33,7 +33,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-close:before {
+  content: "\e90b";
+}
 .icon-logo:before {
   content: "\e90a";
 }
@@ -91,6 +93,10 @@ body {
 .btn-primary {
     background-color: #1C74D5 !important;
 }
+
+.bg-white {
+  background-color: #fff
+}
 .btn-primary {
   border-color: #0275d8;
 }
@@ -135,7 +141,7 @@ body {
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
 }
 
-.title {
+.title.left {
   position: static;;
   padding: 0;
   font-size: 1.125rem;
@@ -300,7 +306,7 @@ body {
 
 /*input-group*/
 .input-group-btn > .btn {
-  padding: 0.3rem 0.75rem;
+  padding: 0.32rem 0.75rem;
 }
 
 /*form-group*/
@@ -335,6 +341,11 @@ body {
 .content {
   background-color: #eeeef2;
 }
+
+.modal .content {
+  background-color: #fff
+}
+
 
 p {
   line-height: 1.2
