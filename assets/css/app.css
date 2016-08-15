@@ -281,6 +281,11 @@ body {
   color: #9a9eac
 }
 
+.card.hd-search .badge-inverted {
+  font-size: 95%;
+  font-weight: normal;
+}
+
 
 /*search result*/
 .card.hd-search-result {
@@ -352,11 +357,6 @@ body {
   color:#626470;
   border-top: 1px dotted #d8dce2;
   font-weight: 300
-}
-
-.card.hd-search-detail .badge-inverted {
-  font-size: 95%;
-  font-weight: normal;
 }
 
 
