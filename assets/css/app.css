@@ -322,6 +322,9 @@ body {
   border-top: 1px dotted #d8dce2;
   border-bottom: 1px solid #d8dce2;
 }
+.card.hd-search-result .card-block .card-block-inner.borderBottomNone {
+  border-bottom: none;
+}
 
 .card.hd-search-result .card-block .card-text {
   overflow: hidden;
@@ -683,10 +686,10 @@ hr {
 }
 
 /*rc 적용*/
-.navigate-up:after,
-.navigate-down:after,
-.push-left:after,
-.push-right:after {
+.navigate-updown:after,
+.navigate-updown:after,
+.push-updown:after,
+.push-updown:after {
   position: absolute;
   top: 50%;
   right: .9375rem;
@@ -701,12 +704,22 @@ hr {
   transform: translateY(-50%);
 }
 
-.navigate-down:after,
-.push-down:after {
+.navigate-updown:after,
+.push-updown:after {
+  content: '\e903';
+}
+
+.navigate-updown.collapsed:after,
+.push-updown.collapsed:after {
   content: '\e902';
 }
 
-.navigate-up:after,
-.push-up:after {
-  content: '\e903';
+
+.collapse .table-view-cell:last-child {
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-description {
+  color: #1c74d5
+
 }
