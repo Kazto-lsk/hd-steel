@@ -5190,7 +5190,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     if (this.transitioning || this.$element.hasClass('in')) return
 
     var activesData
-    var actives = this.$parent && this.$parent.children('.card').children('.in, .collapsing')
+    var actives = this.$parent && this.$parent.children('.table-view').children('.in, .collapsing')
 
     if (actives && actives.length) {
       activesData = actives.data('rc.collapse')
