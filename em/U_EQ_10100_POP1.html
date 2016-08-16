@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>위치마스터_ 검색(팝업) | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">기준정보</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        위치마스터_ 검색
+      </button>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="content-padded">
+
+        <div class="content-padded">
+      		<button class="btn btn-secondary btn-block">Launch modal </button>
+      	</div>
+
+      </div>
+    </div>
+
+
+    <!-- modal 시작 -->
+    <div id="U_EQ_10100_POP1" class="modal">
+    	<<header class="bar bar-nav bar-light bg-white">
+    		<a class="icon icon-close pull-right" data-history="back" role="button"></a>
+    		<h1 class="title">설비유형</h1>
+    	</header>
+
+    	<div class="content">
+
+        <div class="content-padded">
+          <p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="">
+              <span class="input-group-btn">
+                <button class="btn btn-white" type="button">Go!</button>
+              </span>
+            </div>
+          </p>
+
+          <div>총 <span class="text-primary">25</span>개 결과목록</div>
+        </div>
+
+        <div class="card card-full">
+          <ul class="table-view">
+            <li class="table-view-cell"><a >Item 1</a></li>
+            <li class="table-view-cell"><a >Item 2</a></li>
+            <li class="table-view-cell"><a >Item 3</a></li>
+            <li class="table-view-cell"><a >Item 4</a></li>
+          </ul>
+          <div class="card-footer text-muted text-xs-center" role="button">
+            10개씩 더 보기 (1/20)
+          </div>
+        </div>
+
+    	</div>
+    </div>
+
+
+    <script type="text/javascript">
+    $('.btn').tap(function(){
+    	$('#U_EQ_10100_POP1').modal('show');
+    });
+
+    $('#U_EQ_10100_POP1 .table-view-cell a').tap(function(){
+    	$('#U_EQ_10100_POP1').modal('hide');
+
+      // something...
+
+    });
+
+    </script>
+
+  </body>
+</html>

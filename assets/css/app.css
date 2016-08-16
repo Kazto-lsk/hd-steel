@@ -286,6 +286,19 @@ body {
   font-weight: normal;
 }
 
+/* card-full */
+.card.card-full {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.card.card-full .card-footer{
+  background-color: transparent;
+}
+
 
 /*search result*/
 .card.hd-search-result {
@@ -464,7 +477,7 @@ body {
 
 /*input-group*/
 .input-group-btn > .btn {
-  padding: 0.32rem 0.75rem;
+  /*padding: 0.32rem 0.75rem;*/
 }
 
 /*form-group*/
