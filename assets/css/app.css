@@ -3,7 +3,7 @@ html {
 }
 body {
   /*font-family: "Roboto", sans-serif;*/
-  color: #222;
+  color: #333;
 }
 
 
@@ -489,6 +489,15 @@ body {
  * ----------------------------------------------------------------------------
  */
 
+.hd-section {
+  margin: 0.625rem;
+}
+
+.hd-section p {
+  padding-left: .9375rem;
+  font-size: .875rem;
+  color: #9a9eac
+}
 .hd-heading:before {
   padding-right: .312rem;
   font-family: 'icomoon' !important;
@@ -671,4 +680,33 @@ hr {
 .hd-login .card-footer .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0
+}
+
+/*rc 적용*/
+.navigate-up:after,
+.navigate-down:after,
+.push-left:after,
+.push-right:after {
+  position: absolute;
+  top: 50%;
+  right: .9375rem;
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #bbb;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navigate-down:after,
+.push-down:after {
+  content: '\e902';
+}
+
+.navigate-up:after,
+.push-up:after {
+  content: '\e903';
 }
