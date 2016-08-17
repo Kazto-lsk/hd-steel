@@ -579,10 +579,7 @@ hr {
 
 /*date-term*/
 
-.hd-term {
-  margin-left: -10px;
-  margin-right: -10px;
-}
+
 .hd-term:after {
     content: "";
     display: table;
@@ -595,10 +592,8 @@ hr {
 .hd-term .hd-term-item {
   position: relative;
   min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
   float: left;
-  width: 40.666667%;
+  width: 42%;
 }
 .hd-term .hd-term-divider {
   position: relative;
@@ -606,11 +601,12 @@ hr {
   padding-right: 0;
   padding-left: 0;
   float: left;
-  width: 2%;
+  width: 5%;
   min-height: 2.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0;
+  text-align: center;
 }
 .hd-term .hd-term-divider:before {
   content: "~";
@@ -618,10 +614,9 @@ hr {
 .hd-term .hd-term-btn  {
   position: relative;
   min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 2%;
   float: left;
-  width: 8.333333%;
+  width: 8%;
 }
 .hd-term .hd-term-btn .btn {
   margin-left: -15px;
