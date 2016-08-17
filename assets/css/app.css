@@ -292,31 +292,24 @@ body {
   font-weight: normal;
 }
 
+
 .card.hd-search .table {
-  margin-top: .3125rem;
+  margin-top: 0;
+  margin-bottom: 0;
   border: none;
 }
-
 .card.hd-search .table td  {
-  position: relative;
   padding: 0.4rem;
-  text-align: center;
   border: none
 }
-
-.card.hd-search .table td span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left : 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.4rem;
-  text-align: center;
+.card.hd-search .table td .card {
+  margin: 0;
   background-color: #d5e6ff;
-  border-radius: .5rem;
-  border: none
+  border: none;
+  padding: .625.rem
+}
+.card.hd-search .table td .card-block {
+  padding: .625rem
 }
 
 /* card-full */
