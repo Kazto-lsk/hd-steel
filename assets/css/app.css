@@ -593,7 +593,7 @@ hr {
   position: relative;
   min-height: 1px;
   float: left;
-  width: 42%;
+  width: 40%;
 }
 .hd-term .hd-term-divider {
   position: relative;
@@ -616,10 +616,10 @@ hr {
   min-height: 1px;
   padding-left: 2%;
   float: left;
-  width: 8%;
+  width: 13%;
 }
 .hd-term .hd-term-btn .btn {
-  margin-left: -15px;
+  /*margin-left: -15px;*/
   padding: 0.54rem;
   font-size: 1rem;
   line-height: 1.25
