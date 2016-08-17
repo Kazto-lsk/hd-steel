@@ -807,6 +807,10 @@ pre code {
   width: 8.333333%;
 }
 
+.col-xs-1 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-2 {
   position: relative;
   min-height: 1px;
@@ -814,6 +818,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 16.666667%;
+}
+
+.col-xs-2 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .col-xs-3 {
@@ -825,6 +833,10 @@ pre code {
   width: 25%;
 }
 
+.col-xs-3 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-4 {
   position: relative;
   min-height: 1px;
@@ -832,6 +844,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 33.333333%;
+}
+
+.col-xs-4 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .col-xs-5 {
@@ -843,6 +859,10 @@ pre code {
   width: 41.666667%;
 }
 
+.col-xs-5 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-6 {
   position: relative;
   min-height: 1px;
@@ -850,6 +870,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 50%;
+}
+
+.col-xs-6 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .col-xs-7 {
@@ -861,6 +885,10 @@ pre code {
   width: 58.333333%;
 }
 
+.col-xs-7 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-8 {
   position: relative;
   min-height: 1px;
@@ -868,6 +896,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 66.666667%;
+}
+
+.col-xs-8 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .col-xs-9 {
@@ -879,6 +911,10 @@ pre code {
   width: 75%;
 }
 
+.col-xs-9 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-10 {
   position: relative;
   min-height: 1px;
@@ -886,6 +922,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 83.333333%;
+}
+
+.col-xs-10 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .col-xs-11 {
@@ -897,6 +937,10 @@ pre code {
   width: 91.666667%;
 }
 
+.col-xs-11 ~ [class^="col-"] {
+  padding-left: 0;
+}
+
 .col-xs-12 {
   position: relative;
   min-height: 1px;
@@ -904,6 +948,10 @@ pre code {
   padding-left: 10px;
   float: left;
   width: 100%;
+}
+
+.col-xs-12 ~ [class^="col-"] {
+  padding-left: 0;
 }
 
 .pull-xs-0 {
@@ -1063,6 +1111,9 @@ pre code {
     float: left;
     width: 8.333333%;
   }
+  .col-sm-1 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-2 {
     position: relative;
     min-height: 1px;
@@ -1070,6 +1121,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 16.666667%;
+  }
+  .col-sm-2 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-sm-3 {
     position: relative;
@@ -1079,6 +1133,9 @@ pre code {
     float: left;
     width: 25%;
   }
+  .col-sm-3 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-4 {
     position: relative;
     min-height: 1px;
@@ -1086,6 +1143,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 33.333333%;
+  }
+  .col-sm-4 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-sm-5 {
     position: relative;
@@ -1095,6 +1155,9 @@ pre code {
     float: left;
     width: 41.666667%;
   }
+  .col-sm-5 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-6 {
     position: relative;
     min-height: 1px;
@@ -1102,6 +1165,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 50%;
+  }
+  .col-sm-6 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-sm-7 {
     position: relative;
@@ -1111,6 +1177,9 @@ pre code {
     float: left;
     width: 58.333333%;
   }
+  .col-sm-7 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-8 {
     position: relative;
     min-height: 1px;
@@ -1118,6 +1187,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 66.666667%;
+  }
+  .col-sm-8 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-sm-9 {
     position: relative;
@@ -1127,6 +1199,9 @@ pre code {
     float: left;
     width: 75%;
   }
+  .col-sm-9 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-10 {
     position: relative;
     min-height: 1px;
@@ -1134,6 +1209,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 83.333333%;
+  }
+  .col-sm-10 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-sm-11 {
     position: relative;
@@ -1143,6 +1221,9 @@ pre code {
     float: left;
     width: 91.666667%;
   }
+  .col-sm-11 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-sm-12 {
     position: relative;
     min-height: 1px;
@@ -1150,6 +1231,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 100%;
+  }
+  .col-sm-12 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .pull-sm-0 {
     right: auto;
@@ -1276,6 +1360,9 @@ pre code {
     float: left;
     width: 8.333333%;
   }
+  .col-md-1 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-2 {
     position: relative;
     min-height: 1px;
@@ -1283,6 +1370,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 16.666667%;
+  }
+  .col-md-2 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-md-3 {
     position: relative;
@@ -1292,6 +1382,9 @@ pre code {
     float: left;
     width: 25%;
   }
+  .col-md-3 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-4 {
     position: relative;
     min-height: 1px;
@@ -1299,6 +1392,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 33.333333%;
+  }
+  .col-md-4 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-md-5 {
     position: relative;
@@ -1308,6 +1404,9 @@ pre code {
     float: left;
     width: 41.666667%;
   }
+  .col-md-5 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-6 {
     position: relative;
     min-height: 1px;
@@ -1315,6 +1414,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 50%;
+  }
+  .col-md-6 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-md-7 {
     position: relative;
@@ -1324,6 +1426,9 @@ pre code {
     float: left;
     width: 58.333333%;
   }
+  .col-md-7 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-8 {
     position: relative;
     min-height: 1px;
@@ -1331,6 +1436,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 66.666667%;
+  }
+  .col-md-8 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-md-9 {
     position: relative;
@@ -1340,6 +1448,9 @@ pre code {
     float: left;
     width: 75%;
   }
+  .col-md-9 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-10 {
     position: relative;
     min-height: 1px;
@@ -1347,6 +1458,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 83.333333%;
+  }
+  .col-md-10 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-md-11 {
     position: relative;
@@ -1356,6 +1470,9 @@ pre code {
     float: left;
     width: 91.666667%;
   }
+  .col-md-11 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-md-12 {
     position: relative;
     min-height: 1px;
@@ -1363,6 +1480,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 100%;
+  }
+  .col-md-12 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .pull-md-0 {
     right: auto;
@@ -1489,6 +1609,9 @@ pre code {
     float: left;
     width: 8.333333%;
   }
+  .col-lg-1 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-2 {
     position: relative;
     min-height: 1px;
@@ -1496,6 +1619,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 16.666667%;
+  }
+  .col-lg-2 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-lg-3 {
     position: relative;
@@ -1505,6 +1631,9 @@ pre code {
     float: left;
     width: 25%;
   }
+  .col-lg-3 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-4 {
     position: relative;
     min-height: 1px;
@@ -1512,6 +1641,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 33.333333%;
+  }
+  .col-lg-4 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-lg-5 {
     position: relative;
@@ -1521,6 +1653,9 @@ pre code {
     float: left;
     width: 41.666667%;
   }
+  .col-lg-5 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-6 {
     position: relative;
     min-height: 1px;
@@ -1528,6 +1663,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 50%;
+  }
+  .col-lg-6 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-lg-7 {
     position: relative;
@@ -1537,6 +1675,9 @@ pre code {
     float: left;
     width: 58.333333%;
   }
+  .col-lg-7 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-8 {
     position: relative;
     min-height: 1px;
@@ -1544,6 +1685,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 66.666667%;
+  }
+  .col-lg-8 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-lg-9 {
     position: relative;
@@ -1553,6 +1697,9 @@ pre code {
     float: left;
     width: 75%;
   }
+  .col-lg-9 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-10 {
     position: relative;
     min-height: 1px;
@@ -1560,6 +1707,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 83.333333%;
+  }
+  .col-lg-10 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-lg-11 {
     position: relative;
@@ -1569,6 +1719,9 @@ pre code {
     float: left;
     width: 91.666667%;
   }
+  .col-lg-11 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-lg-12 {
     position: relative;
     min-height: 1px;
@@ -1576,6 +1729,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 100%;
+  }
+  .col-lg-12 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .pull-lg-0 {
     right: auto;
@@ -1702,6 +1858,9 @@ pre code {
     float: left;
     width: 8.333333%;
   }
+  .col-xl-1 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-2 {
     position: relative;
     min-height: 1px;
@@ -1709,6 +1868,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 16.666667%;
+  }
+  .col-xl-2 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-xl-3 {
     position: relative;
@@ -1718,6 +1880,9 @@ pre code {
     float: left;
     width: 25%;
   }
+  .col-xl-3 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-4 {
     position: relative;
     min-height: 1px;
@@ -1725,6 +1890,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 33.333333%;
+  }
+  .col-xl-4 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-xl-5 {
     position: relative;
@@ -1734,6 +1902,9 @@ pre code {
     float: left;
     width: 41.666667%;
   }
+  .col-xl-5 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-6 {
     position: relative;
     min-height: 1px;
@@ -1741,6 +1912,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 50%;
+  }
+  .col-xl-6 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-xl-7 {
     position: relative;
@@ -1750,6 +1924,9 @@ pre code {
     float: left;
     width: 58.333333%;
   }
+  .col-xl-7 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-8 {
     position: relative;
     min-height: 1px;
@@ -1757,6 +1934,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 66.666667%;
+  }
+  .col-xl-8 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-xl-9 {
     position: relative;
@@ -1766,6 +1946,9 @@ pre code {
     float: left;
     width: 75%;
   }
+  .col-xl-9 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-10 {
     position: relative;
     min-height: 1px;
@@ -1773,6 +1956,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 83.333333%;
+  }
+  .col-xl-10 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .col-xl-11 {
     position: relative;
@@ -1782,6 +1968,9 @@ pre code {
     float: left;
     width: 91.666667%;
   }
+  .col-xl-11 ~ [class^="col-"] {
+    padding-left: 0;
+  }
   .col-xl-12 {
     position: relative;
     min-height: 1px;
@@ -1789,6 +1978,9 @@ pre code {
     padding-left: 10px;
     float: left;
     width: 100%;
+  }
+  .col-xl-12 ~ [class^="col-"] {
+    padding-left: 0;
   }
   .pull-xl-0 {
     right: auto;
@@ -5158,6 +5350,44 @@ input[type="button"].btn-block {
   border-radius: 10rem;
 }
 
+.badge-outline {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  background-color: transparent;
+  border-radius: 10rem;
+  border: 0.0625rem solid #373a3c;
+}
+
+.badge-outline.badge-default {
+  border-color: #818a91;
+  color: #818a91;
+}
+
+.badge-outline.badge-primary {
+  border-color: #0275d8;
+  color: #0275d8;
+}
+
+.badge-outline.badge-success {
+  border-color: #5cb85c;
+  color: #5cb85c;
+}
+
+.badge-outline.badge-info {
+  border-color: #5bc0de;
+  color: #5bc0de;
+}
+
+.badge-outline.badge-warning {
+  border-color: #f0ad4e;
+  color: #f0ad4e;
+}
+
+.badge-outline.badge-danger {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
 .card {
   position: relative;
   display: block;
@@ -5848,6 +6078,52 @@ input[type="button"].btn-block {
           transform: translateY(-50%);
 }
 
+.table-view {
+  /*2depth*/
+}
+
+.table-view .table-view {
+  margin-top: .6875rem;
+  margin-bottom: -.6875rem;
+  margin-left: -.9375rem;
+  margin-right: -4.0625rem;
+  border-bottom: none;
+  /*3depth*/
+}
+
+.table-view .table-view .table-view-cell {
+  padding-left: 1.875rem;
+}
+
+.table-view .table-view .table-view-cell a {
+  margin-left: -1.875rem;
+}
+
+.table-view .table-view .table-view {
+  margin-left: -1.875rem;
+  /*4depth*/
+}
+
+.table-view .table-view .table-view .table-view-cell {
+  padding-left: 2.8125rem;
+}
+
+.table-view .table-view .table-view .table-view-cell a {
+  margin-left: -2.8125rem;
+}
+
+.table-view .table-view .table-view .table-view {
+  margin-left: -2.8125rem;
+}
+
+.table-view .table-view .table-view .table-view .table-view-cell {
+  padding-left: 3.75rem;
+}
+
+.table-view .table-view .table-view .table-view .table-view-cell a {
+  margin-left: -3.75rem;
+}
+
 .input-group {
   position: relative;
   width: 100%;
@@ -6007,6 +6283,10 @@ input[type="button"].btn-block {
   color: #fff;
   background-color: #0074d9;
   border: none;
+}
+
+.custom-control-input:checked ~ .custom-control-description {
+  color: #0074d9;
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
