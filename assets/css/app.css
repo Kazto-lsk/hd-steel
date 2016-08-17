@@ -313,7 +313,8 @@ body {
   border: 0.0625rem solid #ccc;
   border-radius: 0;
   border-left: 0;
-  border-right: 0
+  border-right: 0;
+  border-bottom: 0
 }
 .card.hd-search .nav-control .nav-link {
   padding-top: .7rem;
