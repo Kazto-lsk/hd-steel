@@ -898,6 +898,7 @@ hr {
 }
 .popup  .bar.bar-nav .title {
   margin: 0;
+  font-weight: 700
 }
 .popup .content {
   /*min-height: 150px;*/
