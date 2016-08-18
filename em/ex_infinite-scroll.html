@@ -74,7 +74,7 @@
 			dataSource: function(helpers, callback) {
 				setTimeout(function() {
 					callback({
-						$("#myInfiniteScroll1 .table-view").append(content);
+						content: content
 					});
 				}, delays[Math.floor(Math.random() * 4)]);
 			}
