@@ -71,13 +71,13 @@
 			};
 			// INFINITE SCROLL
 			$('#myInfiniteScroll1').infinitescroll({
-			dataSource: function(helpers, callback) {
-				setTimeout(function() {
-					callback({
-						content: content
-					});
-				}, delays[Math.floor(Math.random() * 4)]);
-			}
+  			dataSource: function(helpers, callback) {
+  				setTimeout(function() {
+  					callback({
+  						content: content
+  					});
+  				}, delays[Math.floor(Math.random() * 4)]);
+  			}
 			});
 
       setup('#myInfiniteScroll1');
