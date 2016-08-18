@@ -2142,10 +2142,10 @@ if (typeof jQuery === 'undefined') {
 })(window);
 
 /*=======================================================================================
-* Fire Tap Event
+* Fire Tap Event 
 *! jquery.finger - v0.1.4 - 2015-12-02
 * https://github.com/ngryman/jquery.finger
-* Copyright (c) 2015 Nicolas Gryman; Licensed MIT
+* Copyright (c) 2015 Nicolas Gryman; Licensed MIT 
 *=======================================================================================*/
 
 !(function (factory) {
@@ -2593,19 +2593,19 @@ if (typeof jQuery === 'undefined') {
       transition : target.getAttribute('data-transition')
     });
   };
-
-   // popstate 이벤트(백버튼) 체크 함수
+  
+   // popstate 이벤트(백버튼) 체크 함수 
    var checkPopstate=function(){
         var CurrentIndex=History.getCurrentIndex();
         var CurrentObj=History.getStateByIndex(CurrentIndex);
         CurrentObj=JSON.stringify(CurrentObj);
         var ForwardIndex=parseInt(CurrentIndex)-1;
-        var ForwardObj=History.getStateByIndex(ForwardIndex); // 직전 object
+        var ForwardObj=History.getStateByIndex(ForwardIndex); // 직전 object 
         var ForwardObj=JSON.stringify(ForwardObj);
         var result=$.parseJSON(ForwardObj);
         //History.log('직전 history : state =' +ForwardObj+'/ index='+ForwardIndex);
-        var objType=result.data.type; // modal, page, popover, popup,...
-        var objTarget=result.data.target; // modal, page, popover..의 id 정보
+        var objType=result.data.type; // modal, page, popover, popup,...     
+        var objTarget=result.data.target; // modal, page, popover..의 id 정보          
         return [objType,objTarget];
    };
 
@@ -2623,10 +2623,10 @@ if (typeof jQuery === 'undefined') {
     if (!id || !cacheMapping[id]) {
       return;
     }
-    // 컴포넌트 back 버튼 회피
+    // 컴포넌트 back 버튼 회피     
     var checkPop=checkPopstate();
     var objType=checkPop[0];
-
+    
     if(objType!=undefined) return;
     else {
        direction = PUSH.id < id ? 'forward' : 'back';
@@ -2690,7 +2690,7 @@ if (typeof jQuery === 'undefined') {
         document.body.offsetHeight; // force reflow to prevent scroll
     }
 
-
+    
   };
 
 
@@ -3015,6 +3015,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 	var InfiniteScroll = function (element, options) {
 		this.$element = $(element);
+		this.$appendToEle=options.appendToEle;
 		this.$element.addClass('infinitescroll');
 		this.options = $.extend({}, $.fn.infinitescroll.defaults, options);
 
@@ -3025,9 +3026,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		this.$element.on('scroll.fu.infinitescroll', $.proxy(this.onScroll, this));
 		this.onScroll();
 	};
-
-    // require tab.js & history.js & utilty.js
-    if (!$.fn.loader=="undefined") throw new Error('infinite-scroll requires loader.js')
+    
+    // require tab.js & history.js & utilty.js    
+    if (!$.fn.loader=="undefined") throw new Error('infinite-scroll requires loader.js')  
 
 
 	InfiniteScroll.prototype = {
@@ -3091,7 +3092,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 						var end;
 						load.remove();
 						if (resp.content) {
-							self.$element.append(resp.content);
+							self.$appendToEle.append(resp.content);
 						}
 
 						if (resp.end) {
@@ -3826,11 +3827,11 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
       var Scroll = function (element, options) {
             this.options = $.extend({}, Scroll.DEFAULTS, options)
-
+          
             this.$target = $(this.options.target)
                  .on('scroll.rc.scroll.data-api', $.proxy(this.checkPosition, this))
                  .on('tap.rc.scroll.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
-
+          
             this.$element     = $(element)
             this.type=this.options.type// affix , detect, ....
             this.scrolled      = null
@@ -3898,17 +3899,17 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             if (typeof offset != 'object')         offsetBottom = offsetTop = offset
             if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
             if (typeof offsetBottom == 'function') offsetBottom = offset.bottom(this.$element)
-
+             
             var affix = this.getState(scrollHeight, height, offsetTop, offsetBottom)
-
-            // when affix
+            
+            // when affix 
             if(this.type=='affix'){
                   if (this.affixed != affix) {
                         if (this.unpin != null) this.$element.css('top', '')
 
                         var affixType = 'affix' + (affix ? '-' + affix : '')
                         var e         = $.Event(affixType + '.rc.scroll')
-
+                        
                         this.$element.trigger(e)
 
                         if (e.isDefaultPrevented()) return
@@ -3935,13 +3936,13 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                        if(state==true){
                             if(nowScrollTop < this.defaultHeight) scrollEvent=$.Event('default.rc.scroll');
                             else{
-                      	           if(nowScrollTop>lastScrollTop) scrollEvent=$.Event('down.rc.scroll');
+                      	           if(nowScrollTop>lastScrollTop) scrollEvent=$.Event('down.rc.scroll');  
                       	           else scrollEvent=$.Event('up.rc.scroll');
                       	      }
-                      	      this.$element.trigger(scrollEvent); // trigger event
-                            this.lastScrollTop=nowScrollTop;  // update lastScrollTop
-                      }
-            }
+                      	      this.$element.trigger(scrollEvent); // trigger event 
+                            this.lastScrollTop=nowScrollTop;  // update lastScrollTop     	      
+                      }                      
+            } 
 
       }
 
@@ -4076,9 +4077,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.url               = this.options.url?this.options.url:null
             this.isShown             = null
      }
-
-      // require tab.js & history.js & utilty.js
-     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Modal requires tab.js, history.js and utility.js')
+     
+      // require tab.js & history.js & utilty.js    
+     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Modal requires tab.js, history.js and utility.js')  
 
       Modal.VERSION  = '1.0.0'
       Modal.DEFAULTS = {
@@ -4090,12 +4091,12 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       Modal.prototype.toggle = function (_relatedTarget) {
             return this.isShown ? this.hide() : this.show(_relatedTarget)
       }
-
+ 
       Modal.prototype.show = function (_relatedTarget) {
             var $this = this
             var e    = $.Event('show.rc.modal', { relatedTarget: _relatedTarget })
             var title =this.title;
-            var modal=this.options.target?this.options.target:'#'+this.$element.attr('id'); // 엘리먼트 클릭(target) & script 오픈 2 가지
+            var modal=this.options.target?this.options.target:'#'+this.$element.attr('id'); // 엘리먼트 클릭(target) & script 오픈 2 가지 
             var url =this.url;
             if(url!=null) url=url.toString();
             var animation=this.options.animation?this.options.animation:'';
@@ -4103,35 +4104,35 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var tplContainer=this.options.tplcontainer?modal+' '+this.options.tplcontainer:modal;
             this.$element.trigger(e);
             this.isShown = true
-
+      
            // init Utility
-            var utility=new Utility(modal,this.options).init();
+            var utility=new Utility(modal,this.options).init();  
             if(!template){
                  utility.setdataVal(modal,$this.options); // data 값 세팅하는 전용함수 사용한다.
-            }else{
+            }else{ 
                $(tplContainer).load(template,$.proxy(function(){
-                    utility.setdataVal(modal,$this.options); // data 값 세팅하는 전용함수 사용한다.
+                    utility.setdataVal(modal,$this.options); // data 값 세팅하는 전용함수 사용한다. 
                     this.afterTemplate(this,_relatedTarget);
-               },this));
+               },this));   
             }
 
-            this.$element.on('tap.dismiss.rc.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
-
+            this.$element.on('tap.dismiss.rc.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this)) 
+             
             this.$element.addClass(animation); // 에니메이션 적용
             $(modal).show();
             setTimeout(function(){$(modal).addClass('active')}, 0);
             if(this.options.history){
-                // 브라우저 history 객체에 추가
+                // 브라우저 history 객체에 추가 
                 var object = {'type': 'modal','target': modal}
-                utility.addHistoryObject(object,title,url);
+                utility.addHistoryObject(object,title,url);  
             }
-
-           this.afterModal(this,_relatedTarget);
+          
+           this.afterModal(this,_relatedTarget);              
       }
 
       Modal.prototype.afterTemplate=function(obj,_relatedTarget){
             var e = $.Event('loaded.rc.modal', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);  
       }
 
       Modal.prototype.afterModal=function(obj,_relatedTarget){
@@ -4143,12 +4144,12 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            if(this.options.history) history.back();
            else this.nonHistoryHide();
       }
-
+     
      Modal.prototype.historyHide = function (e) {
             this.isShown = false
             if (e) e.preventDefault()
             var e    = $.Event('hide.rc.modal');
-            this.$element.trigger(e)
+            this.$element.trigger(e) 
             this.afterHide();
       }
 
@@ -4158,13 +4159,13 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var e    = $.Event('hide.rc.modal');
             $(modal).trigger(e)
             $(modal).removeClass('active');
-            setTimeout(function(){$(modal).hide();},300);
+            setTimeout(function(){$(modal).hide();},300); 
             this.afterHide();
       }
 
       Modal.prototype.afterHide=function(){
            var e = $.Event('hidden.rc.modal');
-           this.$element.trigger(e);
+           this.$element.trigger(e);     
       }
 
       var old = $.fn.modal
@@ -4193,16 +4194,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 else if (options.show) data.show(_relatedTarget)
            })
        }
-
+      
       // MODAL DATA-API
       // ==============
-
+       
       $(document).on('tap.rc.modal.data-api', '[data-toggle="modal"]', function (e) {
           var $this   = $(this)
           var href    = $this.attr('href')
           var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
           var option  = $target.data('rc.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
+         
           if ($this.is('a')) e.preventDefault()
 
            $target.one('show.rc.modal', function (showEvent) {
@@ -4210,7 +4211,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   $target.one('hidden.rc.modal', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
 
           Plugin.call($target, option, this)
       })
@@ -4240,8 +4241,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.url               = this.options.url?this.options.url:null
             this.isShown             = null
      }
-
-     // require tab.js & history.js & utilty.js
+      
+     // require tab.js & history.js & utilty.js    
      if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Popup requires tab.js, history.js and utility.js')
 
       Popup.VERSION  = '1.0.0'
@@ -4254,14 +4255,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       Popup.prototype.toggle = function (_relatedTarget) {
             return this.isShown ? this.hide() : this.show(_relatedTarget)
       }
-
-      // 모달 호출
+ 
+      // 모달 호출   
       Popup.prototype.show = function (_relatedTarget) {
             var $this = this
             var e    = $.Event('show.rc.popup', { relatedTarget: _relatedTarget })
             var title =this.title;
             var popup=this.options.target?this.options.target:'#'+this.$element.attr('id'); // 엘리먼트 클릭(target) & script 오픈 2 가지 ;
-            var url =this.url;
+            var url =this.url; 
             if(url!=null) url=url.toString();
             var bcontainer=this.options.bcontainer?this.options.bcontainer:'body';
             var template=this.options.template;
@@ -4270,39 +4271,39 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown = true
 
             // init Utility
-            var utility=new Utility(popup,this.options).init();
+            var utility=new Utility(popup,this.options).init();  
             if(!template){
                  utility.setdataVal(popup,$this.options); // data 값 세팅하는 전용함수 사용한다.
-            }else{
+            }else{                 
                  $(tplContainer).load(template,$.proxy(function(){
-                      utility.setdataVal(popup,$this.options); // data 값 세팅하는 전용함수 사용한다.
+                      utility.setdataVal(popup,$this.options); // data 값 세팅하는 전용함수 사용한다. 
                       this.afterTemplate(this,_relatedTarget);
-                },this));
+                },this));  
             }
 
-            this.$element.on('tap.dismiss.rc.popup', '[data-dismiss="popup"]', $.proxy(this.hide, this))
-
+            this.$element.on('tap.dismiss.rc.popup', '[data-dismiss="popup"]', $.proxy(this.hide, this))  
+      
             if(this.options.backdrop) this.backdrop();// add backdrop
-
+             
             $(popup).css("display","block");
             setTimeout(function(){$(popup).addClass('active')}, 0);
 
             if(this.options.history){
-                // 브라우저 history 객체에 추가
+                // 브라우저 history 객체에 추가 
                 var object = {'type': 'popup','target': {'id':popup,'bcontainer':bcontainer,'backdrop':this.options.backdrop}}
                 utility.addHistoryObject(object,title,url);
             }
-            this.afterPopup(this,_relatedTarget);
+            this.afterPopup(this,_relatedTarget);   
       }
 
       Popup.prototype.afterTemplate=function(obj,_relatedTarget){
             var e = $.Event('loaded.rc.popup', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);   
       }
 
       Popup.prototype.afterPopup=function(obj,_relatedTarget){
            var e = $.Event('shown.rc.popup', { relatedTarget: _relatedTarget })
-           obj.$element.trigger('focus').trigger(e);
+           obj.$element.trigger('focus').trigger(e); 
       }
 
       Popup.prototype.hide = function (e) {
@@ -4316,7 +4317,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown = false
             if (e) e.preventDefault()
             var e    = $.Event('hide.rc.popup');
-            this.$element.trigger(e)
+            this.$element.trigger(e)  
             this.afterHide();
       }
 
@@ -4326,16 +4327,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var e    = $.Event('hide.rc.popup');
             $(popup).trigger(e)
             $(popup).removeClass('active');
-            setTimeout(function(){$(popup).hide();},300);
+            setTimeout(function(){$(popup).hide();},300); 
             this.afterHide();
       }
 
       Popup.prototype.afterHide=function(){
            var e = $.Event('hidden.rc.popup');
-           this.$element.trigger(e);
+           this.$element.trigger(e);     
       }
 
-      Popup.prototype.backdrop = function (callback) {
+      Popup.prototype.backdrop = function (callback) {   
           if (this.isShown && this.options.backdrop) {
                this.$backdrop = $(document.createElement('div'))
                   .addClass('backdrop')
@@ -4349,8 +4350,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     this.options.backdrop == 'static'
                     ? this.$element[0].focus()
                     : this.hide()
-               }, this))
-          }
+               }, this))   
+          }  
      }
 
       var old = $.fn.popup
@@ -4379,16 +4380,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 else if (options.show) data.show(_relatedTarget)
            })
        }
-
+      
       // Popup DATA-API
       // ==============
-
+       
       $(document).on('tap.rc.popup.data-api', '[data-toggle="popup"]', function (e) {
           var $this   = $(this)
           var href    = $this.attr('href')
           var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
           var option  = $target.data('rc.popup') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
+         
           if ($this.is('a')) e.preventDefault()
 
            $target.one('show.rc.popup', function (showEvent) {
@@ -4396,7 +4397,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   $target.one('hidden.rc.popup', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
 
           Plugin.call($target, option, this)
       })
@@ -4426,66 +4427,66 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           this.title               = this.options.title?this.options.title:null
           this.url               = this.options.url?this.options.url:null
      }
-
-     // require tab.js & history.js & utilty.js
-     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Page requires tab.js, history.js and utility.js')
+      
+     // require tab.js & history.js & utilty.js    
+     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Page requires tab.js, history.js and utility.js') 
 
       Page.VERSION  = '1.0.0'
       Page.DEFAULTS = {
            show: true,
            history : true
       }
-
-      // 페이지 호출
+        
+      // 페이지 호출   
       Page.prototype.show = function (_relatedTarget) {
             var $this = this;
             var e    = $.Event('show.rc.page', { relatedTarget: _relatedTarget })
             var title =this.title;
             var startPage=this.options.start;
             var loadPage=this.options.target?this.options.target:'#'+this.$element.attr('id');
-            var url =this.url;
+            var url =this.url; 
             if(url!=null) url=url.toString();
             var transition=this.options.transition;
             var template=this.options.template;
             var tplContainer=this.options.tplcontainer?loadPage+' '+this.options.tplcontainer:loadPage;
             this.$element.trigger(e);
             this.isShown = true;
-
-            var utility=new Utility(startPage,this.options).init();
+        
+            var utility=new Utility(startPage,this.options).init();           
             if(!template){
                  utility.setdataVal(loadPage,$this.options); // data 값 세팅하는 전용함수 사용한다.
             }else{
                  $(tplContainer).load(template,function(){
                        utility.setdataVal(loadPage,$this.options); // data 값 세팅하는 전용함수 사용한다.
                        this.afterTemplate(this,_relatedTarget);
-                });
+                });  
             }
 
             this.$element.on('tap.dismiss.rc.page', '[data-dismiss="page"]', $.proxy(this.hide, this))
-
+            
             if(this.options.history){
-                var object = {'type': 'page', 'target':{'start': startPage,'load':loadPage,'transition':transition}};  // 페이지 정보 : object 구분값 , 현재 페이지, 로드 페이지, 방향
-                utility.addHistoryObject(object,title,url);//
-            }
+                var object = {'type': 'page', 'target':{'start': startPage,'load':loadPage,'transition':transition}};  // 페이지 정보 : object 구분값 , 현재 페이지, 로드 페이지, 방향 
+                utility.addHistoryObject(object,title,url);//  
+            }     
             this.getPage(startPage,loadPage,transition); // 타겟 페이지 호출
-            this.afterPage(this,_relatedTarget);
+            this.afterPage(this,_relatedTarget); 
       }
 
       Page.prototype.afterTemplate=function(obj,_relatedTarget){
              var e = $.Event('loaded.rc.page', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);    
       }
 
       Page.prototype.afterPage=function(obj,_relatedTarget){
             var e = $.Event('shown.rc.page', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e); 
       }
-
+      
       Page.prototype.hide=function(e){
            if(this.options.history) history.back();
            else this.nonHistoryHide();
       }
-
+      
       Page.prototype.historyHide=function(e){
           this.isShown = false
           if (e) e.preventDefault()
@@ -4493,7 +4494,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           this.$element.trigger(e)
           var CurrentIndex=History.getCurrentIndex();
           var ForwardIndex=parseInt(CurrentIndex)-1;
-          var ForwardObj=History.getStateByIndex(ForwardIndex); // 직전 object
+          var ForwardObj=History.getStateByIndex(ForwardIndex); // 직전 object 
           var ForwardObj=JSON.stringify(ForwardObj);
           var result=$.parseJSON(ForwardObj);
           var objTarget=result.data.target; // modal, page, popover..의 id 정보
@@ -4501,7 +4502,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           var loadPage=objTarget.load;
           var transition=objTarget.transition;
           this.closePage(startPage,loadPage,transition);
-          this.afterHide();
+          this.afterHide(); 
       }
 
      Page.prototype.nonHistoryHide = function () {
@@ -4515,26 +4516,26 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.closePage(startPage,loadPage,transition);
             this.afterHide();
       }
-
+   
       Page.prototype.afterHide=function(e){
             var e = $.Event('hidden.rc.page');
-           this.$element.trigger(e);
+           this.$element.trigger(e);   
+      }  
+     
+      // 슬라이딩으로 페이지 호출(열기) 함수     
+      Page.prototype.getPage=function(startPage,loadPage,transition){     
+            $(loadPage).attr('class','page right'); // 출발 위치 세팅 
+            $(loadPage).attr('class','page transition center'); // 출발위치에서 중앙으로 이동 
+            $(startPage).attr('class','page transition left'); // start 페이지는 반대로 이동 
       }
 
-      // 슬라이딩으로 페이지 호출(열기) 함수
-      Page.prototype.getPage=function(startPage,loadPage,transition){
-            $(loadPage).attr('class','page right'); // 출발 위치 세팅
-            $(loadPage).attr('class','page transition center'); // 출발위치에서 중앙으로 이동
-            $(startPage).attr('class','page transition left'); // start 페이지는 반대로 이동
-      }
-
-      // 슬라이딩으로 페이지 닫기 함수
-      Page.prototype.closePage=function(startPage,loadPage,transition){
-            $(startPage).attr('class','page left'); // 출발 위치 세팅
-            $(startPage).attr('class','page transition center'); // 출발위치에서 중앙으로 이동
-            $(loadPage).attr('class','page transition right'); // start 페이지는 반대로 이동
-      }
-
+      // 슬라이딩으로 페이지 닫기 함수     
+      Page.prototype.closePage=function(startPage,loadPage,transition){     
+            $(startPage).attr('class','page left'); // 출발 위치 세팅 
+            $(startPage).attr('class','page transition center'); // 출발위치에서 중앙으로 이동 
+            $(loadPage).attr('class','page transition right'); // start 페이지는 반대로 이동 
+      }  
+       
       var old = $.fn.page
 
       $.fn.page             = Plugin
@@ -4558,10 +4559,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   var options = $.extend({}, Page.DEFAULTS, $this.data(), typeof option == 'object' && option)
                   var data = new Page(this, options)
                   if (typeof option == 'string' && option!='toggle') data[option](_relatedTarget)
-                  else if (options.show) data.show(_relatedTarget);
+                  else if (options.show) data.show(_relatedTarget); 
             })
        }
-
+      
       // Page DATA-API
       // ==============
 
@@ -4570,14 +4571,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           var href    = $this.attr('href')
           var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
           var option  = $target.data('rc.page') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
+     
           if ($this.is('a')) e.preventDefault()
            $target.one('show.rc.page', function (showEvent) {
                   if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
                   $target.one('hidden.rc.page', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
           Plugin.call($target, option, this)
       })
 
@@ -4607,7 +4608,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown             = null
      }
 
-     // require tab.js & history.js & utilty.js
+     // require tab.js & history.js & utilty.js    
      if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Sheet requires tab.js, history.js and utility.js')
 
       Sheet.VERSION  = '1.0.0'
@@ -4620,7 +4621,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       Sheet.prototype.toggle = function (_relatedTarget) {
             return this.isShown ? this.hide() : this.show(_relatedTarget)
       }
-
+ 
       Sheet.prototype.show = function (_relatedTarget) {
             var $this = this
             var e    = $.Event('show.rc.sheet', { relatedTarget: _relatedTarget })
@@ -4636,38 +4637,38 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown = true
 
             // init Utility
-            var utility=new Utility(sheet,this.options).init();
+            var utility=new Utility(sheet,this.options).init();  
             if(!template){
                  utility.setdataVal(sheet,$this.options); // data 값 세팅하는 전용함수 사용한다.
-            }else{
+            }else{                 
                  $(tplContainer).load(template,$.proxy(function(){
-                      utility.setdataVal(sheet,$this.options); // data 값 세팅하는 전용함수 사용한다.
+                      utility.setdataVal(sheet,$this.options); // data 값 세팅하는 전용함수 사용한다. 
                       this.afterTemplate(this,_relatedTarget);
-                },this));
-            }
+                },this));  
+            } 
 
             this.$element.on('tap.dismiss.rc.sheet', '[data-dismiss="sheet"]', $.proxy(this.hide, this))
 
-            if(this.options.backdrop) this.backdrop();// add backdrop
+            if(this.options.backdrop) this.backdrop();// add backdrop 
 
-            $(sheet).css("display","block");
+            $(sheet).css("display","block");   
             setTimeout(function(){$(sheet).addClass('active')}, 0);
             if(this.options.history){
-               // 브라우저 history 객체에 추가
+               // 브라우저 history 객체에 추가 
                 var object = {'type': 'sheet','target': {'id':sheet,'bcontainer':bcontainer,'backdrop':this.options.backdrop}}
                utility.addHistoryObject(object,title,url);
             }
-            this.afterSheet(this,_relatedTarget);
+            this.afterSheet(this,_relatedTarget);   
       }
 
       Sheet.prototype.afterTemplate=function(obj,_relatedTarget){
             var e = $.Event('loaded.rc.sheet', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);   
       }
 
       Sheet.prototype.afterSheet=function(obj,_relatedTarget){
            var e = $.Event('shown.rc.sheet', { relatedTarget: _relatedTarget })
-           obj.$element.trigger('focus').trigger(e);
+           obj.$element.trigger('focus').trigger(e); 
       }
 
       Sheet.prototype.hide = function (e) {
@@ -4681,7 +4682,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown = false
             if (e) e.preventDefault()
             var e    = $.Event('hide.rc.sheet');
-            this.$element.trigger(e)
+            this.$element.trigger(e) 
             this.afterHide();
       }
 
@@ -4691,16 +4692,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var e    = $.Event('hide.rc.sheet');
             $(sheet).trigger(e)
             $(sheet).removeClass('active');
-            setTimeout(function(){$(sheet).hide();},300);
+            setTimeout(function(){$(sheet).hide();},300); 
             this.afterHide();
       }
 
       Sheet.prototype.afterHide=function(){
            var e = $.Event('hidden.rc.sheet');
-           this.$element.trigger(e);
+           this.$element.trigger(e);     
       }
 
-     Sheet.prototype.backdrop = function (callback) {
+     Sheet.prototype.backdrop = function (callback) {   
           if (this.isShown && this.options.backdrop) {
                this.$backdrop = $(document.createElement('div'))
                   .addClass('backdrop')
@@ -4713,10 +4714,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     if (e.target !== e.currentTarget) return
                     this.options.backdrop == 'static'
                     ? this.$element[0].focus()
-                    : this.hide()
-               }, this))
-          }
-     }
+                    : this.hide()  
+               }, this))   
+          }  
+     } 
       var old = $.fn.sheet
 
       $.fn.sheet             = Plugin
@@ -4743,16 +4744,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 else if (options.show) data.show(_relatedTarget)
            })
        }
-
+      
       // Sheet DATA-API
       // ==============
-
+       
       $(document).on('tap.rc.sheet.data-api', '[data-toggle="sheet"]', function (e) {
           var $this   = $(this)
           var href    = $this.attr('href')
           var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
           var option  = $target.data('rc.sheet') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
+         
           if ($this.is('a')) e.preventDefault()
 
            $target.one('show.rc.sheet', function (showEvent) {
@@ -4760,7 +4761,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   $target.one('hidden.rc.sheet', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
 
           Plugin.call($target, option, this)
       })
@@ -4791,8 +4792,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown             = null
      }
 
-     // require tab.js & history.js & utilty.js
-     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Popover requires tab.js, history.js and utility.js')
+     // require tab.js & history.js & utilty.js    
+     if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Popover requires tab.js, history.js and utility.js') 
 
       Popover.VERSION  = '1.1.0'
       Popover.DEFAULTS = {
@@ -4804,7 +4805,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       Popover.prototype.toggle = function (_relatedTarget) {
             return this.isShown ? this.hide() : this.show(_relatedTarget)
       }
-
+ 
       Popover.prototype.show = function (_relatedTarget) {
             var $this = this
             var e    = $.Event('show.rc.popover', { relatedTarget: _relatedTarget })
@@ -4820,14 +4821,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown = true
 
             // init Utility
-            var utility=new Utility(popover,this.options).init();
+            var utility=new Utility(popover,this.options).init();  
             if(!template){
                  utility.setdataVal(popover,$this.options); // data 값 세팅하는 전용함수 사용한다.
-            }else{
+            }else{                 
                  $(tplContainer).load(template,$.proxy(function(){
-                      utility.setdataVal(popover,$this.options); // data 값 세팅하는 전용함수 사용한다.
+                      utility.setdataVal(popover,$this.options); // data 값 세팅하는 전용함수 사용한다. 
                       this.afterTemplate(this,_relatedTarget);
-                },this));
+                },this));  
             }
 
             this.$element.on('tap.dismiss.rc.popover', '[data-dismiss="popover"]', $.proxy(this.hide, this))
@@ -4837,28 +4838,28 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             setTimeout(function(){$(popover).addClass('active')}, 0);
 
             if(this.options.history){
-                // 브라우저 history 객체에 추가
+                // 브라우저 history 객체에 추가 
                 var object = {'type': 'popover','target': {'id':popover,'bcontainer':bcontainer,'backdrop':this.options.backdrop}}
                 utility.addHistoryObject(object,title,url);
             }
-            this.afterPopover(this,_relatedTarget);
+            this.afterPopover(this,_relatedTarget);   
       }
 
       Popover.prototype.afterTemplate=function(obj,_relatedTarget){
             var e = $.Event('loaded.rc.popover', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);   
       }
 
       Popover.prototype.afterPopover=function(obj,_relatedTarget){
            var e = $.Event('shown.rc.popover', { relatedTarget: _relatedTarget })
-           obj.$element.trigger('focus').trigger(e);
+           obj.$element.trigger('focus').trigger(e); 
       }
 
       Popover.prototype.hide = function (e) {
           if(this.options.history) history.back();
           else this.nonHistoryHide();
           var backdrop=$('body').find('.backdrop');
-          $(backdrop).remove();
+          $(backdrop).remove();   
       }
      Popover.prototype.historyHide = function (e) {
             this.isShown = false
@@ -4874,16 +4875,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var e    = $.Event('hide.rc.popover');
             $(popover).trigger(e)
             $(popover).removeClass('active');
-            setTimeout(function(){$(popover).hide();},300);
+            setTimeout(function(){$(popover).hide();},300); 
             this.afterHide();
       }
 
       Popover.prototype.afterHide=function(){
            var e = $.Event('hidden.rc.popover');
-           this.$element.trigger(e);
+           this.$element.trigger(e);     
       }
 
-      Popover.prototype.backdrop = function (callback) {
+      Popover.prototype.backdrop = function (callback) {   
           if (this.isShown && this.options.backdrop) {
                this.$backdrop = $(document.createElement('div'))
                   .addClass('backdrop')
@@ -4897,9 +4898,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     this.options.backdrop == 'static'
                     ? this.$element[0].focus()
                     : this.hide()
-               }, this))
-          }
-     }
+               }, this))   
+          }  
+     } 
 
       var old = $.fn.popover
 
@@ -4927,16 +4928,16 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 else if (options.show) data.show(_relatedTarget)
            })
        }
-
+      
       // Popover DATA-API
       // ==============
-
+       
       $(document).on('tap.rc.popover.data-api', '[data-toggle="popover"]', function (e) {
           var $this   = $(this)
           var href    = $this.attr('href')
           var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
           var option  = $target.data('rc.popover') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
+         
           if ($this.is('a')) e.preventDefault()
 
            $target.one('show.rc.popover', function (showEvent) {
@@ -4944,7 +4945,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   $target.one('hidden.rc.popover', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
 
           Plugin.call($target, option, this)
       })
@@ -4974,8 +4975,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.url               = this.options.url?this.options.url:null
             this.isShown             = null
      }
-
-     // require tab.js & history.js & utilty.js
+     
+     // require tab.js & history.js & utilty.js    
      if (!$.fn.tap || window.History=="undefined" || window.Utility=="undefined") throw new Error('Fbutton requires tab.js, history.js and utility.js')
 
       Fbutton.VERSION  = '1.0.0'
@@ -4990,7 +4991,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             var isShown=isfbutton?isfbutton:'false';
             return isShown=='true' ? this.hide() : this.show(_relatedTarget)
       }
-
+ 
       Fbutton.prototype.show = function (_relatedTarget) {
             var $this = this
             var e    = $.Event('show.rc.fbutton', { relatedTarget: _relatedTarget })
@@ -5008,14 +5009,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             this.isShown='true';
             sessionStorage.setItem('isfbutton',this.isShown);
             // init Utility
-            var utility=new Utility(fbutton,this.options).init();
+            var utility=new Utility(fbutton,this.options).init();  
             if(!template){
                  utility.setdataVal(fbutton,$this.options); // data 값 세팅하는 전용함수 사용한다.
-            }else{
+            }else{                 
                  $(tplContainer).load(template,$.proxy(function(){
-                      utility.setdataVal(fbutton,$this.options); // data 값 세팅하는 전용함수 사용한다.
+                      utility.setdataVal(fbutton,$this.options); // data 값 세팅하는 전용함수 사용한다. 
                       this.afterTemplate(this,_relatedTarget);
-                },this));
+                },this));  
             }
 
             this.$element.on('tap.dismiss.rc.fbutton', '[data-dismiss="fbutton"]', $.proxy(this.hide, this))
@@ -5024,29 +5025,29 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             $(fbutton).addClass('active');
 
             if(this.options.history){
-                // 브라우저 history 객체에 추가
+                // 브라우저 history 객체에 추가 
                 var object = {'type': 'fbutton','target': {'id':fbutton,'bcontainer':bcontainer,'backdrop':this.options.backdrop}}
                 utility.addHistoryObject(object,title,url);
             }
-            this.afterFbutton(this,_relatedTarget);
-
+            this.afterFbutton(this,_relatedTarget);   
+            
       }
 
       Fbutton.prototype.afterTemplate=function(obj,_relatedTarget){
             var e = $.Event('loaded.rc.fbutton', { relatedTarget: _relatedTarget })
-            obj.$element.trigger('focus').trigger(e);
+            obj.$element.trigger('focus').trigger(e);   
       }
 
       Fbutton.prototype.afterFbutton=function(obj,_relatedTarget){
            var e = $.Event('shown.rc.fbutton', { relatedTarget: _relatedTarget })
-           obj.$element.trigger('focus').trigger(e);
+           obj.$element.trigger('focus').trigger(e); 
       }
 
       Fbutton.prototype.hide = function (e) {
           if(this.options.history) history.back();
           else this.nonHistoryHide();
           var backdrop=$('body').find('.backdrop');
-          $(backdrop).remove();
+          $(backdrop).remove();   
       }
      Fbutton.prototype.historyHide = function (e) {
             this.isShown = 'false'
@@ -5069,10 +5070,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
       Fbutton.prototype.afterHide=function(){
            var e = $.Event('hidden.rc.fbutton');
-           this.$element.trigger(e);
+           this.$element.trigger(e);     
       }
 
-      Fbutton.prototype.backdrop = function (callback) {
+      Fbutton.prototype.backdrop = function (callback) {   
           if (this.isShown && this.options.backdrop) {
                this.$backdrop = $(document.createElement('div'))
                   .addClass('backdrop')
@@ -5085,10 +5086,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     if (e.target !== e.currentTarget) return
                     this.options.backdrop == 'static'
                     ? this.$element[0].focus()
-                    : this.hide()
-               }, this))
-          }
-     }
+                    : this.hide()  
+               }, this))   
+          }  
+     } 
 
       var old = $.fn.fbutton
 
@@ -5116,10 +5117,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 else if (options.toggle) data.toggle(_relatedTarget)
            })
        }
-
+      
       // Fbutton DATA-API
       // ==============
-
+       
       $(document).on('tap.rc.fbutton.data-api', '[data-toggle="fbutton"]', function (e) {
           var $this   = $(this)
           var href    = $this.attr('href')
@@ -5133,7 +5134,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                   $target.one('hidden.rc.fbutton', function () {
                    $this.is(':active') && $this.trigger('focus')
                 })
-            })
+            }) 
 
           Plugin.call($target, option, this)
       })
@@ -5190,7 +5191,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     if (this.transitioning || this.$element.hasClass('in')) return
 
     var activesData
-    var actives = this.$parent && this.$parent.children('.table-view').children('.in, .collapsing')
+    var actives = this.$parent && this.$parent.children('.card').children('.in, .collapsing')
 
     if (actives && actives.length) {
       activesData = actives.data('rc.collapse')
