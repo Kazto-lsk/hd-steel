@@ -147,7 +147,7 @@ body {
 
 
 /*bar*/
-.bar {
+.bar.bar-nav {
   height: 2.8125rem;
   padding-right: 0;
   padding-left: 0;
@@ -214,7 +214,8 @@ body {
   background-color: #3A444D;
   border-right: 0.0312rem solid #303840;
   letter-spacing: -.5px;
-  line-height: 2.6875rem
+  line-height: 2.6875rem;
+  color: #fff !important
 }
 .bar-tab .tab-item:last-child {
   border-right: none
@@ -881,4 +882,35 @@ hr {
 .custom-radio .custom-control-input:checked ~ .custom-control-description {
   color: #1c74d5
 
+}
+
+
+/**
+ * Components
+ * ----------------------------------------------------------------------------
+ */
+
+
+/*popup*/
+
+.popup  .bar.bar-nav {
+  border-bottom: none
+}
+.popup  .bar.bar-nav .title {
+  margin: 0;
+}
+.popup .content {
+  min-height: 150px;
+  border-radius: 0;
+  color: #626470
+}
+.popup .content-inner{
+  margin: 0 1rem !important;
+  border-top: 0.0625rem solid #3a444d;
+}
+.popup .bg-secondary {
+  background-color: #848896
+}
+.popup .bar-tab .tab-item {
+  border-right: none;
 }
