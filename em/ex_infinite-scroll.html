@@ -65,22 +65,19 @@
 			'<li class="table-view-cell">Item 1</li>' +
 			'<li class="table-view-cell">Item 1</li>';
 			var delays = ['300', '600', '900', '1200'];
-			var setup = function(selector) {
-  			$("#myInfiniteScroll1 .table-view").append(content);
-  			$("#myInfiniteScroll1").scrollTop(0);
-			};
-			// INFINITE SCROLL
-			$('#myInfiniteScroll1').infinitescroll({
-  			dataSource: function(helpers, callback) {
-  				setTimeout(function() {
-  					callback({
-  						content: content
-  					});
-  				}, delays[Math.floor(Math.random() * 4)]);
-  			}
-			});
 
-      setup('#myInfiniteScroll1');
+			// INFINITE SCROLL
+      $('#myInfiniteScroll1').infinitescroll({
+      dataSource: function(helpers, callback) {
+        setTimeout(function() {
+          callback({
+          content: content
+        });
+      }, delays[Math.floor(Math.random() * 4)]);
+      },
+        appendToEle : $("#myInfiniteScroll1 .table-view")
+      });
+
 		</script>
 
   </body>
