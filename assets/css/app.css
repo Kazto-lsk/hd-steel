@@ -74,6 +74,11 @@ body {
 }
 
 
+.collapsed .icon-up-nav:before {
+  content: "\e902";
+}
+
+
 /*theme*/
 
 .hd-sub-01 .bar-header-secondary {
@@ -419,8 +424,8 @@ body {
   border-top: none;
 }
 .card.hd-search-result .card-footer dd {
-    margin-left: -15px;
-    margin-bottom: 0;
+  margin-left: -15px;
+  margin-bottom: 0;
 }
 
 
@@ -707,6 +712,8 @@ hr {
 }
 
 
+
+
 /*floating button*/
 .floating {
     box-sizing: border-box;
@@ -914,4 +921,16 @@ hr {
 }
 .popup .bar-tab .tab-item {
   border-right: none;
+}
+
+/**
+ * Utillity
+ * ----------------------------------------------------------------------------
+ */
+
+ .m-t-05 {
+   margin-top: .5rem !important;
+ }
+.m-b-05 {
+  margin-bottom: .5rem !important;
 }
