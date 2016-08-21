@@ -654,8 +654,12 @@ hr {
 }
 
 .spacing-m1 {
-  letter-spacing: -.0625rem !important
+  letter-spacing: -.0625rem !important;
 }
+.nowrap {
+  white-space: nowrap;
+}
+
 
 /*button group*/
 
@@ -674,7 +678,8 @@ hr {
 }
 .row .form-control[type="date"] {
   padding: .5rem;
-  letter-spacing: -1px
+  letter-spacing: -1px;
+  font-size: .8rem
 }
 
 /*date-term*/
