@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>작업오더_점검결과등록 및 수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+
+      <a class="icon icon-simbol pull-left"></a>
+
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">기준정보</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        작업오더_점검결과등록 및 수정
+      </button>
+    </div>
+
+    <!-- tab bar -->
+    <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" role="button">
+        설비마스터
+      </a>
+      <a class="tab-item" role="button">
+        작업오더
+      </a>
+      <a class="tab-item" role="button">
+        측정지점
+      </a>
+      <a class="tab-item" role="button">
+        작업표준
+      </a>
+    </nav>
+
+    <!-- main content -->
+    <div class="content">
+
+      <form action="">
+        <div class="card hd-search card-medium">
+           <div class="card-block">
+             <div class="card-block-inner">
+               <div class="card-text">
+                 [37023584] 수소 설비 점검(HOIST, 조명등, HEATING & WELDING PANEL, 배수펌프, ANALOG GAUGE, 자동구리스)
+               </div>
+               <div class="text-xs-right m-t-05">
+                 <span class="badge badge-inverted badge-default">2016.04.15 ~ 2016.06.29</span>
+               </div>
+
+             </div>
+           </div>
+           <div class="card-footer collapse" id="more">
+             <dl class="row">
+               <dt class="col-xs-3 spacing-m1">설비번호</dt>
+               <dd class="col-xs-9 m-b-05">[D83UT2003401] EAF-B Trans Cold Water Feed Pump</dd>
+               <dt class="col-xs-3">위치코드</dt>
+               <dd class="col-xs-9 m-b-05">[D23MS1015]Pneumatic Control Sys' For Laminar Flow Strip Cooling System</dd>
+             </dl>
+             <hr>
+             <dl class="row">
+               <dt class="col-xs-3 spacing-m1">주보수반</dt>
+               <dd class="col-xs-9 m-b-05">[D11EA] 철근제강 전기보수반</dd>
+               <dt class="col-xs-3">정비협력</dt>
+               <dd class="col-xs-9 m-b-05">[H4G1AML] 1냉연 PCM 기계-예스엠텍</dd>
+             </dl>
+             <hr>
+             <div class="row">
+               <div class="col-xs-6 text-xs-center">
+                 <span class="badge badge-inverted">JECHUL</span>
+               </div>
+               <div class="col-xs-6 text-xs-center">
+                 <span class="badge badge-primary badge-outline">ACTIVE</span>
+               </div>
+             </div>
+           </div>
+           <div class="nav nav-control">
+             <a class="nav-link" role="button">작업자 조회 및 등록</a>
+           </div>
+
+          <div class="nav nav-control">
+            <a class="nav-link collapsed" role="button" data-toggle="collapse" href="#more" ><span class="icon-up-nav"></span></a>
+          </div>
+        </div>
+
+        <div class="hd-section">
+          <h5 class="hd-heading">점검결과 등록</h5>
+        </div>
+
+        <div id="accordion" class="card-group-collapse" role="group" aria-multiselectable="true">
+          <div class="card card-full" style="margin-bottom: -.0625rem">
+
+            <ul class="table-view"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+              <li class="table-view-cell">
+                <a class="navigate-right navigate-custom">
+                  1. 기능점검 50G/51G (지락 과전류계전기)
+                </a>
+              </li>
+            </ul>
+
+            <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="content-padded">
+
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 col-xs-3 col-form-label">기준값</label>
+                  <div class="col-sm-10 col-xs-9">
+                    <p class="form-control-static">상한 18~20 하한 20~25</p>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-2 col-xs-3 col-form-label required">측정일</label>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="" value="">
+                      <span class="input-group-btn">
+                        <button class="btn btn-white" type="button">
+                          <span class="icon icon-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-2 col-xs-3 col-form-label spacing-m1 required">측정시간</label>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="hd-term">
+                      <div class="hd-term-item" style="width: 47.5%">
+                        <input class="form-control" type="date" value="2016-07-19" id="">
+                      </div>
+                      <div class="hd-term-divider"></div>
+                      <div class="hd-term-item" style="width: 47.5%">
+                        <input class="form-control" type="date" value="2016-08-19" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 col-xs-3 col-form-label required">상태값</label>
+                  <div class="col-sm-10 col-xs-9">
+                    <select class="form-control">
+                      <option>선택</option>
+                      <option selected>교체</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 col-xs-3 col-form-label required">측정값</label>
+                  <div class="col-sm-10 col-xs-9">
+                    <input type="text" class="form-control" id="" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="" class="col-sm-4 col-xs-12 col-form-label">점검결과</label>
+                  <div class="col-sm-8 col-xs-12">
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card card-full" style="margin-bottom: -.0625rem">
+
+            <ul class="table-view"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+              <li class="table-view-cell">
+                <a class="navigate-right navigate-custom">
+                  2.초음파코로나 설비법:최고신호음레벨값
+                </a>
+              </li>
+            </ul>
+
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">
+                <p class="card-text">
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card card-full">
+
+            <ul class="table-view"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+              <li class="table-view-cell">
+                <a class="navigate-right navigate-custom">
+                  3. 육안점검 도전부의 점검 (과열흔적, 부식흔적)
+                </a>
+              </li>
+            </ul>
+
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-block">
+                <p class="card-text">
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hd-section">
+          <h5 class="hd-heading">종합판정</h5>
+        </div>
+
+        <div class="content-padded">
+          <div class="form-group row">
+            <label for="" class="col-sm-2 col-xs-3 col-form-label">판정값</label>
+            <div class="col-sm-10 col-xs-9">
+              <select class="form-control">
+                <option>선택</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-4 col-xs-12 col-form-label">최종의견</label>
+            <div class="col-sm-8 col-xs-12">
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">저장</button>
+            </div>
+            <div class="col-xs-6 p-l-0">
+              <button type="button" class="btn btn-secondary btn-block">취소</button>
+            </div>
+          </div>
+        </div>
+
+
+        <br><br>
+      </form>
+
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
