@@ -412,6 +412,10 @@ body {
   border-top: 1px dotted #d8dce2;
   border-bottom: 1px solid #d8dce2;
 }
+.card.hd-search-result .collapsed ~ .card-block .card-block-inner {
+  border-bottom: none
+}
+
 
 .card.hd-search-result .card-block .card-block-inner:first-child {
   /*border-top: 0*/
