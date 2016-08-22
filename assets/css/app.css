@@ -283,6 +283,15 @@ body {
   padding: 0.75rem .9375rem;
 }
 
+.card.hd-search .card-header .ellipsis {
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .card.hd-search dl {
   margin-bottom: 0;
   font-weight: normal;
@@ -302,6 +311,12 @@ body {
 }
 
 .card.hd-search dd {
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 .card.hd-search .badge-inverted {
   font-size: 95%;
