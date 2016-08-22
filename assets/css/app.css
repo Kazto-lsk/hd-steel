@@ -440,6 +440,12 @@ body {
 .card.hd-search-result .card-footer dd {
   margin-left: -15px;
   margin-bottom: 0;
+  overflow: hidden;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 
@@ -1000,4 +1006,13 @@ hr {
  }
 .m-b-05 {
   margin-bottom: .5rem !important;
+}
+
+.line-clamp-1 {
+  line-clamp: 1 !important;
+  -webkit-line-clamp: 1 !important;
+}
+.line-clamp-2 {
+  line-clamp: 2 !important;
+  -webkit-line-clamp: 2 !important;
 }
