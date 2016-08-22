@@ -49,7 +49,7 @@
 
 
     <!-- modal 시작 -->
-    <div id="U_EQ_10100_POP1" class="modal">
+    <div id="U_EQ_10100_POP1" class="modal active">
     	<<header class="bar bar-nav bar-light bg-white">
     		<a class="icon icon-close pull-right" data-history="back" role="button"></a>
     		<h1 class="title">설비유형</h1>
@@ -59,7 +59,14 @@
 
         <div class="content-padded">
           <p>
-            <div class="input-group">
+            <div class="input-group hd-search-filter">
+              <span class="input-group-addon input-group-select">
+                <select>
+                  <option>유형코드값</option>
+                  <option>항목1</option>
+                  <option>항목2</option>
+                </select>
+              </span>
               <input type="text" class="form-control" placeholder="">
               <span class="input-group-btn">
                 <button class="btn btn-secondary" type="button">검색</button>
