@@ -607,7 +607,7 @@ input.form-control {
   border-radius: 0
 }
 .input-group-addon.input-group-select select {
-  padding: 0.4rem 0.8rem 0.4rem 0.3rem;
+  padding: 0.4rem 2rem 0.4rem 0.3rem;
   font-size: .85rem;
   border: none;
   border-radius: 0;
