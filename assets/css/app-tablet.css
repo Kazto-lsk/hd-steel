@@ -1,0 +1,278 @@
+/*app-tablet.css*/
+html {
+  font-size: 23px;
+}
+
+.bar-nav .btn-outline-secondary {
+  color: #fff;
+  border-color: #5597e0;
+}
+
+.bar-nav .btn {
+  top: 0.4rem;
+  padding: .475rem .75rem .475rem;
+  font-size: 1rem
+}
+
+.bar-nav .btn .icon {
+  top: auto;
+  font-size: 1rem;
+  color: #fff
+}
+.bar-nav .btn-outline-secondary:active,
+.bar-nav .btn-outline-secondary.active,
+.bar-nav .btn-outline-secondary:focus,
+.bar-nav .btn-outline-secondary.focus {
+  background-color: #105fb7;
+  border-color: #105fb7;
+}
+
+.bar-footer {
+  height: 3.75rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+
+.bar-footer, .bar-footer-secondary,
+.bar-footer-secondary-tab {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+
+.bar-footer .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.125rem;
+}
+.bar-footer .btn-lg {
+  padding: 0.75rem 2.5rem;
+}
+
+.content {
+  background-color: #f0f0f4
+}
+.content-padded {
+    margin: 0.9375rem;
+}
+
+
+/*button*/
+
+.btn-primary,
+.btn-secondary {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.btn-primary {
+  background-color: #3a444d;
+  border-color: #3a444d;
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #212a32;
+  border-color: #212a32;
+}
+.btn.disabled,
+.btn:disabled {
+  opacity: 1;
+  color: rgba(255,255,255,0.2)
+}
+
+
+/*table*/
+.table-bordered th,
+.table-bordered td {
+  padding: 0.43rem 0.85rem;
+  border: 0.043rem solid #ccc;
+}
+.table-bordered th {
+  background-color: #e6e6ea;
+  text-align: center;
+  vertical-align: middle;
+  color: #666666;
+  font-weight: normal;
+}
+.table-bordered td {
+  background-color: #fff
+}
+
+/*.hd-table-01*/
+.table-bordered.hd-table-01 th,
+.table-bordered.hd-table-01 td {
+  border-left: 0;
+  border-right: 0
+}
+
+/*.hd-table-02*/
+.table.hd-table-02 thead th {
+  border-bottom: 0.125rem solid #ccc;
+}
+.table-bordered.hd-table-02 tbody th {
+  color: #1c74d5;
+  background-color: #fff
+}
+.table-bordered.hd-table-02 td {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.table-bordered.hd-table-02 td.detail {
+  text-align: left;
+}
+
+.table-unit {
+  text-align: right;
+  padding-bottom: .3rem;
+  font-size: .85rem;
+  color: #666666
+}
+
+
+/*popup*/
+
+.popup {
+  width: 70%;
+  /*max-width: 830px*/
+}
+
+.popup .popup-content,
+.popup .content {
+  border-radius: 0
+}
+.popup .btn-block {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1.125rem;
+  border-radius: 0.125rem;
+}
+
+.popup .btn-primary {
+  background-color: #1c74d5;
+  border-color: #1c74d5
+}
+
+
+/*process*/
+.flexer, .progress-indicator {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.progress-indicator {
+  margin: 1.5rem 0 1.5rem 2rem;
+  padding: 0;
+  font-size: .9rem;
+}
+.flexer-element, .progress-indicator > li {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+.progress-indicator > li {
+    list-style: none;
+    /*text-align: center;*/
+    width: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-overflow: ellipsis;
+    color: #bbbbbb;
+    display: block;
+}
+.progress-indicator > li.completed {
+    color: #1c74d5;
+}
+.progress-indicator > li .bubble {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: block;
+  margin: -4px 0 0.5em 0;
+  border: 4px solid #b9b9b9;
+  z-index: 9999;
+}
+
+.progress-indicator > li .icon-check {
+  position: absolute;
+  top: -1px;
+  left: 2px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.progress-indicator > li .time {
+  position: absolute;
+  top: -25px;
+  left: 60px;
+  width: 70px
+}
+
+.progress-indicator > li.completed .bubble {
+    background-color: #1c74d5;
+    color: #1c74d5;
+    border-color: #1c74d5;
+}
+
+.progress-indicator > li.active .bubble {
+  width: 50px;
+  height: 50px;
+  margin-top: -15px;
+    margin-left: -5px;
+  background-color: #fff;
+  color: #1c74d5;
+  border-color: #1c74d5;
+}
+.progress-indicator > li.active .icon {
+  width: 41px;
+  height: 41px;
+  border-radius: 100px;
+  margin-top: -9px;
+  margin-left: -2px;
+  background-color: #fff;
+  color: #1c74d5;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-color: #1c74d5;
+}
+.progress-indicator > li.active .icon::before {
+  text-indent: -2px;
+  content: '\e81b';
+}
+
+.progress-indicator > li .bubble:before,
+.progress-indicator > li .bubble:after {
+    display: block;
+    position: absolute;
+    top: 9px;
+    width: 100%;
+    height: 3px;
+    content: '';
+    background-color: #bbbbbb;
+}
+.progress-indicator > li .bubble:before {
+    left: 0;
+}
+.progress-indicator > li .bubble:after {
+    right: 0;
+}
+
+.progress-indicator > li:last-child .bubble::before,
+.progress-indicator > li:last-child .bubble::after {
+  display: none;
+}
+
+.progress-indicator > li.completed .bubble:before,
+.progress-indicator > li.completed .bubble:after {
+    background-color: #1c74d5;
+    border-color: #1c74d5;
+}
