@@ -1,6 +1,9 @@
 /*app-tablet.css*/
-html {
-  font-size: 23px;
+
+@media (min-width: 544px) {
+  html {
+    font-size: 23px;
+  }
 }
 
 .bar-nav .btn-outline-secondary {
