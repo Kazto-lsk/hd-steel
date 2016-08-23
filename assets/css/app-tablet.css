@@ -424,3 +424,12 @@
    vertical-align: middle;
    line-height: 1.4rem;
 }
+
+@media (max-width: 543px) {
+  .hd-card-group .btn .media-left {
+    padding-right: 7.5px;
+  }
+  .hd-card-group .btn .media-left .media-object {
+    width: 45px
+  }
+}
