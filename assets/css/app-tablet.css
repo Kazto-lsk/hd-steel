@@ -79,6 +79,9 @@
 .icon-window-full:before {
   content: "\e911";
 }
+.icon-check2:before {
+  content: "\e913";
+}
 .icon-car:before {
   content: "\e915";
 }
@@ -296,10 +299,10 @@
   z-index: 9999;
 }
 
-.progress-indicator > li .icon-check {
+.progress-indicator > li .icon-check2 {
   position: absolute;
   top: -1px;
-  left: 2px;
+  left: 4px;
   color: #fff;
   font-size: 1.2rem;
 }
@@ -327,11 +330,11 @@
   border-color: #1c74d5;
 }
 .progress-indicator > li.active .icon {
-  width: 2.260rem;
-  height: 2.260rem;
+  width: 2.200rem;
+  height: 2.200rem;
   border-radius: 100px;
   margin-top: -.6521rem;
-  margin-left: -.5217rem;
+  margin-left: -.55rem;
   background-color: #fff;
   color: #1c74d5;
   line-height: 2.260rem;
