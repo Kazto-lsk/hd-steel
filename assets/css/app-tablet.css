@@ -309,9 +309,10 @@
 
 .progress-indicator > li .time {
   position: absolute;
-  top: -25px;
-  left: 60px;
-  width: 70px
+  top: -1.086rem;
+  left: 1.826rem;
+  width: 2.173rem;
+  text-align: center;
 }
 
 .progress-indicator > li.completed .bubble {
