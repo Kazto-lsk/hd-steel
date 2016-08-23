@@ -387,12 +387,13 @@
   font-size: .85rem;
   line-height: 1.5rem
 }
-
+.hd-message .media-left {
+    padding-right: 5px;
+}
 .hd-message .hd-info,
 .hd-message .hd-info .icon {
   color: #1c74d5;
 }
-
 .hd-message .hd-num {
   text-align: right;
   color: #666
