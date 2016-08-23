@@ -400,6 +400,11 @@ body {
   color: #55595c;
 }
 
+.card.hd-search .nav-control .nav-link[data-toggle=collapse] {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
 
 /*search result*/
 .card.hd-search-result {
