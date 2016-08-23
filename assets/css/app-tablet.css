@@ -88,8 +88,8 @@
 
 
 /*table*/
-.table-bordered th,
-.table-bordered td {
+.table th,
+.table td {
   padding: 0.43rem 0.85rem;
   border: 0.043rem solid #ccc;
 }
@@ -101,13 +101,14 @@
   font-weight: normal;
   white-space: nowrap;
 }
-.table-bordered td {
-  background-color: #fff
+.table td {
+  background-color: #fff;
+  vertical-align: middle;
 }
 
 /*.hd-table-01*/
-.table-bordered.hd-table-01 th,
-.table-bordered.hd-table-01 td {
+.table.hd-table-01 th,
+.table.hd-table-01 td {
   border-left: 0;
   border-right: 0
 }
@@ -284,4 +285,41 @@
 .progress-indicator > li.completed .bubble:after {
     background-color: #1c74d5;
     border-color: #1c74d5;
+}
+
+/*hd-message*/
+.hd-message {
+  margin-bottom: .3rem;
+  font-size: .85rem;
+  line-height: 1.5rem
+}
+
+.hd-message .hd-info,
+.hd-message .hd-info .icon {
+  color: #1c74d5;
+}
+
+.hd-message .hd-num {
+  text-align: right;
+  color: #666
+}
+
+
+/*hd-card-group*/
+
+.hd-card-group {
+  margin-bottom: .2173rem;
+  margin-left: -.1086rem;
+  margin-right: -.1086rem;
+}
+
+.hd-card-group [class^="col-"] {
+  padding-right: .1086rem;
+  padding-left: .1086rem;
+}
+.hd-card-group .btn{
+  height: 100px;
+  padding-left: 100px;
+  line-height: 1.35rem;
+  text-align: left;
 }
