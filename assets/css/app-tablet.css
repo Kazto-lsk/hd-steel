@@ -72,7 +72,9 @@
 .icon-simbol:before {
   content: "\e909";
 }
-
+.icon-info:before {
+  content: '\e82c';
+}
 .icon-window-half:before {
   content: "\e912";
 }
@@ -90,7 +92,9 @@
   content: "\e902";
 }
 
-
+.icon-rc {
+  font-family: Ratchicons !important;
+}
 
 
 .bar-nav .btn-outline-secondary {
@@ -402,16 +406,19 @@
   margin-left: -.1086rem;
   margin-right: -.1086rem;
 }
-
 .hd-card-group [class^="col-"] {
   padding-right: .1086rem;
   padding-left: .1086rem;
   padding-bottom: .1086rem;
 }
 .hd-card-group .btn{
-  height: 4.3478rem;
+  padding: 0.7375rem 0;
   padding-left: 1rem;
   text-align: left;
-  /*line-height: 1.35rem;*/
-  /*text-align: left;*/
+}
+.hd-card-group .btn .media-left {
+    padding-right: 15px;
+}
+.hd-card-group .btn .media-body {
+   vertical-align: middle;
 }
