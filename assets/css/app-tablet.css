@@ -316,10 +316,11 @@
 .hd-card-group [class^="col-"] {
   padding-right: .1086rem;
   padding-left: .1086rem;
+  padding-bottom: .1086rem;
 }
 .hd-card-group .btn{
-  height: 100px;
-  padding-left: 100px;
+  height: 4.3478rem;
+  padding-left: 4.3478rem;
   line-height: 1.35rem;
   text-align: left;
 }
