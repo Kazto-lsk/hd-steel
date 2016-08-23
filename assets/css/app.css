@@ -6,6 +6,15 @@ body {
   color: #333;
 }
 
+/*무한스크롤 전용 */
+.content-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
 
 /*전용 아이콘 폰트*/
 @font-face {
