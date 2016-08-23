@@ -979,6 +979,13 @@ hr {
 }
 
 
+.table-view-cell .navigate-updown > .btn,
+.table-view-cell .navigate-updown > .badge,
+.table-view-cell .navigate-updown > .select,
+.table-view-cell .navigate-updown > .switch {
+    right: 2.1875rem;
+}
+
 .collapse .table-view-cell:last-child {
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
 }
