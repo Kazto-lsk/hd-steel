@@ -320,7 +320,8 @@
 }
 .hd-card-group .btn{
   height: 4.3478rem;
-  padding-left: 4.3478rem;
-  line-height: 1.35rem;
+  padding-left: 1rem;
   text-align: left;
+  /*line-height: 1.35rem;*/
+  /*text-align: left;*/
 }
