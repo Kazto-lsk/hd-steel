@@ -19,11 +19,11 @@ body {
 /*전용 아이콘 폰트*/
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?jv7rdg');
-  src:  url('../fonts/icomoon.eot?jv7rdg#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?jv7rdg') format('truetype'),
-    url('../fonts/icomoon.woff?jv7rdg') format('woff'),
-    url('../fonts/icomoon.svg?jv7rdg#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
