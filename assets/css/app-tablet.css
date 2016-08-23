@@ -1,10 +1,94 @@
 /*app-tablet.css*/
-
 @media (min-width: 544px) {
   html {
     font-size: 23px;
   }
 }
+
+
+
+/*전용 아이콘 폰트*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jv7rdg');
+  src:  url('../fonts/icomoon.eot?jv7rdg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jv7rdg') format('truetype'),
+    url('../fonts/icomoon.woff?jv7rdg') format('woff'),
+    url('../fonts/icomoon.svg?jv7rdg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-user:before {
+  content: "\e910";
+}
+.icon-close:before {
+  content: "\e90b";
+}
+.icon-logo:before {
+  content: "\e90a";
+}
+.icon-dot-01:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e901";
+}
+.icon-down-nav:before {
+  content: "\e902";
+}
+.icon-up-nav:before {
+  content: "\e903";
+}
+.icon-left-nav:before {
+  content: "\e904";
+}
+.icon-right-nav:before {
+  content: "\e905";
+}
+.icon-qrcode:before {
+  content: "\e906";
+}
+.icon-bars:before {
+  content: "\e907";
+}
+.icon-power-off:before {
+  content: "\e908";
+}
+.icon-simbol:before {
+  content: "\e909";
+}
+
+.icon-window-half:before {
+  content: "\e912";
+}
+.icon-window-full:before {
+  content: "\e911";
+}
+.icon-car:before {
+  content: "\e915";
+}
+
+.collapsed .icon-up-nav:before {
+  content: "\e902";
+}
+
+
+
 
 .bar-nav .btn-outline-secondary {
   color: #fff;
@@ -197,13 +281,14 @@
     color: #bbbbbb;
     display: block;
 }
-.progress-indicator > li.completed {
+.progress-indicator > li.completed,
+.progress-indicator > li.active {
     color: #1c74d5;
 }
 .progress-indicator > li .bubble {
   border-radius: 50px;
-  width: 30px;
-  height: 30px;
+  width: 1.304rem;
+  height: 1.304rem;
   background-color: #fff;
   display: block;
   margin: -4px 0 0.5em 0;
@@ -233,30 +318,31 @@
 }
 
 .progress-indicator > li.active .bubble {
-  width: 50px;
-  height: 50px;
-  margin-top: -15px;
-    margin-left: -5px;
+  width: 2.60rem;
+  height: 2.60rem;
+  margin-top: -.8695rem;
+    margin-left: -.625rem;
   background-color: #fff;
   color: #1c74d5;
   border-color: #1c74d5;
 }
 .progress-indicator > li.active .icon {
-  width: 41px;
-  height: 41px;
+  width: 2.260rem;
+  height: 2.260rem;
   border-radius: 100px;
-  margin-top: -9px;
-  margin-left: -2px;
+  margin-top: -.6521rem;
+  margin-left: -.5217rem;
   background-color: #fff;
   color: #1c74d5;
-  line-height: 40px;
+  line-height: 2.260rem;
   text-align: center;
   font-size: 1.5rem;
   border-color: #1c74d5;
 }
 .progress-indicator > li.active .icon::before {
   text-indent: -2px;
-  content: '\e81b';
+  content: '\e915';
+  font-size: 2rem
 }
 
 .progress-indicator > li .bubble:before,
