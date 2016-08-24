@@ -117,24 +117,34 @@
           </table>
         </div>
 
-
-        <div class="hd-noti p-x-3 p-y-2 text-xs-center">
-          <p class="lead">25번 계량대가 맞습니까?</p>
-          <div class="row">
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-primary btn-block" data-history="back">예</button>
-            </div>
-            <div class="col-xs-6 p-l-0">
-              <button type="button" class="btn btn-secondary btn-block" data-history="back">아니요</button>
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
 
     </div>
+
+    <!-- popup -->
+		<div id="myPopup" class="popup zoom">
+		  <div class="popup-content">
+		    <div class="content">
+		      <div class="p-x-3 p-y-2 text-xs-center">
+            <p class="lead">25번 계량대가 맞습니까?</p>
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block" data-history="back">예</button>
+              </div>
+              <div class="col-xs-6 p-l-0">
+                <button type="button" class="btn btn-secondary btn-block" data-history="back">아니요</button>
+              </div>
+            </div>
+          </div>
+		    </div>
+		  </div>
+		</div>
+
+
+    <script>
+	    $('#myPopup').popup('show')
+	  </script>
+
 
   </body>
 </html>

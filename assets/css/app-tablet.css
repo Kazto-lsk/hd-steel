@@ -454,3 +454,12 @@
     width: 45px
   }
 }
+
+.hd-noti {
+  background-color: #fff;
+  border: 1px solid #ccc
+}
+.hd-noti .btn-primary {
+  background-color: #1c74d5;
+  border-color: #1c74d5
+}
