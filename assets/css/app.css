@@ -550,6 +550,10 @@ body {
   line-height: 1rem
 }
 
+.table-view-cell .hd-title ~ .hd-meta {
+  margin-top: 5px
+}
+
 .table-view-cell .hd-title {
   overflow: hidden;
   display: block; /* Fallback for non-webkit */
@@ -558,6 +562,10 @@ body {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.table-view.table-view-full .table-view-cell {
+  padding-right: 0.9375rem;
 }
 
 
