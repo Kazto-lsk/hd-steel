@@ -16,6 +16,10 @@ body {
   overflow: auto;
 }
 
+.bar-nav ~ .content > .content-scroll {
+  padding-top: 2.75rem;
+}
+
 /*전용 아이콘 폰트*/
 @font-face {
   font-family: 'icomoon';
