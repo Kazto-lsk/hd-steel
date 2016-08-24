@@ -200,8 +200,8 @@
 /*.hd-table-01*/
 .table.hd-table-01 th,
 .table.hd-table-01 td {
-  border-left: 0;
-  border-right: 0
+  /*border-left: 0;*/
+  /*border-right: 0*/
 }
 
 /*.hd-table-02*/
