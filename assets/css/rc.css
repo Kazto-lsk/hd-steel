@@ -756,7 +756,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .container {
     max-width: 720px;
   }
@@ -1267,7 +1267,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .col-md-1 {
     position: relative;
     min-height: 1px;
@@ -6383,7 +6383,7 @@ input[type="button"].btn-block {
 }
 
 /*
- * modal 모달  
+ * modal 모달
  * ----------------------------------------------------------------------------
  */
 .modal {
@@ -6725,7 +6725,7 @@ input[type="button"].btn-block {
 }
 
 /*
- * sheet 시트  
+ * sheet 시트
  * ----------------------------------------------------------------------------
  */
 .sheet {
@@ -6769,7 +6769,7 @@ input[type="button"].btn-block {
 }
 
 /**
- * Action page 페이지 
+ * Action page 페이지
  * ----------------------------------------------------------------------------
  */
 .page {
@@ -7185,7 +7185,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .pull-md-left {
     float: left !important;
   }
@@ -7544,7 +7544,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .text-md-left {
     text-align: left !important;
   }
@@ -7686,7 +7686,7 @@ a.text-danger:focus, a.text-danger:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .hidden-md-up {
     display: none !important;
   }
