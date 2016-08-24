@@ -206,7 +206,15 @@
 
 /*.hd-table-02*/
 .table.hd-table-02 thead th {
-  border-bottom: 0.125rem solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
+  border-left: 0;
+  border-right: 0
+}
+.table.hd-table-02 thead th:first-child {
+  border-left: 0.0625rem solid #ccc
+}
+.table.hd-table-02 thead th:last-child {
+  border-right: 0.0625rem solid #ccc
 }
 .table-bordered.hd-table-02 tbody th {
   color: #1c74d5;
@@ -381,8 +389,7 @@
   display: none;
 }
 
-.progress-indicator > li.completed .bubble:before,
-.progress-indicator > li.completed .bubble:after {
+.progress-indicator > li.completed:before {
     background-color: #1c74d5;
     border-color: #1c74d5;
 }
