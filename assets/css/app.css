@@ -20,6 +20,7 @@ body {
   padding-top: 2.75rem;
 }
 
+
 /*전용 아이콘 폰트*/
 @font-face {
   font-family: 'icomoon';
@@ -1020,6 +1021,23 @@ hr {
  * ----------------------------------------------------------------------------
  */
 
+
+/*modal*/
+.modal .bar-header-secondary.hd-search {
+  height: 5.1rem;
+  padding: .5rem
+}
+
+.modal  .bar-header-secondary ~ .content > .content-scroll {
+  padding-top: 5.1rem;
+}
+.modal .bar-header-secondary.hd-search .input-group {
+  margin-bottom: .4rem
+}
+.modal .bar-header-secondary.hd-search .btn {
+  top: 0;
+  line-height: 1.2rem;
+}
 
 /*popup*/
 
