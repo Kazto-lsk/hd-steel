@@ -104,15 +104,20 @@
 
 .bar-nav .btn {
   top: 0.33rem;
-  padding: .475rem .75rem .475rem;
+  padding: .215rem .75rem .215rem;
   font-size: 1rem
 }
 
 .bar-nav .btn .icon {
-  top: auto;
-  font-size: 1rem;
+  margin-top: -6px;
+  font-size: 1.8rem;
   color: #fff
 }
+.bar-nav .btn .hd-label {
+  display: inline-block;
+  margin-top: 5px
+}
+
 .bar-nav .btn-outline-secondary:active,
 .bar-nav .btn-outline-secondary.active,
 .bar-nav .btn-outline-secondary:focus,
