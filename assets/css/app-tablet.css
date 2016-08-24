@@ -318,11 +318,12 @@
 .progress-indicator > li .time {
   position: absolute;
   top: -1.086rem;
-  left: 1.826rem;
+  left: 50%;
   width: 2.173rem;
   text-align: center;
   color: #666;
-  font-size: .9rem
+  font-size: .9rem;
+  margin-left: -.4rem
 }
 
 .progress-indicator > li.completed .bubble {
