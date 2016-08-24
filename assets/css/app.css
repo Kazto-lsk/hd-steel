@@ -131,6 +131,12 @@ body {
     background-color: #848896;
     border-color: #848896;
 }
+.btn-secondary:active,
+.btn-secondary.active {
+  color: #fff;
+  background-color: #848896;
+  border-color: #848896;
+}
 .btn-white {
   color: #666;
   background-color: #fff;
