@@ -103,19 +103,22 @@
 }
 
 .bar-nav .btn {
+  position: relative;
   top: 0.33rem;
-  padding: .215rem .75rem .215rem;
-  font-size: 1rem
+  padding: 0 .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem
 }
 
 .bar-nav .btn .icon {
-  margin-top: -6px;
+  position: relative;;
+  top: .1739rem;
   font-size: 1.8rem;
   color: #fff
 }
 .bar-nav .btn .hd-label {
-  display: inline-block;
-  margin-top: 5px
+  position: relative;
+  top: -.2173rem
 }
 
 .bar-nav .btn-outline-secondary:active,
