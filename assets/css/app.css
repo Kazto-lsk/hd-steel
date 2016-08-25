@@ -582,6 +582,9 @@ body {
   border: 1px solid #74a9e3;
   border-radius: 20px
 }
+.badge-default.badge-inverted {
+  color: #626470;
+}
 
 /*utility*/
 .borderBottomNone {
