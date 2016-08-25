@@ -66,7 +66,7 @@
           </span>
           <input type="search" class="form-control" placeholder="">
           <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button">검색</button>
+            <button class="btn btn-secondary" type="button" id="search">검색</button>
           </span>
         </div>
         <div>총 <span class="text-primary">25</span>개 결과목록</div>
@@ -122,7 +122,7 @@
     });
 
     $('#U_EQ_10100_POP1').on('shown.rc.modal', function () {
-    	$('.bar-header-secondary input').focus()
+    	$('#search').focus()
     })
 
     var content = '<li class="table-view-cell"><a >Item 1</a></li>' +
