@@ -68,162 +68,152 @@
       </div>
 
 
-      <div id="accordion">
-        <ul class="table-view">
-
-          <!-- collapse-01 -->
-          <li class="table-view-cell">
-            <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-01" >
-              [D11EF1002] L7: Roof
-            </a>
-          </li>
-          <div id="collapse-01" class="collapse" role="tabpanel" aria-labelledby="">
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio11" name="radio-01" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L7: Roof Panel Item 1</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio12" name="radio-01" type="radio" class="custom-control-input" checked>
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L7: Roof Panel Item 2</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio13" name="radio-01" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L7: Roof Panel Item 3</span>
-              </label>
-            </li>
-          </div>
-
-          <!-- collapse-02 -->
-          <li class="table-view-cell">
-            <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-02" >
-              [D11EF1002] L8: Roof
-            </a>
-          </li>
-          <div id="collapse-02" class="collapse" role="tabpanel" aria-labelledby="">
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio21" name="radio-02" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 1</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio22" name="radio-02" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 2</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio23" name="radio-02" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 3</span>
-              </label>
-            </li>
-          </div>
-
-          <!-- collapse-03 -->
-          <li class="table-view-cell">
-            <a class="navigate-updown" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-03" >
-              [D11EF1002] L9: Roof Panel
-            </a>
-          </li>
-          <div id="collapse-03" class="collapse in" role="tabpanel" aria-labelledby="">
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio31" name="radio-03" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 1</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio32" name="radio-03" type="radio" class="custom-control-input" checked>
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 2</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio33" name="radio-03" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 3</span>
-              </label>
-            </li>
-          </div>
+      <ul class="table-view" id="tree">
+      			  <li class="table-view-cell">
+      					<a class="navigate-updown" data-toggle="collapse" data-parent="#tree" data-target="#1" aria-expanded="true">
+      			      Item 1
+      			    </a>
+      			    <!-- 2depth -->
+      			    <ul class="table-view collapse in" id="1" role="tabpanel" aria-expanded="true">
+      			      <li class="table-view-cell">
+      							<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#1" data-target="#1-1" aria-expanded="false">
+      					      Item 1-1
+      					    </a>
+      			        <!-- 3depth -->
+      			        <ul class="table-view collapse" id="1-1" role="tabpanel" aria-expanded="false" style="height: 1px;">
+      			          <li class="table-view-cell">
+      									<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#1-1" data-target="#1-1-1" aria-expanded="false">
+      							      Item 1-1-1
+      							    </a>
+      			            <!-- 4depth -->
+      			            <ul class="table-view collapse" id="1-1-1" aria-expanded="false" style="height: 1px;">
+      			              <li class="table-view-cell">
+      											<a class="">
+      									      Item 1-1-1-1
+      									    </a>
+      			              </li>
+      			            </ul>
+      			          </li>
+      			        </ul>
+      				      </li>
+      				      <li class="table-view-cell">
+      								<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#1" data-target="#1-2" aria-expanded="false">
+      									Item 1-2
+      								</a>
+      								<!-- 3depth -->
+      				        <ul class="table-view collapse" id="1-2" aria-expanded="false">
+      				          <li class="table-view-cell">
+      										<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#1-1" data-target="#1-2-1">
+      								      Item 1-2-1
+      								    </a>
+      				            <!-- 4depth -->
+      				            <ul class="table-view collapse" id="1-2-1">
+      				              <li class="table-view-cell">
+      												<a class="">
+      										      Item 1-2-1-1
+      										    </a>
+      				              </li>
+      				            </ul>
+      				          </li>
+      				        </ul>
+      				      </li>
+      				    </ul>
+      			  </li>
 
 
-          <!-- collapse-04 -->
-          <li class="table-view-cell">
-            <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-04" >
-              [D11EF1002] L10: Roof Panel
-            </a>
-          </li>
-          <div id="collapse-04" class="collapse" role="tabpanel" aria-labelledby="">
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio41" name="radio-04" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L10: Roof Panel Item 1</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio42" name="radio-04" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L10: Roof Panel Item 2</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio43" name="radio-04" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L10: Roof Panel Item 3</span>
-              </label>
-            </li>
-          </div>
+      				<li class="table-view-cell">
+      					<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#2" aria-expanded="false">
+      			      Item 2
+      			    </a>
+      			    <!-- 2depth -->
+      			    <ul class="table-view collapse" id="2" aria-expanded="false">
+      			      <li class="table-view-cell">
+      							<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#2" data-target="#2-1">
+      					      Item 2-1
+      					    </a>
+      			        <!-- 3depth -->
+      			        <ul class="table-view collapse" id="2-1">
+      			          <li class="table-view-cell">
+      									<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#2-1" data-target="#2-1-1">
+      							      Item 2-1-1
+      							    </a>
+      			            <!-- 4depth -->
+      			            <ul class="table-view collapse" id="2-1-1">
+      			              <li class="table-view-cell">
+      											<a class="">
+      									      Item 2-1-1-1
+      									    </a>
+      			              </li>
+      			            </ul>
+      			          </li>
+      			        </ul>
+      				      </li>
+      				      <li class="table-view-cell">
+      								<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#2" data-target="#2-2">
+      									Item 2-2
+      								</a>
+      								<!-- 3depth -->
+      				        <ul class="table-view collapse" id="2-2">
+      				          <li class="table-view-cell">
+      										<a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#2-1" data-target="#2-2-1">
+      								      Item 2-2-1
+      								    </a>
+      				            <!-- 4depth -->
+      				            <ul class="table-view collapse" id="2-2-1">
+      				              <li class="table-view-cell">
+      												<a class="">
+      										      Item 2-2-1-1
+      										    </a>
+      				              </li>
+      				            </ul>
+      				          </li>
+      				        </ul>
+      				      </li>
+      				    </ul>
+      			  </li>
 
-          <!-- collapse-05 -->
-          <li class="table-view-cell">
-            <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-05" >
-              [D11EF1002] L11: Roof Panel
-            </a>
-          </li>
-          <div id="collapse-05" class="collapse" role="tabpanel" aria-labelledby="">
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio51" name="radio-05" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L11: Roof Panel Item 1</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio52" name="radio-05" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L11: Roof Panel Item 2</span>
-              </label>
-            </li>
-            <li class="table-view-cell radio">
-              <label class="custom-control custom-radio">
-                <input id="radio53" name="radio-05" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">[D11EF1002] L11: Roof Panel Item 3</span>
-              </label>
-            </li>
-          </div>
 
-        </ul>
-      </div>
+      			</ul>
+
+
+
+      <ul class="table-view" id="accordion">
+
+        <!-- collapse-01 -->
+        <li class="table-view-cell control">
+          <label class="custom-control custom-radio">
+            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+          </label>
+          <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-01" >
+            [D11EF1002] L7: Roof
+          </a>
+
+
+            <ul class="table-view collapse" id="collapse-01">
+              <li class="table-view-cell radio">
+                <label class="custom-control custom-radio">
+                  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Radio Item 1</span>
+                </label>
+              </li>
+              <li class="table-view-cell radio">
+                <label class="custom-control custom-radio">
+                  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Radio Item 1</span>
+                </label>
+              </li>
+            </ul>
+
+
+        </li>
+
+
+
+      </ul>
+
 
       <div class="content-padded">
           <button type="button" class="btn btn-secondary btn-block">위치코드로 간편검색</button>
