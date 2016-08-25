@@ -58,7 +58,7 @@
     <div class="content">
 
       <form action="">
-        <div class="card hd-search card-medium">
+        <div class="card hd-search hd-search-detail">
            <div class="card-block">
              <div class="card-block-inner">
                <div class="card-text">
@@ -67,14 +67,12 @@
              </div>
            </div>
            <div class="card-footer">
-             <div class="row">
-               <div class="col-xs-6 text-xs-center">
-                 <span class="badge badge-inverted">JECHUL</span>
-               </div>
-               <div class="col-xs-6 text-xs-center">
-                 <span class="badge badge-primary badge-outline">작업완료</span>
-               </div>
-             </div>
+             <ul class="table-view">
+               <li class="table-view-cell">
+                 <span class="badge badge-outline badge-primary">ACTIVE</span>
+                 <span class="meta">JECHUL</span>
+               </li>
+             </ul>
            </div>
 
         </div>
@@ -83,144 +81,125 @@
           <h5 class="hd-heading">작업자 목록</h5>
         </div>
 
-        <div id="accordion" class="card-group-collapse" role="group" aria-multiselectable="true">
-          <div class="card hd-search hd-search-result">
-
-            <ul class="table-view"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view"role="button" style="background-color: #f5f5f5">
               <li class="table-view-cell">
-                <a class="navigate-right navigate-custom">
-                  <span class="badge badge-primary badge-outline">ACTIVE</span>
-                  [CM1008907]
+                <a class="navigate-right">
+                  <span class="badge badge-default badge-inverted spacing-m1">[D11EA] 철근제강 전기보수반</span>
+                  [2010342] 홍길동
                 </a>
               </li>
             </ul>
-            <div class="card-block">
-              <div class="card-block-inner borderBottomNone">
-                <div class="card-text">
-                  COG BOOSTER LUB OIL PRESSURE (PT-CX316C) 점검
-                </div>
-                <div class="text-xs-right m-t-05">
-                  <span class="badge badge-inverted badge-default">2016.08.12 18:00</span>
-                </div>
-              </div>
-            </div>
-            <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
-
-              <div class="content-padded m-t-0">
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">기준값</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">상한 18~20 하한 20~25</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-xs-3 col-form-label spacing-m1 nowrap">측정일시</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">2016.08.12 18:15</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">육안</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">교체</div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
           </div>
 
-          <div class="card hd-search hd-search-result">
+          <ul class="table-view border-top-dotted">
+            <li class="table-view-cell">
+              작업기간
+              <span class="badge badge-inverted spacing-m1">2016.01.01 08:00~ 2016.12.31 08:15</span>
+            </li>
+            <li class="table-view-cell">
+              정규시간
+              <span class="badge badge-inverted spacing-m1">02:00</span>
+            </li>
+            <li class="table-view-cell">
+              총계정원장
+              <span class="badge badge-inverted spacing-m1">68141-99999999</span>
+            </li>
+          </ul>
 
-            <ul class="table-view collapsed"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
-              <li class="table-view-cell">
-                <a class="navigate-right navigate-custom collapse">
-                  <span class="badge badge-primary badge-outline">ACTIVE</span>
-                  [CM1008907]
-                </a>
-              </li>
-            </ul>
-            <div class="card-block">
-              <div class="card-block-inner borderBottomNone">
-                <div class="card-text">
-                  COG BOOSTER LUB OIL PRESSURE (PT-CX316C) 점검
-                </div>
-                <div class="text-xs-right m-t-05">
-                  <span class="badge badge-inverted badge-default">2016.08.12 18:00</span>
-                </div>
-              </div>
+        <div class="card-footer border-top-dotted">
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-white btn-block btn-block-sm">수정</button>
             </div>
-
-            <div id="collapseTwo" class="collapse" role="tabpanel">
-              <div class="content-padded m-t-0">
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">기준값</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">상한 18~20 하한 20~25</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-xs-3 col-form-label spacing-m1 nowrap">측정일시</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">2016.08.12 18:15</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">육안</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">교체</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card hd-search hd-search-result">
-
-            <ul class="table-view collapsed"role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
-              <li class="table-view-cell">
-                <a class="navigate-right navigate-custom">
-                  <span class="badge badge-primary badge-outline">ACTIVE</span>
-                  [CM1008907]
-                </a>
-              </li>
-            </ul>
-            <div class="card-block">
-              <div class="card-block-inner borderBottomNone">
-                <div class="card-text">
-                  COG BOOSTER LUB OIL PRESSURE (PT-CX316C) 점검
-                </div>
-                <div class="text-xs-right m-t-05">
-                  <span class="badge badge-inverted badge-default">2016.08.12 18:00</span>
-                </div>
-              </div>
-            </div>
-
-            <div id="collapseThree" class="collapse" role="tabpanel">
-              <div class="content-padded m-t-0">
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">기준값</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">상한 18~20 하한 20~25</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-xs-3 col-form-label spacing-m1 nowrap">측정일시</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">2016.08.12 18:15</div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="" class="col-sm-2 col-xs-3 col-form-label">육안</label>
-                  <div class="col-sm-10 col-xs-9">
-                    <div class="form-control-static">교체</div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-xs-6 p-l-0">
+              <button type="button" class="btn btn-white btn-block btn-block-sm">삭제</button>
             </div>
           </div>
         </div>
+      </div>
+
+
+      <div class="card hd-search hd-search-result">
+        <div class="card-header">
+          <ul class="table-view"role="button" style="background-color: #f5f5f5">
+            <li class="table-view-cell">
+              <a class="navigate-right">
+                <span class="badge badge-default badge-inverted spacing-m1">[D11EA] 철근제강 전기보수반</span>
+                [2010342] 홍길동
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="table-view border-top-dotted">
+          <li class="table-view-cell">
+            작업기간
+            <span class="badge badge-inverted spacing-m1">2016.01.01 08:00~ 2016.12.31 08:15</span>
+          </li>
+          <li class="table-view-cell">
+            정규시간
+            <span class="badge badge-inverted spacing-m1">02:00</span>
+          </li>
+          <li class="table-view-cell">
+            총계정원장
+            <span class="badge badge-inverted spacing-m1">68141-99999999</span>
+          </li>
+        </ul>
+
+      <div class="card-footer border-top-dotted">
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-white btn-block btn-block-sm">수정</button>
+          </div>
+          <div class="col-xs-6 p-l-0">
+            <button type="button" class="btn btn-white btn-block btn-block-sm">삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card hd-search hd-search-result">
+      <div class="card-header">
+        <ul class="table-view"role="button" style="background-color: #f5f5f5">
+          <li class="table-view-cell">
+            <a class="navigate-right">
+              <span class="badge badge-default badge-inverted spacing-m1">[D11EA] 철근제강 전기보수반</span>
+              [2010342] 홍길동
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="table-view border-top-dotted">
+        <li class="table-view-cell">
+          작업기간
+          <span class="badge badge-inverted spacing-m1">2016.01.01 08:00~ 2016.12.31 08:15</span>
+        </li>
+        <li class="table-view-cell">
+          정규시간
+          <span class="badge badge-inverted spacing-m1">02:00</span>
+        </li>
+        <li class="table-view-cell">
+          총계정원장
+          <span class="badge badge-inverted spacing-m1">68141-99999999</span>
+        </li>
+      </ul>
+
+    <div class="card-footer border-top-dotted">
+      <div class="row">
+        <div class="col-xs-6">
+          <button type="button" class="btn btn-white btn-block btn-block-sm">수정</button>
+        </div>
+        <div class="col-xs-6 p-l-0">
+          <button type="button" class="btn btn-white btn-block btn-block-sm">삭제</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
         <div class="content-padded">
           <button type="button" class="btn btn-primary btn-block">작업자 등록</button>
@@ -229,6 +208,11 @@
         <br><br>
       </form>
     </div>
+
+    <!-- floating button -->
+    <button type="button" class="btn btn-circle-primary floating floating-br animated bounceIn delay-3" role="button">
+      <span class="icon icon-search"></span>
+    </button>
 
   </body>
 </html>

@@ -446,6 +446,10 @@ body {
   text-align: center;
 }
 
+.card.hd-search-result .card-header .meta-code {
+  color: inherit;
+}
+
 .card.hd-search-result .card-block {
     padding: 0 .625rem;
 }
@@ -507,6 +511,9 @@ body {
   color:#626470;
   border-top: 1px dotted #d8dce2;
   font-weight: 300
+}
+.card.hd-search-detail .card-footer.collapse.in .table-view {
+  border-bottom: none
 }
 .card.hd-search-detail .meta {
   font-size: .875rem
@@ -1098,4 +1105,14 @@ hr {
 .line-clamp-2 {
   line-clamp: 2 !important;
   -webkit-line-clamp: 2 !important;
+}
+.line-clamp-3 {
+  line-clamp: 3 !important;
+  -webkit-line-clamp: 3 !important;
+}
+.border-top-dotted {
+  border-top: 0.0625rem dotted #d8dce2 !important;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
