@@ -585,7 +585,7 @@ body {
 
 /*utility*/
 .borderBottomNone {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 
