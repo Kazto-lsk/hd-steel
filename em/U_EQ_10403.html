@@ -40,10 +40,20 @@
 
     <!-- tab bar -->
     <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" role="button">
+        설비마스터
+      </a>
       <a class="tab-item" role="button">
-        점검결과 등록
+        작업오더
+      </a>
+      <a class="tab-item" role="button">
+        측정지점
+      </a>
+      <a class="tab-item" role="button">
+        작업표준
       </a>
     </nav>
+
 
     <!-- main content -->
     <div class="content">
@@ -56,7 +66,7 @@
           <ul class="table-view">
             <li class="table-view-cell">
               <span class="badge badge-outline badge-primary">ACTIVE</span>
-              <span class="meta meta-site">JECHUL</span>
+              <span class="meta">JECHUL</span>
             </li>
           </ul>
         </div>
@@ -72,7 +82,7 @@
             <input class="form-control" type="date" value="2016-08-19" id="">
           </div>
           <div class="hd-term-btn">
-             <button class="btn btn-secondary" type="button">검색</button>
+             <button class="btn btn-secondary" type="button">조회</button>
           </div>
         </form>
       </div>
@@ -97,7 +107,7 @@
                   <dt class="col-xs-5">측정값</dt>
                   <dd class="col-xs-7">0.235</dd>
                   <dt class="col-xs-5">W/O번호</dt>
-                  <dd class="<col-xs-7></col-xs-7>">36942466</dd>
+                  <dd class="col-xs-7">36942466</dd>
                 </dl>
               </div>
               <div class="col-xs-6">
@@ -129,7 +139,7 @@
                   <dt class="col-xs-5">측정값</dt>
                   <dd class="col-xs-7">0.235</dd>
                   <dt class="col-xs-5">W/O번호</dt>
-                  <dd class="<col-xs-7></col-xs-7>">36942466</dd>
+                  <dd class="col-xs-7">36942466</dd>
                 </dl>
               </div>
               <div class="col-xs-6">
@@ -152,6 +162,9 @@
             <button type="button" class="btn btn-secondary btn-block">Trend 조회</button>
           </div>
         </div>
+      </div>
+      <div class="content-padded">
+        <button type="button" class="btn btn-secondary btn-block">점검결과 등록</button>
       </div>
 
       <div class="p-a-2">
