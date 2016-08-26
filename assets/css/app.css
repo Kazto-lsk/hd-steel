@@ -495,10 +495,17 @@ body {
 }
 
 .card.hd-search-result-none {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  height: calc(100% - 38px);
+  width: 100%;
+  display: table;
+  margin-bottom: 0;
   text-align: center;
   color: #9a9eac
+}
+
+.card.hd-search-result-none .card-block {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .card.hd-search-result-none .icon {
