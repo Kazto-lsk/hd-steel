@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>데이타오류_팝업 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- footer -->
+    <div class="bar bar-standard bar-footer">
+      COPYRIGHT(C) 현대제철 설비관리. ALL RIGHTS RESERVED.
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="content-padded">
+        내용
+      </div>
+    </div>
+
+    <!-- popup -->
+    <div id="myPopup" class="popup zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav">
+          <h1 class="title">데이타 오류</h1>
+        </header>
+        <nav class="bar bar-tab">
+          <a class="tab-item bg-primary" role="button" data-dismiss="popup">
+            확인
+          </a>
+        </nav>
+        <div class="content">
+          <div class="content-inner">
+            <div class="p-a-1 text-xs-center">
+                데이터 저장에 오류가 있습니다. <br>
+                담당관리자 (041-1234-5678) 에게 연락주세요!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('#myPopup').popup('show')
+    </script>
+
+  </body>
+</html>
