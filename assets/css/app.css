@@ -808,7 +808,8 @@ hr {
 .row .form-control {
   margin-bottom: 0
 }
-.row .form-control[type="date"] {
+.row .form-control[type="date"],
+.row .form-control[type="time"] {
   padding: .5rem;
   letter-spacing: -1px;
   font-size: .95rem;
@@ -850,6 +851,9 @@ hr {
 .hd-term .hd-term-divider:before {
   content: "~";
   color: #999
+}
+.hd-term .hd-term-divider.none:before {
+  content: "";
 }
 .hd-term .hd-term-btn  {
   position: relative;
