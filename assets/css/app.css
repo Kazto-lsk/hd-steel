@@ -378,6 +378,7 @@ body {
   background-color: transparent;
 }
 
+.card.card-full .nav-control,
 .card.hd-search .nav-control {
   position: relative;
   display: table;
@@ -391,6 +392,8 @@ body {
   border-right: 0;
   border-bottom: 0
 }
+
+.card.card-full .nav-control .nav-link,
 .card.hd-search .nav-control .nav-link {
   padding-top: .7rem;
   padding-bottom: .7rem;
@@ -401,9 +404,12 @@ body {
   border-left: 0.0625rem solid #ccc;
   font-size: 1rem
 }
+
+.card.card-full .nav-control .nav-link:first-child,
 .card.hd-search .nav-control .nav-link:first-child {
   border-left: 0
 }
+.card.card-full .nav-control .nav-link:active,
 .card.hd-search .nav-control .nav-link:active {
   background-color: #eceeef;
   color: #818a91;
@@ -1138,4 +1144,8 @@ hr {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+}
+
+.border-top-none {
+  border-top: none;
 }
