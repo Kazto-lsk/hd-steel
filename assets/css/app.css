@@ -21,6 +21,8 @@ body {
 }
 
 
+
+
 /*전용 아이콘 폰트*/
 @font-face {
   font-family: 'icomoon';
@@ -1017,6 +1019,8 @@ hr {
 }
 
 /*rc 적용*/
+.navigate-rightdown:after,
+.navigate-rightdown:after,
 .navigate-updown:after,
 .navigate-updown:after,
 .push-updown:after,
@@ -1043,6 +1047,16 @@ hr {
 .navigate-updown.collapsed:after,
 .push-updown.collapsed:after {
   content: '\e902';
+}
+
+.navigate-rightdown:after,
+.push-rightup:after {
+  content: '\e902';
+}
+
+.navigate-rightdown.collapsed:after,
+.push-rightup.collapsed:after {
+  content: '\e905';
 }
 
 
@@ -1116,6 +1130,32 @@ hr {
 }
 
 /**
+ * Drawer
+ * ----------------------------------------------------------------------------
+ */
+
+.content > .table-view:first-child {
+  margin-top: 0;
+}
+#tree .navigate-right.collapsed:after {
+ content: '\e826';
+}
+#tree .navigate-right:after {
+ content: '\e820';
+}
+
+.snap-drawer .table-view .table-view {
+ background-color: #f6f6f8;
+}
+
+.snap-drawer .bar .title {
+ text-align: left;
+ padding-left: 25px
+}
+
+
+
+/**
  * Utillity
  * ----------------------------------------------------------------------------
  */
@@ -1148,4 +1188,13 @@ hr {
 
 .border-top-none {
   border-top: none;
+}
+
+.icon-rc {
+  display: inline-block;
+  font-family: Ratchicons !important;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
