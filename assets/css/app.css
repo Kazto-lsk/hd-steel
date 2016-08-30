@@ -502,6 +502,21 @@ body {
   -webkit-line-clamp: 1;
 }
 
+/*검색결과 처리*/
+.hd-none .card.hd-search-result {
+  display: none;
+}
+.hd-none .card.hd-search-result-none {
+  display: table;
+}
+
+.hd-ok .card.hd-search-result {
+  display: block;
+}
+.hd-ok .card.hd-search-result-none {
+  display: none;
+}
+
 .card.hd-search-result-none {
   height: calc(100% - 38px);
   width: 100%;
@@ -521,6 +536,8 @@ body {
   margin-bottom: .7rem;
   font-size: 4.5rem
 }
+
+
 
 /*search-detail*/
 .card.hd-search-detail {
