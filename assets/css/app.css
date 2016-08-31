@@ -174,6 +174,77 @@ body {
     content: '\e905';
 }
 
+/*main*/
+
+.em-main .bar.bar-nav {
+  border-bottom: none
+}
+
+.em-main  .container {
+  background-color: transparent;
+}
+.em-main .logo {
+  width: 100px
+}
+
+.em-main .table {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  border-collapse: separate;
+
+}
+.em-main .table td {
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #1c74d5;
+  color: #fff
+}
+
+.em-main .table td.hd-order {
+  background-color: #3a444d;
+}
+.em-main .table td.hd-qr {
+  background-color: #23335d;
+}
+.em-main .table td.hd-manual {
+  background-color: #636c73;
+}
+
+.em-main .table td img {
+  width: 70px
+}
+
+
+
+.hd-widget .card-header {
+  position: relative;
+  background-color: #fff
+}
+
+.hd-widget .card-header .media-object {
+  height: 18px
+}
+
+.hd-widget .card-header .hd-more {
+  position: absolute;
+  top:0;
+  right: 34px;
+  line-height: 41px
+}
+
+.hd-widget .table-view-cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+
+
+
 /*navigate-custom*/
 .navigate-right.navigate-custom:after {
     content: '\e903';
