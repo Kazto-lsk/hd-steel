@@ -176,15 +176,11 @@ body {
 
 /*main*/
 
-.em-main .bar.bar-nav {
-  border-bottom: none
-}
-
-.em-main .bar .btn-nav.pull-right {
+.em-main  .btn-nav.pull-right {
   margin-top: 10px;
   margin-right: 15px;
 }
-.em-main .bar .btn-nav .icon{
+.em-main .btn-nav .icon{
   color: #1c74d5
 }
 .em-main .bar .btn-nav .icon:active{
