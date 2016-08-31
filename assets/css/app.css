@@ -1145,7 +1145,7 @@ hr {
 }
 
 .hd-login .hd-logo {
-  margin: 50px 0 15px
+  margin: 50px 0 55px
 }
 .hd-login .hd-logo img {
   width: 120px
@@ -1158,7 +1158,21 @@ hr {
   margin: .5rem auto 1.5rem;
 }
 
+.hd-login .card .form-group {
+  position: relative;
+}
+
+.hd-login .card .form-group label {
+  position: absolute;
+  top: 12px;
+  left: 15px
+}
+.hd-login .card .form-group label img {
+  width: 18px
+}
+
 .hd-login .card .form-control {
+  padding-left: 45px;
   background-color: #f4f4f4;
   text-align: left;
   border: none
