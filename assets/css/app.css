@@ -180,11 +180,25 @@ body {
   border-bottom: none
 }
 
+.em-main .bar .btn-nav.pull-right {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.em-main .bar .btn-nav .icon{
+  color: #1c74d5
+}
+.em-main .bar .btn-nav .icon:active{
+  background-color: transparent;
+}
+
 .em-main  .container {
   background-color: transparent;
 }
-.em-main .logo {
-  width: 100px
+.em-main .hd-logo {
+  width: 120px
+}
+.em-main .hd-title {
+  width: 90px
 }
 
 .em-main .table {
