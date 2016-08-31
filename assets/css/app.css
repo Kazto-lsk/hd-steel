@@ -1106,14 +1106,24 @@ hr {
  * ----------------------------------------------------------------------------
  */
 
-
- .hd-login .bar-footer {
-   background-color: transparent;
-   color: #eee;
-   font-size: .7rem;
-   text-align: center;
-   line-height: 2.8125rem;
+ .hd-login.active .hd-logo,
+ .hd-login.active .bar-footer {
+  display: none;
  }
+
+.hd-login.active .card {
+  margin: 0;
+  border-radius: 0
+}
+
+.hd-login .bar-footer {
+  background-color: transparent;
+  color: #eee;
+  font-size: .7rem;
+  text-align: center;
+  line-height: 2.8125rem;
+}
+
 
 .hd-login .content {
   background-image: url(../img/login-bg.png);
@@ -1124,11 +1134,6 @@ hr {
   -o-background-size: cover;
 }
 
-.hd-login .content h1 {
-  margin-top: -1rem;
-  color: #fff;
-  font-size: 200px
-}
 
 .hd-login .content-padded {
   padding: 1rem
@@ -1136,8 +1141,17 @@ hr {
 
 .hd-login .card {
   margin: 1rem;
-  margin-top: -5rem;
   border: none;
+}
+
+.hd-login .hd-logo {
+  margin: 50px 0 15px
+}
+.hd-login .hd-logo img {
+  width: 120px
+}
+.hd-login .hd-title {
+  width: 110px
 }
 
 .hd-login .card-title {

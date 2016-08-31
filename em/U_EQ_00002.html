@@ -27,12 +27,12 @@
     <!-- main content -->
     <div class="content">
 
-      <h1 class="icon-logo content-padded"></h1>
+      <div class="content-padded hd-logo"><img src="../assets/img/logo-white.png" alt=""></div>
 
       <form>
         <div class="card">
           <div class="card-block">
-            <h4 class="card-title text-primary text-xs-center">설비관리</h4>
+            <h4 class="card-title text-primary text-xs-center"><img src="../assets/img/login-title-em.png" class="hd-title" alt=""></h4>
             <div class="form-group">
               <label class="sr-only" for="">아이디</label>
               <input type="text" class="form-control form-control-lg" id="" placeholder="아이디">
@@ -50,6 +50,13 @@
 
     </div>
 
-    <script src="../assets/js/app.js"></script>
+   <script>
+     $("input").focus(function(){
+        $("body").addClass("active");
+     });
+     $("input").blur(function() {
+      $("body").removeClass("active");
+     });
+   </script>
   </body>
 </html>
