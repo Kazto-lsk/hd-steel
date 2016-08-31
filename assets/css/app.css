@@ -229,7 +229,7 @@ body {
 }
 
 .em-main .table td img {
-  width: 70px
+  height: 55px
 }
 .em-main .table td:active {
   background-color: rgba(0,0,0,0.4);
