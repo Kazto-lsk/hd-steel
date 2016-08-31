@@ -202,7 +202,6 @@ body {
   background-color: #1c74d5;
   color: #fff
 }
-
 .em-main .table td.hd-order {
   background-color: #3a444d;
 }
@@ -211,12 +210,19 @@ body {
   background-image: url('../img/em-main-03-bg.png');
   background-size: cover;
 }
+.em-main .table td.hd-qr:active {
+  background-image: url('');
+}
+
 .em-main .table td.hd-manual {
   background-color: #636c73;
 }
 
 .em-main .table td img {
   width: 70px
+}
+.em-main .table td:active {
+  background-color: rgba(0,0,0,0.4);
 }
 
 .hd-widget.card {
