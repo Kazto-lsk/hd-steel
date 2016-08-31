@@ -234,7 +234,7 @@ body {
 }
 
 .hd-widget .card-header .media-object {
-  height: 18px
+  height: 16px
 }
 
 .hd-widget .card-header .hd-more {
@@ -255,11 +255,15 @@ body {
   -ms-text-overflow: ellipsis;
   color: #454545
 }
+.hd-widget .table-view-cell:active {
+  background-color: #f4f4f4
+}
 
 .hd-widget .table-view {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#e0e2e1' x='0' y='0' width='100%' height='0.5'/></svg>"), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#666' x='0' y='0' width='100%' height='0.5'/></svg>");
   background-repeat: no-repeat;
-  background-position: 0 100%, 0 0;
+  background-position: 15px 100%, 15px 0;
+  background-size: 90%;
   border-top: 0;
   border-bottom: 0;
 }
@@ -268,6 +272,7 @@ body {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#f0f0f4' x='0' y='0' width='100%' height='0.5'/></svg>");
   background-repeat: no-repeat;
   background-position: 15px 100%;
+  background-size: 90% auto;
   border-bottom: 0;
 }
 
