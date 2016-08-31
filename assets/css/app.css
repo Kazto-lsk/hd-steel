@@ -190,8 +190,8 @@ body {
 .em-main .table {
   width: 100%;
   border: none;
-  background-color: #fff;
   border-collapse: separate;
+  border-spacing: 2px 1px;
 
 }
 .em-main .table td {
@@ -208,6 +208,8 @@ body {
 }
 .em-main .table td.hd-qr {
   background-color: #23335d;
+  background-image: url('../img/em-main-03-bg.png');
+  background-size: cover;
 }
 .em-main .table td.hd-manual {
   background-color: #636c73;
