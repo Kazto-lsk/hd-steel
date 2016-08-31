@@ -51,12 +51,22 @@
     </div>
 
    <script>
-     $("input").focus(function(){
-        $("body").addClass("active");
+
+
+     $(document).ready(function(){
+       var _originalSize = $(window).width() + $(window).height()
+       $(window).resize(function(){
+         if($(window).width() + $(window).height() != _originalSize){
+           console.log("keyboard show up");
+           $("body").addClass("active");
+         }else{
+           console.log("keyboard closed");
+           $("body").removeClass("active");
+         }
+       });
      });
-     $("input").blur(function() {
-      $("body").removeClass("active");
-     });
+
+
    </script>
   </body>
 </html>
