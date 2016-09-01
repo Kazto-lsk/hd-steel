@@ -363,8 +363,8 @@ body {
 }
 .bar-header-secondary .btn .icon-left-nav {
   top: .3rem;
-  left: .3rem;
-  width: 2.7rem;
+  left: 0;
+  width: 2.1rem;
   color: #848896
 }
 
@@ -403,7 +403,7 @@ body {
   background-color: #fff;
   /*border-radius: 0.25rem;*/
   /*border: 1px solid #b4b8c4;*/
-  border-top: 1px solid #b4b8c4
+  /*border-top: 1px solid #b4b8c4*/
 }
 
 .card.card-full {
@@ -1368,4 +1368,62 @@ hr {
   line-height: 1;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
+}
+
+
+/*badge-left*/
+.hd-search-result .table-view-cell > a {
+  height: 42px
+}
+
+.table-view-cell > a > .badge.hd-left {
+  position: absolute;;
+  left: 10px;
+  right: auto
+}
+.card.hd-search .card-block .badge-inverted {
+  margin-top: .625rem
+}
+.card.hd-search .card-block .badge-inverted + .badge-inverted::before {
+  padding-right: .3125rem;
+  content: "|";
+  color: #d8dce2
+}
+
+/*card-hd-infinite-scroll*/
+
+.card .hd-infinite-scroll {
+  padding: 1rem 0;
+  text-align: center;
+  color: #626470
+}
+.card .hd-infinite-scroll:active {
+  background-color: #eee
+}
+
+
+/*filter*/
+
+.hd-filter.table {
+  background-color: #fff;
+  text-align: center;
+  color: #626470;
+}
+.hd-filter.table td {
+  cursor: pointer;
+  line-height: 1.2;
+  border-color: #d8dce2
+}
+.hd-filter.table td .badge-inverted::before {
+  content: "("
+}
+.hd-filter.table td .badge-inverted::after {
+  content: ")"
+}
+.hd-filter.table .table-active {
+  background-color: #1c74d5;
+  color: #fff
+}
+.hd-filter.table .table-active .badge-inverted {
+  color: #fff
 }
