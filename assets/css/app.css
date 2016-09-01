@@ -1435,15 +1435,7 @@ hr {
 }
 
 /*bar-more-search */
-.content .icon.hd-moreSearch {
-  position: absolute;
-  top: 50px;
-  left: auto;
-  right: 15px;
-  font-size: 1.6rem;
-  color: #1c74d5;
-  z-index: 22;
-}
+
 #moreSearch {
   padding: 1rem;
   background: #fff;
