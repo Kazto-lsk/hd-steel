@@ -1416,6 +1416,10 @@ hr {
   border-color: #d8dce2;
   font-size: .9375rem
 }
+.hd-filter.table td:active {
+  background-color: #eee
+}
+
 .hd-filter.table td .badge-inverted::before {
   content: "("
 }
@@ -1428,4 +1432,20 @@ hr {
 }
 .hd-filter.table .table-active .badge-inverted {
   color: #fff
+}
+
+/*bar-more-search */
+.content .icon.hd-moreSearch {
+  position: absolute;
+  top: 50px;
+  left: auto;
+  right: 15px;
+  font-size: 1.6rem;
+  color: #1c74d5;
+  z-index: 22;
+}
+#moreSearch {
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 0.0625rem solid #d8dce2;
 }
