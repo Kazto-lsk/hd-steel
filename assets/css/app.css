@@ -701,6 +701,7 @@ body {
 .table-view {
   border-top: 0.0625rem solid #b4b8c4;
   border-bottom: 0.0625rem solid #b4b8c4;
+  background-color: #fff
 }
 
 .table-view-divider {
