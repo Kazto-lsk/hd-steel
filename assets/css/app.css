@@ -1410,9 +1410,11 @@ hr {
   color: #626470;
 }
 .hd-filter.table td {
+  padding: 0.625rem;
   cursor: pointer;
   line-height: 1.2;
-  border-color: #d8dce2
+  border-color: #d8dce2;
+  font-size: .9375rem
 }
 .hd-filter.table td .badge-inverted::before {
   content: "("
