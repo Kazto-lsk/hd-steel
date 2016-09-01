@@ -1,0 +1,13 @@
+.sm-main .bar-footer {
+  background-color: transparent;;
+  border-top: none
+}
+
+.sm-main .content {
+  background-image: url("../img/sm-main-bg.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
