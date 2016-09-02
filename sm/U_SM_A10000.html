@@ -11,6 +11,7 @@
     <!-- kimsQ RC CSS -->
     <link rel="stylesheet" href="../assets/css/rc.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -19,127 +20,141 @@
   </head>
   <body class="hd-sub hd-sm">
 
-    <!-- header -->
-    <header class="bar bar-nav bar-dark bg-primary">
-
-      <a class="icon icon-simbol pull-left"></a>
-
-      <a class="icon icon-bars pull-right"></a>
-      <a class="icon icon-qrcode pull-right"></a>
-      <a class="icon icon-power-off pull-right"></a>
-      <h1 class="title left">안전점검</h1>
-    </header>
-
-    <!-- secondary header-->
-    <div class="bar bar-standard bar-header-secondary hd-bar-white">
-      <button class="btn btn-link btn-nav pull-left">
-        <span class="icon icon-left-nav"></span>
-        안전점검_조회목록
-      </button>
-      <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
     </div>
 
-    <!-- tab bar -->
-    <nav class="bar bar-tab bar-dark bg-inverse">
-      <a class="tab-item active" role="button">
-        점검요청사항 등록
-      </a>
-    </nav>
+    <div class="snap-content" data-extension="drawer">
 
-    <!-- main content -->
-    <div class="content">
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
 
-       <!-- 상세검색 -->
-      <div id="moreSearch" class="collapse">
-        상세검색 <br>상세검색 <br>상세검색 <br>상세검색 <br>
+        <a class="icon icon-simbol pull-left"></a>
+
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">안전점검</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          안전점검_조회목록
+        </button>
+        <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
       </div>
 
-      <p class="content-padded">
-        점검 및 개선사항 목록
-      </p>
+      <!-- tab bar -->
+      <nav class="bar bar-tab bar-dark bg-inverse">
+        <a class="tab-item active" role="button">
+          점검요청사항 등록
+        </a>
+      </nav>
 
-      <table class="table table-bordered hd-filter">
-        <tbody>
-          <tr>
-            <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
-            <td>임시발행<br><span class="badge badge-default badge-inverted">10</span></td>
-            <td>발행<br><span class="badge badge-default badge-inverted">10</span></td>
-          </tr>
-          <tr>
-            <td>조치계획<br><span class="badge badge-default badge-inverted">10</span></td>
-            <td>부서완료<br><span class="badge badge-default badge-inverted">10</span></td>
-            <td>결과확인<br><span class="badge badge-default badge-inverted">10</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- main content -->
+      <div class="content">
 
-      <div class="card hd-search hd-search-result">
-        <div class="card-header">
-          <ul class="table-view">
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                <span class="badge badge-default badge-inverted">2016.07.07</span>
-                <span class="badge badge-outline badge-primary hd-left">임시발행</span>
-                <span class="meta meta-site">홍길동</span>
-              </a>
-            </li>
-          </ul>
-         </div>
-         <div class="card-block">
-           <div class="card-block-inner borderBottomNone">
-             <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정 [10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+         <!-- 상세검색 -->
+        <div id="moreSearch" class="collapse">
+          상세검색 <br>상세검색 <br>상세검색 <br>상세검색 <br>
+        </div>
+
+        <p class="content-padded">
+          점검 및 개선사항 목록
+        </p>
+
+        <table class="table table-bordered hd-filter">
+          <tbody>
+            <tr>
+              <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>임시발행<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>발행<br><span class="badge badge-default badge-inverted">10</span></td>
+            </tr>
+            <tr>
+              <td>조치계획<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>부서완료<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>결과확인<br><span class="badge badge-default badge-inverted">10</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right">
+                  <span class="badge badge-default badge-inverted">2016.07.07</span>
+                  <span class="badge badge-outline badge-primary hd-left">임시발행</span>
+                  <span class="meta meta-site">홍길동</span>
+                </a>
+              </li>
+            </ul>
            </div>
-         </div>
-      </div>
-
-      <div class="card hd-search hd-search-result">
-        <div class="card-header">
-          <ul class="table-view">
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                <span class="badge badge-default badge-inverted">2016.07.07</span>
-                <span class="badge badge-outline badge-primary hd-left">발행</span>
-                <span class="meta meta-site">홍길동</span>
-              </a>
-            </li>
-          </ul>
-         </div>
-         <div class="card-block">
-           <div class="card-block-inner borderBottomNone">
-             <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
-             <span class="badge badge-inverted badge-default">(당) 철근제강부</span><span class="badge badge-inverted badge-default">윤진환</span>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정 [10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+             </div>
            </div>
-         </div>
-      </div>
+        </div>
 
-      <div class="card hd-search hd-search-result">
-        <div class="card-header">
-          <ul class="table-view">
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                <span class="badge badge-default badge-inverted">2016.07.07</span>
-                <span class="badge badge-outline badge-primary hd-left">발행</span>
-                <span class="meta meta-site">홍길동</span>
-              </a>
-            </li>
-          </ul>
-         </div>
-         <div class="card-block">
-           <div class="card-block-inner borderBottomNone">
-             <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
-             <span class="badge badge-inverted badge-default">(당) 철근제강부</span><span class="badge badge-inverted badge-default">윤진환</span>
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right">
+                  <span class="badge badge-default badge-inverted">2016.07.07</span>
+                  <span class="badge badge-outline badge-primary hd-left">발행</span>
+                  <span class="meta meta-site">홍길동</span>
+                </a>
+              </li>
+            </ul>
            </div>
-         </div>
-      </div>
-      
-      <div class="card hd-search hd-search-result" role="button">
-        <div class="hd-infinite-scroll">20개씩 더보기 (1/20)</div>
-      </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+               <span class="badge badge-inverted badge-default">(당) 철근제강부</span><span class="badge badge-inverted badge-default">윤진환</span>
+             </div>
+           </div>
+        </div>
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right">
+                  <span class="badge badge-default badge-inverted">2016.07.07</span>
+                  <span class="badge badge-outline badge-primary hd-left">발행</span>
+                  <span class="meta meta-site">홍길동</span>
+                </a>
+              </li>
+            </ul>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+               <span class="badge badge-inverted badge-default">(당) 철근제강부</span><span class="badge badge-inverted badge-default">윤진환</span>
+             </div>
+           </div>
+        </div>
+
+        <div class="card hd-search hd-search-result" role="button">
+          <div class="hd-infinite-scroll">20개씩 더보기 (1/20)</div>
+        </div>
 
 
+      </div>
     </div>
-
 
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script>
+      // Initialize drawer
+      RC_initDrawer();
+
+    </script>
   </body>
 </html>
