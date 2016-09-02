@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>작업오더_작업자 선택 레이어 팝업 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">기준정보</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        작업오더_작업자 등록 및수정
+      </button>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="content-padded">
+
+        <div class="content-padded">
+      		<button class="btn btn-secondary btn-block">Launch modal </button>
+      	</div>
+
+      </div>
+    </div>
+
+
+    <!-- modal 시작 -->
+    <div id="U_EQ_20005_POPUP1" class="modal">
+    	<<header class="bar bar-nav bar-light bg-white">
+    		<a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
+    		<h1 class="title">작업자 선택</h1>
+    	</header>
+
+    	<div class="content">
+
+        <div class="content-padded">
+          <p>
+            <div class="input-group hd-search-filter">
+              <span class="input-group-addon input-group-select">
+                <select>
+                  <option>전체</option>
+                  <option>사번</option>
+                  <option>성명</option>
+                </select>
+              </span>
+              <input type="text" class="form-control" placeholder="">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">조회</button>
+              </span>
+            </div>
+          </p>
+
+          <div>총 <span class="text-primary">25</span>개 결과목록</div>
+        </div>
+
+        <div class="card card-full">
+          <ul class="table-view">
+            <li class="table-view-cell"><a >[2006123] 홍길동 l [D11EA] 철근제강 전기보수반</a></li>
+            <li class="table-view-cell"><a >[2006123] 홍길동 l [D11EA] 철근제강 전기보수반</a></li>
+            <li class="table-view-cell"><a >[2006123] 홍길동 l [D11EA] 철근제강 전기보수반</a></li>
+            <li class="table-view-cell"><a >[2006123] 홍길동 l [D11EA] 철근제강 전기보수반</a></li>
+          </ul>
+          <div class="card-footer text-muted text-xs-center" role="button">
+            10개씩 더 보기 (1/20)
+          </div>
+        </div>
+
+    	</div>
+    </div>
+
+
+    <script type="text/javascript">
+    $('.btn').tap(function(){
+    	$('#U_EQ_20005_POPUP1').modal('show');
+    });
+
+    $('#U_EQ_20005_POPUP1 .table-view-cell a').tap(function(){
+    	$('#U_EQ_20005_POPUP1').modal('hide');
+
+      // something...
+
+    });
+
+    </script>
+
+  </body>
+</html>
