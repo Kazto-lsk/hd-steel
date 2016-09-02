@@ -11,6 +11,7 @@
     <!-- kimsQ RC CSS -->
     <link rel="stylesheet" href="../assets/css/rc.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -19,79 +20,242 @@
   </head>
   <body class="hd-sub">
 
-    <!-- header -->
-    <header class="bar bar-nav bar-dark bg-primary">
 
-      <a class="icon icon-simbol pull-left"></a>
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
 
-      <a class="icon icon-bars pull-right"></a>
-      <a class="icon icon-qrcode pull-right"></a>
-      <a class="icon icon-power-off pull-right"></a>
-      <h1 class="title left">기준정보</h1>
-    </header>
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-rc icon-gear pull-right" role="button" href=""></a>
+          <h1 class="title">홍길동 / 정보운영관리부</h1>
+        </header>
 
-    <!-- secondary header-->
-    <div class="bar bar-standard bar-header-secondary hd-bar-white">
-      <button class="btn btn-link btn-nav pull-left">
-        <span class="icon icon-left-nav"></span>
-        위치마스터_상세
-      </button>
-    </div>
-
-    <!-- tab bar -->
-    <nav class="bar bar-tab bar-dark bg-inverse">
-      <a class="tab-item active" role="button">
-        설비마스터
-      </a>
-      <a class="tab-item" role="button">
-        작업오더
-      </a>
-      <a class="tab-item" role="button">
-        측정지점
-      </a>
-      <a class="tab-item" role="button">
-        작업표준
-      </a>
-    </nav>
-
-    <!-- main content -->
-    <div class="content">
-
-      <div class="card hd-search hd-search-detail">
-        <div class="card-header">
-          [12M-AE-003] 신규보일러 약품주입 펌프 (3인산 소다) 점검 및 교체
+        <div class="bar bar-standard bar-header-secondary bar-dark bg-primary">
+          <h1 class="title">
+            <span class="icon icon-dot-01"></span>
+            설비관리시스템
+          </h1>
         </div>
-        <div class="card-block">
-          <dl class="row">
-            <dt class="col-xs-3">유형</dt>
-            <dd class="col-xs-9">공급업체</dd>
-            <dt class="col-xs-3">레벨</dt>
-            <dd class="col-xs-9">[LA] 재택</dd>
-            <dt class="col-xs-3">교대</dt>
-            <dd class="col-xs-9">[136] IN_PR_인천_3조2교대_M반</dd>
-          </dl>
-        </div>
-        <div class="card-footer">
+
+        <!-- Block button in standard bar fixed above the footer -->
+        <div class="bar bar-standard bar-footer-secondary bar-dark" style="background-color: #3a444d;">
           <ul class="table-view">
+            <li class="table-view-cell">앱버전 <button class="btn btn-outline-secondary">업데이트</button></li>
+          </ul>
+        </div>
+
+        <nav class="bar bar-tab bar-dark" style="background-color: #3a444d;">
+          <a class="tab-item" role="button" href="">
+            현재버전 00.00
+          </a>
+          <a class="tab-item" role="button" href="">
+            최신버전 00.00
+          </a>
+        </nav>
+
+        <div class="content">
+          <ul class="table-view" id="tree">
             <li class="table-view-cell">
-              <span class="badge badge-outline badge-primary">ACTIVE</span>
-              <span class="meta">JECHUL</span>
+              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#1">
+                <span class="media-object pull-left icon-rc icon-star"></span>
+                <div class="media-body">
+                  기준정보
+                </div>
+              </a>
+              <ul class="table-view collapse" id="1">
+                <li class="table-view-cell">
+                  <a href="">
+                    위치마스터
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    설비마스터
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    작업표준
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    측정지점
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    계층구조
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="table-view-cell">
+              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#2">
+                <span class="media-object pull-left icon icon-star"></span>
+                <div class="media-body">
+                  작업오더
+                </div>
+              </a>
+              <ul class="table-view collapse" id="2">
+                <li class="table-view-cell">
+                  <a href="">
+                    검색
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    작업자조회목록
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="table-view-cell">
+              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#3">
+                <span class="media-object pull-left icon icon-star"></span>
+                <div class="media-body">
+                  QR CODE
+                </div>
+              </a>
+              <ul class="table-view collapse" id="3">
+                <li class="table-view-cell">
+                  <a href="">
+                    검색
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    검색결과
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="table-view-cell">
+              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#4">
+                <span class="media-object pull-left icon icon-star"></span>
+                <div class="media-body">
+                  표준메뉴얼
+                </div>
+              </a>
+              <ul class="table-view collapse" id="4">
+                <li class="table-view-cell">
+                  <a href="">
+                    관리표준
+                  </a>
+                </li>
+                <li class="table-view-cell">
+                  <a href="">
+                    기술표준
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="table-view-cell">
+              <a class="navigate-rightdown collapsed" href="">
+                <span class="media-object pull-left icon icon-star"></span>
+                <div class="media-body">
+                  임시저장목록
+                </div>
+              </a>
             </li>
           </ul>
         </div>
+
+      </div>
+    </div>
+
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+
+        <a class="icon icon-simbol pull-left"></a>
+
+        <a class="icon icon-bars pull-right" href="#drawer" data-toggle="drawer" data-direction="right"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">기준정보</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          위치마스터_상세
+        </button>
       </div>
 
-      <div class="content-padded">
-        <button type="button" class="btn btn-secondary btn-lg btn-block">하위설비 목록조회</button>
+      <!-- tab bar -->
+      <nav class="bar bar-tab bar-dark bg-inverse">
+        <a class="tab-item active" role="button">
+          설비마스터
+        </a>
+        <a class="tab-item" role="button">
+          작업오더
+        </a>
+        <a class="tab-item" role="button">
+          측정지점
+        </a>
+        <a class="tab-item" role="button">
+          작업표준
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="card hd-search hd-search-detail">
+          <div class="card-header">
+            [12M-AE-003] 신규보일러 약품주입 펌프 (3인산 소다) 점검 및 교체
+          </div>
+          <div class="card-block">
+            <dl class="row">
+              <dt class="col-xs-3">유형</dt>
+              <dd class="col-xs-9">공급업체</dd>
+              <dt class="col-xs-3">레벨</dt>
+              <dd class="col-xs-9">[LA] 재택</dd>
+              <dt class="col-xs-3">교대</dt>
+              <dd class="col-xs-9">[136] IN_PR_인천_3조2교대_M반</dd>
+            </dl>
+          </div>
+          <div class="card-footer">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <span class="badge badge-outline badge-primary">ACTIVE</span>
+                <span class="meta">JECHUL</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-padded">
+          <button type="button" class="btn btn-secondary btn-lg btn-block">하위설비 목록조회</button>
+        </div>
+
       </div>
+
+      <!-- floating button -->
+      <button type="button" class="btn btn-circle-primary floating floating-br animated bounceIn delay-3" role="button">
+        <span class="icon icon-search"></span>
+      </button>
+
 
     </div>
 
-    <!-- floating button -->
-    <button type="button" class="btn btn-circle-primary floating floating-br animated bounceIn delay-3" role="button">
-      <span class="icon icon-search"></span>
-    </button>
 
     <script src="../assets/js/app.js"></script>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script>
+      // Initialize drawer
+      RC_initDrawer();
+      $('#myButton').tap(function() {
+        $('#myDrawer').drawer('toggle');
+      });
+    </script>
   </body>
 </html>
