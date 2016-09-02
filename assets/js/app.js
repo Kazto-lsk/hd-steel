@@ -1,1 +1,2 @@
 // script
+RC_initDrawer();
