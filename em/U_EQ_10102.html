@@ -24,144 +24,6 @@
     <div class="snap-drawers">
       <div class="snap-drawer snap-drawer-right" id="drawer">
 
-        <header class="bar bar-nav bar-dark bg-primary">
-          <a class="icon icon-rc icon-gear pull-right" role="button" href=""></a>
-          <h1 class="title">홍길동 / 정보운영관리부</h1>
-        </header>
-
-        <div class="bar bar-standard bar-header-secondary bar-dark bg-primary">
-          <h1 class="title">
-            <span class="icon icon-dot-01"></span>
-            설비관리시스템
-          </h1>
-        </div>
-
-        <!-- Block button in standard bar fixed above the footer -->
-        <div class="bar bar-standard bar-footer-secondary bar-dark" style="background-color: #3a444d;">
-          <ul class="table-view">
-            <li class="table-view-cell">앱버전 <button class="btn btn-outline-secondary">업데이트</button></li>
-          </ul>
-        </div>
-
-        <nav class="bar bar-tab bar-dark" style="background-color: #3a444d;">
-          <a class="tab-item" role="button" href="">
-            현재버전 00.00
-          </a>
-          <a class="tab-item" role="button" href="">
-            최신버전 00.00
-          </a>
-        </nav>
-
-        <div class="content">
-          <ul class="table-view" id="tree">
-            <li class="table-view-cell">
-              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#1">
-                <span class="media-object pull-left icon-rc icon-star"></span>
-                <div class="media-body">
-                  기준정보
-                </div>
-              </a>
-              <ul class="table-view collapse" id="1">
-                <li class="table-view-cell">
-                  <a href="">
-                    위치마스터
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    설비마스터
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    작업표준
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    측정지점
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    계층구조
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="table-view-cell">
-              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#2">
-                <span class="media-object pull-left icon icon-star"></span>
-                <div class="media-body">
-                  작업오더
-                </div>
-              </a>
-              <ul class="table-view collapse" id="2">
-                <li class="table-view-cell">
-                  <a href="">
-                    검색
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    작업자조회목록
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="table-view-cell">
-              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#3">
-                <span class="media-object pull-left icon icon-star"></span>
-                <div class="media-body">
-                  QR CODE
-                </div>
-              </a>
-              <ul class="table-view collapse" id="3">
-                <li class="table-view-cell">
-                  <a href="">
-                    검색
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    검색결과
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="table-view-cell">
-              <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#4">
-                <span class="media-object pull-left icon icon-star"></span>
-                <div class="media-body">
-                  표준메뉴얼
-                </div>
-              </a>
-              <ul class="table-view collapse" id="4">
-                <li class="table-view-cell">
-                  <a href="">
-                    관리표준
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a href="">
-                    기술표준
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="table-view-cell">
-              <a class="navigate-rightdown collapsed" href="">
-                <span class="media-object pull-left icon icon-star"></span>
-                <div class="media-body">
-                  임시저장목록
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
 
       </div>
     </div>
@@ -253,6 +115,11 @@
     <script>
       // Initialize drawer
       RC_initDrawer();
+
+      $('#myDrawer').drawer({
+        template : './template/drawer.html'
+      })
+
       $('#myButton').tap(function() {
         $('#myDrawer').drawer('toggle');
       });
