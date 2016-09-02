@@ -116,13 +116,9 @@
       // Initialize drawer
       RC_initDrawer();
 
-      $('#myDrawer').drawer({
-        template : '/hd-steel/em/template/drawer.html'
+      $('#drawer').drawer({
+        template : './template/drawer.html'
       })
-
-      $('#myButton').tap(function() {
-        $('#myDrawer').drawer('toggle');
-      });
     </script>
   </body>
 </html>
