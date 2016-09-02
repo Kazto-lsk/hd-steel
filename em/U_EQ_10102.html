@@ -36,7 +36,7 @@
 
         <a class="icon icon-simbol pull-left"></a>
 
-        <a class="icon icon-bars pull-right" href="#drawer" data-toggle="drawer" data-direction="right"></a>
+        <a class="icon icon-bars pull-right" href="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
         <a class="icon icon-qrcode pull-right"></a>
         <a class="icon icon-power-off pull-right"></a>
         <h1 class="title left">기준정보</h1>
@@ -116,9 +116,9 @@
       // Initialize drawer
       RC_initDrawer();
 
-      $('#drawer').drawer({
-        template : './template/drawer.html'
-      })
+      $('#myButton').tap(function() {
+        $('#drawer').drawer('toggle');
+      });
     </script>
   </body>
 </html>
