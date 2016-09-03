@@ -12,6 +12,9 @@
     <link href="../assets/css/rc.css" rel="stylesheet" >
     <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
     <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
     <link href="../assets/css/app.css" rel="stylesheet" >
 
     <!-- jQuery first, then kimsQ RC JS. -->
@@ -352,18 +355,21 @@
                     <dl>
                       <dt class="m-b-1">조치전</dt>
                       <dd style="margin-left: -15px;margin-right: -15px">
-                        <div class="swiper-container hd-photoset-01" data-extension="swiper" data-spaceBetween="2" data-pagination="true">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide" role="button"><img src="../assets/img/photo-01.png" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
-                            <div class="swiper-slide" role="button"><img src="http://placehold.it/600x320" class="img-fluid" alt=""></div>
+                        <div class="swiper-container hd-photoset-01">
+
+                          <div class="swiper-wrapper" data-extension="photoswipe">
+                            <figure class="figure swiper-slide">
+                              <a href="../assets/img/photo-01.png" data-size="1200x640">
+                                <img src="../assets/img/photo-01.png" class="img-fluid" alt="">
+                              </a>
+                              <figcaption class="figure-caption">사진캡션 입니다.</figcaption>
+                            </figure>
+                            <div class="swiper-slide" role="button">
+                              <img src="http://placehold.it/600x320" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide" role="button">
+                              <img src="http://placehold.it/600x320" class="img-fluid" alt="">
+                            </div>
                           </div>
                           <!-- If we need pagination -->
                           <div class="swiper-pagination"></div>
@@ -374,6 +380,19 @@
 
                       </dd>
                     </dl>
+
+                    <hr class="m-y-1">
+                    <!-- 사진확대 시험중 -->
+                    <div data-extension="photoswipe" style="margin-left: -15px;margin-right: -15px">
+                      <figure class="figure">
+                        <a href="../assets/img/photo-01.png" data-size="1200x640">
+                          <img src="../assets/img/photo-01.png"  alt="" class="img-fluid">
+                        </a>
+                        <figcaption class="figure-caption" itemprop="caption description">사진확대 모달 테스트</figcaption>
+                      </figure>
+                    </div>
+
+
                   </div>
                   <hr class="m-y-1">
                   <div class="card-block">
@@ -404,15 +423,21 @@
                 <div class="content-padded">
                   <div class="row btn-group">
                     <div class="col-xs-6">
-                      <button type="button" class="btn btn-secondary btn-block">삭제</button>
+                      <button type="button" class="btn btn-secondary btn-block">
+                        삭제
+                      </button>
                     </div>
                     <div class="col-xs-6">
-                      <button type="button" class="btn btn-secondary btn-block">수정</button>
+                      <button type="button" class="btn btn-secondary btn-block" role="button" data-toggle="page" data-start="#U_SM_A10006" data-target="#U_SM_A10002">
+                        수정
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div class="content-padded">
-                  <button type="button" class="btn btn-secondary btn-block">목록</button>
+                  <button type="button" class="btn btn-secondary btn-block" data-history="back">
+                    목록
+                  </button>
                 </div>
 
               </div><!-- swiper-slide 끝 -->
@@ -453,6 +478,9 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
     <script src="../assets/js/app.js"></script>
 
     <script>
@@ -464,9 +492,6 @@
       $('#moreSearch').on('hide.rc.collapse', function () {
         $('#header-secondary').removeClass("hd-expanded")
       })
-
-      // tap 플리킹 구현
-      // RC_initSwiper()
 
 
       // Initialize Swiper
@@ -521,6 +546,11 @@
         prevButton: '.hd-photoset-01 .swiper-button-prev',
         spaceBetween: 5
       });
+
+      // 포토스와이프 초기화
+      RC_initPhotoSwipe()
+
+
 
     </script>
 

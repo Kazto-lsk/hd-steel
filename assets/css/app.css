@@ -1561,13 +1561,13 @@ hr {
 
 /*.hd-photoset-01*/
 
+.hd-photoset-01 .swiper-slide {
+  margin-bottom: 0
+}
 .hd-photoset-01 .swiper-slide img {
   border: .0625rem solid #b4b8c4
 }
 
-.hd-photoset-01 .swiper-button-next {
-  right: 0
-}
 .hd-photoset-01 .swiper-button-next,
 .hd-photoset-01 .swiper-button-prev {
   width: 2.125rem;
@@ -1583,12 +1583,12 @@ hr {
   background-color: rgba(0, 0, 0, 1);
 }
 .hd-photoset-01 .swiper-button-prev {
-  left: 0;
+  left: .0625rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 .hd-photoset-01 .swiper-button-next {
-  right: 0;
+  right: .0625rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -1597,4 +1597,10 @@ hr {
   font-size: 1.875rem;
   line-height: 2.75rem;
   color: #fff;
+}
+
+/*photoswipe*/
+
+.hd-photoset-01 .figure-caption {
+  display: none
 }
