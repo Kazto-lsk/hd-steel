@@ -1490,3 +1490,17 @@ hr {
   /*background-color: #fff;*/
   /*color: #cacad4*/
 }
+
+
+/*modal-search*/
+.modal .bar-header-secondary.hd-search {
+  top: 2.8125rem;
+  height: 3.34375rem;
+}
+.modal .bar-header-secondary.hd-search ~ .content {
+  padding-top: 6.2rem;
+}
+.modal .bar-header-secondary.hd-search input[type="search"] {
+  margin: .775rem 0;
+  border-radius: 0
+}
