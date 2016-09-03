@@ -54,7 +54,9 @@ $('#U_SM_E10000 .table-view-cell a').tap(function(){
   var cell = $(event.relatedTarget) // Button that triggered the modal
   var team_name = cell.data('name') // Extract info from data-* attributes
 
-  .find('#team').val(team_name)
+  var moreSearch = $("#moreSearch")
+  moreSearch.find('#team').val(team_name)
+
 
 });
 
