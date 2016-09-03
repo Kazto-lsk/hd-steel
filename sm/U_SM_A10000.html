@@ -356,7 +356,7 @@
                     <dl>
                       <dt class="m-b-1">조치전</dt>
                       <dd style="margin-left: -15px;margin-right: -15px">
-                        <div class="swiper-container hd-photoset-01">
+                        <div class="swiper-container hd-photoset hd-photoset-01">
 
                           <div class="swiper-wrapper" data-extension="photoswipe">
                             <figure class="figure swiper-slide">
@@ -479,7 +479,7 @@
                     <dl>
                       <dt class="m-b-1">조치후</dt>
                       <dd style="margin-left: -15px;margin-right: -15px">
-                        <div class="swiper-container hd-photoset-01">
+                        <div class="swiper-container hd-photoset hd-photoset-02">
 
                           <div class="swiper-wrapper" data-extension="photoswipe">
                             <figure class="figure swiper-slide">
@@ -630,6 +630,15 @@
         spaceBetween: 5
       });
 
+      var swiper = new Swiper('.swiper-container.hd-photoset-02', {
+        pagination: '.hd-photoset-01 .swiper-pagination',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: true,
+        nextButton: '.hd-photoset-01 .swiper-button-next',
+        prevButton: '.hd-photoset-01 .swiper-button-prev',
+        spaceBetween: 5
+      });
       // 포토스와이프 초기화
       RC_initPhotoSwipe()
 
