@@ -33,9 +33,7 @@
 
         <!-- header -->
         <header class="bar bar-nav bar-dark bg-primary">
-
           <a class="icon icon-simbol pull-left"></a>
-
           <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
           <a class="icon icon-qrcode pull-right"></a>
           <a class="icon icon-power-off pull-right"></a>
@@ -141,7 +139,7 @@
             <div class="card-header">
               <ul class="table-view">
                 <li class="table-view-cell">
-                  <a class="navigate-right">
+                  <a class="navigate-right" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10006">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
                     <span class="badge badge-outline badge-primary hd-left">임시발행</span>
                     <span class="meta meta-site">홍길동</span>
@@ -160,7 +158,45 @@
             <div class="card-header">
               <ul class="table-view">
                 <li class="table-view-cell">
-                  <a class="navigate-right">
+                  <a class="navigate-right" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10006">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">임시발행</span>
+                    <span class="meta meta-site">홍길동</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                 <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정 [10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+               </div>
+             </div>
+          </div>
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10006">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">임시발행</span>
+                    <span class="meta meta-site">홍길동</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                 <div class="card-text">[10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정 [10대 핵심안전수칙] 밀페공간 작업전 가스농도 미측정</div>
+               </div>
+             </div>
+          </div>
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10006">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
                     <span class="badge badge-outline badge-primary hd-left">발행</span>
                     <span class="meta meta-site">홍길동</span>
@@ -180,7 +216,7 @@
             <div class="card-header">
               <ul class="table-view">
                 <li class="table-view-cell">
-                  <a class="navigate-right">
+                  <a class="navigate-right" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10006">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
                     <span class="badge badge-outline badge-primary hd-left">발행</span>
                     <span class="meta meta-site">홍길동</span>
@@ -224,10 +260,66 @@
           <div class="content-padded">
             점검 부적합 내용
           </div>
+
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-secondary btn-block" data-history="back">
+                  취소
+                </button>
+              </div>
+              <div class="col-xs-6 p-l-0">
+                <button type="button" class="btn btn-primary btn-block" data-history="back">
+                  저장
+                </button>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
-
       </div><!-- 안전점검_등록 및 수정 끝-->
+
+      <!-- 안전점검내용_상세 시작 -->
+      <div id="U_SM_A10006" class="page right">
+
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-left-nav pull-left" role="button" data-history="back"></a>
+          <h1 class="title left">안전점검_상세</h1>
+        </header>
+
+        <div class="bar bar-standard bar-header-secondary hd-tabs">
+          <nav class="nav nav-inline">
+            <a class="nav-link active">점검내용</a>
+            <a class="nav-link">조치사항</a>
+            <a class="nav-link">결과확인</a>
+          </nav>
+    		</div>
+
+        <div class="content">
+          <div class="content-padded">
+            점검 부적합 내용
+          </div>
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-secondary btn-block">삭제</button>
+              </div>
+              <div class="col-xs-6 p-l-0">
+                <button type="button" class="btn btn-secondary btn-block" data-toggle="page" data-start="#U_SM_A10006" data-target="#U_SM_A10002">
+                  수정
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- 안전점검내용_상세 끝-->
+
 
     </div>
 
@@ -238,6 +330,7 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app.js"></script>
+
 
   </body>
 </html>
