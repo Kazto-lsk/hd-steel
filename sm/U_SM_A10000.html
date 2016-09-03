@@ -249,7 +249,7 @@
           <h1 class="title left">안전점검_등록 및 수정</h1>
         </header>
 
-        <div class="bar bar-standard bar-header-secondary hd-tabs">
+        <div class="bar bar-standard bar-header-secondary hd-tabs hd-swiper-01">
           <nav class="nav nav-inline">
           </nav>
     		</div>
@@ -343,7 +343,7 @@
           <h1 class="title left">안전점검_상세</h1>
         </header>
 
-        <div class="bar bar-standard bar-header-secondary hd-tabs">
+        <div class="bar bar-standard bar-header-secondary hd-tabs hd-swiper-02">
           <nav class="nav nav-inline">
           </nav>
     		</div>
@@ -455,7 +455,7 @@
 
       // Initialize Swiper
       var swiper = new Swiper('.swiper-container.hd-swiper-01', {
-        pagination: '.hd-tabs .nav-inline',
+        pagination: '.hd-tabs.hd-swiper-01 .nav-inline',
         paginationClickable: true,
         effect: 'slide',
         loop: true,
@@ -471,12 +471,12 @@
         return '<a class="' + className + '">'+title+'</a>';
         },
         onSlideChangeEnd: function (swiper) {
-            $('.content').animate({scrollTop:0}, '100');
+            // $('.content').animate({scrollTop:0}, '100');
         }
       });
 
       var swiper = new Swiper('.swiper-container.hd-swiper-02', {
-        pagination: '.hd-tabs .nav-inline',
+        pagination: '.hd-tabs.hd-swiper-02 .nav-inline',
         paginationClickable: true,
         effect: 'slide',
         loop: true,
@@ -492,7 +492,7 @@
         return '<a class="' + className + '">'+title+'</a>';
         },
         onSlideChangeEnd: function (swiper) {
-            $('.content').animate({scrollTop:0}, '100');
+            // $('.content').animate({scrollTop:0}, '100');
         }
       });
     </script>
