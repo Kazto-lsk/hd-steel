@@ -1446,3 +1446,24 @@ hr {
 .bar-header-secondary.hd-expanded ~ .content {
     padding-top: 16rem;
 }
+
+.bar-header-secondary .input-group {
+  top:0
+}
+.bar-header-secondary .input-group-addon {
+  font-size: .9rem;
+  line-height: 1.4rem;
+  color: #848896;
+  background-color: #fff;
+}
+.bar-header-secondary .form-control {
+  padding: 0.5rem;
+  font-size: .9rem;
+  line-height: .9rem;
+}
+
+
+.form-control,
+.input-group-addon {
+  border-radius: 0;
+}
