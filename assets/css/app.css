@@ -1337,6 +1337,9 @@ hr {
 .m-b-05 {
   margin-bottom: .5rem !important;
 }
+.p-l-05 {
+  padding-left: .5rem !important;
+}
 
 .line-clamp-1 {
   line-clamp: 1 !important;
@@ -1459,11 +1462,27 @@ hr {
 .bar-header-secondary .form-control {
   padding: 0.5rem;
   font-size: .9rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
+}
+.bar-header-secondary.hd-expanded .btn {
+  top:0;
+  line-height: 1.2rem;
+  border-radius: 0;
+  font-weight: normal;
+}
+.bar-header-secondary.hd-expanded .btn-primary {
+  background-color: #3a444d !important;
+  border-color: #3a444d !important
 }
 
 
+/*form custom*/
 .form-control,
 .input-group-addon {
   border-radius: 0;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  /*background-color: #fff;*/
+  /*color: #cacad4*/
 }
