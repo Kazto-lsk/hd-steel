@@ -1496,6 +1496,7 @@ hr {
 .modal .bar-header-secondary.hd-search {
   top: 2.8125rem;
   height: 3.34375rem;
+  background-color: #f7f7f9;
 }
 .modal .bar-header-secondary.hd-search ~ .content {
   padding-top: 6.2rem;
