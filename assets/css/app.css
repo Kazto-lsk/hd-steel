@@ -1441,7 +1441,7 @@ hr {
 }
 .bar-header-secondary.hd-expanded {
   height: 13rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
 }
 .bar-header-secondary.hd-expanded ~ .content {
     padding-top: 16rem;
