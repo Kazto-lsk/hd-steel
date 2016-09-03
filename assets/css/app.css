@@ -389,6 +389,10 @@ body {
     color: #fff;
 }
 
+.bar-tab.bar-dark .tab-item:active {
+  background-color: #333
+}
+
 /*footer*/
 .bar-footer {
  background-color: #fff;
@@ -1505,4 +1509,18 @@ hr {
 .modal .bar-header-secondary.hd-search input[type="search"] {
   margin: 0;
   border-radius: 0
+}
+
+/*tabs*/
+
+.hd-tabs {
+  height: 2.75rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid #c2c6d1;
+}
+
+.bar.hd-tabs .nav-inline .nav-link.active:after {
+  height: .1875rem;
+  background-color: #0275d8;
 }
