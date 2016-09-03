@@ -1437,7 +1437,11 @@ hr {
 /*bar-more-search */
 
 #moreSearch {
-  padding: 1rem;
   background: #fff;
-  border-bottom: 0.0625rem solid #d8dce2;
+}
+.bar-header-secondary.hd-expanded {
+  height: 13rem;
+}
+.bar-header-secondary.hd-expanded ~ .content {
+    padding-top: 16rem;
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>안전점검_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+
+        <a class="icon icon-simbol pull-left"></a>
+
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">안전점검</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          안전점검_조회목록
+        </button>
+        <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+      </div>
+
+      <!-- tab bar -->
+      <nav class="bar bar-tab bar-dark bg-inverse">
+        <a class="tab-item active" role="button">
+          점검요청사항 등록
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+         <!-- 상세검색 -->
+        <div id="moreSearch" class="collapse">
+          상세검색 <br>상세검색 <br>상세검색 <br>상세검색 <br>
+        </div>
+
+        <p class="content-padded">
+          점검 및 개선사항 목록
+        </p>
+
+        <table class="table table-bordered hd-filter">
+          <tbody>
+            <tr>
+              <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>임시발행<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>발행<br><span class="badge badge-default badge-inverted">10</span></td>
+            </tr>
+            <tr>
+              <td>조치계획<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>부서완료<br><span class="badge badge-default badge-inverted">10</span></td>
+              <td>결과확인<br><span class="badge badge-default badge-inverted">10</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <spsn class="hd-none">
+          <div class="card hd-search hd-search-result hd-search-result-none" style="height: calc(100% - 188px);">
+            <div class="card-block">
+              <span class="icon icon-search"></span>
+              검색한 결과가 없습니다.
+            </div>
+          </div>
+        </span>
+
+
+
+      </div>
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+  </body>
+</html>
