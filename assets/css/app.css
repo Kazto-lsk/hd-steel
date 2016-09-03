@@ -1321,12 +1321,13 @@ hr {
 .snap-drawer .table-view .table-view {
  background-color: #f6f6f8;
 }
-
 .snap-drawer .bar .title {
  text-align: left;
  padding-left: 25px
 }
-
+.snap-drawer .content {
+  background-image: none
+}
 
 
 /**
