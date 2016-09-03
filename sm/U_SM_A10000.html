@@ -454,7 +454,7 @@
 
 
       // Initialize Swiper
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.swiper-container.hd-swiper-01', {
         pagination: '.hd-tabs .nav-inline',
         paginationClickable: true,
         effect: 'slide',
@@ -473,9 +473,28 @@
         onSlideChangeEnd: function (swiper) {
             $('.content').animate({scrollTop:0}, '100');
         }
-
       });
 
+      var swiper = new Swiper('.swiper-container.hd-swiper-02', {
+        pagination: '.hd-tabs .nav-inline',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: true,
+        autoHeight: true,
+        slideActiveClass :'active',
+        bulletClass : 'nav-link',
+        bulletActiveClass : 'active' ,
+        paginationBulletRender: function (index, className) {
+        var title;
+        if (index === 0) title = '점검내용';
+        if (index === 1) title = '조치사항'
+        if (index === 2) title = '결과확인'
+        return '<a class="' + className + '">'+title+'</a>';
+        },
+        onSlideChangeEnd: function (swiper) {
+            $('.content').animate({scrollTop:0}, '100');
+        }
+      });
     </script>
 
 
