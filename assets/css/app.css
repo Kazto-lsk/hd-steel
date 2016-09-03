@@ -1312,6 +1312,11 @@ hr {
  * ----------------------------------------------------------------------------
  */
 
+ .snapjs-left .snap-drawer-left,
+ .snapjs-right .snap-drawer-right {
+   z-index: 3;
+ }
+
 .content > .table-view:first-child {
   margin-top: 0;
 }
