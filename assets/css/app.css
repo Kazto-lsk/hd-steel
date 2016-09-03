@@ -147,6 +147,9 @@ body {
   background-color: #fff;
   border-color: #b4b8c4;
 }
+.btn-white:active {
+  background-color: #eee;
+}
 .text-danger {
   color: #f22258 !important
 }
