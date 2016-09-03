@@ -1312,6 +1312,9 @@ hr {
  * ----------------------------------------------------------------------------
  */
 
+.snap-drawers {
+  z-index: 3
+}
 
 .content > .table-view:first-child {
   margin-top: 0;
