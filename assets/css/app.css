@@ -1566,17 +1566,18 @@ hr {
 }
 .hd-photoset-01 .swiper-button-next,
 .hd-photoset-01 .swiper-button-prev {
-
   width: 34px;
   height: 44px;
   margin-top: -22px;
-
   background-color: rgba(0, 0, 0, 0.5);
   background-image: none;
   border-radius: 20px;
   text-align: center;
 }
-
+.hd-photoset-01 .swiper-button-next:active,
+.hd-photoset-01 .swiper-button-prev:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 .hd-photoset-01 .swiper-button-prev {
   left: 0;
   border-top-left-radius: 0;
