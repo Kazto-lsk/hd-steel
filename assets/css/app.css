@@ -1561,17 +1561,21 @@ hr {
 
 /*.hd-photoset-01*/
 
+.hd-photoset-01 .swiper-slide img {
+  border: .0625rem solid #b4b8c4
+}
+
 .hd-photoset-01 .swiper-button-next {
   right: 0
 }
 .hd-photoset-01 .swiper-button-next,
 .hd-photoset-01 .swiper-button-prev {
-  width: 34px;
-  height: 44px;
-  margin-top: -22px;
+  width: 2.125rem;
+  height: 2.75rem;
+  margin-top: -1.375rem;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   text-align: center;
 }
 .hd-photoset-01 .swiper-button-next:active,
@@ -1590,10 +1594,7 @@ hr {
 }
 .hd-photoset-01 .swiper-button-next span,
 .hd-photoset-01 .swiper-button-prev span{
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 1.875rem;
+  line-height: 2.75rem;
   color: #fff;
-}
-.hd-photoset-01.swiper-container-horizontal > .swiper-pagination {
-  bottom: 20px;
 }
