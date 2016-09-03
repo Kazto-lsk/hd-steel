@@ -1598,6 +1598,9 @@ hr {
   line-height: 2.75rem;
   color: #fff;
 }
+.hd-photoset-01 .swiper-pagination-bullet-active {
+  background: #fff;
+}
 
 /*photoswipe*/
 

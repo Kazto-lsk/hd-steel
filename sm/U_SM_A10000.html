@@ -329,6 +329,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
 
+                <!-- 점검내용 시작 -->
                 <h5 class="hd-heading content-padded">점검 부적합 내용</h5>
                 <div class="card hd-search hd-search-result p-a-1">
                   <div class="card-block">
@@ -392,7 +393,6 @@
                       </figure>
                     </div>
 
-
                   </div>
                   <hr class="m-y-1">
                   <div class="card-block">
@@ -439,14 +439,97 @@
                     목록
                   </button>
                 </div>
+                <!-- 점검내용 끝 -->
 
               </div><!-- swiper-slide 끝 -->
 
               <div class="swiper-slide" role="button">
 
-                <div class="content-padded">
-                  조치사항 내용
+                <!-- 조치사항 시작 -->
+
+                <h5 class="hd-heading content-padded">조치계획사항 정보</h5>
+                <div class="card hd-search hd-search-result p-a-1">
+                  <div class="card-block">
+                    <dl class="row">
+                      <dt class="col-xs-3">조치자</dt>
+                      <dd class="col-xs-9">김일표 ᅵ 가스안전팀</dd>
+                      <dt class="col-xs-3">계획일</dt>
+                      <dd class="col-xs-9">2016.07.07</dd>
+                      <dt class="col-xs-12 p-b-05">조치계획</dt>
+                      <dd class="col-xs-12 none-line-clamp">조치계획입니다. 조치계획입니다. 조치계획입니다. 조치계획입니다. 조치계획입니다. 조치계획입니다.</dd>
+                    </dl>
+                  </div>
                 </div>
+
+                <h5 class="hd-heading content-padded">조치사항 정보</h5>
+                <div class="card hd-search hd-search-result p-a-1">
+                  <div class="card-block">
+                    <dl class="row">
+                      <dt class="col-xs-3">조치일</dt>
+                      <dd class="col-xs-9">2016.07.07</dd>
+                      <dt class="col-xs-12 p-b-05">발생원인</dt>
+                      <dd class="col-xs-12 none-line-clamp">발생원인입니다. 발생원인입니다. 발생원인입니다. 발생 원인입니다. 발생원인입니다. 발생원인입니다.</dd>
+                      <dt class="col-xs-12 p-b-05">조치사항</dt>
+                      <dd class="col-xs-12 none-line-clamp">조치사항입니다. 조치사항입니다. 조치사항입니다. 조치사항입니다. 조치사항입니다. 조치사항입니다.</dd>
+                    </dl>
+                  </div>
+                  <hr class="m-y-1">
+
+                  <div class="card-block">
+                    <dl>
+                      <dt class="m-b-1">조치후</dt>
+                      <dd style="margin-left: -15px;margin-right: -15px">
+                        <div class="swiper-container hd-photoset-01">
+
+                          <div class="swiper-wrapper" data-extension="photoswipe">
+                            <figure class="figure swiper-slide">
+                              <a href="../assets/img/photo-01.png" data-size="1200x640">
+                                <img src="../assets/img/photo-01.png" class="img-fluid" alt="">
+                              </a>
+                              <figcaption class="figure-caption">사진캡션 입니다.</figcaption>
+                            </figure>
+                            <div class="swiper-slide" role="button">
+                              <img src="http://placehold.it/600x320" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide" role="button">
+                              <img src="http://placehold.it/600x320" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <!-- If we need pagination -->
+                          <div class="swiper-pagination"></div>
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"><span class="icon icon-left-nav"></span></div>
+                          <div class="swiper-button-next"><span class="icon icon-right-nav"></span></div>
+                        </div>
+
+                      </dd>
+                    </dl>
+
+                  </div>
+                  <hr class="m-y-1">
+
+                </div><!-- card 끝 -->
+
+                <div class="content-padded">
+                  <div class="row btn-group">
+                    <div class="col-xs-6">
+                      <button type="button" class="btn btn-secondary btn-block">
+                        삭제
+                      </button>
+                    </div>
+                    <div class="col-xs-6">
+                      <button type="button" class="btn btn-secondary btn-block" role="button" data-toggle="page" data-start="#U_SM_A10006" data-target="#U_SM_A10002">
+                        수정
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-padded">
+                  <button type="button" class="btn btn-secondary btn-block" data-history="back">
+                    목록
+                  </button>
+                </div>
+                <!-- 조치사항 끝 -->
 
 
 
@@ -512,7 +595,7 @@
         return '<a class="' + className + '">'+title+'</a>';
         },
         onSlideChangeEnd: function (swiper) {
-            // $('.content').animate({scrollTop:0}, '100');
+            $('#U_SM_A10002 .content').animate({scrollTop:0}, '100');
         }
       });
 
@@ -533,7 +616,7 @@
         return '<a class="' + className + '">'+title+'</a>';
         },
         onSlideChangeEnd: function (swiper) {
-            // $('.content').animate({scrollTop:0}, '100');
+            $('#U_SM_A10006 .content').animate({scrollTop:0}, '100');
         }
       });
 
