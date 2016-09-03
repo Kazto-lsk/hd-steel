@@ -1467,9 +1467,9 @@ hr {
   font-size: .9rem;
   line-height: 1.2rem;
 }
-.bar-header-secondary.hd-expanded .btn {
+.bar-header-secondary.hd-expanded .form-group .btn {
   top:0;
-  padding: .5rem .75rem;
+  padding: .5rem 1rem;
   line-height: 1.2rem;
   border-radius: 0;
   font-weight: normal;
