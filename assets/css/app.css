@@ -390,7 +390,7 @@ body {
 }
 
 .bar-tab.bar-dark .tab-item:active {
-  background-color: #333
+  background-color: #2e363e
 }
 
 /*footer*/
@@ -473,6 +473,9 @@ body {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+.card.hd-search dl dd:last-child {
+  margin-bottom: 0
 }
 .card.hd-search .badge-inverted {
   font-size: 95%;
@@ -917,9 +920,13 @@ h5.hd-heading {
   font-size: 1rem;
 }
 
- .bar-header-secondary ~ .content {
-    padding-top: 5.2rem;
+.bar-header-secondary ~ .content {
+  padding-top: 5.2rem;
 }
+.bar-header-secondary.hd-tabs ~ .content {
+  padding-top: 5.5rem;
+}
+
 
 .content {
   background-color: #eeeef2;
@@ -1353,6 +1360,9 @@ hr {
 .p-l-05 {
   padding-left: .5rem !important;
 }
+.p-b-05 {
+  padding-bottom: .5rem !important;
+}
 
 .line-clamp-1 {
   line-clamp: 1 !important;
@@ -1366,6 +1376,12 @@ hr {
   line-clamp: 3 !important;
   -webkit-line-clamp: 3 !important;
 }
+.none-line-clamp {
+          line-clamp: 100 !important;
+  -webkit-line-clamp: 100 !important;
+}
+
+
 .border-top-dotted {
   border-top: 0.0625rem dotted #d8dce2 !important;
   border-left: 0;
@@ -1488,6 +1504,10 @@ hr {
   background-color: #3a444d !important;
   border-color: #3a444d !important
 }
+.bar-header-secondary.hd-expanded .btn-primary:active {
+  background-color: #2e363e !important;
+  border-color: #2e363e !important
+}
 
 
 /*form custom*/
@@ -1528,4 +1548,13 @@ hr {
 .bar.hd-tabs .nav-inline .nav-link.active:after {
   height: .1875rem;
   background-color: #0275d8;
+}
+
+
+/*swiper*/
+
+.swiper-wrapper {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
 }
