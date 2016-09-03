@@ -5,6 +5,6 @@ RC_initDrawer();
 $('#moreSearch').on('show.rc.collapse', function () {
   $('#header-secondary').addClass("hd-expanded")
 })
-$('#moreSearch').on('hidden.rc.collapse', function () {
+$('#moreSearch').on('hide.rc.collapse', function () {
   $('#header-secondary').removeClass("hd-expanded")
 })
