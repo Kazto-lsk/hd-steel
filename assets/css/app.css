@@ -1558,3 +1558,41 @@ hr {
      -moz-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+/*.hd-photoset-01*/
+
+.hd-photoset-01 .swiper-button-next {
+  right: 0
+}
+.hd-photoset-01 .swiper-button-next,
+.hd-photoset-01 .swiper-button-prev {
+
+  width: 34px;
+  height: 44px;
+  margin-top: -22px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hd-photoset-01 .swiper-button-prev {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.hd-photoset-01 .swiper-button-next {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.hd-photoset-01 .swiper-button-next span,
+.hd-photoset-01 .swiper-button-prev span{
+  font-size: 30px;
+  line-height: 44px;
+  color: #fff;
+}
+.hd-photoset-01.swiper-container-horizontal > .swiper-pagination {
+  bottom: 20px;
+}
