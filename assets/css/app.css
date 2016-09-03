@@ -1469,7 +1469,7 @@ hr {
 }
 .bar-header-secondary.hd-expanded .form-group .btn {
   top:0;
-  padding: .5rem 1rem;
+  padding: .5rem;
   line-height: 1.2rem;
   border-radius: 0;
   font-weight: normal;

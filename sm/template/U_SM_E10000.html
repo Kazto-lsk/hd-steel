@@ -16,7 +16,7 @@
 
   <div class="card card-full">
     <ul class="table-view">
-      <li class="table-view-cell"><a ><span class="badge badge-pill">1270</span> 냉품질보증팀</a></li>
+      <li class="table-view-cell"><a data-name="냉품질보증팀" data-code="1270"><span class="badge badge-pill">1270</span> 냉품질보증팀</a></li>
       <li class="table-view-cell"><a ><span class="badge badge-pill">1280</span> 운영팀</a></li>
       <li class="table-view-cell"><a ><span class="badge badge-pill">1270</span> 냉품질보증팀</a></li>
       <li class="table-view-cell"><a ><span class="badge badge-pill">1280</span> 운영팀</a></li>
@@ -50,7 +50,11 @@
 $('#U_SM_E10000 .table-view-cell a').tap(function(){
   $('#U_SM_E10000').modal('hide');
 
-  // something...
+
+  var cell = $(event.relatedTarget) // Button that triggered the modal
+  var team_name = cell.data('name') // Extract info from data-* attributes
+
+  .find('#team').val(team_name)
 
 });
 
