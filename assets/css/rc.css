@@ -7296,7 +7296,7 @@ input[type="button"].btn-block {
 }
 
 /**
- * Action page 페이지 
+ * Action page 페이지
  * ----------------------------------------------------------------------------
  */
 .page {
@@ -7370,7 +7370,7 @@ input[type="button"].btn-block {
 
 .switch:before {
   position: absolute;
-  top: 3px;
+  top: 4.8px;
   right: 11px;
   font-size: 13px;
   color: #999;
