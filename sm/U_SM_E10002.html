@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>확대 이미지_레이어 팝업 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+
+    <!-- photoswipe -->
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">안전점검</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        확대 이미지_레이어 팝업
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="content-padded">
+
+        <div class="my-gallery" data-extension="photoswipe">
+          <figure class="figure">
+            <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" data-size="964x1024">
+              <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" alt="" class="figure-img img-fluid">
+            </a>
+            <figcaption class="figure-caption">Image caption 1</figcaption>
+          </figure>
+
+          <figure class="figure">
+            <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" data-size="1024x683">
+              <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" alt="" class="figure-img img-fluid">
+            </a>
+            <figcaption class="figure-caption">Image caption 2</figcaption>
+          </figure>
+
+          <figure class="figure">
+            <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" data-size="1024x768">
+              <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" alt="" class="figure-img img-fluid">
+            </a>
+            <figcaption class="figure-caption">Image caption 3</figcaption>
+          </figure>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- photoswipe -->
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script>
+      // 포토스와이프 초기화
+      RC_initPhotoSwipe()
+    </script>
+
+  </body>
+</html>

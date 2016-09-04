@@ -1,0 +1,74 @@
+<header class="bar bar-nav bar-light bg-faded">
+  <a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
+  <h1 class="title">담당자 검색</h1>
+</header>
+
+<div class="bar bar-standard bar-header-secondary bar-light bg-faded hd-search">
+  <form>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon input-group-select">
+        <select>
+          <option>전체</option>
+          <option>성명</option>
+          <option>부서명</option>
+        </select>
+      </span>
+      <input type="search" class="form-control" placeholder="이름 또는 부서명 검색">
+    </div>
+
+  </form>
+</div>
+
+<div class="content">
+  <div class="content-padded">
+    <div>총 <span class="text-primary">25</span>개 결과목록</div>
+  </div>
+
+  <div class="card card-full">
+    <ul class="table-view">
+      <li class="table-view-cell">
+        <a data-name="이나경" data-code="1270">
+          <span class="badge badge-pill">1270</span>
+          이나경
+          <div class="hd-meta">
+            <span class="badge badge-inverted">특수강소형정비팀</span>
+            <span class="badge badge-inverted">6급사원</span>
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a data-name="이나경" data-code="1270">
+          <span class="badge badge-pill">1270</span>
+          이나경
+          <div class="hd-meta">
+            <span class="badge badge-inverted">특수강소형정비팀</span>
+            <span class="badge badge-inverted">6급사원</span>
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a data-name="이나경" data-code="1270">
+          <span class="badge badge-pill">1270</span>
+          이나경
+          <div class="hd-meta">
+            <span class="badge badge-inverted">특수강소형정비팀</span>
+            <span class="badge badge-inverted">6급사원</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="card-footer hd-infinite-scroll" role="button">
+      10명씩 더 보기 (1/20)
+    </div>
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+$('#U_SM_E10001 .table-view-cell a').tap(function(){
+  $('#U_SM_E10001').modal('hide');
+});
+
+</script>
