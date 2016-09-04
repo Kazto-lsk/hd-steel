@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>안전점검_조회상세검색 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet" >
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 안전점검_조회목록 시작 -->
+      <div id="U_SM_A10000" class="page center">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-power-off pull-right"></a>
+          <h1 class="title left">안전점검</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
+
+          <div class="clearfix">
+            <button class="btn btn-link btn-nav pull-left">
+              <span class="icon icon-left-nav"></span>
+              안전점검_조회목록
+            </button>
+            <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          </div>
+
+          <!-- 상세검색 -->
+           <div id="moreSearch" class="collapse">
+
+             <form class="form-inline">
+
+               <div class="form-group">
+                 <label class="sr-only" for="">요청자</label>
+                 <input type="text" class="form-control" id="" placeholder="" value="요청자" readonly="">
+               </div>
+
+               <div class="form-group">
+                 <label class="sr-only" for="">기간검색</label>
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 47.5%">
+                     <div class="input-group">
+                       <input type="date" class="form-control" value="2016-07-19">
+                       <span class="input-group-addon icon icon-simbol" id="basic-addon2"></span>
+                     </div>
+                   </div>
+                   <div class="hd-term-divider"></div>
+                   <div class="hd-term-item" style="width: 47.5%">
+                     <div class="input-group">
+                       <input type="date" class="form-control" value="2016-08-19">
+                       <span class="input-group-addon icon icon-simbol" id="basic-addon2"></span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="form-group">
+                  <div class="hd-term">
+                    <div class="hd-term-item" style="width: 83%">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="" value="" readonly id="team">
+                        <span class="input-group-btn">
+                          <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                            <span class="icon icon-search"></span>
+                          </button>
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="hd-term-item p-l-05" style="width: 17%">
+                      <button class="btn btn-primary btn-block" type="submit">
+                        조회
+                      </button>
+                    </div>
+                  </div>
+                </div>
+             </form>
+
+           </div>
+        </div>
+
+        <!-- tab bar -->
+        <nav class="bar bar-tab bar-dark bg-inverse">
+          <a class="tab-item active" role="button" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10002">
+            점검요청사항 등록
+          </a>
+        </nav>
+
+        <!-- main content -->
+        <div class="content">
+
+
+
+
+        </div>
+      </div><!-- 안전점검_조회목록 끝 -->
+
+    </div>
+
+    <!-- 부서검색 Modal -->
+    <div id="U_SM_E10000" class="modal">
+       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+    </script>
+
+
+
+  </body>
+</html>
