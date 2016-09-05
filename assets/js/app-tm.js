@@ -20,7 +20,7 @@ $('#map').on('hide.rc.drawer', function () {
 function initMap() {
   var mapDiv = document.getElementById('map');
   var map = new google.maps.Map(mapDiv, {
-      center: {lat: 44.540, lng: -78.546},
+      center: {lat: 36.9861, lng: 126.7218},
       zoom: 8
   });
 }
