@@ -1421,7 +1421,7 @@ hr {
 
 /*badge-left*/
 .hd-search-result .table-view-cell > a {
-  height: 42px
+  min-height: 42px
 }
 
 .table-view-cell > a > .badge.hd-left {
