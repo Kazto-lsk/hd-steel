@@ -31,10 +31,10 @@
       </button>
 
       <div class="btn-group pull-right" role="group">
-        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer" data-backdrop="false">
+        <button type="button" class="btn btn-outline-secondary"  data-target="#map" data-toggle="drawer" data-history="false" data-backdrop="false" id="map-open-half">
           <span class="icon icon-window-half"></span>
         </button>
-        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer" data-showType="expand" data-backdrop="false">
+        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer" data-history="false" data-showType="expand" data-backdrop="false" id="map-open-full">
           <span class="icon icon-window-full"></span>
         </button>
       </div>
@@ -42,18 +42,16 @@
     </header>
 
 
-
-
     <div class="snap-drawers">
       <div class="snap-drawer snap-drawer-left" id="map">
 
         <header class="bar bar-nav">
-          <button class="btn btn-link btn-nav pull-right" id="map-close">
+          <button class="btn btn-link btn-nav pull-right" id="map-close" data-dismiss="drawer">
             <span class="icon icon-close"></span>
           </button>
         </header>
-        <div class="content">
-          <div id="map-view"></div>
+        <div class="content" id="map-view">
+
         </div>
       </div>
     </div>
@@ -126,17 +124,9 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap-tm.js"></script>
     <script src="../assets/js/app-tm.js"></script>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map-view');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8
-        });
-      }
-    </script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3DQmIEjrRvRx0hDp1Qq9LBOoyD2L09sw&callback=initMap">
-    </script>
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
+     </script>
+
   </body>
 </html>
