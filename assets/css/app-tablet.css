@@ -463,3 +463,31 @@
   background-color: #1c74d5;
   border-color: #1c74d5
 }
+
+
+/*지도열기*/
+
+#map-view {
+  width: 100%;
+  height: 100%;
+}
+
+.snapjs-left .snap-content {
+  width: 50%
+}
+
+.snap-drawer-left .bar-nav {
+  top: 2.75rem;
+  border-bottom: none
+}
+.snap-drawer-left .bar-nav .content {
+  top: 4.75rem;
+}
+
+.snap-content .content {
+  padding-top: 2.75rem !important;
+}
+
+.snap-drawer {
+  width: 640px;
+}
