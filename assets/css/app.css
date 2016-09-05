@@ -594,7 +594,13 @@ body {
 }
 
 .card.hd-search-result .card-block {
-    padding: 0 .625rem;
+  padding: 0 .625rem;
+}
+.card.hd-search-result .card-block h4{
+  margin-bottom: .9375rem;
+  padding-bottom: .55rem;
+  font-size: 1rem;
+  border-bottom: .0625rem solid #d8dce2;
 }
 .card.hd-search-result .card-block .card-block-inner {
   padding: .9375rem .3125rem;
