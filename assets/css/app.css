@@ -930,6 +930,9 @@ input.form-control {
   content: "\e900";
   color: #626470;
 }
+.hd-heading.no-bullet:before {
+  content: ""
+}
 
 h5.hd-heading {
   margin-top: 1.5rem;
@@ -1149,12 +1152,32 @@ hr {
 
 .hd-login .bar-footer {
   background-color: transparent;
-  color: #eee;
+  color: #9a9eac;
   font-size: .7rem;
   text-align: center;
   line-height: 2.8125rem;
+  border-top: none;
+  font-size: .6875rem
 }
 
+.hd-login .bar-footer-secondary {
+  border-top: none;
+  bottom: 1.3rem;
+}
+.hd-login .bar-footer-secondary .nav-inline .nav-link {
+  color: #9a9eac;
+  font-size: .8125rem
+}
+.hd-login .nav-inline .nav-item + .nav-item {
+  margin-left: .5rem
+}
+.hd-login .bar-footer-secondary .nav-inline .nav-link::before {
+  padding-right: .5rem;
+  content: "|"
+}
+.hd-login .bar-footer-secondary .nav-inline .nav-item:first-child .nav-link::before {
+  content: ""
+}
 
 .hd-login .content {
   background-image: url(../img/login-bg.png);
