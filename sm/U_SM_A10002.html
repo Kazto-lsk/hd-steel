@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>안전점검_등록 및 수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet" >
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- 안전점검내용_상세 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-left-nav pull-left" role="button" data-history="back"></a>
+        <h1 class="title left">안전점검_등록 및 수정</h1>
+      </header>
+
+      <div class="bar bar-standard bar-header-secondary hd-tabs hd-swiper-02">
+        <nav class="nav nav-inline">
+          <a class="nav-link active" href="#">점검내용</a>
+          <a class="nav-link" href="#">조치사항</a>
+          <a class="nav-link" href="#">결과확인</a>
+        </nav>
+  		</div>
+
+      <div class="content">
+        <!-- 안전점검_등록 및 수정 시작 -->
+        <form>
+          <div class="card hd-search hd-search-result p-a-1">
+            <div class="card-block p-a-0">
+              <h4>점검부적합내용</h4>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">요청일</label>
+                <div class="col-sm-10 col-xs-8">
+                  <p class="form-control-static">2016.07.07</p>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">요청자</label>
+                <div class="col-sm-10 col-xs-8">
+                  <p class="form-control-static">김일표</p>
+                </div>
+              </div>
+
+              <hr class="m-y-1">
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치대상</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control m-b-05">
+                    <option>선택</option>
+                    <option>직영</option>
+                    <option>협력사</option>
+                    <option>외주</option>
+                  </select>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="가스안전팀" readonly>
+                    <span class="input-group-btn">
+                      <button class="btn btn-white" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                        <span class="icon icon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">부적합사항</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">조치요구사항</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">조치전</label>
+                <div class="col-sm-8 col-xs-12">
+                  사진출력
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치구분</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>즉시조치</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치분류</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control m-b-05">
+                    <option>선택</option>
+                    <option selected>10대 핵심안전수칙</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>안전펜스(방호울) 난간안전펜스(방호울) 난간</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">부적합등급</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>경부적합</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">예상발생재해</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>근골격계</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">관련업무</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>시설점검-유해위험기구</option>
+                    <option>..</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- card 끝 -->
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-secondary btn-block" data-history="back">취소</button>
+              </div>
+              <div class="col-xs-4 p-l-0">
+                <button type="button" class="btn btn-secondary btn-block">임시저장</button>
+              </div>
+              <div class="col-xs-4 p-l-0">
+                <button type="button" class="btn btn-primary btn-block" data-history="back">저장</button>
+              </div>
+            </div>
+          </div>
+
+        </form><!-- 안전검검_등록 및 수정 끝 -->
+      </div>
+
+    </div>
+
+
+    <!-- 부서검색 Modal -->
+    <div id="U_SM_E10000" class="modal">
+       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script src="../assets/js/autosize.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+
+      autosize($('textarea'));
+
+      var swiper = new Swiper('.swiper-container.hd-photoset-01', {
+        pagination: '.hd-photoset-01 .swiper-pagination',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        nextButton: '.hd-photoset-01 .swiper-button-next',
+        prevButton: '.hd-photoset-01 .swiper-button-prev',
+        spaceBetween: 5
+      });
+
+      // 포토스와이프 초기화
+      RC_initPhotoSwipe()
+
+    </script>
+
+
+
+  </body>
+</html>
