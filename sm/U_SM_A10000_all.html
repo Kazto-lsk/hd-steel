@@ -322,77 +322,131 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-4 col-xs-12 col-form-label">조치전</label>
                         <div class="col-sm-8 col-xs-12">
-                          사진출력
+                          <div class="hd-image-uploader">
+                            <div class="row">
+                              <div class="col-xs-4">
+                                <div class="hd-add">
+                                  <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                                </div>
+                              </div>
+                              <div class="col-xs-4">
+                                <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                                <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                              </div>
+                              <div class="col-xs-4">
+                                <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                                <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치구분</label>
-                        <div class="col-sm-10 col-xs-8">
-                          <select class="form-control">
-                            <option>선택</option>
-                            <option selected>즉시조치</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
+                     <!-- 점검내용_등록&수정_상세 시작 -->
+                      <div class="collapse" id="U_SM_A10003">
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치구분</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <select class="form-control">
+                              <option>선택</option>
+                              <option selected>즉시조치</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치분류</label>
-                        <div class="col-sm-10 col-xs-8">
-                          <select class="form-control m-b-05">
-                            <option>선택</option>
-                            <option selected>10대 핵심안전수칙</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
-                          <select class="form-control">
-                            <option>선택</option>
-                            <option selected>안전펜스(방호울) 난간안전펜스(방호울) 난간</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">조치분류</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <select class="form-control m-b-05">
+                              <option>선택</option>
+                              <option selected>10대 핵심안전수칙</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                            <select class="form-control">
+                              <option>선택</option>
+                              <option selected>안전펜스(방호울) 난간안전펜스(방호울) 난간</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">부적합등급</label>
-                        <div class="col-sm-10 col-xs-8">
-                          <select class="form-control">
-                            <option>선택</option>
-                            <option selected>경부적합</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">부적합등급</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <select class="form-control">
+                              <option>선택</option>
+                              <option selected>경부적합</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">예상발생재해</label>
-                        <div class="col-sm-10 col-xs-8">
-                          <select class="form-control">
-                            <option>선택</option>
-                            <option selected>근골격계</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">예상발생재해</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <select class="form-control">
+                              <option>선택</option>
+                              <option selected>근골격계</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">관련업무</label>
-                        <div class="col-sm-10 col-xs-8">
-                          <select class="form-control">
-                            <option>선택</option>
-                            <option selected>시설점검-유해위험기구</option>
-                            <option>..</option>
-                            <option>..</option>
-                          </select>
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">관련업무</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <select class="form-control">
+                              <option>선택</option>
+                              <option selected>시설점검-유해위험기구</option>
+                              <option>..</option>
+                              <option>..</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
+
+                        <div class="form-group row m-t-1">
+                          <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치부서 및 조치자</label>
+                          <div class="col-sm-10 col-xs-8 text-xs-right">
+                              <button class="btn btn-secondary" type="button"><span class="icon icon-search"></span></button>
+                          </div>
+                        </div>
+
+                        <div class="card m-x-0 m-t-0 m-b-1">
+                          <ul class="table-view">
+                            <li class="table-view-cell">세원테크 ᅵ신승원(안전) <button class="btn btn-secondary" type="button">삭제</button></li>
+                            <li class="table-view-cell">보건관리팀 ᅵ 이나경 <button class="btn btn-secondary" type="button">삭제</button></li>
+                            <li class="table-view-cell">틀수강소형정비팀 ᅵ 홍길동 <button class="btn btn-secondary" type="button">삭제</button></li>
+                          </ul>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치요구기한</label>
+                          <div class="col-sm-10 col-xs-8">
+                            <div class="input-group">
+                             <input type="date" class="form-control" value="2016-07-19">
+                             <span class="input-group-addon icon icon-simbol" id="basic-addon2"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div> <!-- 점검내용_등록&수정_상세 시작 -->
 
                     </div>
+
+
+                    <ul class="table-view table-view-full">
+                      <li class="table-view-cell">
+                        <a class="navigate-updown collapsed" data-toggle="collapse" href="#U_SM_A10003">
+                        </a>
+                      </li>
+                    </ul>
+
                   </div><!-- card 끝 -->
 
                   <div class="content-padded">
@@ -474,7 +528,23 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 후</label>
                         <div class="col-sm-8 col-xs-12">
-                          사진출력
+                          <div class="hd-image-uploader">
+                            <div class="row">
+                              <div class="col-xs-4">
+                                <div class="hd-add">
+                                  <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                                </div>
+                              </div>
+                              <div class="col-xs-4">
+                                <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                                <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                              </div>
+                              <div class="col-xs-4">
+                                <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                                <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
