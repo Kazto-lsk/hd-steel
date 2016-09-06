@@ -53,10 +53,23 @@
             <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
           </div>
 
+
+        </div>
+
+        <!-- tab bar -->
+        <nav class="bar bar-tab bar-dark bg-inverse">
+          <a class="tab-item active" role="button" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10002">
+            점검요청사항 등록
+          </a>
+        </nav>
+
+        <!-- main content -->
+        <div class="content">
+
           <!-- 상세검색 -->
            <div id="moreSearch" class="collapse">
 
-             <form class="form-inline">
+             <form class="form-inline p-a-1">
 
                <div class="form-group">
                  <label class="sr-only" for="">요청자</label>
@@ -104,43 +117,31 @@
                 </div>
              </form>
 
-           </div>
-        </div>
+           </div><!-- 상세검색 끝-->
 
-        <!-- tab bar -->
-        <nav class="bar bar-tab bar-dark bg-inverse">
-          <a class="tab-item active" role="button" data-toggle="page" data-start="#U_SM_A10000" data-target="#U_SM_A10002">
-            점검요청사항 등록
-          </a>
-        </nav>
-
-        <!-- main content -->
-        <div class="content">
-
-          <!-- 데모용 -->
-          <ul class="table-view">
-            <li class="table-view-cell">Item 1</li>
-            <li class="table-view-cell">Item 2</li>
-            <li class="table-view-cell table-view-divider">Divider</li>
-            <li class="table-view-cell">Item 3</li>
-            <li class="table-view-cell">Item 4</li>
-            <li class="table-view-cell">Item 1</li>
-            <li class="table-view-cell">Item 2</li>
-            <li class="table-view-cell table-view-divider">Divider</li>
-            <li class="table-view-cell">Item 3</li>
-            <li class="table-view-cell">Item 4</li>
-            <li class="table-view-cell">Item 1</li>
-            <li class="table-view-cell">Item 2</li>
-            <li class="table-view-cell table-view-divider">Divider</li>
-            <li class="table-view-cell">Item 3</li>
-            <li class="table-view-cell">Item 4</li>
-            <li class="table-view-cell">Item 1</li>
-            <li class="table-view-cell">Item 2</li>
-            <li class="table-view-cell table-view-divider">Divider</li>
-            <li class="table-view-cell">Item 3</li>
-            <li class="table-view-cell">Item 4</li>
-          </ul><!-- 데모용 끝 -->
-
+           <!-- 데모용 -->
+           <ul class="table-view">
+             <li class="table-view-cell">Item 1</li>
+             <li class="table-view-cell">Item 2</li>
+             <li class="table-view-cell table-view-divider">Divider</li>
+             <li class="table-view-cell">Item 3</li>
+             <li class="table-view-cell">Item 4</li>
+             <li class="table-view-cell">Item 1</li>
+             <li class="table-view-cell">Item 2</li>
+             <li class="table-view-cell table-view-divider">Divider</li>
+             <li class="table-view-cell">Item 3</li>
+             <li class="table-view-cell">Item 4</li>
+             <li class="table-view-cell">Item 1</li>
+             <li class="table-view-cell">Item 2</li>
+             <li class="table-view-cell table-view-divider">Divider</li>
+             <li class="table-view-cell">Item 3</li>
+             <li class="table-view-cell">Item 4</li>
+             <li class="table-view-cell">Item 1</li>
+             <li class="table-view-cell">Item 2</li>
+             <li class="table-view-cell table-view-divider">Divider</li>
+             <li class="table-view-cell">Item 3</li>
+             <li class="table-view-cell">Item 4</li>
+           </ul><!-- 데모용 끝 -->
 
 
         </div>
@@ -155,18 +156,6 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app.js"></script>
-
-    <script>
-
-      // bar-header-secondary 상세검색
-      $('#moreSearch').on('show.rc.collapse', function () {
-        $('#header-secondary').addClass("hd-expanded")
-      })
-      $('#moreSearch').on('hide.rc.collapse', function () {
-        $('#header-secondary').removeClass("hd-expanded")
-      })
-
-    </script>
 
 
 
