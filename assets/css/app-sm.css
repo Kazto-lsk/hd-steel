@@ -25,3 +25,26 @@
   box-shadow: none;
   border-radius: 0
 }
+
+
+.card .table-view-full {
+  margin-top: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem
+}
+.card .table-view-full .table-view-cell {
+  padding-left: 4.0625rem;
+  padding-right: 4.0625rem
+}
+.card .table-view-full .table-view-cell a {
+  margin-left: -4.0625rem;
+  margin-right: -4.0625rem;
+  text-align: center;
+}
+
+.card .table-view-full .table-view-cell a.collapsed::before {
+  content: "상세정보 등록"
+}
+.card .table-view-full .table-view-cell a::before {
+  content: "간단정보 등록"
+}

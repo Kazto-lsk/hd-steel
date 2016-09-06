@@ -1380,6 +1380,11 @@ hr {
   padding-bottom: .5rem !important;
 }
 
+.m-x-minus1 {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important
+}
+
 .line-clamp-1 {
   line-clamp: 1 !important;
   -webkit-line-clamp: 1 !important;
