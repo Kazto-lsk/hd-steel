@@ -38,15 +38,18 @@
 
     <!-- main content -->
     <div class="content">
-      <div class="content-padded">
 
-        <div class="content-padded">
-      		<button class="btn btn-secondary btn-block" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
-            Launch modal
-          </button>
-      	</div>
+        <form class="content-padded">
+          <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+            <input type="text" class="form-control" placeholder="부서검색" readonly>
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <span class="icon icon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
 
-      </div>
     </div>
 
 
