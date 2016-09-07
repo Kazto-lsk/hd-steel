@@ -49,10 +49,16 @@
       </div>
     </div>
 
-
     <!-- modal 시작 -->
     <div id="U_SM_E10001" class="modal">
     </div>
 
+    <script>
+    $('#U_SM_E10001').on('shown.rc.modal', function () {
+      setTimeout(function() {
+        $('#search_input').focus();
+      }, 50);
+    })
+    </script>
   </body>
 </html>
