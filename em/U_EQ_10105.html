@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>작업오더_확인 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+
+      <a class="icon icon-simbol pull-left"></a>
+
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">기준정보</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        작업오더_확인
+      </button>
+    </div>
+
+    <!-- tab bar -->
+    <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" role="button">
+        설비마스터
+      </a>
+      <a class="tab-item" role="button">
+        작업오더
+      </a>
+      <a class="tab-item" role="button">
+        측정지점
+      </a>
+      <a class="tab-item" role="button">
+        작업표준
+      </a>
+    </nav>
+
+    <!-- main content -->
+    <div class="content">
+
+      <p class="content-padded">
+        <small>점검결과 등록할 작업오더를 선택하세요! <span class="text-primary">생성된 작업오더가 없을 경우</span> 아래 <span class="text-primary">측정지점등록</span> 버튼을 클릭 하세요.</small>
+      </p>
+
+      <div class="card hd-search hd-search-result">
+        <div class="card-header">
+          <ul class="table-view">
+            <li class="table-view-cell collapsed" data-toggle="collapse" href="#more">
+              <a class="navigate-right navigate-custom">
+                <span class="badge badge-outline badge-primary">작업대기</span>
+                <span class="meta meta-code">[37023584]</span>
+                <span class="meta meta-site">JECHUL</span>
+              </a>
+            </li>
+          </ul>
+         </div>
+         <div class="card-block">
+           <div class="card-block-inner">
+             <div class="card-text line-clamp-3">
+               수소 설비 점검(HOIST, 조명등, HEATING & WELDING PANEL, 배수펌프, ANALOG GAUGE, 자동구리스)
+             </div>
+             <div class="text-xs-right m-t-05">
+               <span class="badge badge-inverted badge-default">2016.04.15 ~ 2016.06.29</span>
+             </div>
+
+           </div>
+         </div>
+        <div class="card-footer">
+
+          <dl class="row">
+            <dt class="col-xs-3 spacing-m1">설비번호</dt>
+            <dd class="col-xs-9 m-b-05 line-clamp-3">[D83UT2003401] EAF-B Trans Cold Water Feed Pump</dd>
+            <dt class="col-xs-3">위치코드</dt>
+            <dd class="col-xs-9 m-b-05 line-clamp-3">[D23MS1015]Pneumatic Control Sys' For Laminar Flow Strip Cooling System</dd>
+          </dl>
+
+          <div class="collapse" id="more">
+            <dl class="row">
+              <dt class="col-xs-3 spacing-m1">주보수반</dt>
+              <dd class="col-xs-9 m-b-05 line-clamp-3">[D11EA] 철근제강 전기보수반</dd>
+              <dt class="col-xs-3">정비협력</dt>
+              <dd class="col-xs-9 m-b-05 line-clamp-3">[H4G1AML] 1냉연 PCM 기계-예스엠텍</dd>
+
+              <dt class="col-xs-3 spacing-m1">예방정비</dt>
+              <dd class="col-xs-9 m-b-05 line-clamp-3">[11CC-290] 감속기예방점검(Cross Conveyor MAIN 구동감속기)</dd>
+              <dt class="col-xs-3">작업표준</dt>
+              <dd class="col-xs-9 m-b-05 line-clamp-3">[33M-DES'-1] DESCALING HEADER 교체</dd>
+            </dl>
+            <div class="nav nav-control" style="margin: 12px -20px -12px">
+              <a class="nav-link" role="button">설비상세정보</a>
+              <a class="nav-link" role="button">작업자조회 &등록</a>
+              <a class="nav-link" role="button">점검결과등록</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-padded">
+        <button type="button" class="btn btn-secondary btn-block">
+          측정지점등록
+        </button>
+      </div>
+
+    </div>
+
+    <!-- floating button -->
+    <button type="button" class="btn btn-circle-primary floating floating-br animated bounceIn delay-3" role="button">
+      <span class="icon icon-search"></span>
+    </button>
+
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
