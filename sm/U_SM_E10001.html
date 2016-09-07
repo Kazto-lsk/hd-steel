@@ -40,11 +40,16 @@
     <div class="content">
       <div class="content-padded">
 
-        <div class="content-padded">
-      		<button class="btn btn-secondary btn-block" data-toggle="modal" data-target="#U_SM_E10001" data-template="./template/U_SM_E10001.html">
-            Launch modal
-          </button>
-      	</div>
+        <form class="content-padded">
+          <div class="input-group" data-toggle="modal" data-target="#U_SM_E10001" data-template="./template/U_SM_E10001.html">
+            <input type="text" class="form-control" placeholder="담당자 검색" readonly id="" value="">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <span class="icon icon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
 
       </div>
     </div>
