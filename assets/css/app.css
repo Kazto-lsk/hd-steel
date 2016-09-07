@@ -124,7 +124,7 @@ body {
 }
 
 .bg-white {
-  background-color: #fff
+  background-color: #fff !important
 }
 .btn-primary {
   border-color: #0275d8;

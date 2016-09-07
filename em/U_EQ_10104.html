@@ -32,24 +32,14 @@
   <body class="hd-sub">
 
     <!-- header -->
-    <header class="bar bar-nav bar-dark bg-primary">
-      <a class="icon icon-simbol pull-left"></a>
-      <a class="icon icon-bars pull-right"></a>
-      <a class="icon icon-qrcode pull-right"></a>
-      <a class="icon icon-power-off pull-right"></a>
-      <h1 class="title left">기준정보</h1>
+    <header class="bar bar-nav bg-white">
+      <a class="icon icon-left-nav pull-left" role="button"></a>
+      <h1 class="title">계층구조_ 검색</h1>
     </header>
 
-    <!-- secondary header-->
-    <div class="bar bar-standard bar-header-secondary hd-bar-white">
-      <button class="btn btn-link btn-nav pull-left">
-        <span class="icon icon-left-nav"></span>
-        계층구조_ 검색
-      </button>
-    </div>
 
     <!-- main content -->
-    <div class="content">
+    <div class="content bg-white">
 
       <div class="hd-section">
         <h5 class="hd-heading">위치계층구조목록</h5>
@@ -77,83 +67,51 @@
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d11" data-target="#d1101" >
                       [D1101] 전기로 (Electric Arc Furnace)
                     </a>
+                    <ul id="d1101" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1001] 정련로-B 로체부원료설비
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] 로천정 (Roof & Elbow)
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1101" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio11" name="radio-01" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1001] 정련로-B 로체부원료설비</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio12" name="radio-01" type="radio" class="custom-control-input" checked>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] 로천정 (Roof & Elbow)</span>
-                      </label>
-                    </li>
-                  </div>
 
                   <!-- collapse-02 -->
                   <li class="table-view-cell">
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d11" data-target="#d1102" >
                       [D1102] 전기로 부원료설비 ( Additive Feeding System)
                     </a>
+                    <ul id="d1102" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L8: Roof Panel Item 1
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L8: Roof Panel Item 2
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L8: Roof Panel Item 3
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1102" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio21" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 1</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio22" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 2</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio23" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 3</span>
-                      </label>
-                    </li>
-                  </div>
 
                   <!-- collapse-03 -->
                   <li class="table-view-cell">
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d11" data-target="#d1103" >
                       [D1103] 정렬로 ( Ladle Furnace )
                     </a>
+                    <ul id="d1103" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L9: Roof Panel Item 1
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L9: Roof Panel Item 2
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1001">
+                        [D11EF1002] L9: Roof Panel Item 3
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1103" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio31" name="radio-03" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 1</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio32" name="radio-03" type="radio" class="custom-control-input" checked>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 2</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio33" name="radio-03" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 3</span>
-                      </label>
-                    </li>
-                  </div>
 
                 </ul>
 
@@ -173,83 +131,51 @@
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d12" data-target="#d1201" >
                       [D1201] 전기로 (Electric Arc Furnace)
                     </a>
+                    <ul id="d1101" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1001] 정련로-B 로체부원료설비
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] 로천정 (Roof & Elbow)
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1101" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio11" name="radio-01" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1001] 정련로-B 로체부원료설비</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio12" name="radio-01" type="radio" class="custom-control-input" checked>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] 로천정 (Roof & Elbow)</span>
-                      </label>
-                    </li>
-                  </div>
 
                   <!-- collapse-02 -->
                   <li class="table-view-cell">
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d12" data-target="#d1202" >
                       [D1202] 전기로 부원료설비 ( Additive Feeding System)
                     </a>
+                    <ul id="d1102" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L8: Roof Panel Item 1
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L8: Roof Panel Item 2
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L8: Roof Panel Item 3
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1102" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio21" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 1</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio22" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 2</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio23" name="radio-02" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L8: Roof Panel Item 3</span>
-                      </label>
-                    </li>
-                  </div>
 
                   <!-- collapse-03 -->
                   <li class="table-view-cell">
                     <a class="navigate-updown collapsed" data-toggle="collapse" data-parent="#d12" data-target="#d1203" >
                       [D1203] 정렬로 ( Ladle Furnace )
                     </a>
+                    <ul id="d1103" class="table-view collapse" role="tabpanel" aria-labelledby="">
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L9: Roof Panel Item 1
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L9: Roof Panel Item 2
+                      </li>
+                      <li class="table-view-cell radio" data-code="D11EF1002">
+                        [D11EF1002] L9: Roof Panel Item 3
+                      </li>
+                    </ul>
                   </li>
-                  <div id="d1103" class="collapse" role="tabpanel" aria-labelledby="">
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio31" name="radio-03" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 1</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio32" name="radio-03" type="radio" class="custom-control-input" checked>
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 2</span>
-                      </label>
-                    </li>
-                    <li class="table-view-cell radio">
-                      <label class="custom-control custom-radio">
-                        <input id="radio33" name="radio-03" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">[D11EF1002] L9: Roof Panel Item 3</span>
-                      </label>
-                    </li>
-                  </div>
 
                 </ul>
               </li>
