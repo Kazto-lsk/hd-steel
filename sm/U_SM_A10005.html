@@ -124,7 +124,13 @@
 
     <script>
 
+    var doAutosize = function(){
       autosize($('textarea'));
+    };
+
+    // push bind , http://rc.kimsq.com/controls/push/#push-bind
+    window.addEventListener('push', doAutosize);
+    doAutosize();
 
     </script>
 

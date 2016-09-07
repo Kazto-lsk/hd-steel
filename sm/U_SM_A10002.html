@@ -267,21 +267,13 @@
 
     <script>
 
-
+    var doAutosize = function(){
       autosize($('textarea'));
+    };
 
-      var swiper = new Swiper('.swiper-container.hd-photoset-01', {
-        pagination: '.hd-photoset-01 .swiper-pagination',
-        paginationClickable: true,
-        effect: 'slide',
-        loop: false,
-        nextButton: '.hd-photoset-01 .swiper-button-next',
-        prevButton: '.hd-photoset-01 .swiper-button-prev',
-        spaceBetween: 5
-      });
-
-      // 포토스와이프 초기화
-      RC_initPhotoSwipe()
+    // push bind , http://rc.kimsq.com/controls/push/#push-bind
+    window.addEventListener('push', doAutosize);
+    doAutosize();
 
     </script>
 
