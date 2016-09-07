@@ -31,9 +31,46 @@
   </head>
   <body class="hd-sub">
 
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <a class="icon icon-bars pull-right"></a>
+      <a class="icon icon-qrcode pull-right"></a>
+      <a class="icon icon-power-off pull-right"></a>
+      <h1 class="title left">기준정보</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white">
+      <button class="btn btn-link btn-nav pull-left">
+        <span class="icon icon-left-nav"></span>
+        공통_ 서브페이지
+      </button>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="content-padded">
+
+        <div class="input-group" data-toggle="modal" data-target="#U_EQ_10104">
+          <input type="text" class="form-control" placeholder="계층구조_ 검색" readonly="" id="code" value="">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button">
+              <span class="icon icon-search"></span>
+            </button>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+
+  <!-- 모달 시작 -->
+  <div class="modal" id="U_EQ_10104">
     <!-- header -->
     <header class="bar bar-nav bg-white">
-      <a class="icon icon-left-nav pull-left" role="button"></a>
+      <a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
       <h1 class="title">계층구조_ 검색</h1>
     </header>
 
@@ -190,8 +227,19 @@
           </li>
         </ul>
 
-
     </div>
+  </div><!-- 모달 끝 -->
+
+
+    <script>
+
+      $('#U_EQ_10104 .table-view-cell.radio').tap(function(){
+        $('#U_EQ_10104').modal('hide');
+      });
+
+    </script>
+
+
 
   </body>
 </html>

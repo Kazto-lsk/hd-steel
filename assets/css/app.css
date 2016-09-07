@@ -741,6 +741,10 @@ body {
   border-bottom: .09375rem dotted #d8dce2;
 }
 
+.table-view-cell.radio:active {
+  background-color: #eee
+}
+
 .table-view-cell a {
   line-height: 1.3;
   font-weight: 300;
