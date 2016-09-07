@@ -1652,6 +1652,9 @@ hr {
   display: none
 }
 
+.pswp__button--share {
+  display: none
+}
 
 /*loader*/
 .loader-overlay {
