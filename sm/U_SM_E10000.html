@@ -41,7 +41,7 @@
 
         <form class="content-padded">
           <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
-            <input type="text" class="form-control" placeholder="부서검색" readonly>
+            <input type="text" class="form-control" placeholder="부서검색" readonly id="devp" value="">
             <span class="input-group-btn">
               <button class="btn btn-secondary" type="button">
                 <span class="icon icon-search"></span>
@@ -56,6 +56,25 @@
     <!-- modal 시작 -->
     <div id="U_SM_E10000" class="modal">
     </div>
+
+    <script>
+
+      $('#U_SM_E10000').on('shown.rc.modal', function () {
+        setTimeout(function() {
+          $('#search-input').focus();
+        }, 50);
+      })
+
+      $('#U_SM_E10000').on('hide.rc.modal', function() {
+        var item = $(event.relatedTarget) // Button that triggered the modal
+        var devp = item.data('name') // Extract info from data-* attributes
+
+          var input_group = $(".input-group")
+          // modal.find('.title').text('New message to ' + recipient)
+          // input_group.find('#devp').val(recipient)
+          alert(devp);
+      })
+    </script>
 
   </body>
 </html>
