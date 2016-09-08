@@ -234,9 +234,8 @@
     <script>
 
       $('#U_EQ_10104 .table-view-cell.radio').tap(function(event){
-        var code = $(this).data('code')
-        var parent = $('body')
-        parent.find('.form-control').val(code)
+        var code = $(this).data('code');
+        $('#code').val(code);
 
         $('#U_EQ_10104').modal('hide');
 
