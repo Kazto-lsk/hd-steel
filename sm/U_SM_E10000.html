@@ -40,7 +40,7 @@
     <div class="content">
 
         <form class="content-padded">
-          <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+          <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
             <input type="text" class="form-control" placeholder="부서검색" readonly id="devp" value="">
             <span class="input-group-btn">
               <button class="btn btn-secondary" type="button">
@@ -59,12 +59,23 @@
 
     <script>
 
-      $('#U_SM_E10000').on('shown.rc.modal', function () {
-        setTimeout(function() {
-          $('#search-input').focus();
-        }, 50);
-      })
+    $('#U_SM_E10000').on('show.rc.modal',function(event){
+      $(this).load('./template/U_SM_E10000.html',function(event){
 
+        setTimeout(function() {
+          $('#search_input').focus();
+        }, 50);
+
+        $('#U_SM_E10000 .table-view-cell a').tap(function(event){
+          var name = $(this).data('name')
+          var parent = $('body')
+          parent.find('.form-control').val(name)
+
+          $(this).modal('hide');
+
+        });
+      })
+    });
     </script>
 
   </body>
