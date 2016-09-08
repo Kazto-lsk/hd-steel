@@ -156,7 +156,7 @@ body {
 .badge-default.badge-inverted {
     color: #9a9eac;
     font-weight: 300;
-    font-size: 85%
+    font-size: 90%
 }
 
 
@@ -778,6 +778,22 @@ body {
 
 .table-view.table-view-full .table-view-cell a{
   margin-right: -0.9375rem;
+}
+
+.table-view .table-view-cell.media:active {
+  background-color: #eee
+}
+
+.table-view .table-view-cell.media p {
+  margin-bottom: .3rem
+}
+
+.table-view .table-view-cell.media p .badge-inverted {
+  /*padding-top: .5rem*/
+}
+
+.table-view .table-view-cell.media p .pull-xs-right {
+  padding-top: .3rem
 }
 
 
