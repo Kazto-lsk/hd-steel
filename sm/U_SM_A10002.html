@@ -74,10 +74,10 @@
                     <option>협력사</option>
                     <option>외주</option>
                   </select>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="" value="가스안전팀" readonly>
+                  <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                    <input type="text" class="form-control" placeholder="업체 또는 부서검색" value="" readonly id="team">
                     <span class="input-group-btn">
-                      <button class="btn btn-white" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                      <button class="btn btn-white" type="button">
                         <span class="icon icon-search"></span>
                       </button>
                     </span>
@@ -195,7 +195,7 @@
                 <div class="form-group row m-t-1">
                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치부서 및 조치자</label>
                   <div class="col-sm-10 col-xs-8 text-xs-right">
-                      <button class="btn btn-secondary" type="button"><span class="icon icon-search"></span></button>
+                      <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#U_SM_E10001"><span class="icon icon-search"></span></button>
                   </div>
                 </div>
 
@@ -253,6 +253,11 @@
        <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
     </div>
 
+    <!-- 담당자 검색 Modal -->
+    <div id="U_SM_E10001" class="modal">
+       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
+    </div>
+
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
     <script src="../assets/js/autosize.min.js"></script>
@@ -269,6 +274,42 @@
     window.addEventListener('push', doAutosize);
     doAutosize();
 
+
+    $('#U_SM_E10000').on('show.rc.modal',function(){
+      $(this).load('./template/U_SM_E10000.html',function(){
+
+        setTimeout(function() {
+          $('#search_input').focus();
+        }, 50);
+
+        $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+          var name = $(this).data('name');
+          $('#team').val(name);
+
+          $(this).modal('hide');
+
+        });
+      })
+    });
+
+
+    // 담당자 검색
+    $('#U_SM_E10001').on('show.rc.modal',function(){
+      $(this).load('./template/U_SM_E10001.html',function(){
+
+        setTimeout(function() {
+          $('#search_input').focus();
+        }, 50);
+
+        $('#U_SM_E10001 .table-view-cell a').on('tap',function(){
+          var name = $(this).data('name');
+          // $('#man').val(name);
+
+          $(this).modal('hide');
+
+        });
+      })
+    });
     </script>
 
 
