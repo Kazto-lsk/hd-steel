@@ -82,10 +82,10 @@
                 <div class="form-group">
                   <div class="hd-term">
                     <div class="hd-term-item" style="width: 83%">
-                      <div class="input-group">
+                      <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
                         <input type="text" class="form-control" placeholder="업체 및 부서검색" value="" readonly id="team">
                         <span class="input-group-btn">
-                          <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000">
+                          <button class="btn btn-white p-x-1" type="button">
                             <span class="icon icon-search"></span>
                           </button>
                         </span>
@@ -271,12 +271,12 @@
 
           setTimeout(function() {
             $('#search_input').focus();
-          }, 50);
+          }, 300);
 
           $('#U_SM_E10000 .table-view-cell a').tap(function(event){
             var name = $(this).data('name')
-            var parent = $('body')
-            parent.find('#moreSearch .form-control').val(name)
+            var moreSearch = $('#moreSearch')
+            moreSearch.find('#team').val(name)
 
             $(this).modal('hide');
 
