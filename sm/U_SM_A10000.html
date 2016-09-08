@@ -83,9 +83,9 @@
                   <div class="hd-term">
                     <div class="hd-term-item" style="width: 83%">
                       <div class="input-group">
-                        <input type="text" class="form-control" placeholder="" value="" readonly id="team">
+                        <input type="text" class="form-control" placeholder="업체 및 부서검색" value="" readonly id="team">
                         <span class="input-group-btn">
-                          <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                          <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000">
                             <span class="icon icon-search"></span>
                           </button>
                         </span>
@@ -243,6 +243,8 @@
 
     </div>
 
+    <!-- 업체 및 부서검색 모달 -->
+    <div class="modal" id="U_SM_E10000"></div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
@@ -263,6 +265,24 @@
         $('#header-secondary').removeClass("hd-expanded")
       })
 
+
+      $('#U_SM_E10000').on('show.rc.modal',function(event){
+        $(this).load('./template/U_SM_E10000.html',function(event){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').tap(function(event){
+            var name = $(this).data('name')
+            var parent = $('body')
+            parent.find('#moreSearch .form-control').val(name)
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
     </script>
 
 
