@@ -70,17 +70,11 @@
                  <label class="sr-only" for="">기간검색</label>
                  <div class="hd-term">
                    <div class="hd-term-item" style="width: 47.5%">
-                     <div class="input-group">
-                       <input type="date" class="form-control" value="2016-07-19">
-                       <span class="input-group-addon icon icon-simbol" id="basic-addon2"></span>
-                     </div>
+                      <input type="date" class="form-control" value="2016-07-19">
                    </div>
                    <div class="hd-term-divider"></div>
                    <div class="hd-term-item" style="width: 47.5%">
-                     <div class="input-group">
-                       <input type="date" class="form-control" value="2016-08-19">
-                       <span class="input-group-addon icon icon-simbol" id="basic-addon2"></span>
-                     </div>
+                      <input type="date" class="form-control" value="2016-07-19">
                    </div>
                  </div>
                </div>
@@ -88,10 +82,10 @@
                 <div class="form-group">
                   <div class="hd-term">
                     <div class="hd-term-item" style="width: 83%">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="" value="" readonly id="team">
+                      <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                        <input type="text" class="form-control" placeholder="업체 또는 부서검색" value="" readonly id="team">
                         <span class="input-group-btn">
-                          <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                          <button class="btn btn-white p-x-1" type="button">
                             <span class="icon icon-search"></span>
                           </button>
                         </span>
@@ -967,6 +961,25 @@
       $('#moreSearch').on('hide.rc.collapse', function () {
         $('#header-secondary').removeClass("hd-expanded")
       })
+
+
+      $('#U_SM_E10000').on('show.rc.modal',function(event){
+        $(this).load('./template/U_SM_E10000.html',function(event){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 300);
+
+          $('#U_SM_E10000 .table-view-cell a').tap(function(event){
+            var name = $(this).data('name')
+            var moreSearch = $('#moreSearch')
+            moreSearch.find('#team').val(name)
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
 
       autosize($('textarea'));
 
