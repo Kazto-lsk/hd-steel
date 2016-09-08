@@ -108,7 +108,7 @@
                       <li class="table-view-cell radio" data-code="D11EF1001">
                         [D11EF1001] 정련로-B 로체부원료설비
                       </li>
-                      <li class="table-view-cell radio" data-code="D11EF1001">
+                      <li class="table-view-cell radio" data-code="D11EF1002">
                         [D11EF1002] 로천정 (Roof & Elbow)
                       </li>
                     </ul>
@@ -233,10 +233,14 @@
 
     <script>
 
-      $('#U_EQ_10104 .table-view-cell.radio').tap(function(){
-        $('#U_EQ_10104').modal('hide');
-      });
+      $('#U_EQ_10104 .table-view-cell.radio').tap(function(event){
+        var code = $(this).data('code')
+        var parent = $('body')
+        parent.find('.form-control').val(code)
 
+        $('#U_EQ_10104').modal('hide');
+
+      });
     </script>
 
 
