@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>NFC CODE_검색결과 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">안전관리</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          NFC코드_검색결과
+        </button>
+      </div>
+
+      <div class="content">
+
+        <!-- 점검내용 시작 -->
+        <h5 class="hd-heading no-bullet content-padded">검색결과</h5>
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block">
+            <dl class="row">
+              <dt class="col-xs-3">관리번호</dt>
+              <dd class="col-xs-9">DJ261-M01-020</dd>
+              <dt class="col-xs-3">가스명</dt>
+              <dd class="col-xs-9">알곤(AR)</dd>
+              <dt class="col-xs-3">설치장소</dt>
+              <dd class="col-xs-9">연구소 ᅵ 통합개발센터</dd>
+            </dl>
+          </div>
+        </div><!-- card 끝 -->
+
+        <div class="content-padded">
+          <div class="row btn-group">
+            <div class="col-xs-4">
+              <button type="button" class="btn btn-secondary btn-block">
+                점검결과등록
+              </button>
+            </div>
+            <div class="col-xs-4 p-l-0">
+              <button type="button" class="btn btn-secondary btn-block">
+                시설현황조회
+              </button>
+            </div>
+            <div class="col-xs-4 p-l-0">
+              <button type="button" class="btn btn-secondary btn-block">
+                MSDS조회
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 점검내용 끝 -->
+
+      </div>
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script src="../assets/js/autosize.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var swiper = new Swiper('.swiper-container.hd-photoset-01', {
+        pagination: '.hd-photoset-01 .swiper-pagination',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        nextButton: '.hd-photoset-01 .swiper-button-next',
+        prevButton: '.hd-photoset-01 .swiper-button-prev',
+        spaceBetween: 5
+      });
+
+      // 포토스와이프 초기화
+      RC_initPhotoSwipe()
+
+    </script>
+
+
+
+  </body>
+</html>
