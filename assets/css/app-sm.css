@@ -73,3 +73,9 @@
   display: block;
   margin-top: 1rem
 }
+
+.btn-info {
+  color: #fff;
+  background-color: #3a444d;
+  border-color: #3a444d;
+}
