@@ -1482,6 +1482,9 @@ hr {
   left: 10px;
   right: auto
 }
+.table-view-cell > a > .hd-left-padded {
+  padding-left: 4rem
+}
 .card.hd-search .card-block .badge-inverted {
   margin-top: .625rem
 }
@@ -1489,6 +1492,10 @@ hr {
   padding-right: .3125rem;
   content: "|";
   color: #d8dce2
+}
+.card.hd-search .card-block .badge-inverted + .badge-inverted.none::before {
+  padding-right: .3125rem;
+  content: "";
 }
 
 /*card-hd-infinite-scroll*/

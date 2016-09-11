@@ -48,3 +48,28 @@
 .card .table-view-full .table-view-cell a::before {
   content: "간단정보 등록"
 }
+
+
+.card.hd-search-result .card-block .card-block-inner {
+    padding: .4375rem .3125rem;
+    border-top: 1px dotted #d8dce2;
+    border-bottom: 1px solid #d8dce2;
+}
+
+
+.hd-data-none {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #9a9eac
+}
+
+.hd-data-none img {
+  height: 49px
+}
+.hd-data-none span {
+  display: block;
+  margin-top: 1rem
+}
