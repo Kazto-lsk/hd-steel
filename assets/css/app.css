@@ -1580,6 +1580,13 @@ hr {
     padding-top: 16rem;
 }
 
+.bar-header-secondary.hd-expanded.hd-lg {
+  height: 15rem;
+}
+.bar-header-secondary.hd-expanded.hd-lg ~ .content {
+    padding-top: 19rem;
+}
+
 .bar-header-secondary .input-group {
   top:0
 }
