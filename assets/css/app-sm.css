@@ -157,3 +157,13 @@
   line-height: 35px;
   text-align: center;
 }
+
+.bar-header-secondary ~ .content .nav-control.affix-top {
+  margin-top: -1px;
+  border-bottom: 1px solid #bec2ce
+}
+.bar-header-secondary ~ .content .nav-control.affix {
+  top: 82px;
+  border-bottom: none;
+  box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+}

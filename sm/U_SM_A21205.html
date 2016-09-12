@@ -53,10 +53,8 @@
           </ul>
         </div>
 
-        <div class="nav nav-control affix-top" id="myAfix">
-
+        <div class="nav nav-control affix-top" id="tabs">
         </div>
-
 
         <div class="swiper-container hd-swiper-01">
           <div class="swiper-wrapper">
@@ -306,15 +304,15 @@
 
     <script>
 
-      $('#myAfix').scroll({
+      $('#tabs').scroll({
         type: 'affix',
         offset:{top:70}
       });
       // apply animation
-      $('#myAfix').on('affixed.rc.scroll',function(){
+      $('#tabs').on('affixed.rc.scroll',function(){
         $(this).addClass('animated fadeInDown')
       })
-      $('#myAfix').on('affixed-top.rc.scroll',function(){
+      $('#tabs').on('affixed-top.rc.scroll',function(){
         $(this).removeClass('animated fadeInDown')
       })
 
