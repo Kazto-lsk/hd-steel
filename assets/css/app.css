@@ -1514,10 +1514,16 @@ hr {
 /*filter*/
 
 .hd-filter.table {
+  margin-bottom: .5rem;
   background-color: #fff;
   text-align: center;
   color: #626470;
+  z-index: 9
 }
+.hd-filter.table.affix {
+  top: 81px
+}
+
 .hd-filter.table td {
   padding: 0.625rem;
   cursor: pointer;
