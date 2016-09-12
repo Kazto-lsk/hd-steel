@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <title>조치사항_등록&수정 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -58,100 +58,40 @@
 
         <form>
 
-          <!-- 점검기본정보 시작 -->
+          <!-- 조치기본정보 시작 -->
           <div class="card hd-search hd-search-result p-a-1">
             <div class="card-block p-a-0">
-              <h4>점검기본정보</h4>
-
+              <h4>조치기본정보</h4>
 
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">결함번호</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">점검자</label>
+                <label class="col-sm-2 col-xs-4 col-form-label">조치자</label>
                 <div class="col-sm-10 col-xs-8">
                   <input type="text" class="form-control" value="">
                 </div>
               </div>
 
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">점검일</label>
+                <label class="col-sm-2 col-xs-4 col-form-label">조치일</label>
                 <div class="col-sm-10 col-xs-8">
                   <input type="date" class="form-control" value="2016-08-19">
                 </div>
               </div>
 
-              <hr>
-
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">설비명</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">위치</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">가스명</label>
-                <div class="col-sm-10 col-xs-8">
-                  <select class="form-control">
-                    <option>선택</option>
-                    <option selected>￼냉각수 (Cool Water)</option>
-                    <option>..</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">품목</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">사이즈</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-
-            </div>
-          </div><!-- card 끝 -->
-
-          <!-- 점검결과정보 시작 -->
-          <div class="card hd-search hd-search-result p-a-1">
-            <div class="card-block p-a-0">
-              <h4>점검결과정보</h4>
-
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label required">결함유형</label>
-                <div class="col-sm-10 col-xs-8">
-                  <select class="form-control">
-                    <option>선택</option>
-                    <option selected >규격</option>
-                    <option>..</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label for="" class="col-sm-4 col-xs-12 col-form-label">결함내용</label>
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">결함대책</label>
                 <div class="col-sm-8 col-xs-12">
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
               </div>
 
               <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">조치계획</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row m-b-1">
                 <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 전</label>
                 <div class="col-sm-8 col-xs-12">
                   <div class="hd-image-uploader">
@@ -171,6 +111,25 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">조치여부</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>미완료</option>
+                    <option>완료</option>
+                    <option>현장조치완료</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label">계획승인자</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
                 </div>
               </div>
 
@@ -207,27 +166,29 @@
 
     <script>
 
-    var doAutosize = function(){
-      autosize($('textarea'));
-    };
+      var doAutosize = function(){
+        autosize($('textarea'));
+      };
 
+      var doAfix = function(){
+        $('#myAfix').scroll({
+          type: 'affix',
+          offset:{top:125}
+        });
+        // apply animation
+        $('#myAfix').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#myAfix').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
 
-    $('#myAfix').scroll({
-      type: 'affix',
-      offset:{top:125}
-    });
-    // apply animation
-    $('#myAfix').on('affixed.rc.scroll',function(){
-      $(this).addClass('animated fadeInDown')
-    })
-    $('#myAfix').on('affixed-top.rc.scroll',function(){
-      $(this).removeClass('animated fadeInDown')
-    })
-
-
-    // push bind , http://rc.kimsq.com/controls/push/#push-bind
-    window.addEventListener('push', doAutosize);
-    doAutosize();
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAutosize);
+      window.addEventListener('push', doAfix);
+      doAutosize();
+      doAfix();
 
     </script>
 

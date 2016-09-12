@@ -209,27 +209,29 @@
 
     <script>
 
-    var doAutosize = function(){
-      autosize($('textarea'));
-    };
+      var doAutosize = function(){
+        autosize($('textarea'));
+      };
 
+      var doAfix = function(){
+        $('#myAfix').scroll({
+          type: 'affix',
+          offset:{top:125}
+        });
+        // apply animation
+        $('#myAfix').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#myAfix').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
 
-    $('#myAfix').scroll({
-      type: 'affix',
-      offset:{top:125}
-    });
-    // apply animation
-    $('#myAfix').on('affixed.rc.scroll',function(){
-      $(this).addClass('animated fadeInDown')
-    })
-    $('#myAfix').on('affixed-top.rc.scroll',function(){
-      $(this).removeClass('animated fadeInDown')
-    })
-
-
-    // push bind , http://rc.kimsq.com/controls/push/#push-bind
-    window.addEventListener('push', doAutosize);
-    doAutosize();
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAutosize);
+      window.addEventListener('push', doAfix);
+      doAutosize();
+      doAfix();
 
     </script>
 
