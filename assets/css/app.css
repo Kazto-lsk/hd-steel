@@ -1521,7 +1521,9 @@ hr {
   z-index: 9
 }
 .hd-filter.table.affix {
-  top: 81px
+  top: 81px;
+  box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+  border-bottom: none
 }
 
 .hd-filter.table td {
@@ -1535,6 +1537,10 @@ hr {
   background-color: #eee
 }
 
+.hd-filter.table.affix td {
+  border-bottom: none
+}
+
 .hd-filter.table td .badge-inverted::before {
   content: "("
 }
@@ -1543,6 +1549,7 @@ hr {
 }
 .hd-filter.table .table-active {
   background-color: #1c74d5;
+  border-color: #1c74d5;
   color: #fff
 }
 .hd-filter.table .table-active .badge-inverted {
@@ -1555,8 +1562,9 @@ hr {
   background: #fff;
 }
 .bar-header-secondary.hd-expanded {
-  height: 13rem;
+  height: 12rem;
   box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+  border-bottom: none
 }
 .bar-header-secondary.hd-expanded ~ .content {
     padding-top: 16rem;

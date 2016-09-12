@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>소화기_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 안전점검_조회목록 시작 -->
+      <div id="U_SM_A10000" class="page center">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-power-off pull-right"></a>
+          <h1 class="title left">가스시설</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
+
+          <div class="clearfix">
+            <button class="btn btn-link btn-nav pull-left">
+              <span class="icon icon-left-nav"></span>
+              소화기_조회목록
+            </button>
+            <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          </div>
+
+          <!-- 상세검색 -->
+           <div id="moreSearch" class="collapse">
+
+             <form class="form-inline">
+
+               <div class="form-group">
+                 <label class="sr-only" for="">요청자</label>
+                 <select class="form-control">
+                   <option>점검구분</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                   <option>5</option>
+                 </select>
+               </div>
+
+               <div class="form-group">
+                 <label class="sr-only" for="">기간검색</label>
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 47.5%">
+                    <input type="date" class="form-control" value="2016-08-19">
+                   </div>
+                   <div class="hd-term-divider"></div>
+                   <div class="hd-term-item" style="width: 47.5%">
+                    <input type="date" class="form-control" value="2016-08-19">
+                   </div>
+                 </div>
+               </div>
+
+                <div class="form-group">
+                  <div class="hd-term">
+                    <div class="hd-term-item" style="width: 83%">
+                      <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                        <input type="text" class="form-control" placeholder="점검부서" value="" readonly id="team">
+                        <span class="input-group-btn">
+                          <button class="btn btn-white p-x-1" type="button">
+                            <span class="icon icon-search"></span>
+                          </button>
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="hd-term-item p-l-05" style="width: 17%">
+                      <button class="btn btn-primary btn-block" type="submit">
+                        조회
+                      </button>
+                    </div>
+                  </div>
+                </div>
+             </form>
+
+           </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content">
+
+
+          <p class="content-padded">
+            소화기점검 조회목록
+          </p>
+
+          <table class="table table-bordered hd-filter" id="filter">
+            <tbody>
+              <tr>
+                <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
+                <td>등록<br><span class="badge badge-default badge-inverted">5</span></td>
+                <td>승인<br><span class="badge badge-default badge-inverted">2</span></td>
+                <td>반려<br><span class="badge badge-default badge-inverted">3</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="hd-data-none" style="height:70%">
+            <div>
+              <img src="../assets/img/data-none.png" alt="">
+              <span>검색한 결과가 없습니다.</span>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- 조회목록 끝 -->
+
+
+    </div>
+
+    <!-- 업체 및 부서검색 모달 -->
+    <div class="modal" id="U_SM_E10000"></div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+
+      // filter affix
+      $('#filter').scroll({
+        type: 'affix',
+        offset:{top:90}
+      });
+      // apply animation
+      $('#filter').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#filter').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+    </script>
+
+
+
+  </body>
+</html>

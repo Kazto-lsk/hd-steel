@@ -60,27 +60,13 @@
 
                <div class="form-group">
                  <label class="sr-only" for="">요청자</label>
-                 <div class="hd-term">
-                   <div class="hd-term-item" style="width: 47.5%">
-                     <select class="form-control">
-                       <option>소결</option>
-                       <option>2</option>
-                       <option>3</option>
-                       <option>4</option>
-                       <option>5</option>
-                     </select>
-                   </div>
-                   <div class="hd-term-divider none"></div>
-                   <div class="hd-term-item" style="width: 47.5%">
-                     <select class="form-control">
-                       <option>12소결</option>
-                       <option>2</option>
-                       <option>3</option>
-                       <option>4</option>
-                       <option>5</option>
-                     </select>
-                   </div>
-                 </div>
+                 <select class="form-control">
+                   <option>점검구분</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                   <option>5</option>
+                 </select>
                </div>
 
                <div class="form-group">
@@ -100,7 +86,7 @@
                   <div class="hd-term">
                     <div class="hd-term-item" style="width: 83%">
                       <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
-                        <input type="text" class="form-control" placeholder="운영부서" value="" readonly id="team">
+                        <input type="text" class="form-control" placeholder="점검부서" value="" readonly id="team">
                         <span class="input-group-btn">
                           <button class="btn btn-white p-x-1" type="button">
                             <span class="icon icon-search"></span>
@@ -120,13 +106,6 @@
 
            </div>
         </div>
-
-        <!-- tab bar -->
-        <nav class="bar bar-tab bar-dark bg-inverse">
-          <a class="tab-item active" role="button">
-            계획등록
-          </a>
-        </nav>
 
         <!-- main content -->
         <div class="content">
@@ -326,7 +305,7 @@
           </div>
 
         </div>
-      </div><!-- 안전점검_조회목록 끝 -->
+      </div><!-- 조회목록 끝 -->
 
 
     </div>
@@ -344,7 +323,7 @@
       // filter affix
       $('#filter').scroll({
         type: 'affix',
-        offset:{top:125}
+        offset:{top:90}
       });
       // apply animation
       $('#filter').on('affixed.rc.scroll',function(){
