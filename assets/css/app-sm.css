@@ -79,3 +79,20 @@
   background-color: #3a444d;
   border-color: #3a444d;
 }
+
+
+.card {
+  margin: .625rem;
+}
+
+.card .list-inline .list-inline-item + .list-inline-item::before {
+  padding-right: .3125rem;
+  content: "|";
+  color: #d8dce2;
+}
+
+.card.hd-complete,
+.card.hd-complete .card-header,
+.card.hd-complete .table-view {
+  background-color: transparent;
+}

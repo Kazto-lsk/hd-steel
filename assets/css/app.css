@@ -583,7 +583,8 @@ body {
 .card.hd-search-result .card-header .meta {
   font-size: .875rem
 }
-.card.hd-search-result .card-header .meta-site {
+.card.hd-search-result .card-header .meta-site,
+.card.hd-search-result .card-block .meta-site {
   position: absolute;
   left: 0;
   right: 0;

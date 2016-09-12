@@ -124,7 +124,7 @@
         <!-- tab bar -->
         <nav class="bar bar-tab bar-dark bg-inverse">
           <a class="tab-item active" role="button">
-            계획등록
+            법정검사 결과등록
           </a>
         </nav>
 
@@ -132,9 +132,18 @@
         <div class="content">
 
 
-          <p class="content-padded">
-            법정검사 점검목록
-          </p>
+          <div class="card">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <ul class="list-inline">
+                  <li class="list-inline-item">소결</li>
+                  <li class="list-inline-item">1,2 소결</li>
+                </ul>
+                <span class="badge badge-default badge-inverted pull-xs-right">압력용기</span>
+
+              </li>
+            </ul>
+          </div>
 
           <div class="card hd-search hd-search-result">
             <div class="card-header">
@@ -142,21 +151,17 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">불합격</span>
-                    <span class="hd-left-padded">압력용기</span>
+                    <span class="badge badge-outline badge-primary hd-left">미완료</span>
+                    <span class="meta-site">규격</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
                <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-inverted">소결</span><span class="badge badge-inverted">소성부</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">2020.01.01</span>
-               </div>
-               <div class="card-block-inner borderBottomNone">
-                  <span class="badge badge-default badge-inverted">완료 <span class="text-primary">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">미완료 <span class="text-danger">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">현장조치 <span class="">0</span></span>
+                  <span class="badge badge-default badge-inverted">12345679421</span>
+                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
+                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
                </div>
              </div>
           </div>
@@ -167,21 +172,38 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">불합격</span>
-                    <span class="hd-left-padded">저장탱크</span>
+                    <span class="badge badge-outline badge-primary hd-left">완료</span>
+                    <span class="meta-site">누설</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
                <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-inverted">소결</span><span class="badge badge-inverted">소성부</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">2020.01.01</span>
+                  <span class="badge badge-default badge-inverted">12345679421</span>
+                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
+                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
                </div>
-               <div class="card-block-inner borderBottomNone">
-                  <span class="badge badge-default badge-inverted">완료 <span class="text-primary">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">미완료 <span class="text-danger">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">현장조치 <span class="">0</span></span>
+             </div>
+          </div>
+
+          <div class="card hd-search hd-search-result hd-complete">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">현장조치완료</span>
+                    <span class="meta-site">마감</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
+                  <span class="badge badge-default badge-inverted">12345679421</span>
+                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
+                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
                </div>
              </div>
           </div>
@@ -192,21 +214,17 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">불합격</span>
-                    <span class="hd-left-padded">안전밸브</span>
+                    <span class="badge badge-outline badge-primary hd-left">미완료</span>
+                    <span class="meta-site">설치</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
                <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-inverted">소결</span><span class="badge badge-inverted">소성부</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">2020.01.01</span>
-               </div>
-               <div class="card-block-inner borderBottomNone">
-                  <span class="badge badge-default badge-inverted">완료 <span class="text-primary">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">미완료 <span class="text-danger">0</span></span>&nbsp;
-                  <span class="badge badge-default badge-inverted none">현장조치 <span class="">0</span></span>
+                  <span class="badge badge-default badge-inverted">12345679421</span>
+                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
+                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
                </div>
              </div>
           </div>
