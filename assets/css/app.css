@@ -1425,6 +1425,16 @@ hr {
 .p-l-05 {
   padding-left: .5rem !important;
 }
+.p-a-05 {
+  padding: .5rem !important;
+}
+.p-x-05 {
+  padding-left: .5rem !important;
+  padding-right: .5rem !important;
+}
+.p-t-05 {
+  padding-top: .5rem !important;
+}
 .p-b-05 {
   padding-bottom: .5rem !important;
 }

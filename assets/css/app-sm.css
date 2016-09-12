@@ -126,3 +126,34 @@
   z-index: 9;
   border-bottom: 1px solid #bec2ce
 }
+
+/*hd-attach*/
+.hd-attach .media-object {
+  height: 19px
+}
+.hd-attach .media a,
+.hd-attach .media a:active,
+.hd-attach .media a:focus {
+  color: #1c74d5
+}
+
+/*hd-label*/
+.hd-label .btn {
+  position: relative;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+  background-color: #d5e6ff;
+  text-align: left;
+}
+.hd-label .btn-block .badge {
+  position: absolute;
+  top:2px;
+  bottom:0;
+  right: 0;
+  width: 30px;
+  height: 40px;
+  margin-right: 0;
+  background-color: #c4dcff;
+  line-height: 35px;
+  text-align: center;
+}
