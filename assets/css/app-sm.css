@@ -119,7 +119,7 @@
 }
 .nav-control .nav-link.active {
   background-color: #1c74d5;
-  color: #fff;
+  color: #fff !important;
 }
 
 .affix.nav-control {
