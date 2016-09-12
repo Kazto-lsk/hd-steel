@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- 점검내용_등록&수정 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-left-nav pull-left" role="button"></a>
+        <h1 class="title left">법정검사_등록&수정</h1>
+      </header>
+
+      <div class="content">
+
+        <div class="card">
+          <ul class="table-view">
+            <li class="table-view-cell">
+              <ul class="list-inline">
+                <li class="list-inline-item">소결</li>
+                <li class="list-inline-item">1,2 소결</li>
+              </ul>
+              <span class="badge badge-default badge-inverted pull-xs-right">압력용기</span>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav nav-control affix-top" id="myAfix">
+          <a class="nav-link" role="button" href="U_SM_A21202.html" data-control="push" data-transition="fade">점검내용</a>
+          <a class="nav-link active" role="button" href="U_SM_A21203.html" data-control="push" data-transition="fade">조치사항</a>
+          <a class="nav-link" role="button" href="U_SM_A21204.html" data-control="push" data-transition="fade">결과확인</a>
+        </div>
+
+        <form>
+
+          <!-- 점검기본정보 시작 -->
+          <div class="card hd-search hd-search-result p-a-1">
+            <div class="card-block p-a-0">
+              <h4>점검기본정보</h4>
+
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">결함번호</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">점검자</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">점검일</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="date" class="form-control" value="2016-08-19">
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">설비명</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">위치</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label">가스명</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected>￼냉각수 (Cool Water)</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label">품목</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label">사이즈</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+            </div>
+          </div><!-- card 끝 -->
+
+          <!-- 점검결과정보 시작 -->
+          <div class="card hd-search hd-search-result p-a-1">
+            <div class="card-block p-a-0">
+              <h4>점검결과정보</h4>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">결함유형</label>
+                <div class="col-sm-10 col-xs-8">
+                  <select class="form-control">
+                    <option>선택</option>
+                    <option selected >규격</option>
+                    <option>..</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">결함내용</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 전</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="hd-image-uploader">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <div class="hd-add">
+                          <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                        <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                      </div>
+                      <div class="col-xs-4">
+                        <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                        <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- card 끝 -->
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-secondary btn-block">
+                  취소
+                </button>
+              </div>
+              <div class="col-xs-6 p-l-0">
+                <button type="button" class="btn btn-primary btn-block">
+                  저장
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </form><!-- 조치사항_등록 및 수정 끝 -->
+
+      </div>
+
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/autosize.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+    var doAutosize = function(){
+      autosize($('textarea'));
+    };
+
+
+    $('#myAfix').scroll({
+      type: 'affix',
+      offset:{top:125}
+    });
+    // apply animation
+    $('#myAfix').on('affixed.rc.scroll',function(){
+      $(this).addClass('animated fadeInDown')
+    })
+    $('#myAfix').on('affixed-top.rc.scroll',function(){
+      $(this).removeClass('animated fadeInDown')
+    })
+
+
+    // push bind , http://rc.kimsq.com/controls/push/#push-bind
+    window.addEventListener('push', doAutosize);
+    doAutosize();
+
+    </script>
+
+
+
+  </body>
+</html>
