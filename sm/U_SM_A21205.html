@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <title>법정검사_상세 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -32,7 +32,7 @@
       <!-- 점검내용_등록&수정 시작 -->
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-left-nav pull-left" role="button"></a>
-        <h1 class="title left">법정검사_등록&수정</h1>
+        <h1 class="title left">법정검사_상세</h1>
       </header>
 
       <div class="content">
@@ -51,59 +51,121 @@
         </div>
 
         <div class="nav nav-control affix-top" id="myAfix">
-          <a class="nav-link" role="button" href="U_SM_A21202.html" data-control="push" data-transition="fade">점검내용</a>
+          <a class="nav-link active" role="button" href="U_SM_A21202.html" data-control="push" data-transition="fade">점검내용</a>
           <a class="nav-link" role="button" href="U_SM_A21203.html" data-control="push" data-transition="fade">조치사항</a>
-          <a class="nav-link active" role="button" href="U_SM_A21204.html" data-control="push" data-transition="fade">결과확인</a>
+          <a class="nav-link" role="button" href="U_SM_A21204.html" data-control="push" data-transition="fade">결과확인</a>
         </div>
 
-        <form>
 
-          <!-- 점검기본정보 시작 -->
-          <div class="card hd-search hd-search-result p-a-1">
-            <div class="card-block p-a-0">
-              <h4>결과확인정보</h4>
+        <!-- 점검내용 시작 -->
 
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block p-a-0">
+            <h4>점검기본정보</h4>
+            <div class="card-block">
+              <dl class="row">
+                <dt class="col-xs-3">결함번호</dt>
+                <dd class="col-xs-9">124536549412</dd>
+                <dt class="col-xs-3">점검자</dt>
+                <dd class="col-xs-9">이나경</dd>
+                <dt class="col-xs-3">점검일</dt>
+                <dd class="col-xs-9">2016.07.07</dd>
+              </dl>
 
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">계획승인자</label>
-                <div class="col-sm-10 col-xs-8">
-                  <div class="form-control-static">홍길동</div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">확인자</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
+              <hr class="m-y-1">
 
-              <div class="form-group row">
-                <label for="" class="col-sm-4 col-xs-12 col-form-label">비고</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3"></textarea>
-                </div>
-              </div>
-
-            </div>
-          </div><!-- card 끝 -->
-
-
-          <div class="content-padded">
-            <div class="row">
-              <div class="col-xs-6">
-                <button type="button" class="btn btn-secondary btn-block">
-                  취소
-                </button>
-              </div>
-              <div class="col-xs-6 p-l-0">
-                <button type="button" class="btn btn-primary btn-block">
-                  저장
-                </button>
-              </div>
+              <dl class="row">
+                <dt class="col-xs-3">설비명</dt>
+                <dd class="col-xs-9 line-clamp-3">
+                  설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다. 설비명입니다.
+                </dd>
+                <dt class="col-xs-3">위치</dt>
+                <dd class="col-xs-9 line-clamp-3">
+                  위치입니다. 위치입니다. 위치입니다.위치입니다. 위치입니다. 위치입니다.위치입니다. 위치입니다. 위치입니다.
+                </dd>
+                <dt class="col-xs-3">가스명</dt>
+                <dd class="col-xs-9">냉각수 (Cool Water )</dd>
+                <dt class="col-xs-3">품목</dt>
+                <dd class="col-xs-9">품목입니다</dd>
+                <dt class="col-xs-3">사이즈</dt>
+                <dd class="col-xs-9">사이즈입니다.</dd>
+              </dl>
             </div>
           </div>
+        </div><!-- card 끝 -->
 
-        </form><!-- 조치사항_등록 및 수정 끝 -->
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block p-a-0">
+            <h4>점검결과정보</h4>
+            <div class="card-block">
+
+              <dl class="row">
+                <dt class="col-xs-3">결함유형</dt>
+                <dd class="col-xs-9">규격</dd>
+                <dt class="col-xs-3">결함내용</dt>
+                <dd class="col-xs-9 line-clamp-3">
+                  결함내용입니다. 결함내용입니다. 결함내용입니다. 결함내용입니다. 결함내용입니다. 결함내용입니다. 결함내용입니다.
+                </dd>
+
+                <dt class="m-b-1">조치 전</dt>
+                <dd>
+                  <div class="swiper-container hd-photoset hd-photoset-01">
+
+                    <div class="swiper-wrapper" data-extension="photoswipe">
+                      <figure class="figure swiper-slide">
+                        <a href="../assets/img/photo-01.png" data-size="1200x640">
+                          <img src="../assets/img/photo-01.png" class="img-fluid" alt="">
+                        </a>
+                        <figcaption class="figure-caption">첫번째 사진캡션 입니다.</figcaption>
+                      </figure>
+
+                      <figure class="figure swiper-slide">
+                        <a href="../assets/img/photo-01.png" data-size="1200x640">
+                          <img src="../assets/img/photo-01.png" class="img-fluid" alt="">
+                        </a>
+                        <figcaption class="figure-caption">두번째 사진캡션 입니다.</figcaption>
+                      </figure>
+
+                      <figure class="figure swiper-slide">
+                        <a href="../assets/img/photo-01.png" data-size="1200x640">
+                          <img src="../assets/img/photo-01.png" class="img-fluid" alt="">
+                        </a>
+                        <figcaption class="figure-caption">세번째 사진캡션 입니다.</figcaption>
+                      </figure>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"><span class="icon icon-left-nav"></span></div>
+                    <div class="swiper-button-next"><span class="icon icon-right-nav"></span></div>
+                  </div>
+
+                </dd>
+
+
+              </dl>
+            </div>
+          </div>
+        </div><!-- card 끝 -->
+
+
+
+        <div class="content-padded">
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-secondary btn-block">
+                삭제
+              </button>
+            </div>
+            <div class="col-xs-6 p-l-0">
+              <button type="button" class="btn btn-secondary btn-block">
+                수정
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 조치사항_등록 및 수정 끝 -->
 
       </div>
 
