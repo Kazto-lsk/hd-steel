@@ -406,21 +406,17 @@
 
     <script>
 
-      var doAfix = function(){
-        $('#myAfix').scroll({
-          type: 'affix',
-          offset:{top:125}
-        });
-        // apply animation
-        $('#myAfix').on('affixed.rc.scroll',function(){
-          $(this).addClass('animated fadeInDown')
-        })
-        $('#myAfix').on('affixed-top.rc.scroll',function(){
-          $(this).removeClass('animated fadeInDown')
-        })
-      };
-
-      doAfix();
+      $('#myAfix').scroll({
+        type: 'affix',
+        offset:{top:125}
+      });
+      // apply animation
+      $('#myAfix').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#myAfix').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
 
 
       // Initialize Swiper
@@ -445,7 +441,7 @@
         }
       });
 
-      var swiper = new Swiper('.swiper-container.hd-photoset-01', {
+      var swiper = new Swiper('.swiper-container .hd-photoset-01', {
         pagination: '.hd-photoset-01 .swiper-pagination',
         paginationClickable: true,
         effect: 'slide',
@@ -455,15 +451,6 @@
         spaceBetween: 5
       });
 
-      var swiper = new Swiper('.swiper-container.hd-photoset-02', {
-        pagination: '.hd-photoset-02 .swiper-pagination',
-        paginationClickable: true,
-        effect: 'slide',
-        loop: false,
-        nextButton: '.hd-photoset-02 .swiper-button-next',
-        prevButton: '.hd-photoset-02 .swiper-button-prev',
-        spaceBetween: 5
-      });
 
       // 포토스와이프 초기화
       RC_initPhotoSwipe()
