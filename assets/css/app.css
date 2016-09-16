@@ -804,7 +804,9 @@ body {
   padding-left: 0.6rem;
   border-radius: 10rem;
   background-color: transparent;
-  font-weight: 300
+  font-weight: 300;
+  min-width: 3.375rem;
+  text-align: center;
 }
 .badge-primary.badge-outline {
   color: #74a9e3;
@@ -959,11 +961,16 @@ input.form-control {
 .hd-heading.no-bullet:before {
   content: ""
 }
-
 h5.hd-heading {
   margin-top: 1.5rem;
   font-size: 1rem;
 }
+.hd-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 .bar-header-secondary ~ .content {
   padding-top: 5.2rem;
@@ -1585,6 +1592,13 @@ hr {
 }
 .bar-header-secondary.hd-expanded.hd-lg ~ .content {
     padding-top: 19rem;
+}
+
+.bar-header-secondary.hd-expanded.hd-sm {
+  height: 9rem;
+}
+.bar-header-secondary.hd-expanded.hd-sm ~ .content {
+    padding-top: 13rem;
 }
 
 .bar-header-secondary .input-group {
