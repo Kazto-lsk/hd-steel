@@ -266,3 +266,16 @@
 .card.hd-data-none .media-body {
   line-height: 42px
 }
+
+/*fomrs*/
+.custom-control {
+  padding-left: 1.8rem;
+}
+.custom-control + .custom-control {
+  margin-left: .5rem;
+}
+.custom-control-indicator {
+  top: -.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}

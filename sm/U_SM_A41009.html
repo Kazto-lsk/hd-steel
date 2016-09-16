@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>점검 및 개선활동_상세 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">고위험제거활동</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          무계획점검활동_등록&수정
+        </button>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <p class="content-padded">
+          점검결과정보
+        </p>
+
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block p-a-0">
+
+            <div class="form-group row">
+              <label class="col-sm-2 col-xs-4 col-form-label required">상세위치</label>
+              <div class="col-sm-10 col-xs-8">
+                <input type="text" class="form-control" value="">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-4 col-xs-12 col-form-label required">점검내용</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" rows="3" placeholder="※ 위험/위반내용"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-4 col-xs-12 col-form-label">개선대책</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" rows="3" placeholder="※ 즉시조치내용"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 전</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="hd-image-uploader">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="hd-add">
+                        <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                      <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                    </div>
+                    <div class="col-xs-4">
+                      <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                      <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /.card -->
+
+        <div class="content-padded">
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-secondary btn-block">
+                취소
+              </button>
+            </div>
+            <div class="col-xs-6 p-l-0">
+              <button type="button" class="btn btn-primary btn-block">
+                저장
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/autosize.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+      autosize($('textarea'));
+    </script>
+
+  </body>
+</html>

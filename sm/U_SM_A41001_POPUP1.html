@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>점검 및 개선활동_상세 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-power-off pull-right"></a>
+        <h1 class="title left">고위험제거활동</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          점검 및 개선활동_상세목록
+        </button>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+          <button class="btn btn-secondary btn-block">Launch modal </button>
+        </div>
+
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+    <!-- modal 시작 -->
+    <div id="U_SM_A41001_POPUP1" class="modal">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      $('.btn').tap(function(){
+        $('#U_SM_A41001_POPUP1').modal('show');
+      });
+
+      $('#U_SM_A41001_POPUP1').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_A41001_POPUP1.html',function(){
+
+          $('#save').on('tap',function(){
+            $(this).modal('hide');
+            $.notify("점검장소가 등록 되었습니다.");
+          });
+        })
+      });
+
+    </script>
+  </body>
+</html>

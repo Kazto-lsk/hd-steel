@@ -82,7 +82,9 @@
 
             <div class="hd-section m-t-1">
               <h5 class="hd-heading no-bullet pull-xs-left m-t-05">점검장소</h5>
-              <button type="button" class="btn btn-secondary pull-xs-right">점검장소등록</button>
+              <button type="button" class="btn btn-secondary pull-xs-right" data-toggle="modal" data-target="#U_SM_A41001_POPUP1">
+                점검장소등록
+              </button>
             </div>
 
 
@@ -243,9 +245,26 @@
 
     </div><!-- /.snap-content -->
 
+    <!-- modal 시작 -->
+    <div id="U_SM_A41001_POPUP1" class="modal">
+    </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      $('#U_SM_A41001_POPUP1').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_A41001_POPUP1.html',function(){
+
+          $('#save').on('tap',function(){
+            $(this).modal('hide');
+            $.notify("점검장소가 등록 되었습니다.");
+          });
+        })
+      });
+
+    </script>
 
   </body>
 </html>

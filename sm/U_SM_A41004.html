@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>점검 및 개선활동_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- 점검내용_등록&수정 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-left-nav pull-left" role="button"></a>
+        <h1 class="title left">점검 및 개선활동_등록&수정</h1>
+      </header>
+
+      <div class="content">
+
+
+        <div class="card">
+          <div class="card-block text-xs-center">
+            5구역 2냉연공장<br>기간설비 (RCL/CPL/DCS/HBS/ICS)
+          </div>
+        </div>
+
+
+        <div class="nav nav-control affix-top" id="myAfix">
+          <a class="nav-link" role="button" href="U_SM_A41008.html" data-control="push" data-transition="fade">점검내용</a>
+          <a class="nav-link active" role="button" href="U_SM_A41003.html" data-control="push" data-transition="fade">조치사항</a>
+          <a class="nav-link" role="button" href="U_SM_A41004.html" data-control="push" data-transition="fade">결과확인</a>
+        </div>
+
+        <form>
+
+          <!-- 점검결과정보 시작 -->
+          <div class="card hd-search hd-search-result p-a-1">
+            <div class="card-block p-a-0">
+              <h4>점검결과정보</h4>
+
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label required">상세위치</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label required">점검내용</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3" placeholder="※ 위험/위반내용"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">개선대책</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3" placeholder="※ 즉시조치내용"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 전</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="hd-image-uploader">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <div class="hd-add">
+                          <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                        <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                      </div>
+                      <div class="col-xs-4">
+                        <img src="../assets/img/photo-upload-01.jpg" class="img-fluid" alt="">
+                        <button type="button" class="btn"><span class="icon icon-close"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 상세 시작 -->
+               <div class="collapse" id="U_SM_A41008">
+                 <hr class="m-y-1">
+
+                 <div class="form-group row">
+                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap required">지적대상</label>
+                   <div class="col-sm-10 col-xs-8">
+                     <div class="form-check m-b-0 m-t-05">
+               					<label class="custom-control custom-radio">
+               					  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+               					  <span class="custom-control-indicator"></span>
+               					  <span class="custom-control-description">직영</span>
+               					</label>
+               					<label class="custom-control custom-radio">
+               					  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+               					  <span class="custom-control-indicator"></span>
+               					  <span class="custom-control-description">협력사</span>
+               					</label>
+                        <label class="custom-control custom-radio">
+                          <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">외주</span>
+                        </label>
+               				</div>
+                   </div>
+                 </div>
+
+                 <div class="form-group row">
+                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap required">작업구분</label>
+                   <div class="col-sm-10 col-xs-8">
+                     <div class="form-check m-b-0 m-t-05">
+               					<label class="custom-control custom-radio">
+               					  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+               					  <span class="custom-control-indicator"></span>
+               					  <span class="custom-control-description">일상</span>
+               					</label>
+               					<label class="custom-control custom-radio">
+               					  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+               					  <span class="custom-control-indicator"></span>
+               					  <span class="custom-control-description">보수</span>
+               					</label>
+               				</div>
+                   </div>
+                 </div>
+
+                 <div class="form-group row">
+                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">점검부서</label>
+                   <div class="col-sm-10 col-xs-8">
+                     <div class="input-group">
+                       <input type="text" class="form-control" placeholder="" value="" readonly="" id="team">
+                       <span class="input-group-btn">
+                         <button class="btn btn-white p-x-1" type="button" data-toggle="modal" data-target="#U_SM_E10000" data-template="./template/U_SM_E10000.html">
+                           <span class="icon icon-search"></span>
+                         </button>
+                       </span>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="form-group row">
+                   <label class="col-sm-2 col-xs-4 col-form-label required spacing-m1 nowrap">점검항목</label>
+                   <div class="col-sm-10 col-xs-8">
+                     <select class="form-control m-b-05">
+                       <option>선택</option>
+                       <option selected>중장비/중량물작업</option>
+                       <option>..</option>
+                       <option>..</option>
+                     </select>
+                     <select class="form-control">
+                       <option>선택</option>
+                       <option selected>￼기계기구 안전점검(줄걸이/전기기구 등)</option>
+                       <option>..</option>
+                       <option>..</option>
+                     </select>
+                   </div>
+                 </div>
+
+                 <hr class="m-y-1">
+
+                 <div class="form-group row">
+                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치상태</label>
+                   <div class="col-sm-10 col-xs-8">
+                     <select class="form-control">
+                       <option>선택</option>
+                       <option selected>￼즉시조치</option>
+                       <option>..</option>
+                       <option>..</option>
+                     </select>
+                   </div>
+                 </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap required">조치요청일</label>
+                  <div class="col-sm-10 col-xs-8">
+                    <input type="date" class="form-control" value="2016-08-19">
+                  </div>
+                </div>
+
+                 <div class="form-group row m-t-1">
+                   <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치부서 및 조치자</label>
+                   <div class="col-sm-10 col-xs-8 text-xs-right">
+                       <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#U_SM_E10001"><span class="icon icon-search"></span></button>
+                   </div>
+                 </div>
+
+                 <div class="card m-x-0 m-t-0 m-b-1">
+                   <ul class="table-view">
+                     <li class="table-view-cell">세원테크 ᅵ신승원(안전) <button class="btn btn-secondary" type="button">삭제</button></li>
+                     <li class="table-view-cell">보건관리팀 ᅵ 이나경 <button class="btn btn-secondary" type="button">삭제</button></li>
+                     <li class="table-view-cell">틀수강소형정비팀 ᅵ 홍길동 <button class="btn btn-secondary" type="button">삭제</button></li>
+                   </ul>
+                 </div>
+
+               </div> <!-- / 상세 -->
+
+            </div>
+
+            <ul class="table-view table-view-full">
+              <li class="table-view-cell">
+                <a class="navigate-updown collapsed" data-toggle="collapse" href="#U_SM_A41008">
+                </a>
+              </li>
+            </ul>
+          </div><!-- card 끝 -->
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-secondary btn-block">
+                  취소
+                </button>
+              </div>
+              <div class="col-xs-6 p-l-0">
+                <button type="button" class="btn btn-primary btn-block">
+                  저장
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-padded">
+            <div class="row">
+              <div class="col-xs-12">
+                <button type="button" class="btn btn-secondary btn-block">
+                  임시저장
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </form><!-- 조치사항_등록 및 수정 끝 -->
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- 부서검색 Modal -->
+    <div id="U_SM_E10000" class="modal">
+       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
+    </div>
+
+    <!-- 담당자 검색 Modal -->
+    <div id="U_SM_E10001" class="modal">
+       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/autosize.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var doAutosize = function(){
+        autosize($('textarea'));
+      };
+
+      var doAfix = function(){
+        $('#myAfix').scroll({
+          type: 'affix',
+          offset:{top:155}
+        });
+        // apply animation
+        $('#myAfix').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#myAfix').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
+
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAutosize);
+      window.addEventListener('push', doAfix);
+      doAutosize();
+      doAfix();
+
+      $('#U_SM_E10000').on('show.rc.modal',function(e){
+        $(this).load('./template/U_SM_E10000.html',function(){
+          var modal = $(this)
+          setTimeout(function() {
+            modal.find('#search_input').focus();
+          }, 50);
+
+          modal.find('.table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            modal.modal('hide');
+
+          });
+        })
+      });
+
+
+      // 담당자 검색
+      $('#U_SM_E10001').on('show.rc.modal',function(e){
+        $(this).load('./template/U_SM_E10001.html',function(){
+
+          var modal = $(this)
+          setTimeout(function() {
+            modal.find('#search_input').focus();
+          }, 50);
+
+          modal.find('.table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            // $('#man').val(name);
+
+            modal.modal('hide');
+
+          });
+        })
+      });
+
+    </script>
+
+
+
+  </body>
+</html>
