@@ -86,6 +86,7 @@
 }
 
 .card .list-inline .list-inline-item + .list-inline-item::before {
+  margin-left: -3px;
   padding-right: .3125rem;
   content: "|";
   color: #d8dce2;
@@ -278,4 +279,80 @@
   top: -.35rem;
   width: 1.5rem;
   height: 1.5rem;
+}
+
+/* Card-Groups */
+
+.card-deck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-right: -0.09375rem;
+  margin-bottom: 0.75rem;
+  margin-left: -0.09375rem;
+}
+.card-deck .card {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 0.09375rem;
+    margin-bottom: 0;
+    margin-left: 0.09375rem;
+}
+
+
+/*hd-status-01*/
+.hd-status-01 .card-deck .card {
+  border: none;
+  text-align: center;
+  color: #626470;
+  font-size: 13px
+}
+
+.hd-status-01 .card-deck .card .badge {
+  margin-bottom: 5px;
+  padding: 0;
+  display: block;
+  background-color: #d5e6ff;
+  line-height: 40px;
+  font-size: 16px
+}
+
+/*hd-status-02*/
+
+.hd-status-02 .card-deck {
+  margin-bottom: 0
+}
+.hd-status-02 .card-deck .card {
+  margin-top: 0;
+  text-align: center;
+  color: #626470;
+  font-size: 13px
+}
+.hd-status-02 .card-deck .card-block {
+  padding: .7rem .2rem !important
+}
+.hd-status-02 .card-deck .card-title {
+  margin-bottom: .2rem !important;
+  padding-bottom: .2rem !important;
+  font-size: 1.2rem !important;
+  border-bottom: none !important
+}
+.hd-status-02 .card-deck .card-title strong {
+  font-size: 1.7rem
+}
+.hd-status-02 .card-deck .card .card-block {
+  padding: .625rem;
+}
+.hd-status-02 .card-deck .card .card-footer {
+  padding: .5rem;
+  background-color: #d8dce2 !important;
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: #000
 }

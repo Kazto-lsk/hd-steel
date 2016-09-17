@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>점검진행사항_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 조회목록 시작 -->
+      <div id="" class="">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-power-off pull-right"></a>
+          <h1 class="title left">고위험제거활동</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+
+          <div class="clearfix">
+            <button class="btn btn-link btn-nav pull-left">
+              <span class="icon icon-left-nav"></span>
+              점검진행사항_조회목록
+            </button>
+            <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          </div>
+
+          <!-- 상세검색 -->
+           <div id="moreSearch" class="collapse">
+
+             <form class="form-inline">
+              <div class="row m-b-05">
+                <div class="col-xs-6">
+                  <select class="form-control">
+                    <option>전체</option>
+                    <option>관리번호</option>
+                    <option>점검자</option>
+                    <option selected>조치부서</option>
+                  </select>
+                </div>
+                <div class="col-xs-6 p-l-0">
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+               <div class="form-group">
+                 <label class="sr-only" for="">기간검색</label>
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 40%">
+                    <input type="date" class="form-control" value="2016-08-19">
+                   </div>
+                   <div class="hd-term-divider"></div>
+                   <div class="hd-term-item" style="width: 40%">
+                    <input type="date" class="form-control" value="2016-09-19">
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
+                   </div>
+                 </div>
+               </div>
+
+             </form>
+
+           </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content">
+
+
+          <p class="content-padded">
+            점검진행사항 조회목록
+          </p>
+
+          <table class="table table-bordered hd-filter" id="filter">
+             <colgroup>
+               <col width="33.3%"></col>
+               <col width="33.3%"></col>
+               <col></col>
+             </colgroup>
+            <tbody>
+              <tr>
+                <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
+                <td>임시발행<br><span class="badge badge-default badge-inverted">5</span></td>
+                <td>조치의뢰<br><span class="badge badge-default badge-inverted">2</span></td>
+              </tr>
+              <tr>
+                <td>조치중<br><span class="badge badge-default badge-inverted">10</span></td>
+                <td>일정초과<br><span class="badge badge-default badge-inverted">5</span></td>
+                <td>조치완료<br><span class="badge badge-default badge-inverted">2</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">조치의뢰</span>
+                    <span class="meta-site">불안전상태</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">작업장 안전시설</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">A열연제강공장</span>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [D18338] B전기로 SPH 상부 통로 발판 용접부 탈락으로 들? 4 현상 발생- 붕괴위험
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">홍길동</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">(당)A열연 압연부</span>
+               </div>
+             </div>
+          </div><!-- /.card -->
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">임시발행</span>
+                    <span class="meta-site"></span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">작업장 안전시설</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">A열연제강공장</span>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [D18338] B전기로 SPH 상부 통로 발판 용접부 탈락으로 들? 4 현상 발생- 붕괴위험
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">홍길동</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">(당)A열연 압연부</span>
+               </div>
+             </div>
+          </div><!-- /.card -->
+
+
+
+          <div class="card hd-search hd-search-result" role="button">
+            <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
+          </div>
+
+        </div>
+      </div><!-- 조회목록 끝 -->
+
+
+    </div>
+
+    <!-- 업체 및 부서검색 모달 -->
+    <div class="modal" id="U_SM_E10000"></div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+    </script>
+
+
+
+  </body>
+</html>

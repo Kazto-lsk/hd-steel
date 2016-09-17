@@ -1615,6 +1615,9 @@ hr {
   font-size: .9rem;
   line-height: 1.2rem;
 }
+.bar-header-secondary select.form-control:not([size]):not([multiple]) {
+    height: 2.3rem;
+}
 #moreSearch .form-group .btn {
   top:0;
   padding: .5rem;
