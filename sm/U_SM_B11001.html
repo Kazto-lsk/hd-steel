@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>작업허가서_직영 _조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">작업허가서</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
+        <div class="clearfix">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            직영_ 상세
+          </button>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <h5 class="hd-heading no-bullet content-padded">작업기본정보</h5>
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block">
+            <dl class="row">
+              <dt class="col-xs-3">작성자</dt>
+              <dd class="col-xs-9">(주) 케이엔지니어링 ᅵ 홍길동</dd>
+              <dt class="col-xs-3">작성일</dt>
+              <dd class="col-xs-9">2016.0.7.12</dd>
+            </dl>
+          </div>
+          <hr class="m-y-1">
+          <div class="card-block">
+            <dl class="row">
+              <dt class="col-xs-4">W/O 번호</dt>
+              <dd class="col-xs-8">37077370</dd>
+              <dt class="col-xs-4">작업유형</dt>
+              <dd class="col-xs-8">일반보수</dd>
+              <dt class="col-xs-4">작업명</dt>
+              <dd class="col-xs-8 none-line-clamp">특수강 제강 ID FAN ROOM 440V 케이블 포설작 업 및 전선관 작업</dd>
+              <dt class="col-xs-4">작업장소</dt>
+              <dd class="col-xs-8">특수강 제강 집진</dd>
+              <dt class="col-xs-4">작업기간</dt>
+              <dd class="col-xs-8 none-line-clamp">2016.03.10 18:00 ~ 2016.12.31 18:00</dd>
+              <dt class="col-xs-4">정비협력</dt>
+              <dd class="col-xs-8">전기정비_에이런테크</dd>
+            </dl>
+          </div>
+        </div><!-- card 끝 -->
+
+        <h5 class="hd-heading no-bullet content-padded">허가신청작업</h5>
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block">
+            <div class="row">
+              <div class="col-xs-6 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" checked>
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">공통사항</span>
+                </label>
+              </div>
+              <div class="col-xs-6 p-l-0 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">방사선 사용작업</span>
+                </label>
+              </div>
+              <div class="col-xs-6 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" checked>
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">밀페공간, 가스</span>
+                </label>
+              </div>
+              <div class="col-xs-6 p-l-0 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">고소</span>
+                </label>
+              </div>
+              <div class="col-xs-6 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" checked>
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">정전/활선</span>
+                </label>
+              </div>
+              <div class="col-xs-6 p-l-0 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">구동기기</span>
+                </label>
+              </div>
+
+              <div class="col-xs-6 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">중장비/굴착</span>
+                </label>
+              </div>
+              <div class="col-xs-6 p-l-0 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">중량물 취급</span>
+                </label>
+              </div>
+
+              <div class="col-xs-6 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">유독몰취급</span>
+                </label>
+              </div>
+              <div class="col-xs-6 p-l-0 m-b-1">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">일반</span>
+                </label>
+              </div>
+            </dl>
+          </div>
+        </div><!-- card 끝 -->
+
+
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+  </body>
+</html>

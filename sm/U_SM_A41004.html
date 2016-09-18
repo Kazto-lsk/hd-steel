@@ -139,25 +139,9 @@
         autosize($('textarea'));
       };
 
-      var doAfix = function(){
-        $('#myAfix').scroll({
-          type: 'affix',
-          offset:{top:155}
-        });
-        // apply animation
-        $('#myAfix').on('affixed.rc.scroll',function(){
-          $(this).addClass('animated fadeInDown')
-        })
-        $('#myAfix').on('affixed-top.rc.scroll',function(){
-          $(this).removeClass('animated fadeInDown')
-        })
-      };
-
       // push bind , http://rc.kimsq.com/controls/push/#push-bind
       window.addEventListener('push', doAutosize);
-      window.addEventListener('push', doAfix);
       doAutosize();
-      doAfix();
 
       $('#U_SM_E10000').on('show.rc.modal',function(e){
         $(this).load('./template/U_SM_E10000.html',function(){

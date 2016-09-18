@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>법정검사_점검이력목록 | 현대제철 스마트팩토리 마크업</title>
+    <title>작업허가서_직영 _조회목록 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -30,8 +30,8 @@
     <div class="snap-content" data-extension="drawer">
 
 
-      <!-- 안전점검_조회목록 시작 -->
-      <div id="U_SM_A10000" class="page center">
+      <!-- 조회목록 시작 -->
+      <div id="" class="">
 
         <!-- header -->
         <header class="bar bar-nav bar-dark bg-primary">
@@ -39,7 +39,7 @@
           <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
           <a class="icon icon-qrcode pull-right"></a>
           <a class="icon icon-logout pull-right"></a>
-          <h1 class="title left">가스시설</h1>
+          <h1 class="title left">작업허가서</h1>
         </header>
 
         <!-- secondary header-->
@@ -48,7 +48,7 @@
           <div class="clearfix">
             <button class="btn btn-link btn-nav pull-left">
               <span class="icon icon-left-nav"></span>
-              법정검사_점검이력목록
+              직영_조회목록
             </button>
             <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
           </div>
@@ -58,92 +58,60 @@
 
              <form class="form-inline">
 
-               <div class="form-group">
-                 <label class="sr-only" for="">요청자</label>
-                 <div class="hd-term">
-                   <div class="hd-term-item" style="width: 47.5%">
-                     <select class="form-control">
-                       <option>소결</option>
-                       <option>2</option>
-                       <option>3</option>
-                       <option>4</option>
-                       <option>5</option>
-                     </select>
-                   </div>
-                   <div class="hd-term-divider none"></div>
-                   <div class="hd-term-item" style="width: 47.5%">
-                     <select class="form-control">
-                       <option>12소결</option>
-                       <option>2</option>
-                       <option>3</option>
-                       <option>4</option>
-                       <option>5</option>
-                     </select>
-                   </div>
+               <div class="row m-b-05">
+                 <div class="col-xs-12">
+                   <select class="form-control">
+                     <option>전체</option>
+                   </select>
                  </div>
                </div>
+
+              <div class="form-group">
+                <div class="hd-term">
+                  <div class="hd-term-item" style="width: 40%">
+                    <select class="form-control">
+                      <option>전체</option>
+                      <option>W/O번호</option>
+                      <option>내역</option>
+                      <option>정비협력명</option>
+                    </select>
+                  </div>
+                  <div class="hd-term-item p-l-1" style="width: 60%">
+                   <input type="text" class="form-control" value="">
+                  </div>
+                </div>
+              </div>
 
                <div class="form-group">
                  <label class="sr-only" for="">기간검색</label>
                  <div class="hd-term">
-                   <div class="hd-term-item" style="width: 47.5%">
+                   <div class="hd-term-item" style="width: 40%">
                     <input type="date" class="form-control" value="2016-08-19">
                    </div>
                    <div class="hd-term-divider"></div>
-                   <div class="hd-term-item" style="width: 47.5%">
-                    <input type="date" class="form-control" value="2016-08-19">
+                   <div class="hd-term-item" style="width: 40%">
+                    <input type="date" class="form-control" value="2016-09-19">
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
                    </div>
                  </div>
                </div>
 
-                <div class="form-group">
-                  <div class="hd-term">
-                    <div class="hd-term-item" style="width: 83%">
-                      <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
-                        <input type="text" class="form-control" placeholder="운영부서" value="" readonly id="team">
-                        <span class="input-group-btn">
-                          <button class="btn btn-white p-x-1" type="button">
-                            <span class="icon icon-search"></span>
-                          </button>
-                        </span>
-                      </div>
-
-                    </div>
-                    <div class="hd-term-item p-l-05" style="width: 17%">
-                      <button class="btn btn-primary btn-block" type="submit">
-                        조회
-                      </button>
-                    </div>
-                  </div>
-                </div>
              </form>
 
            </div>
         </div>
 
-        <!-- tab bar -->
-        <nav class="bar bar-tab bar-dark bg-inverse">
-          <a class="tab-item active" role="button">
-            법정검사 결과등록
-          </a>
-        </nav>
-
         <!-- main content -->
         <div class="content">
 
 
-          <div class="card">
-            <ul class="table-view">
-              <li class="table-view-cell">
-                <ul class="list-inline">
-                  <li class="list-inline-item">소결</li>
-                  <li class="list-inline-item">1,2 소결</li>
-                </ul>
-                <span class="badge badge-default badge-inverted pull-xs-right">압력용기</span>
-
-              </li>
-            </ul>
-          </div>
+          <p class="content-padded">
+            작업허가서 조회목록
+          </p>
 
           <div class="card hd-search hd-search-result">
             <div class="card-header">
@@ -151,20 +119,23 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">미완료</span>
-                    <span class="meta-site">규격</span>
+                    <span class="badge badge-outline badge-primary hd-left">승인완료</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
-               <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-default badge-inverted">12345679421</span>
-                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [37077370] 특수강 제강 ID FAN ROOM 440V 케이블포설작업및 전선관작업
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">전기정비-에이런테크</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.08.01 ~2016.08.31</span>
                </div>
              </div>
-          </div>
+          </div><!-- /.card -->
 
           <div class="card hd-search hd-search-result">
             <div class="card-header">
@@ -172,41 +143,23 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">완료</span>
-                    <span class="meta-site">누설</span>
+                    <span class="badge badge-outline badge-primary hd-left">계획완료</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
-               <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-default badge-inverted">12345679421</span>
-                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [37077370] 특수강 제강 ID FAN ROOM 440V 케이블포설작업및 전선관작업
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">전기정비-에이런테크</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.08.01 ~2016.08.31</span>
                </div>
              </div>
-          </div>
-
-          <div class="card hd-search hd-search-result hd-complete">
-            <div class="card-header">
-              <ul class="table-view">
-                <li class="table-view-cell">
-                  <a class="navigate-right">
-                    <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">현장조치완료</span>
-                    <span class="meta-site">마감</span>
-                  </a>
-                </li>
-              </ul>
-             </div>
-             <div class="card-block">
-               <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-default badge-inverted">12345679421</span>
-                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
-               </div>
-             </div>
-          </div>
+          </div><!-- /.card -->
 
           <div class="card hd-search hd-search-result">
             <div class="card-header">
@@ -214,27 +167,56 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">미완료</span>
-                    <span class="meta-site">설치</span>
+                    <span class="badge badge-outline badge-primary hd-left">승인완료</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
-               <div class="card-block-inner borderBottomNone" style="border-top-style: solid;">
-                  <span class="badge badge-default badge-inverted">12345679421</span>
-                  <span class="badge badge-default badge-inverted meta-site none">산소(O2)</span>
-                  <span class="badge badge-default badge-inverted pull-xs-right none p-r-2">홍길동</span>
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [37077370] 특수강 제강 ID FAN ROOM 440V 케이블포설작업및 전선관작업
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">전기정비-에이런테크</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.08.01 ~2016.08.31</span>
                </div>
              </div>
-          </div>
+          </div><!-- /.card -->
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">일정대기</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [37077370] 특수강 제강 ID FAN ROOM 440V 케이블포설작업및 전선관작업
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">전기정비-에이런테크</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.08.01 ~2016.08.31</span>
+               </div>
+             </div>
+          </div><!-- /.card -->
+
+
 
           <div class="card hd-search hd-search-result" role="button">
             <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
           </div>
 
         </div>
-      </div><!-- 안전점검_조회목록 끝 -->
+      </div><!-- 조회목록 끝 -->
 
 
     </div>

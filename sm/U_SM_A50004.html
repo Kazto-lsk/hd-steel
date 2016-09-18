@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <title>유해위험기구_점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -32,7 +32,7 @@
       <!-- 점검내용_등록&수정 시작 -->
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-left-nav pull-left" role="button"></a>
-        <h1 class="title left">법정검사_등록&수정</h1>
+        <h1 class="title left">유해위험기구_등록 &수정</h1>
       </header>
 
       <div class="content">
@@ -41,52 +41,39 @@
           <ul class="table-view">
             <li class="table-view-cell">
               <ul class="list-inline">
-                <li class="list-inline-item">소결</li>
-                <li class="list-inline-item">1,2 소결</li>
+                <li class="list-inline-item">기술연구소</li>
+                <li class="list-inline-item">에너지실험동 (B지구)</li>
               </ul>
-              <span class="badge badge-default badge-inverted pull-xs-right">압력용기</span>
-
             </li>
           </ul>
-        </div>
+        </div><!-- /.card -->
 
         <div class="nav nav-control affix-top" id="myAfix">
-          <a class="nav-link" role="button" href="U_SM_A21202.html" data-control="push" data-transition="fade">점검내용</a>
-          <a class="nav-link" role="button" href="U_SM_A21203.html" data-control="push" data-transition="fade">조치사항</a>
-          <a class="nav-link active" role="button" href="U_SM_A21204.html" data-control="push" data-transition="fade">결과확인</a>
+          <a class="nav-link" role="button" href="U_SM_A50002.html" data-control="push" data-transition="fade">점검내용</a>
+          <a class="nav-link" role="button" href="U_SM_A50003.html" data-control="push" data-transition="fade">조치사항</a>
+          <a class="nav-link active" role="button" href="U_SM_A50004.html" data-control="push" data-transition="fade">결과확인</a>
         </div>
 
         <form>
 
-          <!-- 점검기본정보 시작 -->
+          <!-- 점검내용 시작 -->
           <div class="card hd-search hd-search-result p-a-1">
             <div class="card-block p-a-0">
-              <h4>결과확인정보</h4>
-
+              <h4>결과확인</h4>
 
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">계획승인자</label>
+                <label class="col-sm-2 col-xs-4 col-form-label">결과확인</label>
                 <div class="col-sm-10 col-xs-8">
-                  <div class="form-control-static">홍길동</div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">확인자</label>
-                <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label for="" class="col-sm-4 col-xs-12 col-form-label">비고</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3"></textarea>
+                  <select class="form-control m-b-05">
+                    <option>선택</option>
+                    <option>미확인</option>
+                    <option>확인</option>
+                  </select>
                 </div>
               </div>
 
             </div>
           </div><!-- card 끝 -->
-
 
           <div class="content-padded">
             <div class="row">
@@ -103,12 +90,12 @@
             </div>
           </div>
 
-        </form><!-- 조치사항_등록 및 수정 끝 -->
+        </form><!-- 점검내용 끝 -->
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
 
-      </div>
-
-    </div>
-
+    <!-- 업체 및 부서검색 모달 -->
+    <div class="modal" id="U_SM_E10000"></div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
@@ -126,9 +113,24 @@
       window.addEventListener('push', doAutosize);
       doAutosize();
 
+      // 업체 및 부서검색
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
     </script>
-
-
 
   </body>
 </html>

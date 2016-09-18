@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>조치사항_등록&수정 | 현대제철 스마트팩토리 마크업</title>
+    <title>유해위험기구_점검내용_등록&수정 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -32,50 +32,64 @@
       <!-- 점검내용_등록&수정 시작 -->
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-left-nav pull-left" role="button"></a>
-        <h1 class="title left">점검 및 개선활동_등록&수정</h1>
+        <h1 class="title left">유해위험기구_등록 &수정</h1>
       </header>
 
       <div class="content">
 
         <div class="card">
           <ul class="table-view">
-            <li class="table-view-cell p-x-1" style="border-bottom-style: dotted">5구역 2냉연공장</li>
-            <li class="table-view-cell p-x-1 text-muted">기간설비 (RCL/CPL/DCS/HBS/ICS)</li>
+            <li class="table-view-cell">
+              <ul class="list-inline">
+                <li class="list-inline-item">기술연구소</li>
+                <li class="list-inline-item">에너지실험동 (B지구)</li>
+              </ul>
+            </li>
           </ul>
-        </div>
+        </div><!-- /.card -->
 
         <div class="nav nav-control affix-top" id="myAfix">
-          <a class="nav-link" role="button" href="U_SM_A41008.html" data-control="push" data-transition="fade">점검내용</a>
-          <a class="nav-link active" role="button" href="U_SM_A41003.html" data-control="push" data-transition="fade">조치사항</a>
-          <a class="nav-link" role="button" href="U_SM_A41004.html" data-control="push" data-transition="fade">결과확인</a>
+          <a class="nav-link" role="button" href="U_SM_A50002.html" data-control="push" data-transition="fade">점검내용</a>
+          <a class="nav-link active" role="button" href="U_SM_A50003.html" data-control="push" data-transition="fade">조치사항</a>
+          <a class="nav-link" role="button" href="U_SM_A50004.html" data-control="push" data-transition="fade">결과확인</a>
         </div>
 
         <form>
 
-          <!-- 조치사항정보 시작 -->
+          <!-- 점검내용 시작 -->
           <div class="card hd-search hd-search-result p-a-1">
             <div class="card-block p-a-0">
               <h4>조치사항정보</h4>
 
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">조치자</label>
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치부서</label>
                 <div class="col-sm-10 col-xs-8">
-                  <input type="text" class="form-control" value="">
+                  <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                    <input type="text" class="form-control" placeholder="점검부서" value="" readonly id="team">
+                    <span class="input-group-btn">
+                      <button class="btn btn-white p-x-1" type="button">
+                        <span class="icon icon-search"></span>
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
+
               <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label">조치일</label>
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">조치일</label>
                 <div class="col-sm-10 col-xs-8">
-                  <input type="date" class="form-control" value="2016-09-01">
+                  <input type="date" class="form-control" value="2016-08-19">
                 </div>
               </div>
+
               <div class="form-group row">
                 <label for="" class="col-sm-4 col-xs-12 col-form-label">조치내용</label>
                 <div class="col-sm-8 col-xs-12">
                   <textarea class="form-control" rows="3" placeholder=""></textarea>
                 </div>
               </div>
-              <div class="form-group row m-b-1">
+
+              <div class="form-group row">
                 <label for="" class="col-sm-4 col-xs-12 col-form-label">조치 후</label>
                 <div class="col-sm-8 col-xs-12">
                   <div class="hd-image-uploader">
@@ -98,18 +112,6 @@
                 </div>
               </div>
 
-              <div class="form-group row">
-                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">진행상태</label>
-                <div class="col-sm-10 col-xs-8">
-                  <select class="form-control">
-                    <option>선택</option>
-                    <option selected>조치중</option>
-                    <option>..</option>
-                    <option>..</option>
-                  </select>
-                </div>
-              </div>
-
             </div>
           </div><!-- card 끝 -->
 
@@ -128,20 +130,12 @@
             </div>
           </div>
 
-        </form><!-- 조치사항_등록 및 수정 끝 -->
+        </form><!-- 점검내용 끝 -->
       </div><!-- /.content -->
     </div><!-- /.snap-content -->
 
-
-    <!-- 부서검색 Modal -->
-    <div id="U_SM_E10000" class="modal">
-       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
-    </div>
-
-    <!-- 담당자 검색 Modal -->
-    <div id="U_SM_E10001" class="modal">
-       <!-- 모달내부 모달은 템플릿으로 가져오도록 처리헸습니다. -->
-    </div>
+    <!-- 업체 및 부서검색 모달 -->
+    <div class="modal" id="U_SM_E10000"></div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
@@ -159,46 +153,24 @@
       window.addEventListener('push', doAutosize);
       doAutosize();
 
-      $('#U_SM_E10000').on('show.rc.modal',function(e){
+      // 업체 및 부서검색
+      $('#U_SM_E10000').on('show.rc.modal',function(){
         $(this).load('./template/U_SM_E10000.html',function(){
-          var modal = $(this)
+
           setTimeout(function() {
-            modal.find('#search_input').focus();
+            $('#search_input').focus();
           }, 50);
 
-          modal.find('.table-view-cell a').on('tap',function(){
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
             var name = $(this).data('name');
             $('#team').val(name);
 
-            modal.modal('hide');
+            $(this).modal('hide');
 
           });
         })
       });
-
-
-      // 담당자 검색
-      $('#U_SM_E10001').on('show.rc.modal',function(e){
-        $(this).load('./template/U_SM_E10001.html',function(){
-
-          var modal = $(this)
-          setTimeout(function() {
-            modal.find('#search_input').focus();
-          }, 50);
-
-          modal.find('.table-view-cell a').on('tap',function(){
-            var name = $(this).data('name');
-            // $('#man').val(name);
-
-            modal.modal('hide');
-
-          });
-        })
-      });
-
     </script>
-
-
 
   </body>
 </html>

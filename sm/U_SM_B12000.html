@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>점검진행사항_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <title>작업허가서_외주_조회목록 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -39,16 +39,16 @@
           <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
           <a class="icon icon-qrcode pull-right"></a>
           <a class="icon icon-logout pull-right"></a>
-          <h1 class="title left">고위험제거활동</h1>
+          <h1 class="title left">작업허가서</h1>
         </header>
 
         <!-- secondary header-->
-        <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
 
           <div class="clearfix">
             <button class="btn btn-link btn-nav pull-left">
               <span class="icon icon-left-nav"></span>
-              점검진행사항_조회목록
+              외주_조회목록
             </button>
             <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
           </div>
@@ -71,7 +71,6 @@
                   <div class="hd-term-item p-l-1" style="width: 60%">
                    <input type="text" class="form-control" value="">
                   </div>
-
                 </div>
               </div>
 
@@ -93,6 +92,26 @@
                  </div>
                </div>
 
+               <div class="form-group">
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 85%">
+                     <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                       <input type="text" class="form-control" placeholder="조치부서" value="" readonly="" id="team">
+                       <span class="input-group-btn">
+                         <button class="btn btn-white p-x-1" type="button">
+                           <span class="icon icon-search"></span>
+                         </button>
+                       </span>
+                     </div>
+
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
+                   </div>
+                 </div>
+               </div>
              </form>
 
            </div>
@@ -103,25 +122,29 @@
 
 
           <p class="content-padded">
-            점검진행사항 조회목록
+            작업허가서 조회목록
           </p>
 
           <table class="table table-bordered hd-filter" id="filter">
              <colgroup>
-               <col width="33.3%"></col>
-               <col width="33.3%"></col>
+               <col width="25%"></col>
+               <col width="25%"></col>
+               <col width="25%"></col>
+               <col width="25%"></col>
                <col></col>
              </colgroup>
             <tbody>
               <tr>
                 <td class="table-active">전체<br><span class="badge badge-default badge-inverted">10</span></td>
-                <td>임시발행<br><span class="badge badge-default badge-inverted">5</span></td>
-                <td>조치의뢰<br><span class="badge badge-default badge-inverted">2</span></td>
+                <td>업체등록<br><span class="badge badge-default badge-inverted">5</span></td>
+                <td>반려<br><span class="badge badge-default badge-inverted">2</span></td>
+                <td>허가요청중<br><span class="badge badge-default badge-inverted">2</span></td>
               </tr>
               <tr>
-                <td>조치중<br><span class="badge badge-default badge-inverted">10</span></td>
-                <td>일정초과<br><span class="badge badge-default badge-inverted">5</span></td>
-                <td>조치완료<br><span class="badge badge-default badge-inverted">2</span></td>
+                <td>공사진행중<br><span class="badge badge-default badge-inverted">10</span></td>
+                <td>공사중지<br><span class="badge badge-default badge-inverted">5</span></td>
+                <td>공사취소<br><span class="badge badge-default badge-inverted">2</span></td>
+                <td>공사완료<br><span class="badge badge-default badge-inverted">2</span></td>
               </tr>
             </tbody>
           </table>
@@ -132,25 +155,21 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">조치의뢰</span>
-                    <span class="meta-site">불안전상태</span>
+                    <span class="badge badge-outline badge-primary hd-left">허가요청중</span>
+                    <span class="m-l-5">특수강소형안압부</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
                <div class="card-block-inner borderBottomNone">
-                <span class="badge badge-default badge-inverted">작업장 안전시설</span>
-                <span class="badge badge-default badge-inverted none pull-xs-right">A열연제강공장</span>
-               </div>
-               <div class="card-block-inner borderBottomNone">
                 <div class="card-text line-clamp-2">
-                   [D18338] B전기로 SPH 상부 통로 발판 용접부 탈락으로 들? 4 현상 발생- 붕괴위험
+                   [58497] 강제전선관, 통신케이블 포설아울렛 모듈 및 콘센트박스 설치선로 테스트
                 </div>
                </div>
                <div class="card-block-inner borderBottomNone">
-                <span class="badge badge-default badge-inverted">홍길동</span>
-                <span class="badge badge-default badge-inverted none pull-xs-right">(당)A열연 압연부</span>
+                <span class="badge badge-default badge-inverted">한국구조안전기술원</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.04.01~2016.04.31</span>
                </div>
              </div>
           </div><!-- /.card -->
@@ -161,30 +180,49 @@
                 <li class="table-view-cell">
                   <a class="navigate-right">
                     <span class="badge badge-default badge-inverted">2016.07.07</span>
-                    <span class="badge badge-outline badge-primary hd-left">임시발행</span>
-                    <span class="meta-site"></span>
+                    <span class="badge badge-outline badge-primary hd-left">공사진행중</span>
+                    <span class="m-l-5">냉연정비1팀</span>
                   </a>
                 </li>
               </ul>
              </div>
              <div class="card-block">
                <div class="card-block-inner borderBottomNone">
-                <span class="badge badge-default badge-inverted">작업장 안전시설</span>
-                <span class="badge badge-default badge-inverted none pull-xs-right">A열연제강공장</span>
-               </div>
-               <div class="card-block-inner borderBottomNone">
                 <div class="card-text line-clamp-2">
-                   [D18338] B전기로 SPH 상부 통로 발판 용접부 탈락으로 들? 4 현상 발생- 붕괴위험
+                   [58497] 강제전선관, 통신케이블 포설아울렛 모듈 및 콘센트박스 설치선로 테스트
                 </div>
                </div>
                <div class="card-block-inner borderBottomNone">
-                <span class="badge badge-default badge-inverted">홍길동</span>
-                <span class="badge badge-default badge-inverted none pull-xs-right">(당)A열연 압연부</span>
+                <span class="badge badge-default badge-inverted">한국트럼프지엠비에이취</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.04.01~2016.04.31</span>
                </div>
              </div>
           </div><!-- /.card -->
 
-
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <a class="navigate-right">
+                    <span class="badge badge-default badge-inverted">2016.07.07</span>
+                    <span class="badge badge-outline badge-primary hd-left">반려</span>
+                    <span class="m-l-5">특수강정정부</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                <div class="card-text line-clamp-2">
+                   [58497] 강제전선관, 통신케이블 포설아울렛 모듈 및 콘센트박스 설치선로 테스트
+                </div>
+               </div>
+               <div class="card-block-inner borderBottomNone">
+                <span class="badge badge-default badge-inverted">경민정보통신주식회사</span>
+                <span class="badge badge-default badge-inverted none pull-xs-right">2016.04.01~2016.04.31</span>
+               </div>
+             </div>
+          </div><!-- /.card -->
 
           <div class="card hd-search hd-search-result" role="button">
             <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>

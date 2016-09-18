@@ -55,6 +55,9 @@ body {
 .icon-close:before {
   content: "\e90b";
 }
+.icon-logout:before {
+  content: "\e914";
+}
 .icon-logo:before {
   content: "\e90a";
 }
@@ -940,7 +943,16 @@ input.form-control {
 
 
  .icon.icon-search {
-   font-size: 1rem
+   font-size: 1rem;
+ }
+
+.hd-moreSearch.icon.icon-search {
+   margin-right: -5px;
+   padding-top: 5px;
+   padding-bottom: 0;
+   padding-right: 0;
+   font-size: 1.8rem;
+   color: #1c74d5
  }
 
 .hd-section {
@@ -1444,6 +1456,9 @@ hr {
 }
 .p-b-05 {
   padding-bottom: .5rem !important;
+}
+.m-l-5 {
+  margin-left: 5rem !important;
 }
 
 .m-x-minus1 {
