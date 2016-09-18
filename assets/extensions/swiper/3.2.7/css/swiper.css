@@ -1,15 +1,15 @@
 /**
  * Swiper 3.2.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * 
+ *
  * http://www.idangero.us/swiper/
- * 
+ *
  * Copyright 2015, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: December 7, 2015
  */
 .swiper-container {
@@ -50,11 +50,11 @@
 }
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
-  -webkit-transform: translate3d(0px, 0, 0);
-  -moz-transform: translate3d(0px, 0, 0);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate3d(0px, 0, 0);
-  transform: translate3d(0px, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .swiper-container-multirow > .swiper-wrapper {
   -webkit-box-lines: multiple;
@@ -118,14 +118,14 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: 27px;
-  height: 44px;
-  margin-top: -22px;
+  width: 1.6875rem;
+  height: 2.75rem;
+  margin-top: -1.375rem;
   z-index: 10;
   cursor: pointer;
-  -moz-background-size: 27px 44px;
-  -webkit-background-size: 27px 44px;
-  background-size: 27px 44px;
+  -moz-background-size: 1.6875rem 2.75rem;
+  -webkit-background-size: 1.6875rem 2.75rem;
+  background-size: 1.6875rem 2.75rem;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -138,7 +138,7 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  left: 10px;
+  left: .625rem;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
@@ -152,7 +152,7 @@
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
+  right: .625rem;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
@@ -181,8 +181,8 @@
   opacity: 0;
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: .5rem;
+  height: .5rem;
   display: inline-block;
   border-radius: 100%;
   background: #000;
@@ -215,32 +215,32 @@ button.swiper-pagination-bullet {
   background: #000;
 }
 .swiper-container-vertical > .swiper-pagination {
-  right: 10px;
+  right: .625rem;
   top: 50%;
-  -webkit-transform: translate3d(0px, -50%, 0);
-  -moz-transform: translate3d(0px, -50%, 0);
-  -o-transform: translate(0px, -50%);
-  -ms-transform: translate3d(0px, -50%, 0);
-  transform: translate3d(0px, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
 }
 .swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
-  margin: 5px 0;
+  margin: .3125rem 0;
   display: block;
 }
 .swiper-container-horizontal > .swiper-pagination {
-  bottom: 10px;
+  bottom: .625rem;
   left: 0;
   width: 100%;
 }
 .swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet {
-  margin: 0 5px;
+  margin: 0 .3125rem;
 }
 /* 3D Container */
 .swiper-container-3d {
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
+  -webkit-perspective: 75rem;
+  -moz-perspective: 75rem;
+  -o-perspective: 75rem;
+  perspective: 75rem;
 }
 .swiper-container-3d .swiper-wrapper,
 .swiper-container-3d .swiper-slide,
@@ -317,7 +317,7 @@ button.swiper-pagination-bullet {
 /* Coverflow */
 .swiper-container-coverflow .swiper-wrapper {
   /* Windows 8 IE 10 fix */
-  -ms-perspective: 1200px;
+  -ms-perspective: 75rem;
 }
 /* Fade */
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
@@ -382,18 +382,18 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-cube-shadow {
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: #000;
   opacity: 0.6;
-  -webkit-filter: blur(50px);
-  filter: blur(50px);
+  -webkit-filter: blur(3.125rem);
+  filter: blur(3.125rem);
   z-index: 0;
 }
 /* Scrollbar */
 .swiper-scrollbar {
-  border-radius: 10px;
+  border-radius: .625rem;
   position: relative;
   -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
@@ -401,17 +401,17 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal > .swiper-scrollbar {
   position: absolute;
   left: 1%;
-  bottom: 3px;
+  bottom: .1875rem;
   z-index: 50;
-  height: 5px;
+  height: .3125rem;
   width: 98%;
 }
 .swiper-container-vertical > .swiper-scrollbar {
   position: absolute;
-  right: 3px;
+  right: .1875rem;
   top: 1%;
   z-index: 50;
-  width: 5px;
+  width: .3125rem;
   height: 98%;
 }
 .swiper-scrollbar-drag {
@@ -419,7 +419,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: .625rem;
   left: 0;
   top: 0;
 }
@@ -428,13 +428,13 @@ button.swiper-pagination-bullet {
 }
 /* Preloader */
 .swiper-lazy-preloader {
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -21px;
-  margin-top: -21px;
+  margin-left: -1.3125rem;
+  margin-top: -1.3125rem;
   z-index: 10;
   -webkit-transform-origin: 50%;
   -moz-transform-origin: 50%;
