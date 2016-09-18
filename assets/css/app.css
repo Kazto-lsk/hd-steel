@@ -469,6 +469,9 @@ body {
   content : "·";
   color: #9a9eac
 }
+.card.hd-search dt.hd-none:before {
+  content : "";
+}
 
 .card.hd-search dd {
   overflow: hidden;
