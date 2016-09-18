@@ -109,11 +109,30 @@
   margin: .625rem;
 }
 
+.card .list-inline {
+  margin-bottom: 0
+}
 .card .list-inline .list-inline-item + .list-inline-item::before {
   margin-left: -3px;
   padding-right: .3125rem;
   content: "|";
   color: #d8dce2;
+}
+
+.card .list-inline.hd-step .list-inline-item {
+  font-family: 'icomoon';
+}
+.card .list-inline.hd-step .list-inline-item + .list-inline-item::before {
+  margin-left: -3px;
+  padding-right: .3125rem;
+  content: "\e916";
+  color: #9a9eac;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.card .list-inline.hd-step .list-inline-item.active {
+  font-weight: bold;
+  color: #1c74d5
 }
 
 .card.hd-complete,
@@ -156,10 +175,23 @@
 .hd-attach .media-object {
   height: 19px
 }
+.hd-attach .media-body {
+  padding-top: 1px
+}
 .hd-attach .media a,
 .hd-attach .media a:active,
 .hd-attach .media a:focus {
   color: #1c74d5
+}
+
+.hd-attach.hd-none .media-object {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  opacity: .3
+}
+.hd-attach.hd-none .media-body::before {
+  content: "첨부파일 없음";
+  color: #cacad4
 }
 
 /*hd-label*/
@@ -294,7 +326,7 @@
 
 /*fomrs*/
 .custom-control {
-  padding-left: 1.8rem;
+  padding-left: 2rem;
 }
 .custom-control + .custom-control {
   margin-left: .5rem;

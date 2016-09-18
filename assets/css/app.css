@@ -58,6 +58,9 @@ body {
 .icon-logout:before {
   content: "\e914";
 }
+.icon-step-divider:before {
+  content: "\e916";
+}
 .icon-logo:before {
   content: "\e90a";
 }
