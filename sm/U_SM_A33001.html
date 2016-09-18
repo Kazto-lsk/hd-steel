@@ -58,7 +58,7 @@
         <!-- main content -->
         <div class="content">
 
-          <div class="nav nav-control affix-top" id="tabs">
+          <div class="nav nav-inline affix-top" id="tabs">
           </div>
 
           <div class="swiper-container hd-swiper-01">
@@ -84,7 +84,12 @@
                       <dt class="col-xs-3">점검일</dt>
                       <dd class="col-xs-9">2016.07.07</dd>
                       <dt class="col-xs-3">요청자</dt>
-                      <dd class="col-xs-9">정비안전팀 | 박상현</dd>
+                      <dd class="col-xs-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">정비안전팀</li>
+                          <li class="list-inline-item">박상현</li>
+                        </ul>
+                      </dd>
                     </dl>
                   </div>
 
@@ -100,7 +105,12 @@
                       <dt class="col-xs-3">조치부서</dt>
                       <dd class="col-xs-9">안전관리부</dd>
                       <dt class="col-xs-3">설비구분</dt>
-                      <dd class="col-xs-9">소화활동설비 ᅵ 연결살수설비</dd>
+                      <dd class="col-xs-9">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">소화활동설비</li>
+                          <li class="list-inline-item">연결살수설비</li>
+                        </ul>
+                      </dd>
                       <dt class="col-xs-12 m-b-05">지적내용</dt>
                       <dd class="col-xs-12 none-line-clamp p-l-1">
                         입력한 지적내용입니다. 입력한 지적내용입니다.입력한 지적내용입니다. 입력한 지적내용입니다.입력한 지적내용입니다. 입력한 지적내용입니다.입력한 지적내용입니다. 입력한 지적내용입니다.입력한 지적내용입니다. 입력한 지적내용입니다.
@@ -232,7 +242,12 @@
                         </dd>
 
                         <dt class="col-xs-3">조치자</dt>
-                        <dd class="col-xs-9">소방안전팀 | 조준범</dd>
+                        <dd class="col-xs-9">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">소방안전팀</li>
+                            <li class="list-inline-item">조준범</li>
+                          </ul>
+                        </dd>
                         <dt class="col-xs-3">조치일</dt>
                         <dd class="col-xs-9">2016.07.07</dd>
 
@@ -274,7 +289,7 @@
 
       // Initialize Swiper
       var swiper = new Swiper('.hd-swiper-01', {
-        pagination: '.nav-control',
+        pagination: '.nav-inline',
         paginationClickable: true,
         effect: 'slide',
         loop: false,

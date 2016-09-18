@@ -129,6 +129,13 @@
   color: #d8dce2;
 }
 
+.card .list-inline.hd-none .list-inline-item + .list-inline-item::before {
+  margin-left: -.1875rem;
+  padding-right: .3125rem;
+  content: "";
+  color: #d8dce2;
+}
+
 .card .list-inline.hd-step .list-inline-item {
   font-family: 'icomoon';
 }
