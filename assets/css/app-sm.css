@@ -21,7 +21,8 @@
 }
 .bg-sky.card .card-header {
   padding: .4375rem .625rem !important;
-  background-color: #c6daf8 !important
+  background-color: #c6daf8 !important;
+  font-size: .875rem;
 }
 .bg-sky.card dd {
   margin-bottom: 0
@@ -369,13 +370,22 @@
   margin-left: -0.09375rem;
 }
 .card-deck .card {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 0%;
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
-    margin-right: 0.09375rem;
-    margin-bottom: 0;
-    margin-left: 0.09375rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  margin-right: 0.09375rem;
+  margin-bottom: 0;
+  margin-left: 0.09375rem;
+}
+.hd-deck .card-deck  {
+  margin-right: -0.3125rem;
+  margin-left: -0.3125rem;
+}
+.hd-deck .card-deck .card {
+  margin-right: 0.3125rem;
+  margin-bottom: 0;
+  margin-left: 0.3125rem;
 }
 
 
