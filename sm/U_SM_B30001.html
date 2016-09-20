@@ -815,6 +815,17 @@
 
     <script>
 
+      $('#tabs').scroll({
+        type: 'affix',
+        offset:{top:50}
+      });
+      // apply animation
+      $('#tabs').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#tabs').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
 
       // Initialize Swiper
       var swiper = new Swiper('.hd-swiper-01', {
