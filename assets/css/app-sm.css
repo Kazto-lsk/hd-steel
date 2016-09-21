@@ -507,6 +507,7 @@
 
 /*card-group*/
 .card-group {
+  display: block !important;
   margin-bottom: 1rem
 }
 
