@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>운전자안전교육_교육안내 레이어팝업 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">안전교육</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
+
+        <div class="clearfix">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            운전자안전교육_조회목록
+          </button>
+          <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+        </div>
+
+        <!-- 상세검색 -->
+         <div id="moreSearch" class="collapse">
+
+           <form class="form-inline">
+
+             <div class="form-group">
+               <div class="hd-term">
+                 <div class="hd-term-item" style="width: 33.3%">
+                   <select class="form-control">
+                     <option>공장전체</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 33.3%">
+                   <select class="form-control">
+                     <option>공정전체</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 33.3%">
+                   <select class="form-control">
+                     <option>품목선택</option>
+                   </select>
+                 </div>
+               </div>
+             </div>
+
+            <div class="form-group">
+              <div class="hd-term">
+                <div class="hd-term-item" style="width: 33.3%">
+                  <select class="form-control">
+                    <option>구관리번호</option>
+                  </select>
+                </div>
+                <div class="hd-term-item p-l-05" style="width: 66.6%">
+                 <input type="text" class="form-control" value="">
+                </div>
+              </div>
+            </div>
+
+             <div class="form-group">
+               <div class="hd-term">
+                 <div class="hd-term-item" style="width: 85%">
+                   <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                     <input type="text" class="form-control" placeholder="운영부서" value="" readonly="" id="team">
+                     <span class="input-group-btn">
+                       <button class="btn btn-white p-x-1" type="button">
+                         <span class="icon icon-search"></span>
+                       </button>
+                     </span>
+                   </div>
+
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 15%">
+                   <button class="btn btn-primary btn-block" type="submit">
+                     조회
+                   </button>
+                 </div>
+               </div>
+             </div>
+           </form>
+
+         </div>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+        <div class="nav nav-inline affix-top" id="tabs">
+        </div>
+
+        <div class="swiper-container hd-swiper-01">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+
+            </div><!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+
+
+            </div><!-- /.swiper-slide -->
+
+
+
+          </div><!-- /.swiper-wrapper -->
+
+        </div><!-- /.swiper-container -->
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- 교육안내 팝업 -->
+    <div id="U_SM_D12100" class="popup zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">운전자안전교육안내</h1>
+        </header>
+        <nav class="bar bar-tab">
+          <a class="tab-item bg-primary" role="button" data-dismiss="popup">
+            닫기
+          </a>
+        </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered hd-table-01">
+              <colgroup>
+                <col width="25%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">1. 대상</th>
+                  <td>제철소 출입 운전자 전체 <br> ￼(납품/배달/출하/구내운송/버스 등)</td>
+                </tr>
+                <tr>
+                  <th scope="row">2. 내용</th>
+                  <td class="spacing-m1">
+                     제철소 출입 운전자 안전교육<br>
+                    - 기초 안전질서 / 핵심 안전수칙<br>
+                    - 물류안전 / 사고사례<br>
+                    - 주요 안전정보 (CPR /AED)
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3. 주기</th>
+                  <td>
+                    1회/年
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4. 장소</th>
+                  <td>100년안전문화관 /온라인</td>
+                </tr>
+                <tr>
+                  <th scope="row">5. 방법</th>
+                  <td>오프라인 강의 / 온라인 이수</td>
+                </tr>
+                <tr>
+                  <th scope="row">6. 담당</th>
+                  <td>신의기 차장 (☏ 1452)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // 팝업 호출
+
+      $("#U_SM_D12100").popup({
+        backdrop :'static',
+        history :'false'
+      });
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+      $('#tabs').scroll({
+        type: 'affix',
+        offset:{top:50}
+      });
+      // apply animation
+      $('#tabs').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#tabs').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
+
+      // Initialize Swiper
+      var swiper = new Swiper('.hd-swiper-01', {
+        pagination: '.nav-inline',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        autoHeight: true,
+        slideActiveClass :'active',
+        bulletClass : 'nav-link',
+        bulletActiveClass : 'active' ,
+        paginationBulletRender: function (index, className) {
+        var title;
+        if (index === 0) title = '교육신청'
+        if (index === 1) title = '결과조회'
+        return '<a class="' + className + '">'+title+'</a>';
+        },
+        onSlideChangeEnd: function (swiper) {
+            $('.content').animate({scrollTop:0}, '100');
+        }
+      });
+
+
+    </script>
+
+
+
+  </body>
+</html>

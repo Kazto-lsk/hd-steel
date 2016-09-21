@@ -845,7 +845,12 @@ body {
   outline: none;
 }
 
-
+.content-padded-x {
+  margin: 0 .625rem
+}
+.content-padded-y {
+  margin: .625rem 0
+}
 
 /**
  * footer
