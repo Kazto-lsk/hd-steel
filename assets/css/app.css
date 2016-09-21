@@ -852,6 +852,10 @@ body {
   margin: .625rem 0
 }
 
+.text-black {
+  color:  #000
+}
+
 /**
  * footer
  * ----------------------------------------------------------------------------
@@ -1629,6 +1633,13 @@ hr {
 }
 .bar-header-secondary.hd-expanded.hd-sm ~ .content {
     padding-top: 13rem;
+}
+
+.bar-header-secondary.hd-expanded.hd-xs {
+  height: 6rem;
+}
+.bar-header-secondary.hd-expanded.hd-xs ~ .content {
+    padding-top: 9rem;
 }
 
 .bar-header-secondary .input-group {

@@ -502,3 +502,23 @@
   vertical-align: middle;
   white-space: nowrap;
 }
+
+
+
+/*card-group*/
+.card-group {
+  margin-bottom: 1rem
+}
+
+.card-group .card-group-header {
+  padding: .5rem 0;
+  border-top: 1px solid #b4b8c4;
+  text-align: center;
+}
+
+.card-group .card {
+  margin-bottom: 0
+}
+.card-group .card + .card {
+  margin-top: -.0625rem
+}
