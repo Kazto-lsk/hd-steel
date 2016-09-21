@@ -1927,7 +1927,7 @@ hr {
   border-color: #3a444d;
 }
 
-
+/*hd-image-uploader*/
 .hd-image-uploader {
 
 }
@@ -1974,6 +1974,9 @@ hr {
 .hd-image-uploader .hd-add .icon {
   width: 2.5rem;
 }
+
+
+
 
 /*affix*/
 .affix {
