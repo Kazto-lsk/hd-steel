@@ -572,26 +572,32 @@
     padding-top: 5.875rem;
 }
 .hd-step .nav-inline {
+  position: relative;
   display: flex;
 }
 .hd-step .nav-inline .nav-item {
   width: 10%;
   line-height: 3.125rem;
+  z-index: 20
 }
 .hd-step .nav-inline .nav-item.active {
-  width: 80%
+  width: 80%;
 }
 
 .hd-step .nav-inline .nav-link {
   display: none
 }
 .hd-step .nav-inline .active .nav-link {
+  margin-left: -4px;
   display: inline;
-  color: #626470
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #626470;
+  background-color: #fff
 }
 
 .hd-step .nav-inline .badge-default {
-  margin-left: 5px;
   width: 32px;
   height: 32px;
   padding: 0;
@@ -600,7 +606,7 @@
   background-color: #b4b8c4;
   border-radius: 100%;
   text-align: center;
-  border: 2px solid #d8dce2
+  border: 2px solid #d8dce2;
 }
 .hd-step .nav-inline .active .badge-default {
   background-color: #0275d8;
@@ -609,4 +615,14 @@
 .hd-step .nav-inline .nav-item + .nav-item,
 .hd-step .nav-inline .nav-link + .nav-link {
     margin-left: .625rem;
+}
+.hd-step .nav-inline:before {
+  display: block;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background-color: #d8dce2;
+  z-index: 18
 }
