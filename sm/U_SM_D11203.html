@@ -100,8 +100,6 @@
                 </div>
               </div>
 
-
-
             </div>
           </div>
 
@@ -120,30 +118,6 @@
     <script src="../assets/js/app.js"></script>
 
     <script>
-
-    var doSearchbar = function(){
-      // bar-header-secondary 상세검색
-      $('#moreSearch').on('show.rc.collapse', function () {
-        $('#header-secondary').addClass("hd-expanded hd-xs")
-        $('#tabs').css("display","none")
-      })
-      $('#moreSearch').on('hide.rc.collapse', function () {
-        $('#header-secondary').removeClass("hd-expanded hd-xs");
-        $('#tabs').css("display","block")
-      })
-    };
-
-    var doSearchbar_2 = function(){
-      // bar-header-secondary 상세검색
-      $('#moreSearch_2').on('show.rc.collapse', function () {
-        $('#header-secondary').addClass("hd-expanded hd-sm")
-        $('#tabs').css("display","none")
-      })
-      $('#moreSearch_2').on('hide.rc.collapse', function () {
-        $('#header-secondary').removeClass("hd-expanded hd-sm")
-        $('#tabs').css("display","block")
-      })
-    };
 
     var doAffix = function(){
       $('#tabs').scroll({
@@ -164,12 +138,8 @@
     };
 
     // push bind , http://rc.kimsq.com/controls/push/#push-bind
-    window.addEventListener('push', doSearchbar);
-    window.addEventListener('push', doSearchbar_2);
     window.addEventListener('push', doAffix);
     window.addEventListener('push', doCollapse);
-    doSearchbar();
-    doSearchbar_2();
     doAffix();
 
     </script>

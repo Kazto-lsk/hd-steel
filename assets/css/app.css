@@ -653,6 +653,15 @@ body {
   -webkit-line-clamp: 1;
 }
 
+
+.card .card-block .card-block-item {
+  padding: .65rem .75rem;
+  border-bottom: 1px dotted #d8dce2
+}
+.card .card-block .card-block-item:last-child {
+  border-bottom: none
+}
+
 /*검색결과 처리*/
 .hd-none .card.hd-search-result {
   display: none;
@@ -1529,6 +1538,7 @@ hr {
   min-height: 2.625rem
 }
 
+.table-view-cell >  .badge.hd-left,
 .table-view-cell > a > .badge.hd-left {
   position: absolute;;
   left: .625rem;
