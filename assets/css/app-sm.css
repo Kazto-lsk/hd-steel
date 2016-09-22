@@ -563,3 +563,50 @@
 .hd-license .card-block .hd-logo {
   width: 6.875rem
 }
+
+/*step*/
+.hd-step {
+  height: 3.125rem
+}
+.bar-header-secondary.hd-step ~ .content {
+    padding-top: 5.875rem;
+}
+.hd-step .nav-inline {
+  display: flex;
+}
+.hd-step .nav-inline .nav-item {
+  width: 10%;
+  line-height: 3.125rem;
+}
+.hd-step .nav-inline .nav-item.active {
+  width: 80%
+}
+
+.hd-step .nav-inline .nav-link {
+  display: none
+}
+.hd-step .nav-inline .active .nav-link {
+  display: inline;
+  color: #626470
+}
+
+.hd-step .nav-inline .badge-default {
+  margin-left: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 28px;
+  background-color: #b4b8c4;
+  border-radius: 100%;
+  text-align: center;
+  border: 2px solid #d8dce2
+}
+.hd-step .nav-inline .active .badge-default {
+  background-color: #0275d8;
+}
+
+.hd-step .nav-inline .nav-item + .nav-item,
+.hd-step .nav-inline .nav-link + .nav-link {
+    margin-left: .625rem;
+}
