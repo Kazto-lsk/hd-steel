@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>결과조회_결과 목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">안전교육</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+
+        <div class="clearfix">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            기초안전교육_조회목록
+          </button>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+        <div class="nav nav-inline affix-top" id="tabs">
+          <a class="nav-link" href="U_SM_D11101.html" data-control="push" data-transition="fade">교육신청</a>
+          <a class="nav-link active" href="U_SM_D11200.html" data-control="push" data-transition="fade">결과조회</a>
+        </div>
+
+        <p class="content-padded m-t-2">
+          이수필증
+        </p>
+
+        <div class="card hd-search hd-search-result p-y-1">
+
+          <div class="card hd-license">
+            <div class="card-header">
+              기초안전교육 이수필증
+            </div>
+            <div class="card-block">
+
+              <div class="media">
+                <a class="media-left" href="#">
+                  <img class="media-object" src="../assets/img/sm-license-pic.png" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">홍길동 <small class="text-muted">군산항 석탄취급시설</small></h4>
+                  <dl class="row">
+                    <dt class="col-xs-4 hd-none">발급일자</dt>
+                    <dd class="col-xs-8 m-b-0">2016.01.01</dd>
+                    <dt class="col-xs-4 hd-none">유효기간</dt>
+                    <dd class="col-xs-8 m-b-0">~2016.12.31</dd>
+                  </dl>
+                </div>
+              </div>
+              <dl class="row m-t-05">
+                <dt class="col-xs-2 hd-none spacing-m1">화재구급</dt>
+                <dd class="col-xs-4 m-b-0 spacing-m1 none-line-clamp  text-xs-right"><a href="tel:041-680-6119">041) 680-6119</a></dd>
+                <dt class="col-xs-2 hd-none spacing-m1">교육문의</dt>
+                <dd class="col-xs-4 m-b-0 spacing-m1 none-line-clamp text-xs-right"><a href="tel:041-350-9774">041) 350-9774</a></dd>
+              </dl>
+
+              <hr class="m-b-1">
+
+              <div class="row">
+                <div class="col-xs-6">
+                  <img src="../assets/img/logo-basic.png" class="hd-logo" alt="">
+                </div>
+                <div class="col-xs-6 text-xs-right">
+                  환경안전실
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="content-padded m-t-1">
+            <button type="button" class="btn btn-info btn-block btn-lg">
+              ￼이수증 다운로드
+            </button>
+          </div>
+
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+    var doSearchbar = function(){
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded hd-xs")
+        $('#tabs').css("display","none")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded hd-xs");
+        $('#tabs').css("display","block")
+      })
+    };
+
+    var doSearchbar_2 = function(){
+      // bar-header-secondary 상세검색
+      $('#moreSearch_2').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded hd-sm")
+        $('#tabs').css("display","none")
+      })
+      $('#moreSearch_2').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded hd-sm")
+        $('#tabs').css("display","block")
+      })
+    };
+
+    var doAffix = function(){
+      $('#tabs').scroll({
+        type: 'affix',
+        offset:{top:50}
+      });
+      // apply animation
+      $('#tabs').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#tabs').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
+    };
+
+    var doCollapse = function(){
+      $('#moreSearch').collapse('hide');
+    };
+
+    // push bind , http://rc.kimsq.com/controls/push/#push-bind
+    window.addEventListener('push', doSearchbar);
+    window.addEventListener('push', doSearchbar_2);
+    window.addEventListener('push', doAffix);
+    window.addEventListener('push', doCollapse);
+    doSearchbar();
+    doSearchbar_2();
+    doAffix();
+
+    </script>
+
+
+
+  </body>
+</html>

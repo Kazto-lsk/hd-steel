@@ -523,3 +523,34 @@
 .card-group .card + .card {
   margin-top: -.0625rem
 }
+
+/*hd-license*/
+
+.hd-license .card-header {
+  padding: 1rem 0 !important;
+  background-color: #dae9ff !important;
+  text-align: center;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+.hd-license .card-block {
+  padding: 1rem !important
+}
+.hd-license .card-block .media-object {
+  width: 95px;
+  border: 1px solid #b4b8c4
+}
+.hd-license .card-block .media-heading {
+  margin-bottom: .5rem !important;
+  border-bottom: .0625rem dotted #d8dce2 !important;
+}
+
+.hd-license .card-block .media-heading small {
+  margin-top: 5px;
+  display: block;
+  font-size: .9rem;
+}
+
+.hd-license .card-block .hd-logo {
+  width: 110px
+}
