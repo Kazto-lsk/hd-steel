@@ -178,7 +178,7 @@
                 </button>
               </div>
               <div class="col-xs-6 p-l-0">
-                <button type="button" class="btn btn-primary btn-block"  data-history="back">
+                <button type="button" class="btn btn-primary btn-block" id="alert-edit-ok">
                   저장
                 </button>
               </div>
@@ -379,6 +379,7 @@
 
     <script>
 
+      // 자료삭제
       $(".hd-del").tap(function(){
         $("#alert-del").popup({
           backdrop :'static',
@@ -388,7 +389,25 @@
 
       $("#alert-del-ok").tap(function(){
         $('#alert-del').popup('hide');
-        $.notify("삭제되었습니다.")
+        $.notify('삭제되었습니다.', {
+          offset: 270,
+          animate: {
+            enter: 'animated fadeIn',
+            exit: 'animated fadeOut'
+          }
+        })
+      });
+
+      // 자료수정
+      $("#alert-edit-ok").tap(function(){
+        window.history.back();
+        $.notify('저장되었습니다.', {
+          offset: 270,
+          animate: {
+            enter: 'animated fadeIn',
+            exit: 'animated fadeOut'
+          }
+        })
       });
 
       $('#tabs').scroll({
