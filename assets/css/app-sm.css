@@ -628,3 +628,43 @@
   background-color: #d8dce2;
   z-index: 18
 }
+
+/*hd-ageement*/
+.card.hd-ageement {
+  padding-top: .325rem
+}
+.card.hd-ageement .card-header,
+.card.hd-ageement .card-block {
+  padding: .625rem
+}
+.card.hd-ageement .card-header {
+  background-color: inherit;
+  border-bottom: none;
+  padding-bottom: .425rem
+}
+.card.hd-ageement .card-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: .525rem;
+  padding-left: 5px
+}
+.card.hd-ageement .card-block p {
+  margin-bottom: .325rem
+}
+
+/*bar-buttons*/
+.bar-buttons.bar-footer {
+  height: 62px;
+  padding: .625rem;
+  background-color: #eeeef2
+}
+.bar-buttons.bar-footer ~ .content {
+  padding-bottom: 62px;
+}
+.bar-buttons.bar-footer .row {
+  margin-top: -5px
+}
+.bar-buttons.bar-footer .btn-block {
+  padding: 0.75rem 0;
+}
