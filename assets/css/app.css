@@ -1659,18 +1659,21 @@ hr {
 .bar-header-secondary select.form-control:not([size]):not([multiple]) {
     height: 2.3rem;
 }
-#moreSearch .form-group .btn {
+#moreSearch .form-group .btn,
+#moreSearch_2 .form-group .btn {
   top:0;
   padding: .5rem;
   line-height: 1.2rem;
   border-radius: 0;
   font-weight: normal;
 }
-#moreSearch .btn-primary {
+#moreSearch .btn-primary,
+#moreSearch_2 .btn-primary {
   background-color: #3a444d !important;
   border-color: #3a444d !important
 }
-#moreSearch .btn-primary:active {
+#moreSearch .btn-primary:active,
+#moreSearch_2 .btn-primary:active {
   background-color: #2e363e !important;
   border-color: #2e363e !important
 }

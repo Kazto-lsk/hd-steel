@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>결과조회_결과 목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">안전교육</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+
+        <div class="clearfix">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            기초안전교육_조회목록
+          </button>
+          <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+        </div>
+
+        <!-- 상세검색 -->
+         <div id="moreSearch" class="collapse">
+
+           <form class="form-inline">
+
+             <div class="form-group">
+               <div class="hd-term">
+                 <div class="hd-term-item" style="width: 35%">
+                   <select class="form-control">
+                     <option>2016년도</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 50%">
+                   <select class="form-control">
+                     <option>7월</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 15%">
+                   <button class="btn btn-primary btn-block" type="submit">
+                     조회
+                   </button>
+                 </div>
+               </div>
+             </div>
+           </form>
+
+         </div>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+        <div class="nav nav-inline affix-top" id="tabs">
+          <a class="nav-link" href="U_SM_D11101.html" data-control="push" data-transition="fade">교육신청</a>
+          <a class="nav-link active" href="U_SM_D11200.html" data-control="push" data-transition="fade">결과조회</a>
+        </div>
+
+        <p class="content-padded">
+          교육장소: 100년안전문화관(2냉연공장)
+        </p>
+
+        <div class="hd-data-none" style="height: 60%">
+          <div>
+            <img src="../assets/img/data-none.png" alt="">
+            <span>신청한 교육정보가 없습니다.</span>
+          </div>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var doSearchbar = function(){
+        // bar-header-secondary 상세검색
+        $('#moreSearch').on('show.rc.collapse', function () {
+          $('#header-secondary').addClass("hd-expanded")
+        })
+        $('#moreSearch').on('hide.rc.collapse', function () {
+          $('#header-secondary').removeClass("hd-expanded")
+        })
+      };
+
+      var doAffix = function(){
+        $('#tabs').scroll({
+          type: 'affix',
+          offset:{top:50}
+        });
+        // apply animation
+        $('#tabs').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#tabs').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
+
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doSearchbar);
+      window.addEventListener('push', doAffix);
+      doSearchbar();
+      doAffix();
+
+    </script>
+
+
+
+  </body>
+</html>
