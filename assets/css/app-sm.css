@@ -596,7 +596,9 @@
   color: #626470;
   background-color: #fff
 }
-
+.hd-step .nav-inline .nav-item.active:last-child {
+  background-color: #fff
+}
 .hd-step .nav-inline .badge-default {
   width: 32px;
   height: 32px;
