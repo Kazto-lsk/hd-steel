@@ -46,25 +46,35 @@
             <span class="icon icon-left-nav"></span>
             기초안전교육_조회목록
           </button>
-          <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch_2"></a>
         </div>
 
         <!-- 상세검색 -->
-         <div id="moreSearch" class="collapse">
+         <div id="moreSearch_2" class="collapse">
 
            <form class="form-inline">
-
              <div class="form-group">
                <div class="hd-term">
-                 <div class="hd-term-item" style="width: 35%">
+                 <div class="hd-term-item" style="width: 33.3%">
                    <select class="form-control">
-                     <option>2016년도</option>
+                     <option>업체명</option>
                    </select>
                  </div>
-                 <div class="hd-term-item p-l-05" style="width: 50%">
-                   <select class="form-control">
-                     <option>7월</option>
-                   </select>
+                 <div class="hd-term-item p-l-05" style="width: 66.6%">
+                  <input type="text" class="form-control" value="">
+                 </div>
+               </div>
+             </div>
+
+             <div class="form-group">
+               <label class="sr-only" for="">기간검색</label>
+               <div class="hd-term">
+                 <div class="hd-term-item" style="width: 40%">
+                  <input type="date" class="form-control" value="2016-08-19">
+                 </div>
+                 <div class="hd-term-divider"></div>
+                 <div class="hd-term-item" style="width: 40%">
+                  <input type="date" class="form-control" value="2016-09-19">
                  </div>
                  <div class="hd-term-item p-l-05" style="width: 15%">
                    <button class="btn btn-primary btn-block" type="submit">
@@ -86,7 +96,7 @@
         </div>
 
         <p class="content-padded">
-          교육장소: 100년안전문화관(2냉연공장)
+          기초안전교육 조회목록
         </p>
 
         <div class="hd-data-none" style="height: 60%">
@@ -104,35 +114,57 @@
 
     <script>
 
-      var doSearchbar = function(){
-        // bar-header-secondary 상세검색
-        $('#moreSearch').on('show.rc.collapse', function () {
-          $('#header-secondary').addClass("hd-expanded")
-        })
-        $('#moreSearch').on('hide.rc.collapse', function () {
-          $('#header-secondary').removeClass("hd-expanded")
-        })
-      };
+    var doSearchbar = function(){
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded hd-xs")
+        $('#tabs').css("display","none")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded hd-xs");
+        $('#tabs').css("display","block")
+      })
+    };
 
-      var doAffix = function(){
-        $('#tabs').scroll({
-          type: 'affix',
-          offset:{top:50}
-        });
-        // apply animation
-        $('#tabs').on('affixed.rc.scroll',function(){
-          $(this).addClass('animated fadeInDown')
-        })
-        $('#tabs').on('affixed-top.rc.scroll',function(){
-          $(this).removeClass('animated fadeInDown')
-        })
-      };
+    var doSearchbar_2 = function(){
+      // bar-header-secondary 상세검색
+      $('#moreSearch_2').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded hd-sm")
+        $('#tabs').css("display","none")
+      })
+      $('#moreSearch_2').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded hd-sm")
+        $('#tabs').css("display","block")
+      })
+    };
 
-      // push bind , http://rc.kimsq.com/controls/push/#push-bind
-      window.addEventListener('push', doSearchbar);
-      window.addEventListener('push', doAffix);
-      doSearchbar();
-      doAffix();
+    var doAffix = function(){
+      $('#tabs').scroll({
+        type: 'affix',
+        offset:{top:50}
+      });
+      // apply animation
+      $('#tabs').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#tabs').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
+    };
+
+    var doCollapse = function(){
+      $('#moreSearch').collapse('hide');
+    };
+
+    // push bind , http://rc.kimsq.com/controls/push/#push-bind
+    window.addEventListener('push', doSearchbar);
+    window.addEventListener('push', doSearchbar_2);
+    window.addEventListener('push', doAffix);
+    window.addEventListener('push', doCollapse);
+    doSearchbar();
+    doSearchbar_2();
+    doAffix();
+
 
     </script>
 
