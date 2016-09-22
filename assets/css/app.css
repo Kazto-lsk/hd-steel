@@ -1977,6 +1977,7 @@ hr {
 .hd-image-uploader img.img-fluid {
   border: .0625rem solid #aaadb8;
   width: 11.25rem;
+  height: 9.9375rem
 }
 .hd-image-uploader .hd-add {
   display: flex;
