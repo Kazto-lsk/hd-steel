@@ -84,13 +84,13 @@
   margin-right: 0;
 }
 .modal .card .table-view-full .table-view-cell {
-    padding-left: .625rem;
-    padding-right: .625rem;
+  padding-left: .625rem;
+  padding-right: .625rem;
 }
 .modal .card-full .table-view-full .table-view-cell a {
-    margin-left: -.625rem;
-    margin-right: -.625rem;
-    text-align: left;
+  margin-left: -.625rem;
+  margin-right: -.625rem;
+  text-align: left;
 }
 
 .card .table-view-full .table-view-cell a.collapsed::before {
