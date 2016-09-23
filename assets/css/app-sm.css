@@ -78,6 +78,21 @@
   text-align: center;
 }
 
+.modal .card-full .table-view-full {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.modal .card .table-view-full .table-view-cell {
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+.modal .card-full .table-view-full .table-view-cell a {
+    margin-left: -.625rem;
+    margin-right: -.625rem;
+    text-align: left;
+}
+
 .card .table-view-full .table-view-cell a.collapsed::before {
   content: "상세정보 등록"
 }
