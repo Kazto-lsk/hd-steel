@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>C지구_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">비상대피로</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-xs" id="header-secondary">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          비상대피로_조회목록
+        </button>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+          <select class="form-control m-b-05">
+            <option>A지구</option>
+            <option>B지구</option>
+            <option selected="">C지구</option>
+          </select>
+        </div>
+
+        <div class="card hd-photo card-full">
+          <img class="card-img-top img-fluid" src="../assets/img/U_SM_C30000-01.png" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title bg-primary">제선</h4>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              <button type="button" class="btn btn-secondary btn-lg">제강/연주</button>
+              <button type="button" class="btn btn-secondary btn-lg">대형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">소형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">정정공장</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="card hd-photo card-full">
+          <img class="card-img-top img-fluid" src="../assets/img/U_SM_C30000-02.png" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title bg-primary">제강</h4>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              <button type="button" class="btn btn-secondary btn-lg">제강/연주</button>
+              <button type="button" class="btn btn-secondary btn-lg">대형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">소형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">정정공장</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="card hd-photo card-full">
+          <img class="card-img-top img-fluid" src="../assets/img/U_SM_C30000-03.png" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title bg-primary">열연/후판</h4>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              <button type="button" class="btn btn-secondary btn-lg">제강/연주</button>
+              <button type="button" class="btn btn-secondary btn-lg">대형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">소형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">정정공장</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="card hd-photo card-full">
+          <img class="card-img-top img-fluid" src="../assets/img/U_SM_C30000-04.png" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title bg-primary">기타</h4>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              <button type="button" class="btn btn-secondary btn-lg">제강/연주</button>
+              <button type="button" class="btn btn-secondary btn-lg">대형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">소형공장</button>
+              <button type="button" class="btn btn-secondary btn-lg">정정공장</button>
+            </p>
+          </div>
+        </div>
+
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var doAffix = function(){
+        $('#tabs').scroll({
+          type: 'affix',
+          offset:{top:50}
+        });
+        // apply animation
+        $('#tabs').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#tabs').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
+
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAffix);
+      doAffix();
+
+
+    </script>
+
+
+
+  </body>
+</html>
