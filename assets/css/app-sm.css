@@ -717,3 +717,53 @@
 .bar-buttons.bar-footer .btn-block {
   padding: 0.75rem 0;
 }
+
+/*비상대비로*/
+.card.hd-photo {
+ padding: .625rem
+}
+.card.hd-photo .card-img-overlay .card-title {
+  display: inline-block;
+  margin-top: .625rem;
+  margin-left: -.625rem;
+  padding: .625rem 1.65625rem;
+  font-size: 1.25rem;
+  color: #fff
+}
+.card.hd-photo .card-block {
+  padding: .625rem 0 0;
+}
+.card.hd-photo .card-block .btn {
+  margin-bottom: .625rem
+}
+.card.hd-photo .card-block .btn:active {
+  background-color: #333
+}
+.card.hd-photo .card-img-overlay .card-text {
+  position: absolute;
+  bottom: 1.25rem;
+  top: auto;
+  right: 1.25rem;
+}
+
+/*btn-custem-01*/
+.btn.btn-custem-01 {
+  padding: .4075rem .5rem .4075rem .8rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 14px;
+  outline: 0;
+}
+.btn.btn-custem-01 .icon-rc {
+  color: #fff;
+  font-size: .9rem
+}
+.btn.btn-custem-01 .icon-right-nav:before {
+  content: '\e818';
+}
+.btn.btn-custem-01:active {
+  outline: 0;
+  background-color: #000
+}
