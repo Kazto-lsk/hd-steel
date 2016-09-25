@@ -764,3 +764,59 @@
   outline: 0;
   background-color: #000
 }
+
+.hd-exit-status.bar-footer-secondary {
+  bottom: 3.21rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 37px;
+  line-height: 37px;
+  color: #626470;
+  font-size: .875rem
+}
+
+.nav-control.hd-exit {
+  border-bottom: 1px solid #bec2ce
+}
+
+/*page-header*/
+.page-header.hd-exit {
+  position: relative;
+  padding-top: 1.21875rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+.page-header.hd-exit h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700
+}
+.page-header.hd-exit .badge-primary {
+  background-color: #3a444d
+}
+
+.page-header.hd-exit .hd-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #999fb1;
+  text-align: center;
+}
+.page-header.hd-exit .hd-control.left {
+  left: 0;
+  right: auto;
+}
+.page-header.hd-exit .hd-control.right {
+  right: 0;
+  left: auto;
+}
+.page-header.hd-exit .hd-control .icon {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}

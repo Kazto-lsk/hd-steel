@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>비상대피로_상세 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">비상대피로</h1>
+      </header>
+
+      <div class="bar bar-standard bar-footer-secondary bar-light text-xs-center hd-exit-status">
+        ￼현재 위치에서 50M 거리에 위치
+      </div>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-xs" id="header-secondary">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          ￼비상대피로_상세
+        </button>
+      </div>
+      <nav class="bar bar-tab bar-dark bg-inverse">
+        <a class="tab-item active" role="button">
+          가이드 로드맵
+        </a>
+        <a class="tab-item active" role="button">
+          확대 맵
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="page-header hd-exit">
+          <h1>[B지구]공장정비동</h1>
+          <span class="badge badge-pill badge-primary">옥외소화전</span>
+
+          <div class="hd-control left">
+            <span class="icon icon-left-nav"></span>
+          </div>
+          <div class="hd-control right">
+            <span class="icon icon-right-nav"></span>
+          </div>
+        </div>
+
+        <div class="nav nav-control hd-exit">
+          <a class="nav-link active" role="button">소화전</a>
+          <a class="nav-link" role="button">H빔번호</a>
+          <a class="nav-link" role="button">구역</a>
+          <a class="nav-link" role="button">신고위치번호</a>
+        </div>
+
+        <div class="">
+          <img src="../assets/img/U_SM_C11100-01.png" class="img-fluid" alt="">
+        </div>
+
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var doAffix = function(){
+        $('#tabs').scroll({
+          type: 'affix',
+          offset:{top:50}
+        });
+        // apply animation
+        $('#tabs').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#tabs').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
+
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAffix);
+      doAffix();
+
+
+    </script>
+
+
+
+  </body>
+</html>
