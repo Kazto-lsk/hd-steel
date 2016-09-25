@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>교육신청_ 신청정보입력| 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <div id="U_SM_D11105" class="">
+
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-left-nav pull-left" role="button" data-history="back"></a>
+          <h1 class="title left">기초안전교육_교육신청</h1>
+        </header>
+
+        <div class="bar bar-standard bar-header-secondary hd-step">
+    			<ul class="nav nav-inline">
+    			  <li class="nav-item">
+              <span class="badge badge-pill badge-default">1</span>
+    			    <a class="nav-link">정보제공동의</a>
+    			  </li>
+    			  <li class="nav-item active">
+              <span class="badge badge-pill badge-default">2</span>
+    			    <a class="nav-link">신청정보입력</a>
+    			  </li>
+    			  <li class="nav-item">
+              <span class="badge badge-pill badge-default">3</span>
+    			    <a class="nav-link">서약서 작성 및 신청완료</a>
+    			  </li>
+    			</ul>
+    		</div>
+        <div class="bar bar-buttons bar-footer hd-buttons">
+          <div class="row">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-secondary btn-block" data-history="back">
+                이전
+              </button>
+            </div>
+            <div class="col-xs-6 p-l-0">
+              <button type="button" class="btn btn-primary btn-block" data-toggle="page" data-start="#U_SM_D11105" data-target="#U_SM_D11106">
+                다음
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="card card-full hd-ageement">
+            <div class="card-block">
+              <h4>교육신청</h4>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">부서/업체명</label>
+                <div class="col-sm-10 col-xs-8">
+                  <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                    <input type="text" class="form-control" placeholder="부서선택" value="" readonly="" id="team">
+                    <span class="input-group-btn">
+                      <button class="btn btn-white p-x-1" type="button">
+                        <span class="icon icon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">이름</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">사번/생년월일</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="" placeholder="생년월일일 경우 YYMMDD로 입력">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">사진등록</label>
+                <div class="col-sm-10 col-xs-8">
+                  <div class="hd-image-uploader">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="hd-add">
+                            <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.hd-image-uploader -->
+
+                </div>
+              </div>
+            </div>
+          </div><!-- /.card -->
+
+        </div><!-- /.content -->
+
+      </div><!-- /#U_SM_D12105 -->
+
+    </div><!-- /.snap-content -->
+
+
+    <!-- modal 소속부서 -->
+    <div id="U_SM_E10000" class="modal">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+
+      // 소속부서 선택
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+      // 키패드가 활성화 되면 .bar-footer 숨김처리함
+      var _originalSize = $(window).width() + $(window).height()
+      $(window).resize(function(){
+        if($(window).width() + $(window).height() != _originalSize){
+          console.log("keyboard show up");
+          $(".bar-footer").css("display","none")
+        }else{
+          console.log("keyboard closed");
+          $(".bar-footer").css("display","block")
+        }
+      });
+
+    </script>
+
+
+
+  </body>
+</html>
