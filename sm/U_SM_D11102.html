@@ -341,11 +341,51 @@
           </div>
         </div>
         <div class="content">
-          <div class="card">
+          <div class="card card-full hd-ageement">
             <div class="card-block">
-              교육신청
+              <h4>교육신청</h4>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">부서/업체명</label>
+                <div class="col-sm-10 col-xs-8">
+                  <div class="input-group" data-toggle="modal" data-target="#U_SM_E10000">
+                    <input type="text" class="form-control" placeholder="부서선택" value="" readonly="" id="team">
+                    <span class="input-group-btn">
+                      <button class="btn btn-white p-x-1" type="button">
+                        <span class="icon icon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">이름</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">사번/생년월일</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="" placeholder="생년월일일 경우 YYMMDD로 입력">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">사진등록</label>
+                <div class="col-sm-10 col-xs-8">
+                  <div class="hd-image-uploader">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="hd-add">
+                            <img src="../assets/img/image-uploader-icon.png" class="icon" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.hd-image-uploader -->
+
+                </div>
+              </div>
             </div>
-          </div>
+          </div><!-- /.card -->
 
         </div><!-- /.content -->
 
@@ -389,11 +429,117 @@
           </div>
         </div>
         <div class="content">
-          <div class="card">
+
+          <div class="card card-full hd-ageement" style="border-bottom: none">
             <div class="card-block">
-              안전수칙 준수 서약서
+              <h4>안전수칙 준수 서약서</h4>
             </div>
+            <ul class="table-view" id="accordion" style="margin-top: -1.625rem">
+              <li class="table-view-cell checkbox">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">안전복장 착용 및 작업절차 준수</span>
+                </label>
+                <span class="badge badge-default badge-inverted collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#accordion-01">
+                  <span class="icon icon-up-nav"></span>
+                </span>
+              </li>
+              <li class="table-view-cell collapse hd-full" id="accordion-01">
+                <p class="m-b-1">당사 내 출입 시 정해진 안전복장을 착용하고 작업 시에 는 정해진 작업절차를 준수하겠습니다.</p>
+                <ul>
+                  <li>출입 시에는 안전모, 안전화 기타 담당자가 요청하는 보호구 착용</li>
+                  <li>작업 시 담당자가 지시하는 적정 안전보호구 착용</li>
+                </ul>
+              </li>
+              <li class="table-view-cell checkbox">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">사내 교통안전수칙 준수</span>
+                </label>
+                <span class="badge badge-default badge-inverted collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#accordion-02">
+                  <span class="icon icon-up-nav"></span>
+                </span>
+              </li>
+              <li class="table-view-cell collapse hd-full" id="accordion-02">
+                <p class="m-b-1">당사 내 보행 또는 차량을 이용 시 사내교통안전수칙을 준 수하겠습니다.</p>
+                <ul>
+                  <li>사내규정속도 30Km 이하 운행 (건설기계, 운반차량 : 20Km 이하)</li>
+                  <li>차량 장소 주정차</li>
+                  <li>보행 중 안전수칙 준수</li>
+                </ul>
+              </li>
+              <li class="table-view-cell checkbox">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">지정 흡연장소 준수</span>
+                </label>
+                <span class="badge badge-default badge-inverted collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#accordion-03">
+                  <span class="icon icon-up-nav"></span>
+                </span>
+              </li>
+              <li class="table-view-cell collapse hd-full" id="accordion-03">
+                <p class="m-b-1">당사 내 에서 지정된 흡연장소에서만 흡연하겠습니다.</p>
+                <ul>
+                  <li>차량 운영 중 흡연 금지</li>
+                  <li>폭발위험장소 (위험물저장시설, 가스체류지역 등) 에서 절대 금연</li>
+                </ul>
+              </li>
+              <li class="table-view-cell checkbox">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description spacing-m1">위험지역 및 관계자 외 출입금지 준수</span>
+                </label>
+                <span class="badge badge-default badge-inverted collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#accordion-04">
+                  <span class="icon icon-up-nav"></span>
+                </span>
+              </li>
+              <li class="table-view-cell collapse hd-full" id="accordion-04">
+                <p>당사 내의 표시된 위험지역 및 [관계자 외 출입금지] 장소에서는 담당자의 허가 없이 출입하지 않겠습니다.</p>
+              </li>
+              <li class="table-view-cell checkbox">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description spacing-m1">응급상황 또는 비상사태 시 신고요령 준수</span>
+                </label>
+                <span class="badge badge-default badge-inverted collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#accordion-05">
+                  <span class="icon icon-up-nav"></span>
+                </span>
+              </li>
+              <li class="table-view-cell collapse hd-full" id="accordion-05">
+                <p class="m-b-1">당내에서 출입하여 용무 중 응급상황발행, 화재목록등 의 비상상태 발생 시에는 해당 장소의 신고위치 표지판을 확인하여 신고 합니다.</p>
+                <p>비상신고전화  041) 680-6119</p>
+              </li>
+            </ul>
+          </div><!-- /.card -->
+
+          <div class="p-a-2 text-xs-center">
+            <p>
+              본인은 상기 안전수직 준수사항을 숙지하였으며, 상기 수칙을 위반하여 당하는 불이익에 대해서는 감수할 것임을 서약합니다.
+            </p>
+            <p class="text-muted">2016년 7월 15일</p>
           </div>
+
+          <div class="card card-full hd-ageement">
+            <div class="card-block">
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">업체명</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-xs-4 col-form-label spacing-m1 nowrap">이름</label>
+                <div class="col-sm-10 col-xs-8">
+                  <input class="form-control" type="text" value="" placeholder="">
+                </div>
+              </div>
+            </div>
+          </div><!-- /.card -->
 
         </div><!-- /.content -->
 
@@ -431,6 +577,10 @@
 
     <!-- modal 개인정보수집동의-->
     <div id="U_SM_E10005" class="modal">
+    </div>
+
+    <!-- modal 소속부서 -->
+    <div id="U_SM_E10000" class="modal">
     </div>
 
 
@@ -482,6 +632,37 @@
       $('#tabs').on('affixed-top.rc.scroll',function(){
         $(this).removeClass('animated fadeInDown')
       })
+
+      // 소속부서 선택
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+      // 키패드가 활성화 되면 .bar-footer 숨김처리함 
+      var _originalSize = $(window).width() + $(window).height()
+      $(window).resize(function(){
+        if($(window).width() + $(window).height() != _originalSize){
+          console.log("keyboard show up");
+          $(".bar-footer").css("display","none")
+        }else{
+          console.log("keyboard closed");
+          $(".bar-footer").css("display","block")
+        }
+      });
+
 
     </script>
 

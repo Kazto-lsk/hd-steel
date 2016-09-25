@@ -592,7 +592,7 @@
 }
 .hd-step .nav-inline .nav-item {
   width: 10%;
-  line-height: 3.125rem;
+  line-height: 3.1rem;
   z-index: 20
 }
 .hd-step .nav-inline .nav-item.active {
@@ -667,6 +667,38 @@
 .card.hd-ageement .card-block p {
   margin-bottom: .325rem
 }
+.card.hd-ageement .card-block h4 {
+  margin-bottom: .9375rem;
+  padding-bottom: .55rem;
+  font-size: 1rem;
+  border-bottom: .0625rem solid #d8dce2;
+  font-weight: bold;
+}
+.card.hd-ageement .hd-image-uploader .hd-add {
+  min-height: 6.9375rem;
+}
+.card.hd-ageement  .table-view-cell .icon-up-nav {
+  color: #999fb1
+}
+.card.hd-ageement  .table-view-cell .collapsed .icon-up-nav::before {
+  content: "\e902";
+}
+.card.hd-ageement .table-view-cell ul,
+.card.hd-ageement .table-view-cell p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #626470;
+}
+.card.hd-ageement .table-view-cell p::before {
+  content: "* "
+}
+.card.hd-ageement .table-view-cell.hd-full {
+  padding: 15px 15px  15px 50px
+}
+.card.hd-ageement .table-view-cell ul {
+  padding-left: 16px
+}
+
 
 /*bar-buttons*/
 .bar-buttons.bar-footer {
