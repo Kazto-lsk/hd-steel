@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>교육신청 목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">안전교육</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-xs" id="header-secondary">
+
+        <div class="clearfix">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            전문안전체험교육_상세목록
+          </button>
+        </div>
+      </div>
+
+      <nav class="bar bar-tab bar-dark bg-inverse">
+        <a class="tab-item active" role="button" data-toggle="page" data-start="#U_SM_D11102" data-target="#U_SM_D11103">
+          교육신청 등록
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="nav nav-inline affix-top" id="tabs">
+          <a class="nav-link active" href="" data-control="push" data-transition="fade">교육신청</a>
+          <a class="nav-link" href="" data-control="push" data-transition="fade">결과조회</a>
+        </div>
+
+        <div class="card m-b-2">
+
+          <div class="card-block p-a-0">
+            <div class="card-block-item clearfix">
+              <span class="pull-xs-left">
+                <span class="text-muted">[오전1]</span>&nbsp;
+                08:00~09:50
+              </span>
+             </div>
+            <div class="card-block-item clearfix">
+              <span class="pull-xs-left">
+                <span class="badge badge-default badge-inverted">정원 <span class="text-primary">60</span></span>&nbsp;
+                <span class="badge badge-default badge-inverted none">신청 <span class="text-danger">60</span></span>&nbsp;
+              </span>
+              <span class="pull-xs-right">
+                <ul class="list-inline">
+                  <li class="list-inline-item text-muted">강사</li>
+                  <li class="list-inline-item">홍길동</li>
+                </ul>
+              </span>
+             </div>
+          </div>
+        </div>
+
+        <p class="content-padded">
+          교육신청목록
+        </p>
+
+        <div class="hd-data-none" style="height: 40%">
+          <div>
+            <img src="../assets/img/data-none.png" alt="">
+            <span>신청한 교육이 없습니다.</span>
+          </div>
+        </div>
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var doAffix = function(){
+        $('#tabs').scroll({
+          type: 'affix',
+          offset:{top:50}
+        });
+        // apply animation
+        $('#tabs').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+        })
+        $('#tabs').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+        })
+      };
+
+      // push bind , http://rc.kimsq.com/controls/push/#push-bind
+      window.addEventListener('push', doAffix);
+      doAffix();
+
+
+    </script>
+
+
+
+  </body>
+</html>
