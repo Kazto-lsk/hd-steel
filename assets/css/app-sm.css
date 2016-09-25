@@ -674,8 +674,10 @@
   border-bottom: .0625rem solid #d8dce2;
   font-weight: bold;
 }
+.card.hd-ageement .hd-image-uploader img.img-fluid,
 .card.hd-ageement .hd-image-uploader .hd-add {
-  min-height: 6.9375rem;
+  max-height: 6.9375rem !important;
+  min-height: 6.9375rem !important;
 }
 .card.hd-ageement  .table-view-cell .icon-up-nav {
   color: #999fb1
