@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>방문자안전교육_교육안내 레이어팝업 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">안전교육</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white" id="header-secondary">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          ￼방문자안전교육_교육신청_안전교육
+        </button>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+        <div class="nav nav-inline">
+          <a href="" class="nav-link active">교육신청</a>
+          <a href="" class="nav-link">결과조회</a>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- 교육안내 팝업 -->
+    <div id="U_SM_D14100" class="popup zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">방문자안전교육안내</h1>
+        </header>
+        <nav class="bar bar-tab">
+          <a class="tab-item bg-primary" role="button" data-dismiss="popup">
+            닫기
+          </a>
+        </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered hd-table-01">
+              <colgroup>
+                <col width="25%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">1. 대상</th>
+                  <td class="spacing-m1">
+                    <strong>제철소 일반 방문객 전원</strong> <br>
+                    - 방문객 / 접견자 등 <br>
+                    *기초/전문/운전자 교육대상자 제외
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2. 내용</th>
+                  <td class="spacing-m1">
+                    - 방문자 준수 기본 안전수칙<br>
+                    - 안전교육 퀴즈<br>
+                    - 안전준수 서약서 작성
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3. 주기</th>
+                  <td>
+                    1회/年
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4. 장소</th>
+                  <td>A/C지구 정문 / 모바일</td>
+                </tr>
+                <tr>
+                  <th scope="row">5. 시간</th>
+                  <td>수시</td>
+                </tr>
+                <tr>
+                  <th scope="row">6. 방법</th>
+                  <td>오프라인 이수 / 모바일</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // 팝업 호출
+      $("#U_SM_D14100").popup({
+        backdrop :'static',
+        history :'false'
+      });
+
+    </script>
+
+
+
+  </body>
+</html>

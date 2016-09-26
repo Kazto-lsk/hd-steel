@@ -2007,6 +2007,10 @@ hr {
 }
 
 
+.btn.disabled,
+.btn:disabled {
+  opacity: .35;
+}
 
 
 /*affix*/
