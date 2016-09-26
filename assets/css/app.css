@@ -2013,6 +2013,11 @@ hr {
 }
 
 
+.bg-faded {
+  background-color: #f0f0f4
+}
+
+
 /*affix*/
 .affix {
   top: 2.75rem;
