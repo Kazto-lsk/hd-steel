@@ -820,3 +820,20 @@
   display: inline-block;
   margin-top: -10px;
 }
+
+/*hd-card-accordion*/
+.hd-card-accordion .card  .card-img-overlay img {
+  width: 18px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.hd-card-accordion .card .card-block {
+  padding: .625rem;
+  text-align: center;
+}
+
+.hd-card-accordion .collapse,
+.hd-card-accordion .collapsing {
+  padding: 0 .625rem .625rem
+}

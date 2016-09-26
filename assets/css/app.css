@@ -2017,6 +2017,9 @@ hr {
   background-color: #f0f0f4
 }
 
+.table-view-cell {
+  border-bottom: 0.0625rem solid #d8dce2;
+}
 
 /*affix*/
 .affix {
