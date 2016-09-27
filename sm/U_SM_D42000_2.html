@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>5분안전교육_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 조회목록 시작 -->
+      <div id="" class="">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-logout pull-right"></a>
+          <h1 class="title left">안전정보</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+
+          <div class="clearfix">
+            <button class="btn btn-link btn-nav pull-left">
+              <span class="icon icon-left-nav"></span>
+              5분안전교육_조회목록
+            </button>
+            <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          </div>
+
+          <!-- 상세검색 -->
+           <div id="moreSearch" class="collapse">
+
+             <form class="form-inline">
+
+              <div class="form-group">
+                <div class="hd-term">
+                  <div class="hd-term-item" style="width: 100%">
+                    <select class="form-control">
+                      <option>방문자안전</option>
+                      <option>기초안전</option>
+                      <option>전문안전</option>
+                      <option>사고테마</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 35%">
+                     <select class="form-control">
+                       <option>전체</option>
+                       <option>제목</option>
+                       <option>내용</option>
+                     </select>
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 50%">
+                    <input type="text" class="form-control" placeholder="" value="">
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
+                   </div>
+                 </div>
+               </div>
+             </form>
+
+           </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content">
+
+
+          <p class="content-padded">
+            5분 안전교육 조회목록
+          </p>
+
+          <div class="hd-data-none" style="height:70%">
+            <div>
+              <img src="../assets/img/data-none.png" alt="">
+              <span>검색한 결과가 없습니다.</span>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- 조회목록 끝 -->
+
+
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+
+
+    </script>
+
+
+
+  </body>
+</html>

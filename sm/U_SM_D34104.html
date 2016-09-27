@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼감지기_상세 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-qrcode pull-right"></a>
+        <a class="icon icon-logout pull-right"></a>
+        <h1 class="title left">보건예방</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+          감지기_상세
+        </button>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded form-inline" id="moreSearch_2">
+          <div class="form-group">
+             <div class="hd-term">
+               <div class="hd-term-item" style="width: 60%">
+                 <select class="form-control">
+                   <option>시험검정(재질시험실)</option>
+                 </select>
+               </div>
+               <div class="hd-term-item p-l-05" style="width: 25%">
+                 <select class="form-control">
+                   <option>A</option>
+                 </select>
+               </div>
+               <div class="hd-term-item p-l-05" style="width: 15%">
+                 <button class="btn btn-primary btn-block" type="submit">
+                   중단
+                 </button>
+               </div>
+             </div>
+           </div>
+        </div>
+
+        <div class="nav nav-control affix-top" id="tabs">
+        </div>
+
+        <div class="swiper-container hd-swiper-01">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slider" role="button">
+
+              <div class="card hd-search hd-search-result p-a-1">
+                <div class="card-block p-a-0">
+                  <h4>감지기 기본정보</h4>
+
+                  <dl class="row">
+                    <dt class="col-xs-4">SK상태</dt>
+                    <dd class="col-xs-8">양호</dd>
+                    <dt class="col-xs-4">점검상태</dt>
+                    <dd class="col-xs-8">정상</dd>
+                    <dt class="col-xs-4">감지기ID</dt>
+                    <dd class="col-xs-8">2HP-A01</dd>
+                    <dt class="col-xs-4">도면번호</dt>
+                    <dd class="col-xs-8">2HP- 009</dd>
+                    <dt class="col-xs-4">설치위치</dt>
+                    <dd class="col-xs-8">가열로 1호기 1F</dd>
+                  </dl>
+
+                  <hr class="m-y-1">
+
+                  <dl class="row">
+                    <dt class="col-xs-4">가스종류</dt>
+                    <dd class="col-xs-8">H2</dd>
+                    <dt class="col-xs-4">검출량</dt>
+                    <dd class="col-xs-8">7.8%</dd>
+                    <dt class="col-xs-4">비상기준치</dt>
+                    <dd class="col-xs-8">25</dd>
+                    <dt class="col-xs-4">수신종류</dt>
+                    <dd class="col-xs-8">아날로그</dd>
+                    <dt class="col-xs-4">수신상태</dt>
+                    <dd class="col-xs-8">수신</dd>
+                    <dt class="col-xs-4">에러</dt>
+                    <dd class="col-xs-8">센서고장</dd>
+                  </dl>
+                </div>
+              </div><!-- /.card -->
+
+              <div class="card hd-search hd-search-result p-a-1">
+                <div class="card-block p-a-0">
+                  <h4>측정데이타 정보</h4>
+
+                  <dl class="row">
+                    <dt class="col-xs-4">PLC_IP</dt>
+                    <dd class="col-xs-8">192.168.20</dd>
+                    <dt class="col-xs-4">DATA_TYPE</dt>
+                    <dd class="col-xs-8">WORD</dd>
+                    <dt class="col-xs-4">IO_ADDRESS</dt>
+                    <dd class="col-xs-8">DB50.DBW30</dd>
+                    <dt class="col-xs-4">값변환</dt>
+                    <dd class="col-xs-8">예</dd>
+                    <dt class="col-xs-4">측정범위_MIN</dt>
+                    <dd class="col-xs-8">0</dd>
+                    <dt class="col-xs-4">측정범위_MAX</dt>
+                    <dd class="col-xs-8">100</dd>
+                  </dl>
+
+                </div>
+              </div><!-- /.card -->
+            </div><!-- /.swiper-slider -->
+
+            <div class="swiper-slider" role="button">
+
+
+
+            </div><!-- /.swiper-slider -->
+
+          </div><!-- /.swiper-wrapper -->
+        </div><!-- /.swiper-container -->
+
+
+      </div><!-- /.content -->
+
+
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      $('#tabs').scroll({
+        type: 'affix',
+        offset:{top:80}
+      });
+      // apply animation
+      $('#tabs').on('affixed.rc.scroll',function(){
+        $(this).addClass('animated fadeInDown')
+      })
+      $('#tabs').on('affixed-top.rc.scroll',function(){
+        $(this).removeClass('animated fadeInDown')
+      })
+
+
+      // Initialize Swiper
+      var swiper = new Swiper('.hd-swiper-01', {
+        pagination: '.nav-control',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        autoHeight: true,
+        slideActiveClass :'active',
+        bulletClass : 'nav-link',
+        bulletActiveClass : 'active' ,
+        paginationBulletRender: function (index, className) {
+        var title;
+        if (index === 0) title = '모니터링'
+        if (index === 1) title = '비상기준치대비'
+        return '<a class="' + className + '">'+title+'</a>';
+        },
+        onSlideChangeEnd: function (swiper) {
+            $('.content').animate({scrollTop:0}, '100');
+        }
+      });
+
+
+    </script>
+
+
+
+  </body>
+</html>
