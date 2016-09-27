@@ -145,6 +145,13 @@
   color: #d8dce2;
 }
 
+.list-inline .list-inline-item + .list-inline-item::before {
+  margin-left: -.1875rem;
+  padding-right: .3125rem;
+  content: "|";
+  color: #d8dce2;
+}
+
 .card .list-inline.hd-none .list-inline-item + .list-inline-item::before {
   margin-left: -.1875rem;
   padding-right: .3125rem;
@@ -847,4 +854,21 @@
 .hd-card-accordion .collapse,
 .hd-card-accordion .collapsing {
   padding: 0 .625rem .625rem
+}
+
+#U_SM_D34200 .form-group {
+  margin-bottom: 0;
+  background-color: #fff;
+  padding: .625rem;
+  line-height: 2.8;
+  border-top: .0625rem solid #bec2ce
+}
+#U_SM_D34200 .form-group .btn {
+  top: 0;
+  padding: .5rem;
+  line-height: 1.2rem;
+  border-radius: 0;
+  font-weight: normal;
+  background-color: #3a444d !important;
+  border-color: #3a444d !important;
 }
