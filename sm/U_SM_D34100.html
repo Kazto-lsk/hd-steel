@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼감지기_조회목록| 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 조회목록 시작 -->
+      <div id="" class="">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-logout pull-right"></a>
+          <h1 class="title left">보건예방</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+          <button class="btn btn-link btn-nav pull-left">
+            <span class="icon icon-left-nav"></span>
+            ￼감지기_조회목록
+          </button>
+        </div>
+
+        <!-- main content -->
+        <div class="content">
+
+          <div class="content-padded form-inline" id="moreSearch_2">
+            <div class="form-group">
+               <div class="hd-term">
+                 <div class="hd-term-item" style="width: 60%">
+                   <select class="form-control">
+                     <option>시험검정(재질시험실)</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 25%">
+                   <select class="form-control">
+                     <option>A</option>
+                   </select>
+                 </div>
+                 <div class="hd-term-item p-l-05" style="width: 15%">
+                   <button class="btn btn-primary btn-block" type="submit">
+                     시작
+                   </button>
+                 </div>
+               </div>
+             </div>
+          </div>
+
+          <div class="nav nav-control m-b-05">
+            <a class="nav-link active" role="button">모니터링</a>
+            <a class="nav-link" role="button">비상기준치대비</a>
+          </div>
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <span class="badge badge-default badge-inverted">정상</span>
+                  <span class="badge badge-outline badge-primary hd-left">양호</span>
+                  &nbsp;
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                 <dl class="row">
+                   <dt class="col-xs-3">감지기ID</dt>
+                   <dd class="col-xs-9 text-xs-right">1GR-A01</dd>
+                   <dt class="col-xs-3">가스종류</dt>
+                   <dd class="col-xs-9 text-xs-right">CO</dd>
+                   <dt class="col-xs-3">검출량</dt>
+                   <dd class="col-xs-9 text-xs-right">0 ppm</dd>
+                 </dl>
+               </div>
+             </div>
+             <div class="nav nav-control">
+               <a class="nav-link" role="button">상세확인</a>
+               <a class="nav-link" role="button" data-toggle="modal" data-target="#U_SM_D34103">점검이력조회</a>
+             </div>
+          </div>
+
+          <div class="card hd-search hd-search-result">
+            <div class="card-header">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <span class="badge badge-default badge-inverted">정상</span>
+                  <span class="badge badge-outline badge-primary hd-left">양호</span>
+                  &nbsp;
+                </li>
+              </ul>
+             </div>
+             <div class="card-block">
+               <div class="card-block-inner borderBottomNone">
+                 <dl class="row">
+                   <dt class="col-xs-3">감지기ID</dt>
+                   <dd class="col-xs-9 text-xs-right">1GR-A01</dd>
+                   <dt class="col-xs-3">가스종류</dt>
+                   <dd class="col-xs-9 text-xs-right">CO</dd>
+                   <dt class="col-xs-3">검출량</dt>
+                   <dd class="col-xs-9 text-xs-right">0 ppm</dd>
+                 </dl>
+               </div>
+             </div>
+             <div class="nav nav-control">
+               <a class="nav-link" role="button">상세확인</a>
+               <a class="nav-link" role="button" data-toggle="modal" data-target="#U_SM_D34103">점검이력조회</a>
+             </div>
+          </div>
+
+        </div>
+      </div><!-- 조회목록 끝 -->
+
+    </div>
+
+    <!-- modal 점검이력조회 -->
+    <div id="U_SM_D34103" class="modal">
+      <header class="bar bar-nav bar-light bg-faded">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title">점검이력조회</h1>
+      </header>
+      <div class="content">
+        <p class="content-padded">
+          The contents of my modal go here.
+        </p>
+      </div>
+    </div>
+
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+
+    </script>
+
+
+
+  </body>
+</html>
