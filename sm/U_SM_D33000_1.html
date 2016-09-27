@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>안전신문_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <title>근골결계_조회목록 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -48,7 +48,7 @@
           <div class="clearfix">
             <button class="btn btn-link btn-nav pull-left">
               <span class="icon icon-left-nav"></span>
-              안전신문_조회목록
+              ￼근골격계_조회목록
             </button>
             <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
           </div>
@@ -56,41 +56,39 @@
           <!-- 상세검색 -->
            <div id="moreSearch" class="collapse">
 
-             <div class="form-inline">
+             <form class="form-inline">
+
+              <div class="form-group">
+                <div class="hd-term">
+                  <div class="hd-term-item" style="width: 100%">
+                    <select class="form-control">
+                      <option>2016년도</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
               <div class="form-group">
                  <div class="hd-term">
-                   <div class="hd-term-item" style="width: 40%">
+                   <div class="hd-term-item" style="width: 35%">
                      <select class="form-control">
-                       <option>전체</option>
-                       <option>제목</option>
-                       <option>내용</option>
+                       <option>부서명</option>
+                       <option>직무구분</option>
+                       <option>설비구분</option>
+                       <option>작업명</option>
                      </select>
                    </div>
-                   <div class="hd-term-item p-l-1" style="width: 60%">
+                   <div class="hd-term-item p-l-05" style="width: 50%">
                     <input type="text" class="form-control" placeholder="" value="">
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
                    </div>
                  </div>
                </div>
-
-               <div class="form-group">
-                 <div class="hd-term">
-                    <div class="hd-term-item" style="width: 40%">
-                     <input type="date" class="form-control" value="2016-08-19">
-                    </div>
-                    <div class="hd-term-divider"></div>
-                    <div class="hd-term-item" style="width: 40%">
-                     <input type="date" class="form-control" value="2016-08-19">
-                    </div>
-                    <div class="hd-term-item p-l-05" style="width: 15%">
-                      <button class="btn btn-primary btn-block" type="submit">
-                        조회
-                      </button>
-                    </div>
-                  </div>
-               </div>
-
-             </div>
+             </form>
 
            </div>
         </div>
@@ -100,39 +98,21 @@
 
 
           <p class="content-padded">
-            안전신문 조회목록
+            ￼근골격계 조회목록
           </p>
-
-          <ul class="table-view">
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                제목입니다. 제목입니다
-                <p class="m-t-05">2016.01.01</p>
-              </a>
-            </li>
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                제목입니다. 제목입니다 제목입니다. 제목입니다제목입니다. 제목입니다
-                <p class="m-t-05">2016.01.01</p>
-              </a>
-            </li>
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                제목입니다. 제목입니다
-                <p class="m-t-05">2016.01.01</p>
-              </a>
-            </li>
-            <li class="table-view-cell">
-              <a class="navigate-right">
-                제목입니다. 제목입니다 제목입니다. 제목입니다제목입니다. 제목입니다
-                <p class="m-t-05">2016.01.01</p>
-              </a>
-            </li>
-          </ul>
+          <div class="card p-a-1 text-xs-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">2016년도</li>
+              <li class="list-inline-item">A.B 지구</li>
+            </ul>
+          </div>
 
 
-          <div class="card hd-search hd-search-result" role="button">
-            <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
+          <div class="hd-data-none" style="height:70%">
+            <div>
+              <img src="../assets/img/data-none.png" alt="">
+              <span>검색한 결과가 없습니다.</span>
+            </div>
           </div>
 
         </div>
