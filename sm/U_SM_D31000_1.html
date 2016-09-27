@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>보호구_조회목록 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-sm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+
+      <!-- 조회목록 시작 -->
+      <div id="" class="">
+
+        <!-- header -->
+        <header class="bar bar-nav bar-dark bg-primary">
+          <a class="icon icon-simbol pull-left"></a>
+          <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+          <a class="icon icon-qrcode pull-right"></a>
+          <a class="icon icon-logout pull-right"></a>
+          <h1 class="title left">보건예방</h1>
+        </header>
+
+        <!-- secondary header-->
+        <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+
+          <div class="clearfix">
+            <button class="btn btn-link btn-nav pull-left">
+              <span class="icon icon-left-nav"></span>
+              보호구_조회목록
+            </button>
+            <a class="icon icon-search pull-right hd-moreSearch" role="button" data-toggle="collapse" href="#moreSearch"></a>
+          </div>
+
+          <!-- 상세검색 -->
+           <div id="moreSearch" class="collapse">
+
+             <div class="form-inline">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>전체</option>
+                  <option>발보호용</option>
+                  <option>두부보호용</option>
+                  <option>호흡기보호용</option>
+                  <option>안구보호용</option>
+                  <option>손보호용</option>
+                  <option>신체보호용</option>
+                  <option>청각보호용</option>
+                </select>
+              </div>
+              <div class="form-group">
+                 <div class="hd-term">
+                   <div class="hd-term-item" style="width: 85%">
+                    <input type="text" class="form-control" placeholder="※ 품목검색" value="">
+                   </div>
+                   <div class="hd-term-item p-l-05" style="width: 15%">
+                     <button class="btn btn-primary btn-block" type="submit">
+                       조회
+                     </button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content bg-white">
+
+          <p class="content-padded">
+            보호구 조회목록
+          </p>
+
+          <div class="hd-data-none" style="height:70%">
+            <div>
+              <img src="../assets/img/data-none.png" alt="">
+              <span>검색한 결과가 없습니다.</span>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- 조회목록 끝 -->
+
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      // bar-header-secondary 상세검색
+      $('#moreSearch').on('show.rc.collapse', function () {
+        $('#header-secondary').addClass("hd-expanded")
+      })
+      $('#moreSearch').on('hide.rc.collapse', function () {
+        $('#header-secondary').removeClass("hd-expanded")
+      })
+
+
+      $('#U_SM_E10000').on('show.rc.modal',function(){
+        $(this).load('./template/U_SM_E10000.html',function(){
+
+          setTimeout(function() {
+            $('#search_input').focus();
+          }, 50);
+
+          $('#U_SM_E10000 .table-view-cell a').on('tap',function(){
+            var name = $(this).data('name');
+            $('#team').val(name);
+
+            $(this).modal('hide');
+
+          });
+        })
+      });
+
+      // photoSwipe 초기화
+      RC_initPhotoSwipe()
+
+    </script>
+
+
+
+  </body>
+</html>
