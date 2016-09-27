@@ -414,6 +414,17 @@
   margin-left: 0.3125rem;
 }
 
+/*hd-deck-02*/
+.hd-deck-02 .card-deck {
+  margin-right: -.1875rem;
+  margin-bottom: .375rem;
+  margin-left: -.1875rem;
+}
+.hd-deck-02 .card-deck .card {
+  margin-top: 0;
+  margin-right: .1875rem;
+  margin-left: .1875rem;
+}
 
 /*hd-status-01*/
 .hd-status-01 .card-deck .card {
