@@ -11,6 +11,8 @@
     <!-- kimsQ RC CSS -->
     <link href="../assets/css/rc.css" rel="stylesheet" >
     <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
 
     <link href="../assets/css/app.css" rel="stylesheet">
     <link href="../assets/css/app-sm.css" rel="stylesheet">
@@ -93,10 +95,16 @@
             보호구 조회목록
           </p>
 
-          <div class="card-deck-wrapper content-padded hd-deck-02">
+          <div class="card-deck-wrapper content-padded hd-deck-02"  data-extension="photoswipe">
+
             <div class="card-deck">
               <div class="card">
-                <img class="card-img-top img-fluid" src="../assets/img/U_SM_D31000-01.png" alt="">
+                <figure>
+                  <a href="../assets/img/U_SM_D31000-01.png" itemprop="contentUrl" data-size="964x1024">
+                    <img class="card-img-top img-fluid figure-img" src="../assets/img/U_SM_D31000-01.png" alt="[발보호용]신발류">
+                  </a>
+                </figure>
+
                 <div class="card-block p-a-1">
                   <h4 class="card-title h6 m-b-05">[발보호용]신발류</h4>
                   <p class="card-text">
@@ -151,6 +159,8 @@
 
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
 
     <script src="../assets/js/app.js"></script>
 
@@ -181,6 +191,9 @@
           });
         })
       });
+
+      // photoSwipe 초기화
+      RC_initPhotoSwipe()
 
     </script>
 
