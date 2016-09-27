@@ -70,14 +70,14 @@
                  </div>
                  <div class="hd-term-item p-l-05" style="width: 15%">
                    <button class="btn btn-primary btn-block" type="submit">
-                     시작
+                     중단
                    </button>
                  </div>
                </div>
              </div>
           </div>
 
-          <div class="nav nav-control m-b-05">
+          <div class="nav nav-control m-b-05" style="border-bottom: 0.0625rem solid #bec2ce">
             <a class="nav-link active" role="button">모니터링</a>
             <a class="nav-link" role="button">비상기준치대비</a>
           </div>
@@ -143,16 +143,92 @@
 
     </div>
 
-    <!-- modal 점검이력조회 -->
+    <!-- modal #U_SM_D34103 점검이력조회 -->
     <div id="U_SM_D34103" class="modal">
-      <header class="bar bar-nav bar-light bg-faded">
+      <header class="bar bar-nav bar-light bg-white" style="border-bottom: .0625rem solid #3a444d">
         <a class="icon icon-close pull-right" data-history="back" role="button"></a>
-        <h1 class="title">점검이력조회</h1>
+        <h1 class="title"><strong>점검이력조회</strong></h1>
       </header>
-      <div class="content">
-        <p class="content-padded">
-          The contents of my modal go here.
-        </p>
+      <div class="content bg-faded">
+
+        <div class="card p-a-1">
+          <dl class="row m-b-0">
+            <dt class="col-xs-3">감지기ID</dt>
+            <dd class="col-xs-3 p-l-0 m-b-0">1GR-A01</dd>
+            <dt class="col-xs-3">가스종류</dt>
+            <dd class="col-xs-3 p-l-0 m-b-0">CO</dd>
+          </dl>
+        </div><!-- /.card -->
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <button class="btn btn-white">삭제</button>
+                <span class="badge badge-default badge-inverted hd-left">2016.05.18 13:43:22</span>
+                &nbsp;
+              </li>
+            </ul>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <span class="text-muted">[PLC점검]</span>
+               <span class="text-muted pull-xs-right text-danger">범위초과</span>
+              </div>
+           </div>
+        </div><!-- /.card -->
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <button class="btn btn-white">삭제</button>
+                <span class="badge badge-default badge-inverted hd-left">2016.05.18 13:43:22</span>
+                &nbsp;
+              </li>
+            </ul>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <span>[PLC점검]</span>
+               <span class="text-muted pull-xs-right text-danger">혼선</span>
+              </div>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               &nbsp;
+               <span class="pull-xs-right">수신 2 WH-112</span>
+              </div>
+           </div>
+        </div><!-- /.card -->
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <button class="btn btn-white">삭제</button>
+                <span class="badge badge-default badge-inverted hd-left">2016.05.18 13:43:22</span>
+                &nbsp;
+              </li>
+            </ul>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+               <span>[PLC점검]</span>
+               <span class="text-muted pull-xs-right text-danger">혼선</span>
+              </div>
+           </div>
+           <div class="card-block">
+             <div class="card-block-inner borderBottomNone">
+                비고내용입니다. 비고내용입니다. 비고내용입니다.
+              </div>
+           </div>
+        </div><!-- /.card -->
+
+        <div class="card hd-search hd-search-result" role="button">
+          <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
+        </div>
+
       </div>
     </div>
 

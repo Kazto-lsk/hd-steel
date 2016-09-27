@@ -2017,7 +2017,7 @@ hr {
 
 
 .bg-faded {
-  background-color: #f0f0f4
+  background-color: #f0f0f4 !important
 }
 
 .table-view-cell {
