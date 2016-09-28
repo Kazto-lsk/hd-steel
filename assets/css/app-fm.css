@@ -85,7 +85,7 @@
     line-height: 2.5rem;
   }
   .bar-header-secondary .form-inline {
-    width: 730px
+    /*width: 730px*/
   }
 }
 
@@ -178,4 +178,35 @@
 
 .popup.popup-sm .content {
   max-height: 300px;
+}
+
+/*bar-tab*/
+.bar-tab .tab-item {
+  color: #999 !important;
+}
+.bar-tab .tab-item.active {
+  color: #fff !important;
+}
+
+/*utility*/
+
+.m-l-default {
+  margin-left: .625rem
+}
+.m-r-default {
+  margin-right: .625rem
+}
+.m-x-default {
+  margin-left: .625rem;
+  margin-right: .625rem
+}
+.m-t-default {
+  margin-top: .625rem
+}
+.m-b-default {
+  margin-bottom: .625rem
+}
+.m-y-default {
+  margin-top: .625rem;
+  margin-bottom: .625rem
 }

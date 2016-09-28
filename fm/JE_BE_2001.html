@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>￼저장고 MAP 재고 수정 | 현대제철 스마트팩토리 마크업</title>
+    <title>￼배합적치실적조회(층별) | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -33,151 +33,539 @@
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-simbol pull-left"></a>
         <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
-        <h1 class="title left">저장고 MAP 재고 수정</h1>
+        <h1 class="title left">배합적치실적조회(층별)</h1>
       </header>
 
       <!-- secondary header-->
       <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
         <div class="table-responsive">
         <div class="form-inline">
-          <div class="form-group">
-            <label>조회일시</label>
-            <input type="date" class="form-control" id="" placeholder="" style="width: 230px" value="2016-07-18">
-            <input type="text" class="form-control" id="time" placeholder="" style="width: 100px" value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
-          </div>
-          <div class="form-group p-l-1">
-            <label>구분</label>
-            <select class="form-control">
-              <option selected>습량</option>
-              <option selected>건량</option>
+
+          <div class="form-group pull-xs-left">
+            <label>공장</label>
+            <select class="form-control m-l-default">
+              <option selected>1배합</option>
+              <option>2배합</option>
+              <option>3배합</option>
             </select>
           </div>
-          <div class="form-group p-l-1">
-            <label>광석구분</label>
-            <select class="form-control">
-              <option selected>철광석</option>
-              <option selected>석탄</option>
-              <option selected>부원료</option>
+          <div class="form-group p-l-1 pull-xs-left">
+            <label>Pile No</label>
+            <select class="form-control m-l-default">
+              <option selected>0204</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary">조회</button>
+          <div class="pull-xs-right">
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div>
         </div><!-- /.form-inline -->
       </div><!-- /.table-responsive -->
 
-
       </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
 
       <!-- main content -->
       <div class="content">
 
-        <div class="nav nav-control">
-          <a class="nav-link active" role="button" data-toggle="tab">OC</a>
-          <a class="nav-link" role="button" data-toggle="tab">OL</a>
-          <a class="nav-link" role="button" data-toggle="tab">BL</a>
-          <a class="nav-link spacing-m1" role="button" data-toggle="tab">배합강 상세내역</a>
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom">
+            <thead>
+              <tr>
+                <th rowspan="2">Brand</th>
+                <th colspan="4">Total</th>
+                <th colspan="2">1-1</th>
+                <th colspan="2">1-2</th>
+
+                <th colspan="2">1-3</th>
+                <th colspan="2">2-4</th>
+                <th colspan="2">2-5</th>
+                <th colspan="2">2-6</th>
+                <th colspan="2">3-7</th>
+                <th colspan="2">3-8</th>
+                <th colspan="2">3-9</th>
+                <th colspan="2">4-10</th>
+                <th colspan="2">4-11</th>
+                <th colspan="2">4-12</th>
+
+              </tr>
+              <tr>
+                <th>계획</th>
+                <th>실적(건)</th>
+                <th>실적(급)</th>
+                <th>잔량</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+                <th>계획</th>
+                <th>실적</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1- 0232</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">CARF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">YANF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">PILF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">HIYF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">ROVF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">ASMF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">KINF</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">ASMU</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">PILU</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">M90A82</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">M90A86</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">R80D06</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+              <tr>
+                <th scope="row">BFD</th>
+                <td>1,000</td>
+                <td>362</td>
+                <td>365</td>
+                <td>638</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+                <td>1001</td>
+                <td>362</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane active" id="oc" role="tabpanel">
-
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr class="bg-white">
-                    <th></th>
-                    <th colspan="3">OC-1 : 195,543톤</th>
-                    <th colspan="3">OC-2 : 110,671톤</th>
-                    <th colspan="3">OC-3 : 112,175톤</th>
-                    <th colspan="3">OC-4 : 148,352톤</th>
-                  </tr>
-                  <tr>
-                    <th>Cell No</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table-active">
-                    <th scope="row">브랜드</th>
-                    <td>KOMS</td>
-                    <td>CARF</td>
-                    <td></td>
-                    <td>PILS</td>
-                    <td>YANF</td>
-                    <td></td>
-                    <td>KINF</td>
-                    <td>HIYF</td>
-                    <td></td>
-                    <td>SAMP</td>
-                    <td>ASMF</td>
-                    <td>SFPP</td>
-                  </tr>
-                  <tr class="text-xs-center">
-                    <th scope="row">적치구간</th>
-                    <td>45~180</td>
-                    <td>190~350</td>
-                    <td></td>
-                    <td>20~180</td>
-                    <td>190~350</td>
-                    <td></td>
-                    <td>20~180</td>
-                    <td>190~350</td>
-                    <td></td>
-                    <td>100~200</td>
-                    <td>210~350</td>
-                    <td>25~95</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">불출각도</th>
-                    <td>23.41</td>
-                    <td>0.00</td>
-                    <td></td>
-                    <td>23.41</td>
-                    <td>2.14</td>
-                    <td></td>
-                    <td>0.56</td>
-                    <td>6.23</td>
-                    <td></td>
-                    <td>6.36</td>
-                    <td>15.03</td>
-                    <td>0.00</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">재고량</th>
-                    <td>4,911</td>
-                    <td>8,496</td>
-                    <td></td>
-                    <td>110,866</td>
-                    <td>84,677</td>
-                    <td></td>
-                    <td>79,494</td>
-                    <td>32,681</td>
-                    <td></td>
-                    <td>50,088</td>
-                    <td>88,031</td>
-                    <td>10,233</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-
-          </div>
-          <div class="tab-pane" id="ol" role="tabpanel">OL</div>
-          <div class="tab-pane" id="bl" role="tabpanel">BL</div>
-          <div class="tab-pane" id="dt" role="tabpanel">배합강 상세내역</div>
-        </div>
 
 
       </div><!-- /.content -->
@@ -190,9 +578,40 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
     <script src="../assets/js/app-fm.js"></script>
 
     <script>
+
+      // http://timmywil.github.io/jquery.panzoom/
+
+      // Several options at once
+    $(".panzoom").panzoom("option", {
+      increment: 0.4,
+      minScale: 0.5,
+      maxScale: 1,
+      duration: 500,
+      $reset: $("#panzoom-reset")
+    });
+
+    $("#panzoom-remove").tap(function(){
+      $(".panzoom").panzoom("resetPan");
+      $(".panzoom").panzoom("resetZoom");
+      $(".panzoom").panzoom("disable");
+      $(this).addClass("active");
+      $("#panzoom-start").removeClass("active");
+    });
+    $("#panzoom-start").tap(function(){
+      $(".panzoom").panzoom();
+      $(".panzoom").panzoom("enable");
+      $(this).addClass("active");
+      $("#panzoom-remove").removeClass("active");
+    });
+
+
+
     $('#popup-time').on('show.rc.popup',function(){
       $(this).load('./template/popup-time.html',function(){
 
