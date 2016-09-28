@@ -99,3 +99,58 @@
   border-left: none;
   border-right: none
 }
+
+
+/*table*/
+
+.table {
+  margin-top: .5rem
+}
+.table-bordered {
+  border: 0.0625rem solid #b4b8c4;
+}
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 0.0625rem;
+  border-color: #b4b8c4;
+  vertical-align: middle;
+}
+.table-bordered td {
+  border: 0.0625rem solid #d8dce2;
+}
+.table-bordered th, .table-bordered td {
+  border: 0.0625rem solid #d8dce2;
+}
+.table th {
+  background-color: #d4d6e4;
+  text-align: center;
+  color: #626470;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.table tbody td {
+  background-color: #fff;
+  text-align: right;
+  vertical-align: middle;
+  min-width: 4.5rem;
+}
+.table .bg-white th {
+  background-color: #fff;
+  color: #333
+}
+.table th,
+.table td {
+  padding: 0.75rem 0.75rem ;
+  vertical-align: top;
+  border-top: 0.0625rem solid #eceeef;
+  font-weight: normal;
+}
+.table tr.table-active td {
+  background-color: #f0f4fb;
+  text-align: center;
+}
+
+.table [scope="row"] {
+  border-right: .0625rem solid #b4b8c4;
+  border-bottom: .0625rem solid #b4b8c4
+}
