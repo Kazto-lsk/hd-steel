@@ -130,7 +130,7 @@
   background-color: #d4d6e4;
   text-align: center;
   color: #626470;
-  vertical-align: middle;
+  vertical-align: middle !important;
   white-space: nowrap;
 }
 .table tbody td {
@@ -160,6 +160,10 @@
   border-bottom: .0625rem solid #b4b8c4
 }
 
+.table .hd-time td {
+  text-align: center;
+  font-size: .9rem;
+}
 
 
 /*popup*/
