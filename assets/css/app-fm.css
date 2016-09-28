@@ -20,10 +20,6 @@
   border-bottom: .0625rem solid #d8dce2;
 }
 
-.bar-header-secondary .form-inline {
-  min-width: 1150px
-}
-
 .bar-header-secondary .form-inline label {
   margin-bottom: 0;
   color: #626470;
@@ -83,6 +79,9 @@
   }
   .form-inline .form-group {
     line-height: 2.5rem;
+  }
+  .bar-header-secondary .form-inline {
+    width: 730px
   }
 }
 
