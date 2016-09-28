@@ -18,6 +18,11 @@
     <script src="../assets/js/rc.js"></script>
 
     <style>
+    .table {
+      background-color: #fff;
+      width: 98%
+    }
+
     .table th,
     .table td {
       vertical-align: middle;
@@ -32,6 +37,13 @@
     .table-active a {
       color: #999
     }
+
+    .table tbody tr {
+      counter-increment: Serial;
+    }
+    .table tbody th:before {
+      content: counter(Serial); /* Display the counter */
+    }
     </style>
   </head>
   <body>
@@ -40,10 +52,82 @@
       <h1 class="title">제선공정</h1>
     </header>
     <div class="content">
-      <div class="">
-
-
-      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered table-sm">
+          <thead class="thead-default">
+            <tr>
+              <th>#</th>
+              <th>1차메뉴</th>
+              <th>2차메뉴</th>
+              <th>페이지명</th>
+              <th>화면ID</th>
+              <th>소스코드</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">인트로</td>
+              <td class="text-xs-center"></td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_LO_0001.html" target="_blank">JE_LO_0001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_LO_0001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">앱가이드</td>
+              <td class="text-xs-center"></td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_AG_0001.html" target="_blank">JE_AG_0001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_AG_0001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center" rowspan="2">로그인</td>
+              <td class="text-xs-center">로그인</td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_LO_1001.html" target="_blank">JE_LO_1001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_LO_1001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">개인정보취급방침</td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_LO_1002.html" target="_blank">JE_LO_1002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_LO_1002.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">메인화면</td>
+              <td class="text-xs-center"></td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_MA_1000.html" target="_blank">JE_MA_1000</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_MA_1000.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center" rowspan="11">배합</td>
+              <td class="text-xs-center">저장고Map재고</td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_BE_1001.html" target="_blank">JE_BE_1001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_BE_1001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">배합적치실적조회(층별)</td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_BE_2001.html" target="_blank">JE_BE_2001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_BE_2001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">Brand별 배합기준 성분관리</td>
+              <td class="text-xs-center"></td>
+              <td><a href="./JE_BE_2002.html" target="_blank">JE_BE_2002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/fm/JE_BE_2002.html" target="_blank">CODE</a></td>
+            </tr>
+          </tbody>
+        </table>
     </div>
 
     <script src="../assets/js/app.js"></script>
