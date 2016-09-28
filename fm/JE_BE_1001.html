@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼저장고 MAP 재고 수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">저장고 MAP 재고 수정</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+        <div class="form-inline">
+          <div class="form-group">
+            <label>조회일시</label>
+            <input type="date" class="form-control" id="" placeholder="" style="width: 230px" value="2016-07-18">
+            <input type="text" class="form-control" id="" placeholder="" style="width: 100px" value="11시">
+          </div>
+          <div class="form-group p-l-1">
+            <label>구분</label>
+            <select class="form-control">
+              <option selected>습량</option>
+            </select>
+          </div>
+          <div class="form-group p-l-1">
+            <label>광석구분</label>
+            <select class="form-control">
+              <option selected>철광석</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">조회</button>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+
+
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="nav nav-control">
+          <a class="nav-link active" role="button">OC</a>
+          <a class="nav-link" role="button">OL</a>
+          <a class="nav-link" role="button">BL</a>
+          <a class="nav-link spacing-m1" role="button">배합강 상세내역</a>
+        </div>
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
