@@ -566,7 +566,10 @@
           </table>
         </div>
 
-
+          dfdfsdfsdf  <br>
+          dfdfsdfsdf  <br>
+          dfdfsdfsdf  <br>
+          dfdfsdfsdf  <br>
 
       </div><!-- /.content -->
     </div><!-- /.snap-content -->
@@ -588,17 +591,10 @@
       // http://timmywil.github.io/jquery.panzoom/
 
       // Several options at once
-    $(".panzoom").panzoom("option", {
-      increment: 0.4,
-      minScale: 0.5,
-      maxScale: 1,
-      duration: 500,
-      $reset: $("#panzoom-reset")
-    });
+
 
     $("#panzoom-remove").tap(function(){
-      $(".panzoom").panzoom("resetPan");
-      $(".panzoom").panzoom("resetZoom");
+      $(".panzoom").panzoom("reset");
       $(".panzoom").panzoom("disable");
       $(this).addClass("active");
       $("#panzoom-start").removeClass("active");
@@ -608,6 +604,14 @@
       $(".panzoom").panzoom("enable");
       $(this).addClass("active");
       $("#panzoom-remove").removeClass("active");
+
+      $(".panzoom").panzoom("option", {
+        increment: 0.4,
+        minScale: 0.5,
+        maxScale: 1,
+        duration: 500,
+      });
+
     });
 
 
