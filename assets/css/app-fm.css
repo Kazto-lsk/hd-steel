@@ -14,6 +14,10 @@
   background-color: #d5e6ff
 }
 
+.form-control[readonly] {
+  background-color: #fff;
+}
+
 
 .bar-header-secondary {
   height: 3.5625rem;
@@ -104,7 +108,8 @@
 /*table*/
 
 .table {
-  margin-top: .5rem
+  margin-top: .5rem;
+  margin-bottom: 0
 }
 .table-bordered {
   border: 0.0625rem solid #b4b8c4;
@@ -153,4 +158,24 @@
 .table [scope="row"] {
   border-right: .0625rem solid #b4b8c4;
   border-bottom: .0625rem solid #b4b8c4
+}
+
+
+
+/*popup*/
+
+.popup .bar.bar-nav {
+  border-bottom: .0625rem solid #000;
+}
+
+.popup .table td {
+  text-align: center;
+}
+.popup .table td:active {
+  background-color: #f4f8fd;
+  border: .125rem solid #74a9e3
+}
+
+.popup.popup-sm .content {
+  max-height: 300px;
 }
