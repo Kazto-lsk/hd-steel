@@ -99,7 +99,9 @@
 .card .table-view-full .table-view-cell a::before {
   content: "간단정보 등록"
 }
-
+.card .table-view-full .table-view-cell a.hd-none::before {
+  content: ""
+}
 
 .card.hd-search-result .card-block .card-block-inner {
   padding: .4375rem .3125rem;
