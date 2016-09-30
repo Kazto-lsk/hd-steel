@@ -1387,7 +1387,7 @@ hr {
 }
 
 .modal  .bar-header-secondary ~ .content > .content-scroll {
-  padding-top: 7.9rem;
+  padding-top: 7.7rem;
 }
 .modal .bar-header-secondary.hd-search .input-group {
   margin-bottom: .4rem
@@ -1707,11 +1707,11 @@ hr {
 /*modal-search*/
 .modal .bar-header-secondary.hd-search {
   top: 2.8125rem;
-  height: 3.34375rem;
+  height: 5rem;
   background-color: #f7f7f9;
 }
 .modal .bar-header-secondary.hd-search ~ .content {
-  padding-top: 6.2rem;
+  padding-top: 7.7rem;
 }
 .modal .bar-header-secondary.hd-search input[type="search"] {
   margin: 0;
