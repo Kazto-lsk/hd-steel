@@ -88,7 +88,7 @@ body {
   content: "\e907";
 }
 .icon-power-off:before {
-  content: "\e908";
+  content: "\e914";
 }
 .icon-simbol:before {
   content: "\e909";
@@ -351,8 +351,8 @@ body {
   width: 2.5rem
 }
 .bar .icon.pull-right {
-  padding-left: .5625rem;
-  padding-right: .5625rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
 }
 .bar-dark .btn-link {
   padding-left: .625rem;
@@ -1002,7 +1002,7 @@ input.form-control {
   content: ""
 }
 h5.hd-heading {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 1rem;
 }
 .hd-section:after {
