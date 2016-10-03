@@ -417,9 +417,7 @@ body {
   margin: 1.25rem;
   margin-bottom: 0.75rem;
   background-color: #fff;
-  /*border-radius: 0.25rem;*/
-  /*border: .0625rem solid #b4b8c4;*/
-  /*border-top: .0625rem solid #b4b8c4*/
+  border: 1px solid #ccc;
 }
 
 .card.card-full {
