@@ -1350,7 +1350,7 @@ hr {
 
 .navigate-rightdown:after,
 .push-rightup:after {
-  content: '\e902';
+  content: '\e903';
 }
 
 .navigate-rightdown.collapsed:after,
@@ -1448,17 +1448,87 @@ hr {
  content: '\e820';
 }
 
-.snap-drawer .table-view .table-view {
- background-color: #f6f6f8;
+.snap-drawer .bar-nav .title {
+  margin: 0;
+  text-align: left;
+  padding-left: 1rem;
+  line-height: 2.8125rem
 }
-.snap-drawer .bar .title {
- text-align: left;
- padding-left: 2.3125rem
+.snap-drawer .bar-header-secondary {
+  height: 2.34375rem
+}
+.snap-drawer .bar-header-secondary .title,
+.snap-drawer .bar-footer-secondary .title {
+  margin: 0;
+  text-align: left;
+  padding-left: 1rem;
+  line-height: 2.34375rem
+}
+.snap-drawer .bar-header-secondary .icon,
+.snap-drawer .bar-footer-secondary .icon {
+  top: .3125rem
+}
+.snap-drawer .bar-footer-secondary {
+  bottom: 2.59rem;
+}
+.snap-drawer .bar-footer-secondary .title {
+  line-height: 2.75rem
+}
+.snap-drawer .bar-footer-secondary .btn-outline-secondary:active,
+.snap-drawer .bar-footer-secondary .btn-outline-secondary:focus {
+  background-color: #1f2b36;
+}
+
+.snap-drawer .bar-tab.bar-dark {
+  border-top-color: #313a42;
+  height: 2.5rem
+}
+.snap-drawer .bar-tab.bar-dark .tab-item {
+  color: #9a9eac !important;
+  font-size: .9rem;
+  line-height: 2.5rem
+}
+.snap-drawer .table-view [data-toggle="collapse"] .media-body {
+  color: #0a2972;
+}
+.snap-drawer .table-view .collapsed[data-toggle="collapse"] .media-body{
+  color: #333
+}
+.snap-drawer .table-view .table-view {
+  background-color: #f6f6f8;
+  border-top: 0.0625rem solid #d8dce2
+}
+.snap-drawer .table-view .table-view .table-view-cell {
+  padding-left: 2.8rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#c8c7cc' x='0' y='0' width='100%' height='0.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: 2.5rem 100%;
+  border-bottom: 0;
+}
+.snap-drawer .table-view .table-view .table-view-cell:last-child {
+  background-image: none;
+}
+.snap-drawer .table-view .table-view .table-view-cell a {
+  margin-left: -2.8rem;
+  color: #626470
+}
+.snap-drawer .table-view .table-view .table-view-cell a:active {
+  background-color: #e8e8ee
+}
+.snap-drawer .table-view-inverse {
+  background-color: #707480;
+  border-top: none;
+  border-bottom: none
+}
+.snap-drawer .bar-footer-secondary ~ .content {
+  padding-bottom: 5.33rem;
 }
 .snap-drawer .content {
   background-image: none !important
 }
-
+.snap-drawer .content .media-object {
+  height: 1.25rem
+}
 
 /**
  * Utillity

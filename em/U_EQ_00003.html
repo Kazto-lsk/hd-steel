@@ -25,11 +25,11 @@
       <div class="snap-drawer snap-drawer-right" id="drawer">
 
         <header class="bar bar-nav bar-dark bg-primary">
-          <a class="icon icon-rc icon-gear pull-right" role="button" href=""></a>
+          <a class="icon icon-power-off pull-right" role="button" href=""></a>
           <h1 class="title">홍길동 / 정보운영관리부</h1>
         </header>
 
-        <div class="bar bar-standard bar-header-secondary bar-dark bg-primary">
+        <div class="bar bar-standard bar-header-secondary bar-dark bg-primary p-x-0">
           <h1 class="title">
             <span class="icon icon-dot-01"></span>
             설비관리시스템
@@ -37,26 +37,28 @@
         </div>
 
         <!-- Block button in standard bar fixed above the footer -->
-        <div class="bar bar-standard bar-footer-secondary bar-dark" style="background-color: #3a444d;">
-          <ul class="table-view">
-            <li class="table-view-cell">앱버전 <button class="btn btn-outline-secondary">업데이트</button></li>
-          </ul>
+        <div class="bar bar-standard bar-footer-secondary bar-dark p-l-0" style="background-color: #3a444d;">
+          <h1 class="title">
+            <span class="icon icon-dot-01"></span>
+            앱버전
+          </h1>
+          <button class="btn btn-outline-secondary pull-right">업데이트</button>
         </div>
 
         <nav class="bar bar-tab bar-dark" style="background-color: #3a444d;">
-          <a class="tab-item" role="button" href="">
+          <span class="tab-item">
             현재버전 00.00
-          </a>
-          <a class="tab-item" role="button" href="">
+          </span>
+          <span class="tab-item">
             최신버전 00.00
-          </a>
+          </span>
         </nav>
 
         <div class="content">
-          <ul class="table-view" id="tree">
+          <ul class="table-view m-b-0" id="tree">
             <li class="table-view-cell">
               <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#1">
-                <span class="media-object pull-left icon-rc icon-star"></span>
+                <img class="media-object pull-left" src="../assets/img/em-side-01.png" alt="">
                 <div class="media-body">
                   기준정보
                 </div>
@@ -91,7 +93,7 @@
             </li>
             <li class="table-view-cell">
               <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#2">
-                <span class="media-object pull-left icon icon-star"></span>
+                <img class="media-object pull-left" src="../assets/img/em-side-02.png" alt="">
                 <div class="media-body">
                   작업오더
                 </div>
@@ -112,7 +114,7 @@
 
             <li class="table-view-cell">
               <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#3">
-                <span class="media-object pull-left icon icon-star"></span>
+                <img class="media-object pull-left" src="../assets/img/em-side-03.png" alt="">
                 <div class="media-body">
                   QR CODE
                 </div>
@@ -133,7 +135,7 @@
 
             <li class="table-view-cell">
               <a class="navigate-rightdown collapsed" data-toggle="collapse" data-parent="#tree" data-target="#4">
-                <span class="media-object pull-left icon icon-star"></span>
+                <img class="media-object pull-left" src="../assets/img/em-side-04.png" alt="">
                 <div class="media-body">
                   표준메뉴얼
                 </div>
@@ -151,16 +153,20 @@
                 </li>
               </ul>
             </li>
+          </ul>
 
+          <ul class="table-view table-view-inverse m-b-0" style="margin-top: -1px">
             <li class="table-view-cell">
               <a class="navigate-rightdown collapsed" href="">
-                <span class="media-object pull-left icon icon-star"></span>
+                <img class="media-object pull-left" src="../assets/img/em-side-05.png" alt="">
                 <div class="media-body">
                   임시저장목록
                 </div>
               </a>
             </li>
           </ul>
+
+
         </div>
 
       </div>
