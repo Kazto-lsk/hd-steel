@@ -895,16 +895,17 @@
   padding-bottom: .4375rem;
   overflow: hidden;
   line-height: 1rem;
-  background-color: #eceeef;
-  color: #818a91;
+  background-color: #fff;
+  color: #55595c !important;
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   border-left: 0.0625rem solid #ccc;
 }
-.snap-drawer .nav-control .nav-link.active {
-  background-color: #fff;
-  color: #55595c !important;
+.snap-drawer .nav-control .nav-link.active,
+.snap-drawer .nav-control .nav-link:active  {
+  background-color: #eceeef;
+  color: #818a91;
 }
 .snap-drawer .nav-control .nav-link:first-child {
   border-left-width: 0;
@@ -915,6 +916,19 @@
   text-align: left;
   line-height: 2.8125rem;
 }
+.snap-drawer .bar-footer {
+  height: 3.175rem;
+}
+.snap-drawer .bar-footer .table-view-cell a {
+ line-height: 1.72rem
+}
+.snap-drawer .bar-footer .table-view-cell .media-object {
+  margin-top: 3px
+}
+.snap-drawer .bar-footer ~ .content {
+  padding-bottom: 3.175rem;
+}
+
 /*hd-widget-02*/
 .hd-widget-02.card {
   margin-bottom: 0;
