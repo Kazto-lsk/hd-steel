@@ -1433,10 +1433,7 @@ hr {
  * ----------------------------------------------------------------------------
  */
 
- .snapjs-left .snap-drawer-left,
- .snapjs-right .snap-drawer-right {
-   /*z-index: 3;*/
- }
+
 
 .content > .table-view:first-child {
   margin-top: 0;
@@ -1446,6 +1443,17 @@ hr {
 }
 #tree .navigate-right:after {
  content: '\e820';
+}
+
+.snapjs-left .snap-drawer-left,
+.snapjs-right .snap-drawer-right {
+  /*z-index: 3;*/
+}
+.snap-drawer {
+  /*overflow: visible !important;*/
+}
+.snap-drawer .bar-nav .pull-left {
+  /*margin-left: -40px;*/
 }
 
 .snap-drawer .bar-nav .title {
@@ -1488,6 +1496,9 @@ hr {
   font-size: .9rem;
   line-height: 2.5rem
 }
+.snap-drawer .table-view .media-body {
+  text-align: left;
+}
 .snap-drawer .table-view [data-toggle="collapse"] .media-body {
   color: #0a2972;
 }
@@ -1526,7 +1537,7 @@ hr {
 .snap-drawer .content {
   background-image: none !important
 }
-.snap-drawer .content .media-object {
+.snap-drawer .media-object {
   height: 1.25rem
 }
 
@@ -2107,4 +2118,9 @@ hr {
 /*affix*/
 .affix {
   top: 2.75rem;
+}
+
+/*backdrop*/
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }

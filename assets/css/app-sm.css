@@ -874,3 +874,103 @@
   background-color: #3a444d !important;
   border-color: #3a444d !important;
 }
+
+/*drawer*/
+
+
+.snap-drawer .nav-control {
+  position: relative;
+  display: table;
+  overflow: hidden;
+  font-size: .875rem;
+  font-weight: 400;
+  background-color: #eceeef;
+  border: 0.0625rem solid #ccc;
+  border-radius: 1.25rem;
+}
+.snap-drawer .nav-control .nav-link {
+  display: table-cell;
+  width: 1%;
+  padding-top: .375rem;
+  padding-bottom: .4375rem;
+  overflow: hidden;
+  line-height: 1rem;
+  background-color: #eceeef;
+  color: #818a91;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-left: 0.0625rem solid #ccc;
+}
+.snap-drawer .nav-control .nav-link.active {
+  background-color: #fff;
+  color: #55595c !important;
+}
+.snap-drawer .nav-control .nav-link:first-child {
+  border-left-width: 0;
+}
+
+.snap-drawer .bar-footer .table-view-cell {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 2.8125rem;
+}
+/*hd-widget-02*/
+.hd-widget-02.card {
+  margin-bottom: 0;
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+}
+
+.hd-widget-02 .card-header {
+  position: relative;
+  padding: 0.625rem .9375rem;
+  background-color: #fff;
+  border-bottom: none;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.hd-widget-02 .card-header .btn {
+  position: absolute;
+  top: .32rem;
+  right: .625rem;
+  color: inherit;
+  font-weight: 300
+}
+
+.hd-widget-02 .table-view-cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  color: #454545
+}
+.hd-widget-02 .table-view-cell:active {
+  background-color: #f4f4f4
+}
+
+.hd-widget-02 .table-view {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#666666' x='0' y='0' width='100%' height='0.5'/></svg>"), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#666' x='0' y='0' width='100%' height='0.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: 100% 100%,0 0;
+  background-size: 100%;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.hd-widget-02 .table-view .table-view-cell {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='1'><rect fill='#d8dce2' x='0' y='0' width='100%' height='0.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100% auto;
+  border-bottom: 0;
+  padding-left: .9375rem;
+  padding-right: .9375rem
+}
+
+.hd-widget-02 .table-view .table-view-cell:last-child {
+  background-image: none;
+}
