@@ -171,6 +171,10 @@
   font-size: .9rem;
 }
 
+.table tr.text-xs-center td {
+  text-align: center !important
+}
+
 
 /*popup*/
 @media (max-width: 640px) {
@@ -227,6 +231,10 @@
 }
 
 /*utility*/
+
+.text-black {
+  color: #333 !important
+}
 
 .m-l-default {
   margin-left: .625rem
