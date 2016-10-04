@@ -988,3 +988,12 @@
 .hd-widget-02 .table-view .table-view-cell:last-child {
   background-image: none;
 }
+
+.hd-policy {
+  height: 100px;
+  margin-bottom: .9rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
