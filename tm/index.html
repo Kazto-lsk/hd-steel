@@ -18,10 +18,16 @@
     <script src="./assets/js/rc.js"></script>
 
     <style>
+    .table {
+      background-color: #fff;
+      width: 98%
+    }
+
     .table th,
     .table td {
       vertical-align: middle;
       white-space: nowrap;
+      text-align: center;
     }
     .table th {
       text-align: center;
@@ -31,6 +37,13 @@
     }
     .table-active a {
       color: #999
+    }
+
+    .table tbody tr {
+      counter-increment: Serial;
+    }
+    .table tbody th:before {
+      content: counter(Serial); /* Display the counter */
     }
     </style>
   </head>
@@ -54,7 +67,7 @@
           </thead>
           <tbody>
             <tr class="table-active">
-              <th scope="row">1</th>
+              <th scope="row"></th>
               <td class="text-xs-center">인트로</td>
               <td class="text-xs-center"></td>
               <td><span class="badge badge-pill"></span></td>
@@ -62,52 +75,91 @@
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0001.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">2</th>
-              <td rowspan="6" class="text-xs-center">로그인</td>
-              <td class="text-xs-center">로그인</td>
+              <th scope="row"></th>
+              <td rowspan="9" class="text-xs-center">로그인</td>
+              <td class="text-xs-center" rowspan="6">로그인</td>
               <td><span class="badge badge-pill"></span></td>
               <td><a href="./GU_LO_0002.html" target="_blank">GU_LO_0002</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0002.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">3</th>
-              <td class="text-xs-center">건강확인</td>
-              <td><span class="badge badge-pill"></span></td>
+              <th scope="row"></th>
+              <td>건강확인<span class="badge badge-pill"></span></td>
               <td><a href="./GU_LO_0003.html" target="_blank">GU_LO_0003</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0003.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">4</th>
-              <td class="text-xs-center">운전원 변경</td>
-              <td><span class="badge badge-pill"></span></td>
+              <th scope="row"></th>
+              <td>운전원 변경<span class="badge badge-pill"></span></td>
               <td><a href="./GU_LO_0003.html" target="_blank">GU_LO_0003</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0003.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">5</th>
-              <td class="text-xs-center">정책동의</td>
-              <td><span class="badge badge-pill"></span></td>
+              <th scope="row"></th>
+              <td>정책동의<span class="badge badge-pill"></span></td>
               <td><a href="./GU_LO_0004.html" target="_blank">GU_LO_0004</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0004.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">6</th>
-              <td class="text-xs-center">차량상태점검</td>
-              <td><span class="badge badge-pill"></span></td>
+              <th scope="row"></th>
+              <td>차량상태점검<span class="badge badge-pill"></span></td>
               <td><a href="./GU_LO_0005.html" target="_blank">GU_LO_0005</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0005.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">7</th>
-              <td class="text-xs-center">차량변경</td>
+              <th scope="row"></th>
+              <td>차량변경<span class="badge badge-pill"></span></td>
+              <td><a href="./GU_LO_0006.html" target="_blank">GU_LO_0006</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0006.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">직영/외주사 로그인</td>
               <td><span class="badge badge-pill"></span></td>
-              <td><a href="./GU_LO_0005.html" target="_blank">GU_LO_0005</a></td>
-              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0005.html" target="_blank">CODE</a></td>
+              <td><a href="./GU_LO_0002.html" target="_blank">GU_LO_0002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0002.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">수시장비 로그인</td>
+              <td><span class="badge badge-pill"></span></td>
+              <td><a href="./GU_LO_0002.html" target="_blank">GU_LO_0002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0002.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">제품출하 로그인</td>
+              <td><span class="badge badge-pill"></span></td>
+              <td><a href="./GU_LO_0002.html" target="_blank">GU_LO_0002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_LO_0002.html" target="_blank">CODE</a></td>
+            </tr>
+
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center" rowspan="3">앱가이드</td>
+              <td class="text-xs-center">구내운송 앱가이드</td>
+              <td><span class="badge badge-pill"></span></td>
+              <td><a href="./GU_AG_0001.html" target="_blank">GU_AG_0001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_AG_0001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">직영/외주사 앱가이드</td>
+              <td><span class="badge badge-pill"></span></td>
+              <td><a href="./GU_AG_0002.html" target="_blank">GU_AG_0002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_AG_0002.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td class="text-xs-center">수시장비 앱가이드</td>
+              <td><span class="badge badge-pill"></span></td>
+              <td><a href="./GU_AG_0003.html" target="_blank">GU_AG_0003</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/GU_AG_0003.html" target="_blank">CODE</a></td>
             </tr>
 
 
             <tr class="table-active">
-              <th scope="row">8</th>
+              <th scope="row"></th>
               <td rowspan="89" class="text-xs-center">구내운송<br>[작업안내]<br>(일반 PDA)</td>
               <td rowspan="11" class="text-xs-center">비분리형<br>(N001)</td>
               <td>비분리형 작업안내<span class="badge badge-pill"></span></td>
@@ -115,65 +167,123 @@
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1001.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">9</th>
+              <th scope="row"></th>
               <td>비분리형 운송요구현황<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1002.html" target="_blank">IL_GU_CT_1002</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1002.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">10</th>
+              <th scope="row"></th>
               <td>비분리형 상차지 행선 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1101.html" target="_blank">IL_GU_CT_1101</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1101.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">11</th>
+              <th scope="row"></th>
               <td>비분리형 상차지 도착처리<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1103.html" target="_blank">IL_GU_CT_1103</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1103.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">12</th>
+              <th scope="row"></th>
               <td>비분리형 상차 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1102.html" target="_blank">IL_GU_CT_1102</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1102.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">13</th>
+              <th scope="row"></th>
               <td>비분리형 재배치 지시<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1401.html" target="_blank">IL_GU_CT_1401</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1401.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">14</th>
+              <th scope="row"></th>
               <td>비분리형 영차 계량 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1301.html" target="_blank">IL_GU_CT_1301</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1301.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">15</th>
+              <th scope="row"></th>
               <td>비분리형 하차지 행선 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1201.html" target="_blank">IL_GU_CT_1201</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1201.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">16</th>
+              <th scope="row"></th>
               <td>비분리형 하차지 도착처리<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1203.html" target="_blank">IL_GU_CT_1203</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1203.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">17</th>
+              <th scope="row"></th>
               <td>비분리형 하차 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1202.html" target="_blank">IL_GU_CT_1202</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1202.html" target="_blank">CODE</a></td>
             </tr>
             <tr class="table-active">
-              <th scope="row">18</th>
+              <th scope="row"></th>
               <td>비분리형 공차 계량 안내<span class="badge badge-pill"></span></td>
               <td><a href="./IL_GU_CT_1301.html" target="_blank">IL_GU_CT_1301</a></td>
               <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1301.html" target="_blank">CODE</a></td>
             </tr>
+
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td rowspan="9" class="text-xs-center">소재 TR<br>(N002)</td>
+              <td>소재 TR 작업안내<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1001.html" target="_blank">IL_GU_CT_1001</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1001.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 운송요구현황<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1002.html" target="_blank">IL_GU_CT_1002</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1002.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 상차지 행선안내<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1101.html" target="_blank">IL_GU_CT_1101</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1101.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 상차 안내<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1102.html" target="_blank">IL_GU_CT_1102</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1102.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 상차 완료 확인<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1104.html" target="_blank">IL_GU_CT_1104</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1104.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 하차지 행선안내<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1201.html" target="_blank">IL_GU_CT_1201</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1201.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 하차 안내<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1201.html" target="_blank">IL_GU_CT_1201</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1201.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 하차 완료<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1204.html" target="_blank">IL_GU_CT_1204</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1204.html" target="_blank">CODE</a></td>
+            </tr>
+            <tr class="table-active">
+              <th scope="row"></th>
+              <td>소재 TR 회송 진행<span class="badge badge-pill"></span></td>
+              <td><a href="./IL_GU_CT_1205.html" target="_blank">IL_GU_CT_1205</a></td>
+              <td><a href="https://github.com/kimsQ/hd-steel/blob/gh-pages/tm/IL_GU_CT_1205.html" target="_blank">CODE</a></td>
+            </tr>
+
+            <!-- 생석회 T/L -->
           </tbody>
         </table>
       </div>
