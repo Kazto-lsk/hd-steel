@@ -1274,7 +1274,7 @@ hr {
 }
 
 .hd-login .hd-logo {
-  margin: 3.125rem 0 4.3125rem
+  margin: 3.125rem 0 2rem
 }
 .hd-login .hd-logo img {
   width: 7.5rem
@@ -1293,7 +1293,7 @@ hr {
 
 .hd-login .card .form-group label {
   position: absolute;
-  top: 1.125rem;
+  top: .7rem;
   left: .9375rem
 }
 .hd-login .card .form-group label img {
@@ -1301,11 +1301,45 @@ hr {
 }
 
 .hd-login .card .form-control {
-  padding-left: 4.3125rem;
+  padding-left: 3rem;
   background-color: #f4f4f4;
   text-align: left;
   border: none
 }
+.hd-login .card .custom-select {
+  width: 100%;
+  display: block;
+  border-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #cacad4;
+  text-align: center;
+  text-align-last: center;
+  background: #f4f4f4 url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background-image: none \9;
+  -webkit-background-size: 12px 14px;
+          background-size: 12px 14px;
+  border: 0.0625rem solid transfer;
+  border-radius: 0.125rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.hd-login .card .custom-select option {
+  text-align: center;
+  color: #cacad4;
+}
+
+.hd-login .card .form-control::-webkit-input-placeholder {
+  color: #cacad4;
+}
+.hd-login .card .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #cacad4;
+}
+.hd-login .card .form-control::-moz-placeholder {  /* Firefox 19+ */
+  color: #cacad4;
+}
+
 
 .hd-login .card-footer {
   border: none;
