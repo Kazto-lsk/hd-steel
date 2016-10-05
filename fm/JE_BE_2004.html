@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>원료 Blending 공정시험 분석 조회 | 현대제철 스마트팩토리 마크업</title>
+    <title>B/L 적치실적 및 품질조회 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -33,7 +33,7 @@
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-simbol pull-left"></a>
         <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
-        <h1 class="title left">Brand별 배합기준 성분관리</h1>
+        <h1 class="title left">B/L 적치실적 및 품질조회</h1>
       </header>
 
       <!-- secondary header-->
@@ -42,12 +42,12 @@
           <div class="form-inline nowrap">
             <div class="form-group">
               <label>공장</label>
-              <input type="text" class="form-control hd-sm" id="factory-1" placeholder="선택" value="1기" readonly="" data-toggle="popup" data-target="#popup-factory-1">
+              <input type="text" class="form-control hd-sm" id="factory" placeholder="선택" value="1배합" readonly="" data-toggle="popup" data-target="#popup-factory">
             </div>
             <div class="form-group p-l-1">
-              <label>조회일자</label>
-              <input type="date" class="form-control hd-md" value="2016-10-01"> <label>~</label>
-              <input type="date" class="form-control hd-md" value="2016-10-10">
+              <label>Pile No</label>
+              <input type="number" class="form-control hd-sm" value="0204"> <label>~</label>
+              <input type="number" class="form-control hd-sm" value="0208">
             </div>
             <button type="submit" class="btn btn-primary">조회</button>
           </div><!-- /.form-inline -->
@@ -70,8 +70,7 @@
           <table class="table table-bordered panzoom hd-data">
             <thead>
               <tr>
-                <th>분석일자</th>
-                <th>Pile No</th>
+                <th colspan="3">Pile 명</th>
                 <th>FeO</th>
                 <th>SiO2</th>
                 <th>Cano</th>
@@ -81,8 +80,8 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
+                <th scope="row" rowspan="8">B/L<br>적치실적</th>
+                <th scope="row" colspan="2">총적치량(t)</th>
                 <td>4.340</td>
                 <td>3.701</td>
                 <td>1.883</td>
@@ -90,8 +89,7 @@
                 <td>0.114</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
+                <th scope="row" colspan="2">총사용량(t)</th>
                 <td>4.340</td>
                 <td>3.701</td>
                 <td>1.883</td>
@@ -99,8 +97,31 @@
                 <td>0.114</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
+                <th scope="row" colspan="2">적치기간(From-To)</th>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="2">사용기간(From-To)</th>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+                <td><small>07.09 17~07.18 20</small></td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="2">S/T가동률(%)</th>
+                <td>51.85</td>
+                <td>51.85</td>
+                <td>51.85</td>
+                <td>51.85</td>
+                <td>51.85</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="2">S/T주행수</th>
                 <td>4.340</td>
                 <td>3.701</td>
                 <td>1.883</td>
@@ -108,8 +129,7 @@
                 <td>0.114</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
+                <th scope="row" colspan="2">적치광종수</th>
                 <td>4.340</td>
                 <td>3.701</td>
                 <td>1.883</td>
@@ -117,8 +137,7 @@
                 <td>0.114</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
+                <th scope="row" colspan="2">소결B/L사용비(%)</th>
                 <td>4.340</td>
                 <td>3.701</td>
                 <td>1.883</td>
@@ -126,76 +145,47 @@
                 <td>0.114</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
+                <th scope="row" rowspan="5">B/L<br>품질실적</th>
+                <th scope="row" rowspan="3">SiO2</th>
+                <th scope="row">이론치</th>
+                <td>4.71</td>
+                <td>4.56</td>
+                <td>4.45</td>
+                <td>4.08</td>
+                <td>4.33</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
+                <th scope="row">실적평균</th>
+                <td>4.71</td>
+                <td>4.56</td>
+                <td>4.45</td>
+                <td>4.08</td>
+                <td>4.33</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
+                <th scope="row">실적편차</th>
+                <td>4.71</td>
+                <td>4.56</td>
+                <td>4.45</td>
+                <td>4.08</td>
+                <td>4.33</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
+                <th scope="row" rowspan="2">FeO</th>
+                <th scope="row">이론치</th>
+                <td>4.71</td>
+                <td>4.56</td>
+                <td>4.45</td>
+                <td>4.08</td>
+                <td>4.33</td>
               </tr>
               <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
-              </tr>
-              <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
-              </tr>
-              <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
-              </tr>
-              <tr>
-                <th scope="row">2016.07.21 14:00</th>
-                <th scope="row">1-0232</th>
-                <td>4.340</td>
-                <td>3.701</td>
-                <td>1.883</td>
-                <td>1.450</td>
-                <td>0.114</td>
+                <th scope="row">실적평균</th>
+                <td>4.71</td>
+                <td>4.56</td>
+                <td>4.45</td>
+                <td>4.08</td>
+                <td>4.33</td>
               </tr>
             </tbody>
           </table>
@@ -206,7 +196,7 @@
 
 
     <!-- Popup 공장구분 -->
-    <div id="popup-factory-1" class="popup popup-sm zoom">
+    <div id="popup-factory" class="popup popup-sm zoom">
     </div>
 
 

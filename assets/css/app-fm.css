@@ -18,23 +18,36 @@
   background-color: #fff;
 }
 
-
 .bar-header-secondary {
   height: 3.5625rem;
+  line-height: 3.5625rem;
   border-bottom: .0625rem solid #d8dce2;
 }
-
+.bar-header-secondary .form-inline {
+  line-height: inherit
+}
 .bar-header-secondary .form-inline label {
   margin-bottom: 0;
   color: #626470;
-  /*line-height: 3.5rem*/
+}
+.bar-header-secondary .form-inline input {
+  margin-left: .3rem
 }
 
 .bar-header-secondary .form-inline .btn {
-  height: 2.3rem;
+  position: static;
+  display: inline-block;
+  top:auto;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  padding: 0 .75rem;
+  font-size: 1rem;
   background-color: #3a444d !important;
   border-color: #3a444d !important;
   border-radius: 0
+}
+.bar-header-secondary .form-inline .btn:active {
+  background-color: #000 !important
 }
 
 .nav-control .nav-link {
@@ -70,8 +83,22 @@
   .bar-header-secondary {
     line-height: 2.5625rem;
   }
+  .bar-header-secondary {
+    text-align: left;
+    line-height: 2.5rem;
+  }
+  .form-inline  {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .form-inline .form-group {
+    line-height: 2.5rem;
+  }
 }
-.form-inline .form-group {
+
+.form-inline .form-group,
+.form-inline .form-group label,
+.form-inline .btn {
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
@@ -82,15 +109,11 @@
   vertical-align: middle;
 }
 
-@media (max-width: 640px) {
-  .bar-header-secondary {
-    text-align: left;
-    line-height: 2.5rem;
-  }
-  .form-inline .form-group {
-    line-height: 2.5rem;
-  }
+.form-inline .btn {
+  /*margin-top: .4rem;*/
+  margin-left: .5rem
 }
+
 
 
 .bar-header-secondary .btn {
@@ -168,9 +191,12 @@
   text-align: center;
   font-size: .9rem;
 }
-
 .hd-data.table tr.text-xs-center td {
   text-align: center !important
+}
+.hd-data.table td small {
+  white-space: nowrap;
+  letter-spacing: -.0625rem
 }
 
 .hd-data.table tbody tr {
