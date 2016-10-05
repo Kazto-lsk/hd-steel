@@ -82,16 +82,13 @@
   vertical-align: middle;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
   .bar-header-secondary {
     text-align: left;
     line-height: 2.5rem;
   }
   .form-inline .form-group {
     line-height: 2.5rem;
-  }
-  .bar-header-secondary .form-inline {
-    /*width: 730px*/
   }
 }
 

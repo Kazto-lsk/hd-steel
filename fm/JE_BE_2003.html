@@ -39,14 +39,15 @@
       <!-- secondary header-->
       <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
         <div class="table-responsive">
-          <div class="form-inline clearfix">
+          <div class="form-inline clearfix nowrap" style="min-width: 500px">
             <div class="form-group pull-xs-left">
-              <label>분류</label>
-              <input type="text" class="form-control hd-sm" id="category" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-category">
+              <label>공장</label>
+              <input type="text" class="form-control hd-sm" id="factory-1" placeholder="선택" value="1기" readonly="" data-toggle="popup" data-target="#popup-factory-1">
             </div>
             <div class="form-group p-l-1 pull-xs-left">
-              <label>용도</label>
-              <input type="text" class="form-control hd-sm" id="usage" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-usage">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" value="2016-10-01"> ~
+              <input type="date" class="form-control hd-md" value="2016-10-10">
             </div>
             <div class="pull-xs-right">
               <button type="submit" class="btn btn-primary">조회</button>
@@ -274,13 +275,10 @@
     </div><!-- /.snap-content -->
 
 
-    <!-- Popup 분류 -->
-    <div id="popup-category" class="popup popup-sm zoom">
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-1" class="popup popup-sm zoom">
     </div>
 
-    <!-- Popup 용도 -->
-    <div id="popup-usage" class="popup popup-sm zoom">
-    </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
