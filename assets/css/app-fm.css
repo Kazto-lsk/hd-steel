@@ -115,7 +115,8 @@
 
 .table.hd-data {
   margin-top: .5rem;
-  margin-bottom: 0
+  margin-bottom: 0;
+  background-color: #fff
 }
 .hd-data.table-bordered {
   border: 0.0625rem solid #b4b8c4;
@@ -140,13 +141,13 @@
   white-space: nowrap;
 }
 .hd-data.table tbody td {
-  background-color: #fff;
+  /*background-color: #fff;*/
   text-align: right;
   vertical-align: middle;
   min-width: 4.5rem;
 }
 .hd-data.table .bg-white th {
-  background-color: #fff;
+  /*background-color: #fff;*/
   color: #333
 }
 .hd-data.table th,
@@ -181,8 +182,13 @@
 .hd-data.table tbody th.hd-serial:before {
   content: counter(Serial); /* Display the counter */
 }
-
-
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f0f4fb;
+}
+.hd-data.table .bg-white th,
+.hd-data.table .bg-white td {
+  background-color: #fff
+}
 /*popup*/
 @media (max-width: 640px) {
   ..hd-datapopup .content {

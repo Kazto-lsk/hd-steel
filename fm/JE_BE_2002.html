@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼Brand별 배합기준 성분관리 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">Brand별 배합기준 성분관리</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+        <div class="form-inline">
+
+          <div class="form-group pull-xs-left">
+            <label>분류</label>
+            <input type="text" class="form-control hd-sm" id="category" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-category">
+          </div>
+          <div class="form-group p-l-1 pull-xs-left">
+            <label>용도</label>
+            <input type="text" class="form-control hd-sm" id="usage" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-usage">
+          </div>
+          <div class="pull-xs-right">
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+
+      </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data table-striped">
+            <thead>
+              <tr>
+                <th rowspan="2">Brand</th>
+                <th>Tree</th>
+                <th>Foe</th>
+                <th>Siu</th>
+                <th>Cano</th>
+                <th>Ai2O3</th>
+                <th>MgO</th>
+                <th>Mn</th>
+                <th>S</th>
+                <th>P</th>
+                <th>TIO2</th>
+                <th>Zn</th>
+              </tr>
+              <tr class="bg-white">
+                <th>K2O</th>
+                <th>Na2O</th>
+                <th>CU</th>
+                <th>CI</th>
+                <th>V</th>
+                <th>MS</th>
+                <th>-0.15mm</th>
+                <th>RDI</th>
+                <th>RI</th>
+                <th>Cost</th>
+                <th>수분</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" rowspan="2">PILU<br><small>2016-04-25</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="2">1-0232<br><small>2016-07-18</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="2">3-0104<br><small>2016-07-16</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="2">2-0202<br><small>2016-07-12</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="2">1-0231<br><small>2016-07-08</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="2">3-0103<br><small>2016-07-07</small></th>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>0.180</td>
+                <td>62.340</td>
+                <td>62.340</td>
+                <td>62.340</td>
+              </tr>
+              <tr>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.036</td>
+                <td>0.009</td>
+                <td>0.009</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 분류 -->
+    <div id="popup-category" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 용도 -->
+    <div id="popup-usage" class="popup popup-sm zoom">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
