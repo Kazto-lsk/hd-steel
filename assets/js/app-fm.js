@@ -52,11 +52,22 @@ $('#popup-humidity').on('show.rc.popup',function(){
     });
   })
 });
+
 $('#popup-ore').on('show.rc.popup',function(){
   $(this).load('./template/popup-ore.html',function(){
     $('#popup-ore .table td').on('tap',function(){
       var value = $(this).data('label');
       $('#ore').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-factory').on('show.rc.popup',function(){
+  $(this).load('./template/popup-factory.html',function(){
+    $('#popup-factory .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#factory').val(value);
       $(this).popup('hide');
     });
   })

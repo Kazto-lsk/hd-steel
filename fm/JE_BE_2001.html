@@ -43,17 +43,11 @@
 
           <div class="form-group pull-xs-left">
             <label>공장</label>
-            <select class="form-control m-l-default">
-              <option selected>1배합</option>
-              <option>2배합</option>
-              <option>3배합</option>
-            </select>
+            <input type="text" class="form-control hd-sm" id="factory" placeholder="선택" value="1배합" readonly="" data-toggle="popup" data-target="#popup-factory">
           </div>
           <div class="form-group p-l-1 pull-xs-left">
             <label>Pile No</label>
-            <select class="form-control m-l-default">
-              <option selected>0204</option>
-            </select>
+            <input type="number" class="form-control hd-sm" placeholder="" value="">
           </div>
           <div class="pull-xs-right">
             <button type="submit" class="btn btn-primary">조회</button>
@@ -710,8 +704,8 @@
     </div><!-- /.snap-content -->
 
 
-    <!-- Popup 시간선택 -->
-    <div id="popup-time" class="popup popup-sm zoom">
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory" class="popup popup-sm zoom">
     </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
