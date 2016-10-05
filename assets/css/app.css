@@ -1505,6 +1505,10 @@ hr {
   /*margin-left: -40px;*/
 }
 
+.snap-content{
+  background-color: #eeeef2
+}
+
 .snap-drawer .bar-nav .title {
   margin: 0;
   text-align: left;
