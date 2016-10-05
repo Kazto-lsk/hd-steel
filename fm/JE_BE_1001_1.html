@@ -56,9 +56,16 @@
           <button type="submit" class="btn btn-primary">조회</button>
         </div><!-- /.form-inline -->
       </div><!-- /.table-responsive -->
+      </div><!-- /.bar-header-secondary -->
 
-
-      </div>
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
 
       <!-- main content -->
       <div class="content">
@@ -100,40 +107,14 @@
     </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
 
     <script src="../assets/js/app-fm.js"></script>
 
     <script>
-    $('#popup-time').on('show.rc.popup',function(){
-      $(this).load('./template/popup-time.html',function(){
 
-        $('#popup-time .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#time').val(value);
-
-          $(this).popup('hide');
-
-        });
-      })
-    });
-    $('#popup-humidity').on('show.rc.popup',function(){
-      $(this).load('./template/popup-humidity.html',function(){
-        $('#popup-humidity .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#humidity').val(value);
-          $(this).popup('hide');
-        });
-      })
-    });
-    $('#popup-ore').on('show.rc.popup',function(){
-      $(this).load('./template/popup-ore.html',function(){
-        $('#popup-ore .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#ore').val(value);
-          $(this).popup('hide');
-        });
-      })
-    });
     </script>
 
   </body>

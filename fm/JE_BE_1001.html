@@ -39,26 +39,33 @@
       <!-- secondary header-->
       <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
         <div class="table-responsive">
-        <div class="form-inline nowrap">
-          <div class="form-group">
-            <label>조회일시</label>
-            <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
-            <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
-          </div>
-          <div class="form-group p-l-1">
-            <label>구분</label>
-            <input type="text" class="form-control hd-sm" id="humidity" placeholder="선택"  value="" readonly="" data-toggle="popup" data-target="#popup-humidity">
-          </div>
-          <div class="form-group p-l-1">
-            <label>광석구분</label>
-            <input type="text" class="form-control hd-sm" id="ore" placeholder="선택" value="" readonly="" data-toggle="popup" data-target="#popup-ore">
-          </div>
-          <button type="submit" class="btn btn-primary">조회</button>
-        </div><!-- /.form-inline -->
-      </div><!-- /.table-responsive -->
-
-
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>조회일시</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+            </div>
+            <div class="form-group p-l-1">
+              <label>구분</label>
+              <input type="text" class="form-control hd-sm" id="humidity" placeholder="선택"  value="" readonly="" data-toggle="popup" data-target="#popup-humidity">
+            </div>
+            <div class="form-group p-l-1">
+              <label>광석구분</label>
+              <input type="text" class="form-control hd-sm" id="ore" placeholder="선택" value="" readonly="" data-toggle="popup" data-target="#popup-ore">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
       </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
 
       <!-- main content -->
       <div class="content">
@@ -71,7 +78,7 @@
         </div>
 
         <div class="table-responsive">
-          <table class="table table-bordered">
+          <table class="table table-bordered panzoom">
             <thead>
               <tr class="bg-white">
                 <th></th>
@@ -179,39 +186,13 @@
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
 
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
     <script src="../assets/js/app-fm.js"></script>
 
     <script>
-    $('#popup-time').on('show.rc.popup',function(){
-      $(this).load('./template/popup-time.html',function(){
 
-        $('#popup-time .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#time').val(value);
-
-          $(this).popup('hide');
-
-        });
-      })
-    });
-    $('#popup-humidity').on('show.rc.popup',function(){
-      $(this).load('./template/popup-humidity.html',function(){
-        $('#popup-humidity .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#humidity').val(value);
-          $(this).popup('hide');
-        });
-      })
-    });
-    $('#popup-ore').on('show.rc.popup',function(){
-      $(this).load('./template/popup-ore.html',function(){
-        $('#popup-ore .table td').on('tap',function(){
-          var value = $(this).data('label');
-          $('#ore').val(value);
-          $(this).popup('hide');
-        });
-      })
-    });
     </script>
 
   </body>
