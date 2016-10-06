@@ -102,3 +102,33 @@ $('#popup-usage').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-part-1').on('show.rc.popup',function(){
+  $(this).load('./template/popup-part-1.html',function(){
+    $('#popup-part-1 .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#part-1').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-part-2').on('show.rc.popup',function(){
+  $(this).load('./template/popup-part-2.html',function(){
+    $('#popup-part-2 .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#part-2').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-part-3').on('show.rc.popup',function(){
+  $(this).load('./template/popup-part-3.html',function(){
+    $('#popup-part-3 .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#part-3').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
