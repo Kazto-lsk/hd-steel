@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼원료탄 탄종별 재고현황 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">원료탄 탄종별 재고현황</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>조회일시</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th rowspan="2">Item</th>
+                <th rowspan="2">Item Nm</th>
+                <th rowspan="2">품명</th>
+                <th colspan="2">재고합계</th>
+                <th colspan="4">Pile 1</th>
+              </tr>
+              <tr>
+                <th>Pile수</th>
+                <th>재고량</th>
+                <th>저장고</th>
+                <th>Cell No</th>
+                <th>적치높이</th>
+                <th>재고량</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row" rowspan="12">강점탄</th>
+                <th scope="row" rowspan="4">고유동도</th>
+                <th scope="row" class="text-xs-center">LH0</th>
+                <td>2</td>
+                <td>36,911</td>
+                <td>PCL4</td>
+                <td>09</td>
+                <td>29.2</td>
+                <td>20,842</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">AG0</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">CH0</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr class="table-active text-xs-right">
+                <th scope="row" class="text-xs-center">소계</th>
+                <td>5</td>
+                <td>82,212</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>58,009</td>
+              </tr><!-- 고유동도 -->
+
+              <tr>
+                <th scope="row" rowspan="4">중유동도</th>
+                <th scope="row" class="text-xs-center">GY0</th>
+                <td>2</td>
+                <td>36,911</td>
+                <td>PCL4</td>
+                <td>09</td>
+                <td>29.2</td>
+                <td>20,842</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">MN0</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">NM0</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr class="table-active text-xs-right">
+                <th scope="row" class="text-xs-center">소계</th>
+                <td>5</td>
+                <td>82,212</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>58,009</td>
+              </tr><!-- 중유동도 -->
+
+              <tr>
+                <th scope="row" rowspan="3">저유동도</th>
+                <th scope="row" class="text-xs-center">GC0</th>
+                <td>2</td>
+                <td>36,911</td>
+                <td>PCL4</td>
+                <td>09</td>
+                <td>29.2</td>
+                <td>20,842</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">JI0</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">소계</th>
+                <td>1</td>
+                <td>22,042</td>
+                <td>CL4</td>
+                <td>04</td>
+                <td>29.2</td>
+                <td>22,042</td>
+              </tr>
+              <tr class="table-active text-xs-right">
+                <th scope="row" colspan="2" class="text-xs-center">강점탄계</th>
+                <td>5</td>
+                <td>82,212</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>58,009</td>
+              </tr><!-- 저유동도 -->
+
+
+              <!-- /강점탄 -->
+
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 시간 -->
+    <div id="popup-time" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 습량/건량 -->
+    <div id="popup-humidity" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 광석구분 -->
+    <div id="popup-ore" class="popup popup-sm zoom">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

@@ -190,7 +190,9 @@
   background-color: #f0f4fb;
   text-align: center;
 }
-
+.hd-data.table tr.table-active.text-xs-right td {
+  text-align: right;
+}
 .hd-data.table [scope="row"] {
   border-right: .0625rem solid #b4b8c4;
   border-bottom: .0625rem solid #b4b8c4
