@@ -160,6 +160,15 @@
   vertical-align: middle !important;
   white-space: nowrap;
 }
+
+.hd-data.table thead ~ thead tr {
+  border-top: 0.0625rem solid #b4b8c4 !important;
+}
+.hd-data.table thead ~ thead th {
+  background-color: #f0f4fb;
+  border-color: #b4b8c4
+}
+
 .hd-data.table tbody td {
   /*background-color: #fff;*/
   text-align: right;
