@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>선적반입정보 조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">선적반입정보 조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group p-l-1">
+              <label>접안일자</label>
+              <input type="date" class="form-control hd-md" value="2016-10-01"> <label>~</label>
+              <input type="date" class="form-control hd-md" value="2016-10-10">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>조업계상일</th>
+                <th>모선관리번호</th>
+                <th>Brand</th>
+                <th>장비고</th>
+                <th>Cell</th>
+                <th>반입량</th>
+                <th>선적량</th>
+                <th>차이</th>
+                <th>접안일시</th>
+                <th>착수일시</th>
+                <th>완료일시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-xs-center">2016.07.13</td>
+                <td class="text-xs-center">CF1605020</td>
+                <td class="text-xs-center">KOMS</td>
+                <td class="text-xs-center">OC1</td>
+                <td class="text-xs-center">01</td>
+                <td>45,334.000</td>
+                <td></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">2016.07.14</td>
+                <td class="text-xs-center">CF1605020</td>
+                <td class="text-xs-center">KOMS</td>
+                <td class="text-xs-center">OC1</td>
+                <td class="text-xs-center">01</td>
+                <td>45,334.000</td>
+                <td></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+              </tr>
+              <tr class="table-active">
+                <td class="text-xs-center">합계</td>
+                <td class="text-xs-center">CF1605020</td>
+                <td class="text-xs-center">KOMS</td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td>45,334.000</td>
+                <td>176,318.000</td>
+                <td class="text-xs-center">-11,982.000</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">2016.07.19</td>
+                <td class="text-xs-center">CF1605020</td>
+                <td class="text-xs-center">NSFK</td>
+                <td class="text-xs-center">SL1</td>
+                <td class="text-xs-center">01</td>
+                <td>45,334.000</td>
+                <td></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+              </tr>
+              <tr class="table-active">
+                <td class="text-xs-center">합계</td>
+                <td class="text-xs-center">CF1605020</td>
+                <td class="text-xs-center">NSFK</td>
+                <td class="text-xs-center"></td>
+                <td class="text-xs-center"></td>
+                <td>45,334.000</td>
+                <td>176,318.000</td>
+                <td class="text-xs-center">-11,982.000</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+                <td class="text-xs-center">2016.07.13<br>09:48</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 구분 -->
+    <div id="popup-part-1" class="popup popup-sm zoom">
+    </div>
+
+    <div id="popup-part-2" class="popup popup-sm zoom">
+    </div>
+
+    <div id="popup-part-3" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
