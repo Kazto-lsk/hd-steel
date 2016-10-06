@@ -88,8 +88,8 @@
       </div>
 
 
-      <div class="card hd-search hd-search-result p-a-3 text-xs-center">
-        line chart
+      <div class="card hd-search hd-search-result p-a-05 text-xs-center">
+        <canvas id="chart-line" width="600" height="400" class=""></canvas>
       </div>
 
 
@@ -115,6 +115,47 @@
       <span class="icon icon-search"></span>
     </button>
 
+    <!-- http://www.chartjs.org/docs/ -->
+    <script src="../assets/extensions/chartjs/2.3.0/Chart.min.js"></script>
+
     <script src="../assets/js/app.js"></script>
+
+
+    <script>
+
+    var ctx = document.getElementById("chart-line");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2013-05-23", "2013-05-30", "2013-06-06", "2013-06-13", "2013-06-20", "2013-06-27" , "2013-07-01", "2013-07-15", "2013-07-30", "2013-08-01", "2013-08-16", "2013-08-30"],
+            datasets: [{
+                label: '측정지점_Trend',
+                data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
+
+    </script>
+
+
   </body>
 </html>
