@@ -142,3 +142,13 @@ $('#popup-kind').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-pile').on('show.rc.popup',function(){
+  $(this).load('./template/popup-pile.html',function(){
+    $('#popup-pile .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#pile').val(value);
+      $(this).popup('hide');
+    });
+  })
+});

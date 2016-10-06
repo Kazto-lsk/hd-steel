@@ -62,7 +62,12 @@
       <!-- main content -->
       <div class="content">
 
-
+        <div class="form-inline text-xs-right content-padded">
+          <div class="form-group">
+            <label class="p-r-1">Pile No</label>
+            <input type="text" class="form-control hd-md" id="pile" placeholder="선택" value="선택" readonly="" data-toggle="popup" data-target="#popup-pile">
+          </div>
+        </div><!-- /.form-inline -->
 
         <div class="table-responsive">
           <table class="table table-bordered panzoom hd-data">
@@ -215,12 +220,8 @@
     <div id="popup-time" class="popup popup-sm zoom">
     </div>
 
-    <!-- Popup 습량/건량 -->
-    <div id="popup-humidity" class="popup popup-sm zoom">
-    </div>
-
-    <!-- Popup 광석구분 -->
-    <div id="popup-ore" class="popup popup-sm zoom">
+    <!-- Popup Pile -->
+    <div id="popup-pile" class="popup popup-sm zoom">
     </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
