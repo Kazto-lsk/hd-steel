@@ -83,6 +83,16 @@ $('#popup-factory-1').on('show.rc.popup',function(){
   })
 });
 
+$('#popup-factory-2').on('show.rc.popup',function(){
+  $(this).load('./template/popup-factory-2.html',function(){
+    $('#popup-factory-2 .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#factory-2').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
 $('#popup-category').on('show.rc.popup',function(){
   $(this).load('./template/popup-category.html',function(){
     $('#popup-category .table td').on('tap',function(){
@@ -148,6 +158,16 @@ $('#popup-pile').on('show.rc.popup',function(){
     $('#popup-pile .table td').on('tap',function(){
       var value = $(this).data('label');
       $('#pile').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-viewtype').on('show.rc.popup',function(){
+  $(this).load('./template/popup-viewtype.html',function(){
+    $('#popup-viewtype .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#viewtype').val(value);
       $(this).popup('hide');
     });
   })
