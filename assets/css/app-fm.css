@@ -242,6 +242,8 @@
 }
 .popup .bar.bar-nav {
   border-bottom: .0625rem solid #000;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .popup .table td {
