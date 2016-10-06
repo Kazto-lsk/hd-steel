@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>원료 선적 정보조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">원료 선적 정보조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>입항예정일자</label>
+              <input type="date" class="form-control hd-md" value="2016-10-01"> <label>~</label>
+              <input type="date" class="form-control hd-md" value="2016-10-10">
+            </div>
+            <div class="form-group p-l-1">
+              <label>하역품종</label>
+              <input type="text" class="form-control hd-sm" id="kind" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-kind">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>모선번호</th>
+                <th>모선명</th>
+                <th>입항예정</th>
+                <th>공급사 Item</th>
+                <th>공급사명</th>
+                <th>B/L번호</th>
+              </tr>
+            </thead>
+
+            <tbody data-toggle="modal" data-target="#JE_BE_4002" role="button">
+              <tr>
+                <th scope="row" class="text-xs-center">IO1606013</td>
+                <td class="text-xs-left nowrap">MV ALEXANDER CARL</td>
+                <td class="text-xs-center">2016.08.05</td>
+                <td class="text-xs-center">CARF</td>
+                <td class="text-xs-left nowrap">CARAJAS FINE</td>
+                <td class="text-xs-left">VALEPM161086401</td>
+              </tr>
+             </tbody>
+
+             <tbody data-toggle="modal" data-target="#JE_BE_4002" role="button">
+               <tr>
+                 <th scope="row" class="text-xs-center" rowspan="4">IO1606013</td>
+                 <td class="text-xs-left nowrap" rowspan="4">MV ALEXANDER CARL</td>
+                 <td class="text-xs-center" rowspan="4">2016.08.05</td>
+                 <td class="text-xs-center">GC0</td>
+                 <td class="text-xs-left nowrap">GERMAN CREEK</td>
+                 <td class="text-xs-left">CO1607007GC0</td>
+               </tr>
+               <tr>
+                 <td class="text-xs-center">PD0</td>
+                 <td class="text-xs-left nowrap">PEAK DOWNS</td>
+                 <td class="text-xs-left">1</td>
+               </tr>
+               <tr>
+                 <td class="text-xs-center">CSP</td>
+                 <td class="text-xs-left nowrap">CURRAGH SEMI HARD PCI</td>
+                 <td class="text-xs-left">CO1607007CSP</td>
+               </tr>
+               <tr>
+                 <td class="text-xs-center">BWW</td>
+                 <td class="text-xs-left nowrap">BLACK WATER</td>
+                 <td class="text-xs-left">CO1607007BWW</td>
+               </tr>
+             </tbody>
+
+            <tbody data-toggle="modal" data-target="#JE_BE_4002" role="button">
+              <tr>
+                <th scope="row" class="text-xs-center">IO1606013</td>
+                <td class="text-xs-left nowrap">MV ALEXANDER CARL</td>
+                <td class="text-xs-center">2016.08.05</td>
+                <td class="text-xs-center">CARF</td>
+                <td class="text-xs-left nowrap">CARAJAS FINE</td>
+                <td class="text-xs-left">VALEPM161086401</td>
+              </tr>
+            </tbody>
+
+            <tbody data-toggle="modal" data-target="#JE_BE_4002" role="button">
+              <tr>
+                <th scope="row" class="text-xs-center" rowspan="2">IO1606013</td>
+                <td class="text-xs-left nowrap" rowspan="2">MV ALEXANDER CARL</td>
+                <td class="text-xs-center" rowspan="2">2016.08.05</td>
+                <td class="text-xs-center">GC0</td>
+                <td class="text-xs-left nowrap">GERMAN CREEK</td>
+                <td class="text-xs-left">CO1607007GC0</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">PD0</td>
+                <td class="text-xs-left nowrap">PEAK DOWNS</td>
+                <td class="text-xs-left">1</td>
+              </tr>
+            </tbody>
+
+            <tbody data-toggle="modal" data-target="#JE_BE_4002" role="button">
+              <tr>
+                <th scope="row" class="text-xs-center">IO1606013</td>
+                <td class="text-xs-left nowrap">MV ALEXANDER CARL</td>
+                <td class="text-xs-center">2016.08.05</td>
+                <td class="text-xs-center">CARF</td>
+                <td class="text-xs-left nowrap">CARAJAS FINE</td>
+                <td class="text-xs-left">VALEPM161086401</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 품종 -->
+    <div id="popup-kind" class="popup popup-sm zoom">
+    </div>
+
+    <div id="JE_BE_4002" class="modal zoom">
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title">원료 선적 정보조회 조회 상세정보</h1>
+      </header>
+      <div class="content">
+        <p class="content-padded">
+          The contents of my modal go here.
+        </p>
+      </div>
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

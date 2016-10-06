@@ -212,6 +212,16 @@
 .hd-data.table .bg-white td {
   background-color: #fff
 }
+
+.hd-data.table tbody[data-toggle="modal"]:active,
+.hd-data.table tbody[data-toggle="modal"]:focus {
+  border: .125rem solid #74a9e3
+}
+.hd-data.table tbody[data-toggle="modal"]:active th,
+.hd-data.table tbody[data-toggle="modal"]:active td {
+  background-color: #f4f8fd !important
+}
+
 /*popup*/
 @media (max-width: 640px) {
   ..hd-datapopup .content {
