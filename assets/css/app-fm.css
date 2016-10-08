@@ -341,6 +341,50 @@
 
 
 /*원료 Bin card */
+.hd-bin > .card-header {
+  padding: 0.6rem .625rem;
+  border-bottom: none;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.hd-bin > .card-header h3,
+.hd-bin > .card-header small {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: 1 0 0%;
+  flex: 1 0 0% !important;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hd-bin > .card-header h3 {
+  font-weight: 700
+}
+.hd-bin > .card-header small {
+  padding-top: .3rem;
+  text-align: right;
+  align-items: center;
+  line-height: 1.3rem
+}
+
+.hd-bin > .card-block {
+  margin: 0 .625rem .625rem;
+  padding: .3rem;
+  line-height: 1.5rem;
+  border-top: .0625rem solid #d8dce2;
+  border-bottom: .0625rem solid #d8dce2;
+}
+.hd-bin > .card-block:before {
+  padding-right: .312rem;
+  font-family: 'icomoon' !important;
+  content: "\e900";
+  color: #626470;
+}
 
 .hd-bin .card-deck-wrapper {
   padding: .625rem
@@ -409,6 +453,10 @@
   }
 }
 
+.hd-bin .card-deck ~ .card-deck {
+  margin-top: 2rem
+}
+
 .hd-bin .card-deck .card .card-block {
   margin-top: .3rem;
   padding: 0;
@@ -444,6 +492,14 @@
   height: 1rem;
   width: 3.5rem;
 }
+
+@media (min-width: 544px) {
+  .progress.progress-vertical {
+    height: 2rem;
+    width: 4.5rem;
+  }
+}
+
 .progress.progress-vertical[value]::-webkit-progress-bar{
   background: #fff !important;
   border-radius:2rem 2rem 2rem 2rem;
