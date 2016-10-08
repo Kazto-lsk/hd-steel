@@ -198,6 +198,12 @@
   border-bottom: .0625rem solid #b4b8c4
 }
 
+.hd-data.table tr [scope="row"] ~ [scope="row"] {
+  border-left: none;
+  border-right: none;
+  border-bottom: .0625rem solid #b4b8c4;
+}
+
 .hd-data.table .hd-time td {
   text-align: center;
   font-size: .9rem;
@@ -331,4 +337,143 @@
 .m-y-default {
   margin-top: .625rem;
   margin-bottom: .625rem
+}
+
+
+/*원료 Bin card */
+
+.hd-bin .card-deck-wrapper {
+  padding: .625rem
+}
+.hd-bin .card-deck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-right: -0.2rem;
+  margin-bottom: 0.75rem;
+  margin-left: -0.2rem;
+}
+.hd-bin .card-deck .card {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: 1 0 0%;
+  flex: 1 0 0% !important;
+  border: none;
+  margin-top: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  margin-left: 0.2rem;
+}
+.hd-bin .card-deck .card .card-media-wrap {
+  padding-top: 1rem !important;
+  padding-bottom: 0 !important;
+  background-color: #eaeaea;
+  border-radius: .25rem;
+}
+
+.hd-bin .card-deck .card .media ~ .media {
+  padding-top: .9375rem;
+  border-top: .0625rem solid #dadada;
+  margin-top: .5rem
+}
+.hd-bin .media-left {
+  width: 2.5rem
+}
+.hd-bin .media-object {
+  margin-top: .625rem;
+  margin-left: -.8rem
+}
+.hd-bin .media-body {
+  margin-left: -1.5625rem;
+  padding-top: 0;
+  padding-right: .3125rem;
+  color: #616874;
+  font-size: 1rem;
+  letter-spacing: -.0625rem;
+  line-height: 1.2rem
+}
+
+@media (min-width: 544px) {
+  .hd-bin .media-object {
+    margin-top: 1.25rem;
+    margin-left: -.625rem
+  }
+  .hd-bin .media-body {
+    padding-top: 0;
+    padding-right: .625rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem
+  }
+}
+
+.hd-bin .card-deck .card .card-block {
+  margin-top: .3rem;
+  padding: 0;
+  line-height: 2.5rem;
+  text-align: center;
+  border-top: none;
+  background-color: #fff;
+  background-image: url("../img/hd-bin-footer.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hd-bin .card-deck .card .card-header {
+  background-color: #fff;
+  padding: 0  0 .5rem;
+  line-height: 1rem;
+  border-bottom: none;
+  text-align: center;
+  color: #626470
+}
+.hd-bin .card-deck .card .card-footer {
+  padding: .3rem 0;
+  background-color: #fff;
+  line-height: 1rem;
+  border-top: none;
+  text-align: center;
+  color: #626470
+}
+
+/*vertical progress*/
+.progress.progress-vertical {
+  -webkit-transform: rotate(270deg);
+  height: 1rem;
+  width: 3.5rem;
+}
+.progress.progress-vertical[value]::-webkit-progress-bar{
+  background: #fff !important;
+  border-radius:2rem 2rem 2rem 2rem;
+  border:none
+}
+.progress.progress-vertical[value]::-webkit-progress-value{
+  border-radius: 2rem 0 0 2rem;
+  -webkit-animation: load 3s ease 1s forwards;
+}
+.progress.progress-vertical[value="100"]::-webkit-progress-value{
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+.progress-striped[value]::-webkit-progress-value {
+  background-size: .5rem .5rem;
+}
+.progress[value]::-ms-fill {
+  background-color: #4c81d6;
+}
+.progress[value]::-moz-progress-bar {
+  background-color: #4c81d6;
+}
+.progress[value]::-webkit-progress-value {
+  background-color: #4c81d6;
+}
+.progress-warning[value]::-webkit-progress-value {
+  background-color: #ef811f;
+}
+.progress-warning[value]::-moz-progress-bar {
+  background-color: #ef811f;
+}
+.progress-warning[value]::-ms-fill {
+  background-color: #ef811f;
 }

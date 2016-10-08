@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Truck Hopper 작업정보 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">Truck Hopper 작업정보</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>일시</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="nav nav-control">
+          <a class="nav-link active" role="button" data-toggle="tab" href="" data-control="push" data-transition="fade">중괴</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="" data-control="push" data-transition="fade">소괴</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="" data-control="push" data-transition="fade">분</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>품종</th>
+                <th>작업대기</th>
+                <th>일 계획</th>
+                <th>완료</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-xs-center">석회석(LM)</th>
+                <td>3</td>
+                <td>72</th>
+                <td>61</th>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">규석(SL)</th>
+                <td>0</td>
+                <td>0</th>
+                <td>0</th>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">밀스케일(자가)</th>
+                <td>0</td>
+                <td>0</th>
+                <td>0</th>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">석회석 분(자가)</th>
+                <td>0</td>
+                <td>0</th>
+                <td>0</th>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center">분진(Cyclone)</th>
+                <td>0</td>
+                <td>0</th>
+                <td>0</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5 class="hd-heading no-bullet content-padded m-t-2">대기차량 상세정보</h5>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>일자</th>
+                <th colspan="3">2016/06/15</th>
+              </tr>
+              <tr>
+                <th>제품명</th>
+                <th colspan="3">밀스케일(자가)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1차계량</th>
+                <td colspan="3" class="text-xs-left">2016/06/15 22:40</td>
+              </tr>
+              <tr>
+                <th scope="row">거래처</th>
+                <td class="text-xs-left">-</td>
+                <th scope="row">차량번호</th>
+                <td class="text-xs-left">전북06사7503</td>
+              </tr>
+              <tr>
+                <th scope="row">출발지</th>
+                <td colspan="3" class="text-xs-left">Slag처리공장-Scale 선별장</td>
+              </tr>
+              <tr>
+                <th scope="row">목적지</th>
+                <td colspan="3" class="text-xs-left">원료-Truck Hopper</td>
+              </tr>
+
+              <tr>
+                <th scope="row">1차중량</th>
+                <td class="text-xs-left">44,840</td>
+                <th scope="row">위치</th>
+                <td class="text-xs-left">-</td>
+              </tr>
+              <tr>
+                <th scope="row">번호</th>
+                <td class="text-xs-left">-</td>
+                <th scope="row">구분</th>
+                <td class="text-xs-left">구내</td>
+              </tr>
+              <tr>
+                <th scope="row">지시번호</th>
+                <td class="text-xs-left">0395</td>
+                <th scope="row">운송사</th>
+                <td class="text-xs-left">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 시간 -->
+    <div id="popup-time" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
