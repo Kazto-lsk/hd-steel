@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>원료 사용 실적조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">원료 사용 실적조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>공장구분</label>
+              <input type="text" class="form-control hd-sm" id="factory-3" placeholder=""  value="1고로" readonly="" data-toggle="popup" data-target="#popup-factory-3">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>조회구분</label>
+              <input type="text" class="form-control hd-sm" id="viewtype-2" placeholder=""  value="사용량" readonly="" data-toggle="popup" data-target="#popup-viewtype-2">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>조회년월</label>
+              <input type="text" class="form-control hd-md" id="month" placeholder=""  value="2016.07" readonly="" data-toggle="popup" data-target="#popup-month">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="nav nav-control">
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_GR_3002.html" data-control="push" data-transition="fade">주원료</a>
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_GR_3002_1.html" data-control="push" data-transition="fade">부원료</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>SLSK</th>
+                <th>FEMN</th>
+                <th>FESI</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>합계</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="table-active">
+                <td>합계</td>
+                <td class="spacing-m1 text-xs-right">15,617.291</td>
+                <td class="spacing-m1 text-xs-right">64,314.311</td>
+                <td class="spacing-m1 text-xs-right">16089.137</td>
+                <td class="spacing-m1 text-xs-right">96,020.739</td>
+                <td class="spacing-m1 text-xs-right">96,020.739</td>
+                <td class="spacing-m1 text-xs-right">96,020.739</td>
+                <td class="spacing-m1 text-xs-right">96,020.739</td>
+                <td class="spacing-m1 text-xs-right">464,351.648</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">01일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">02일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">03일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">04일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">05일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">06일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">07일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">08일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">09일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">10일</td>
+                <td class="spacing-m1">694.181</td>
+                <td class="spacing-m1">2,575.715</td>
+                <td class="spacing-m1">590.902</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+                <td class="spacing-m1">3,860.798</td>
+              </tr>
+
+             </tbody>
+
+          </table>
+        </div>
+
+        <br>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-3" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 조회구분 -->
+    <div id="popup-viewtype-2" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 조회년월 -->
+    <div id="popup-month" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

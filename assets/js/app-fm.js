@@ -207,6 +207,16 @@ $('#popup-viewtype-1').on('show.rc.popup',function(){
   })
 });
 
+$('#popup-viewtype-2').on('show.rc.popup',function(){
+  $(this).load('./template/popup-viewtype-2.html',function(){
+    $('#popup-viewtype-2 .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#viewtype-2').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
 $('#popup-bin').on('show.rc.popup',function(){
   $(this).load('./template/popup-bin.html',function(){
     $('#popup-bin .table td').on('tap',function(){
