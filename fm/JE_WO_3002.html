@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>장비 가동실적 조회(기간별) | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">장비 가동실적 조회(기간별)</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <label>~</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-22">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>근 구분</label>
+              <input type="text" class="form-control hd-sm" id="part-1" placeholder=""  value="전체" readonly="" data-toggle="popup" data-target="#popup-part-1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="nav nav-control">
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_3001.html" data-control="push" data-transition="fade">Recimer</a>
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_WO_3002.html" data-control="push" data-transition="fade">Stacker</a>
+        </div>
+
+        <div class="table-responsive">
+                  <table class="table table-bordered panzoom hd-data">
+                    <thead>
+                      <tr>
+                        <th>장비명</th>
+                        <th>작업량</th>
+                        <th>작업시간</th>
+                        <th>Ton/hr</th>
+                        <th>가동률</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-xs-center nowrap">BLST-1</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">BLST-2</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-xs-center nowrap">BLST-3</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">ST-1</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">ST-2</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">ST-3</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">ST-301</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R115TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R116TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R325TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R129TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R130TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R345TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs-center nowrap">R117TC</td>
+                        <td>233,629.000</td>
+                        <td>434:11</td>
+                        <td>538.088</td>
+                        <td>58.358</td>
+                      </tr>
+                     </tbody>
+
+                  </table>
+                </div>
+
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup bin -->
+    <div id="popup-part-1" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
