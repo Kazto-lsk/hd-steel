@@ -1,3 +1,14 @@
+$('.content').on('up.rc.scroll', function() {
+  $('#floating-top').css('display','block').addClass('animated bounceIn')
+})
+$('.content').on('down.rc.scroll', function() {
+  $('#floating-top').css('display','block').addClass('animated bounceIn')
+})
+$('.content').on('default.rc.scroll', function() {
+  $('#floating-top').css('display','none').removeClass('animated bounceIn')
+})
+
+
 var doPanzoom = function(){
   // http://timmywil.github.io/jquery.panzoom/
   // Several options at once

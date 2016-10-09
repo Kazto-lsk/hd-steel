@@ -533,3 +533,13 @@
 .progress-warning[value]::-ms-fill {
   background-color: #ef811f;
 }
+
+/*hd-floating*/
+#floating-top .btn:focus,
+#floating-top .btn:active {
+  outline: none;
+  background-color: #eee
+}
+#floating-top .btn img {
+  width: 22px
+}
