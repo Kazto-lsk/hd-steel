@@ -96,6 +96,13 @@
   }
 }
 
+.bar-header-secondary.hd-normal {
+  height: 2.75rem !important;
+}
+.bar-header-secondary.hd-normal .nav-inline .nav-link.active:after {
+  height: .1875rem;
+}
+
 .form-inline .form-group,
 .form-inline .form-group label,
 .form-inline .btn {

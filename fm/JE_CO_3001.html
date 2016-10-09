@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>장입탄 및 COKE 분석일보 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">장입탄 및 COKE 분석일보</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary p-x-0 hd-normal">
+        <nav class="nav nav-inline">
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_CO_3001.html" data-control="push" data-transition="fade">장입탄분석</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_CO_3002.html" data-control="push" data-transition="fade">W/F COKE분석</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_CO_3003.html" data-control="push" data-transition="fade">B/F COKE 분석</a>
+        </nav>
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown" style="padding-top: 5.5rem;">
+
+        <div class="bg-white p-a-05" id="moreSearch">
+          <div class="form-group row">
+            <label class="col-xs-3 col-form-label spacing-m1">공장구분</label>
+            <div class="col-xs-9 p-l-0">
+              <input type="text" class="form-control" id="factory-2" placeholder="" value="1코크스" readonly="" data-toggle="popup" data-target="#popup-factory-2">
+
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-xs-3 col-form-label spacing-m1">조회일자</label>
+            <div class="col-xs-9 p-l-0">
+              <div class="row">
+                <div class="col-xs-5">
+                  <input type="date" class="form-control" id="" placeholder=""  value="2016-07-18">
+                </div>
+                <div class="col-xs-5 p-l-0">
+                  <input type="date" class="form-control" id="" placeholder=""  value="2016-07-18">
+                </div>
+                <div class="col-xs-2 p-l-0">
+                  <button type="submit" class="btn btn-primary" style="line-height: 1.3rem"><small>조회</small></button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>일자</th>
+                <th>근</th>
+                <th>전수분<br><small>(%)</small></th>
+                <th>입도<br><small>(-3mm)</small></th>
+                <th>평균입도<br><small>(mm)</small></th>
+              </tr>
+            </thead>
+
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.18</small></td>
+                <td class="text-xs-center">1</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_3001" data-title="장입탄 분석">
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.17</small></td>
+                <td class="text-xs-center">3</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+            </tbody>
+
+
+          </table>
+        </div>
+
+        <br>
+
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-2" class="popup popup-sm zoom">
+    </div>
+
+    <!-- modal - 상세보기 -->
+    <div id="JE_CO_3001" class="modal">
+      <header class="bar bar-nav content-padded-x bg-white">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title" data-role="title"></h1>
+      </header>
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>일자</th>
+                <th>근</th>
+                <th>전수분<br><small>(%)</small></th>
+                <th>입도<br><small>(-3mm)</small></th>
+                <th>평균입도<br><small>(mm)</small></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-xs-center spacing-m1"><small>12016.06.18</small></td>
+                <td class="text-xs-center">1</td>
+                <td>9.2</td>
+                <td>82.1</td>
+                <td>1.46</td>
+              </tr>
+             </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
