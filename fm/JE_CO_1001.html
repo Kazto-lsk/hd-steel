@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>조업현황 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">조업현황</h1>
+      </header>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="nav nav-control">
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_CO_1001.html" data-control="push" data-transition="fade">1, 2기</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_CO_1001_1.html" data-control="push" data-transition="fade">3기</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="50%">
+              <col width="50%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">타르 출하탱크 #A레벨</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">조경유 출하탱크 #A레벨</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">조경유 출하탱크 #B레벨</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">타르 생산량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 PGC 전단압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 PGC 전단압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 PGC 후단 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 PGC 후단 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 PGC 후단 압력</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 PGC 후단 압력</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 PGC 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 PGC 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 배송기 전단압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 배송기 전단압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">1기 배송기 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">2기 배송기 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">배송기 #A 암페어</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">배송기 #B 암페어</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">배송기 #C 암페어</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">AS 포집탑 차압(COG LINE)</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">BTX 포집탑 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">H2S</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">홀더 COG 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">AS 증류탑 #A 상부 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">AS 증류탑 #B 상부 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">AS 증류탑 #A 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">AS 증류탑 #B 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">Acid gas #A 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">Acid gas #B 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">탈황설비 #A 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">탈황설비 #B 차압</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">탈황설비 #A 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">탈황설비 #B 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">E/O 순환 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">BTX 생산량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">공급 스팀 압력</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">원폐수 유량</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">원폐수 온도</th>
+                <td class="spacing-m1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center spacing-m1">원폐수 Ph</th>
+                <td class="spacing-m1"></td>
+              </tr>
+
+             </tbody>
+
+          </table>
+        </div>
+
+        <br>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup bin -->
+    <div id="popup-part-1" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
