@@ -206,3 +206,42 @@ $('#popup-item').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-month').on('show.rc.popup',function(){
+  $(this).load('./template/popup-month.html',function(){
+    $('#popup-month .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#month').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-year').on('show.rc.popup',function(){
+  $(this).load('./template/popup-year.html',function(){
+    $('#popup-year .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#year').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
+$('#popup-cycle').on('show.rc.popup',function(){
+  $(this).load('./template/popup-cycle.html',function(){
+    $('#cycle-month').on('tap',function(){
+      var value = $(this).data('label');
+      $('#cycle').val(value);
+      $('#month').css('display','inline-block');
+      $('#year').css('display','none');
+      $(this).popup('hide');
+    });
+    $('#cycle-year').on('tap',function(){
+      var value = $(this).data('label');
+      $('#cycle').val(value);
+      $('#month').css('display','none');
+      $('#year').css('display','inline-block');
+      $(this).popup('hide');
+    });
+  })
+});

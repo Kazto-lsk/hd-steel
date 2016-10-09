@@ -274,6 +274,13 @@
   background-color: #848896;
   color: #fff !important
 }
+.popup .nav-control .nav-link.active {
+  color: #333 !important;
+  font-weight: 700
+}
+.popup .nav-control .nav-link.active:after {
+  height: 0;
+}
 
 /*bar-tab*/
 .bar-tab .tab-item {
