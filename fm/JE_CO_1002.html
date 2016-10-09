@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>화성 부산물 생산관리 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">화성 부산물 생산관리</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>공장구분</label>
+              <input type="text" class="form-control hd-sm" id="factory-2" placeholder=""  value="1코크스" readonly="" data-toggle="popup" data-target="#popup-factory-2">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>조회주기</label>
+              <input type="text" class="form-control hd-sm" id="cycle-1" placeholder=""  value="일간" readonly="" data-toggle="popup" data-target="#popup-cycle-1">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" id="day" placeholder=""  value="2016-07-25">
+              <input type="text" class="form-control hd-md" id="month" placeholder=""  value="2016.07" readonly="" data-toggle="popup" data-target="#popup-month" style="display: none">
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+
+        <div class="card hd-data">
+          <ul class="table-view">
+            <li class="table-view-cell">
+              &middot; Coal 1기
+              <span class="badge badge-inverted">5,280.516</span>
+            </li>
+            <li class="table-view-cell">
+              &middot; Coal 2기
+              <span class="badge badge-inverted">5,280.516</span>
+            </li>
+            <li class="table-view-cell">
+              &middot; Coal 3기
+              <span class="badge badge-inverted">6,510.748</span>
+            </li>
+            <li class="table-view-cell table-view-info">
+              &nbsp;&nbsp;&nbsp;합계
+              <span class="badge badge-inverted">17,055.001</span>
+            </li>
+          </ul>
+        </div>
+
+        <table class="table table-bordered hd-filter content-padded-y">
+          <tbody>
+            <tr>
+              <td class="table-active">타르<br>(V90S87)</td>
+              <td>조경유<br>(V90S88)</td>
+              <td>유황<br>(V90S89)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th></th>
+                <th>1/2기</th>
+                <th>3기</th>
+                <th>합계</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-xs-center nowrap">기초재고(Ton)</th>
+                <td class="spacing-m1">-</td>
+                <td class="spacing-m1">-</td>
+                <td class="spacing-m1">6,864.341</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center nowrap">생산량(ton)</th>
+                <td class="spacing-m1">315.000</td>
+                <td class="spacing-m1">181.000</td>
+                <td class="spacing-m1">496.000</td>
+              </tr>
+             </tbody>
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>출하량<br>(ton)</th>
+                <th>해송출하량<br>(ton)</th>
+                <th>육송출하량<br>(ton)</th>
+                <th>기타출고<br>(ton)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="4" class="text-xs-left">미시비씨상사</td>
+              </tr>
+              <tr>
+                <td class="spacing-m1">2,997.218</td>
+                <td class="spacing-m1">2,997.218</td>
+                <td class="spacing-m1">0.000</td>
+                <td class="spacing-m1">0.000</td>
+              </tr>
+             </tbody>
+
+             <thead>
+               <tr>
+                 <th colspan="4">소계</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td class="spacing-m1">2,997.218</td>
+                 <td class="spacing-m1">2,997.218</td>
+                 <td class="spacing-m1">0.000</td>
+                 <td class="spacing-m1">0.000</td>
+               </tr>
+              </tbody>
+
+              <thead>
+                <tr>
+                  <th colspan="2">기말재고(ton)</th>
+                  <th colspan="2">원단위(kg/t-coal)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2" rowspan="3" class="spacing-m1 text-xs-center">7,360.341</td>
+                  <td colspan="2" class="spacing-m1">27.858</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="spacing-m1">27.186</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="spacing-m1">27.609</td>
+                </tr>
+               </tbody>
+          </table>
+        </div>
+
+
+        <br><br><br>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-2" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 조회주기 -->
+    <div id="popup-cycle-1" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 조회년월 -->
+    <div id="popup-month" class="popup popup-sm zoom">
+    </div>
+
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

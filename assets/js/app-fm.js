@@ -275,3 +275,22 @@ $('#popup-cycle').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-cycle-1').on('show.rc.popup',function(){
+  $(this).load('./template/popup-cycle-1.html',function(){
+    $('#cycle-month').on('tap',function(){
+      var value = $(this).data('label');
+      $('#cycle-1').val(value);
+      $('#month').css('display','inline-block');
+      $('#day').css('display','none');
+      $(this).popup('hide');
+    });
+    $('#cycle-day').on('tap',function(){
+      var value = $(this).data('label');
+      $('#cycle-1').val(value);
+      $('#month').css('display','none');
+      $('#day').css('display','inline-block');
+      $(this).popup('hide');
+    });
+  })
+});
