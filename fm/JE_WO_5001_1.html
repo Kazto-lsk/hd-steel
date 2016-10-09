@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>일일 선별 실적조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">일일 선별 실적조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <label>~</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-22">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>근 구분</label>
+              <input type="text" class="form-control hd-sm" id="part-1" placeholder=""  value="전체" readonly="" data-toggle="popup" data-target="#popup-part-1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="nav nav-control">
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001.html" data-control="push" data-transition="fade">1기</a>
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_WO_5001_1.html" data-control="push" data-transition="fade">2기</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001_2.html" data-control="push" data-transition="fade">직송량</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001_3.html" data-control="push" data-transition="fade">저장고적치량</a>
+        </div>
+
+        <div class="content-padded">
+          <input type="text" class="form-control text-xs-center" id="item" placeholder="" value="R80A22 / MTNS" readonly="" data-toggle="popup" data-target="#popup-item">
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm m-t-0">
+            <tbody>
+              <tr>
+                <th scope="row">작업일자</th>
+                <td class="spacing-m1 text-xs-center">2016.07.12-3D</td>
+                <th scope="row">작업시간</th>
+                <td class="text-xs-left">03:50</td>
+              </tr>
+              <tr>
+                <th scope="row">입조량</th>
+                <td colspan="3" class="text-xs-left">1,750.000</td>
+              </tr>
+              <tr>
+                <th scope="row">생산량</th>
+                <td colspan="3" class="text-xs-left spacing-m1">정립광 : 1,476.000 / 채밑광 : 201.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Ton/hr</th>
+                <td colspan="3" class="text-xs-left">330.189</td>
+              </tr>
+              <tr>
+                <th scope="row">가동율(%)</th>
+                <td class="text-xs-left">66.250</td>
+                <th scope="row">분율(%)</th>
+                <td class="text-xs-left">11.986</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <tbody>
+              <tr>
+                <th scope="row">작업일자</th>
+                <td class="spacing-m1 text-xs-center">2016.07.12-2C</td>
+                <th scope="row">작업시간</th>
+                <td class="text-xs-left">03:50</td>
+              </tr>
+              <tr>
+                <th scope="row">입조량</th>
+                <td colspan="3" class="text-xs-left">1,750.000</td>
+              </tr>
+              <tr>
+                <th scope="row">생산량</th>
+                <td colspan="3" class="text-xs-left spacing-m1">정립광 : 1,476.000 / 채밑광 : 201.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Ton/hr</th>
+                <td colspan="3" class="text-xs-left">330.189</td>
+              </tr>
+              <tr>
+                <th scope="row">가동율(%)</th>
+                <td class="text-xs-left">66.250</td>
+                <th scope="row">분율(%)</th>
+                <td class="text-xs-left">11.986</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <tbody>
+              <tr>
+                <th scope="row">작업일자</th>
+                <td class="spacing-m1 text-xs-center">2016.07.12-1A</td>
+                <th scope="row">작업시간</th>
+                <td class="text-xs-left">03:50</td>
+              </tr>
+              <tr>
+                <th scope="row">입조량</th>
+                <td colspan="3" class="text-xs-left">1,750.000</td>
+              </tr>
+              <tr>
+                <th scope="row">생산량</th>
+                <td colspan="3" class="text-xs-left spacing-m1">정립광 : 1,476.000 / 채밑광 : 201.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Ton/hr</th>
+                <td colspan="3" class="text-xs-left">330.189</td>
+              </tr>
+              <tr>
+                <th scope="row">가동율(%)</th>
+                <td class="text-xs-left">66.250</td>
+                <th scope="row">분율(%)</th>
+                <td class="text-xs-left">11.986</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <tbody>
+              <tr>
+                <th scope="row">작업일자</th>
+                <td class="spacing-m1 text-xs-center">2016.07.11-3D</td>
+                <th scope="row">작업시간</th>
+                <td class="text-xs-left">03:50</td>
+              </tr>
+              <tr>
+                <th scope="row">입조량</th>
+                <td colspan="3" class="text-xs-left">1,750.000</td>
+              </tr>
+              <tr>
+                <th scope="row">생산량</th>
+                <td colspan="3" class="text-xs-left spacing-m1">정립광 : 1,476.000 / 채밑광 : 201.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Ton/hr</th>
+                <td colspan="3" class="text-xs-left">330.189</td>
+              </tr>
+              <tr>
+                <th scope="row">가동율(%)</th>
+                <td class="text-xs-left">66.250</td>
+                <th scope="row">분율(%)</th>
+                <td class="text-xs-left">11.986</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <br>
+
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup bin -->
+    <div id="popup-part-1" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup item -->
+    <div id="popup-item" class="popup popup-sm zoom">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

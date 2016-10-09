@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>고로 조업현황 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">고로 조업현황</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>조회일자 :</label>
+              <label>2016.07.21</label>
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>시간</label>
+              <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+              <label> &nbsp;:</label>
+              <input type="text" class="form-control hd-sm" id="time2" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th colspan="2">구분</th>
+                <th>1고로</th>
+                <th>2고로</th>
+                <th>3고로</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-xs-center" rowspan="6">송풍</td>
+                <td class="text-xs-center">BV</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">BP</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">BPSD</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">O2</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">H2O</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">송풍구 개수</td>
+                <td>42</td>
+                <td>42</td>
+                <td>-</td>
+              </tr><!-- /송풍 -->
+
+              <tr>
+                <td class="text-xs-center" rowspan="9">용선</td>
+                <td class="text-xs-center">HMT</td>
+                <td class="spacing-m1">0.00</td>
+                <td class="spacing-m1">1501.00</td>
+                <td class="spacing-m1">1490.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">저선</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">출선속도</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">예상<br>출선량</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">Si</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">S</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">Cu</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">Slag Ratio</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">C/S</td>
+                <td>42</td>
+                <td>42</td>
+                <td>-</td>
+              </tr><!-- /용선 -->
+
+
+              <tr>
+                <td class="text-xs-center" rowspan="8">환원<br>제비</td>
+                <td class="text-xs-center">RR</td>
+                <td class="spacing-m1">0.00</td>
+                <td class="spacing-m1">1501.00</td>
+                <td class="spacing-m1">1490.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">PCR</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">CC</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">NC</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">O/C</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">PCI</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">Os</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">C/S</td>
+                <td>42</td>
+                <td>42</td>
+                <td>-</td>
+              </tr><!-- /환원 제비 -->
+
+
+             </tbody>
+
+          </table>
+        </div>
+
+        <br><br><br>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup time -->
+    <div id="popup-time" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

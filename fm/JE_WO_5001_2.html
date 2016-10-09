@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>일일 선별 실적조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">일일 선별 실적조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+              <label>~</label>
+              <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-22">
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>근 구분</label>
+              <input type="text" class="form-control hd-sm" id="part-1" placeholder=""  value="전체" readonly="" data-toggle="popup" data-target="#popup-part-1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="nav nav-control">
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001.html" data-control="push" data-transition="fade">1기</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001_1.html" data-control="push" data-transition="fade">2기</a>
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_WO_5001_2.html" data-control="push" data-transition="fade">직송량</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_WO_5001_3.html" data-control="push" data-transition="fade">저장고적치량</a>
+        </div>
+
+        <table class="table table-bordered hd-filter content-padded-y">
+          <tbody>
+            <tr>
+              <td class="table-active">고로</td>
+              <td>배합</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>작업일자</th>
+                <th>1배합</th>
+                <th>2배합</th>
+                <th>3배합</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center nowrap spacing-m1">2016.07.12-3D</td>
+                <td>52.000</td>
+                <td>608.000</td>
+                <td>320.000</td>
+              </tr>
+             </tbody>
+
+          </table>
+        </div>
+
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup bin -->
+    <div id="popup-part-1" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>연원료성분현황 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">연원료 성분현황</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group">
+              <label>조회일자 :</label>
+              <label>2016.07.21</label>
+            </div>
+
+            <div class="form-group p-l-1">
+              <label>시간</label>
+              <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+              <label> &nbsp;:</label>
+              <input type="text" class="form-control hd-sm" id="time2" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>항목</th>
+                <th>1기</th>
+                <th>2기</th>
+                <th>3기</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="table-active">
+                <td class="text-xs-center" rowspan="6">연료</td>
+                <td class="text-xs-center">측정일시</td>
+                <td class="spacing-m1">20 00:00</td>
+                <td class="spacing-m1">20 00:00</td>
+                <td class="spacing-m1">20 00:00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">WF DI</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">BF DI</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">CSR</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">MS</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">H20</td>
+                <td>42</td>
+                <td>42</td>
+                <td>-</td>
+              </tr><!-- /연료 -->
+
+              <tr class="table-active">
+                <td class="text-xs-center" rowspan="9">원료</td>
+                <td class="text-xs-center">측정일시</td>
+                <td class="spacing-m1">21 10:00</td>
+                <td class="spacing-m1">21 10:00</td>
+                <td class="spacing-m1">21 10:00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">RDI</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">FeO</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">MS</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">SI</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">MgO</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">-10mm</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">T.Fe</td>
+                <td class="spacing-m1">648.00</td>
+                <td class="spacing-m1">7028.00</td>
+                <td class="spacing-m1">7206.00</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">C/S</td>
+                <td>42</td>
+                <td>42</td>
+                <td>-</td>
+              </tr><!-- /원료 -->
+
+             </tbody>
+
+          </table>
+        </div>
+
+        <br>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup time -->
+    <div id="popup-time" class="popup popup-sm zoom">
+    </div>
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

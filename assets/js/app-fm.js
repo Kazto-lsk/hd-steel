@@ -196,3 +196,13 @@ $('#popup-bin').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-item').on('show.rc.popup',function(){
+  $(this).load('./template/popup-item.html',function(){
+    $('#popup-item .table tr').on('tap',function(){
+      var value = $(this).data('label');
+      $('#item').val(value);
+      $(this).popup('hide');
+    });
+  })
+});

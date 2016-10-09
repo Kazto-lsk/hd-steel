@@ -186,6 +186,11 @@
   border-top: 0.0625rem solid #eceeef;
   font-weight: normal;
 }
+.hd-data.hd-sm.table th,
+.hd-data.hd-sm.table td {
+  padding: 0.4rem 0.4rem ;
+}
+
 .hd-data.table tr.table-active td {
   background-color: #f0f4fb;
   text-align: center;
@@ -255,7 +260,7 @@
 .popup .table td {
   text-align: center;
 }
-.popup .table td:active {
+.popup .table tr:active {
   background-color: #f4f8fd;
   border: .125rem solid #74a9e3
 }
