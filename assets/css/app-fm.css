@@ -249,7 +249,10 @@
   font-size: 1rem;
   font-weight: normal;
 }
-
+.table-view-info,
+.table-view-info > table-view-cell {
+    background-color: #f0f4fb;
+}
 .hd-data.card {
   margin: .625rem !important
 }
