@@ -1,13 +1,14 @@
-$('.content').on('up.rc.scroll', function() {
-  $('#floating-top').css('display','block').addClass('animated bounceIn')
-})
-$('.content').on('down.rc.scroll', function() {
-  $('#floating-top').css('display','block').addClass('animated bounceIn')
-})
-$('.content').on('default.rc.scroll', function() {
-  $('#floating-top').css('display','none').removeClass('animated bounceIn')
-})
-
+var doScolltop = function(){
+  $('.content').on('up.rc.scroll', function() {
+    $('#floating-top').css('display','block').addClass('animated bounceIn')
+  })
+  $('.content').on('down.rc.scroll', function() {
+    $('#floating-top').css('display','block').addClass('animated bounceIn')
+  })
+  $('.content').on('default.rc.scroll', function() {
+    $('#floating-top').css('display','none').removeClass('animated bounceIn')
+  })
+};
 
 var doPanzoom = function(){
   // http://timmywil.github.io/jquery.panzoom/
@@ -34,7 +35,9 @@ var doPanzoom = function(){
 };
 
 // push bind , http://rc.kimsq.com/controls/push/#push-bind
+window.addEventListener('push', doScolltop);
 window.addEventListener('push', doPanzoom);
+doScolltop();
 doPanzoom();
 
 
