@@ -39,18 +39,33 @@
       </header>
 
       <!-- secondary header-->
-      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
-        <div class="table-responsive">
-          <div class="form-inline nowrap">
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="moreSearch">
 
-            <div class="form-group">
-              <label>공장구분</label>
-              <input type="text" class="form-control hd-sm" id="factory-3" placeholder=""  value="1고로" readonly="" data-toggle="popup" data-target="#popup-factory-3">
+        <div class="form-group m-b-0" style="margin-top: .5rem">
+          <div class="hd-term">
+            <div class="hd-term-item p-l-05" style="width: 15%">
+              품명
             </div>
+            <div class="hd-term-item" style="width: 68%">
+              <div class="input-group" data-toggle="modal" data-target="#JE_CO_4001-search">
+                <input type="text" class="form-control" placeholder="" value="전체" readonly="" id="team">
+                <span class="input-group-btn">
+                  <button class="btn btn-white" type="button" style="padding: .43rem">
+                    <span class="icon-rc icon-search2"></span>
+                  </button>
+                </span>
+              </div>
 
-            <button type="submit" class="btn btn-primary">조회</button>
-          </div><!-- /.form-inline -->
-        </div><!-- /.table-responsive -->
+            </div>
+            <div class="hd-term-item p-l-05" style="width: 17%">
+              <button class="btn btn-primary btn-block" type="submit">
+                조회
+              </button>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
       <!-- main content -->
@@ -170,18 +185,7 @@
     </div><!-- /.snap-content -->
 
 
-    <!-- Popup 공장구분 -->
-    <div id="popup-factory-3" class="popup popup-sm zoom">
-    </div>
-
-    <!-- Popup 조회구분 -->
-    <div id="popup-viewtype-1" class="popup popup-sm zoom">
-    </div>
-
-    <!-- Popup 조회년월 -->
-    <div id="popup-month" class="popup popup-sm zoom">
-    </div>
-
+    <!-- modal-상세보기 -->
     <div id="JE_CO_4001" class="modal zoom">
       <header class="bar bar-nav bar-inverse bg-primary">
         <a class="icon icon-close pull-right" data-history="back" role="button"></a>
@@ -539,6 +543,41 @@
 
 
       </div>
+    </div>
+
+    <!-- modal-품명검색 -->
+    <div id="JE_CO_4001-search" class="modal">
+      <header class="bar bar-nav bar-inverse bg-primary">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title left p-l-2">품명검색</h1>
+      </header>
+
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>품명</label>
+              <input type="text" class="form-control hd-sm" id="product" placeholder="" value="전체" readonly="" data-toggle="popup" data-target="#popup-product">
+            </div>
+            <button type="submit" class="btn btn-primary">확인</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <div class="content bg-faded">
+
+
+
+        <br>
+
+
+      </div><!-- /.content -->
+    </div><!-- /.modal -->
+
+
+
+    <!-- Popup 품명검색  -->
+    <div id="popup-product" class="popup popup-sm zoom">
     </div>
 
 

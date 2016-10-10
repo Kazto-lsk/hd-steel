@@ -257,6 +257,16 @@ $('#popup-year').on('show.rc.popup',function(){
   })
 });
 
+$('#popup-product').on('show.rc.popup',function(){
+  $(this).load('./template/popup-product.html',function(){
+    $('#popup-product .table td').on('tap',function(){
+      var value = $(this).data('label');
+      $('#product').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
+
 $('#popup-cycle').on('show.rc.popup',function(){
   $(this).load('./template/popup-cycle.html',function(){
     $('#cycle-month').on('tap',function(){

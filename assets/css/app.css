@@ -69,6 +69,9 @@ body {
 .icon-search:before {
   content: "\e901";
 }
+.icon-search2:before {
+  content: "\e819";
+}
 .icon-down-nav:before {
   content: "\e902";
 }
@@ -1432,6 +1435,10 @@ hr {
 
 
 /*modal*/
+
+.modal {
+  z-index: 14
+}
 .modal .bar-header-secondary.hd-search {
   height: 5.1rem;
   padding: .5rem
