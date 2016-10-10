@@ -196,6 +196,7 @@
 .hd-data.hd-sm.table th,
 .hd-data.hd-sm.table td {
   padding: 0.4rem 0.4rem ;
+  min-width: 3rem;
 }
 
 .hd-data.table tr.table-active td {
