@@ -588,3 +588,14 @@
 .hd-button-next.swiper-button-disabled:active {
   background-color: #fff;
 }
+
+
+/*drawer*/
+.snap-drawer .table-view .table-view .table-view-cell {
+  padding-right: 2.0625rem
+}
+.snap-drawer .table-view .table-view .table-view-cell a {
+  margin-right: -2.0625rem
+  font-size: .92rem;
+  letter-spacing: -.0625rem
+}
