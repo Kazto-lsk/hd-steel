@@ -552,14 +552,17 @@
         <h1 class="title left p-l-2">품명검색</h1>
       </header>
 
-      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm">
         <div class="table-responsive">
-          <div class="form-inline nowrap">
+          <div class="form-inline">
             <div class="form-group">
-              <label>품명</label>
-              <input type="text" class="form-control hd-sm" id="product" placeholder="" value="전체" readonly="" data-toggle="popup" data-target="#popup-product">
+              <label class="p-r-1">품명</label>
+              <input type="text" class="form-control hd-md" id="product" placeholder="" value="전체" readonly="" data-toggle="popup" data-target="#popup-product">
+              <button class="btn btn-primary" type="submit" data-history="back">
+                확인
+              </button>
             </div>
-            <button type="submit" class="btn btn-primary">확인</button>
+
           </div><!-- /.form-inline -->
         </div><!-- /.table-responsive -->
       </div>
@@ -567,6 +570,57 @@
       <div class="content bg-faded">
 
 
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>선택</th>
+                <th>품명</th>
+                <th>입하차수</th>
+                <th>입하일자</th>
+                <th>모선명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-xs-center">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                  </label>
+                </td>
+                <td class="text-xs-center">AG0</td>
+                <td class="text-xs-center spacing-m1">20150001</td>
+                <td class="text-xs-center spacing-m1">2015.12.08</td>
+                <td class="text-xs-left">MV ANDROUSA</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                  </label>
+                </td>
+                <td class="text-xs-center">AN2</td>
+                <td class="text-xs-center spacing-m1">20150001</td>
+                <td class="text-xs-center spacing-m1">2015.12.08</td>
+                <td class="text-xs-left">CAPE BRITANNIA</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                  </label>
+                </td>
+                <td class="text-xs-center">AG0</td>
+                <td class="text-xs-center spacing-m1">20150001</td>
+                <td class="text-xs-center spacing-m1">2015.12.08</td>
+                <td class="text-xs-left">MV GLORIOUS STARLIGHT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <br>
 
