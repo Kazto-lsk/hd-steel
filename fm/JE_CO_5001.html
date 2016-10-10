@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>COKE OVEN 조업관리 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/rc-progress.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">COKE OVEN 조업관리</h1>
+      </header>
+
+      <!-- main content -->
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="bg-white p-a-05" id="moreSearch">
+          <div class="form-group row">
+            <label class="col-xs-3 col-form-label spacing-m2 hd-none">공장구분</label>
+            <div class="col-xs-4 p-l-0">
+              <input type="text" class="form-control" id="factory-2" placeholder="" value="1코크스" readonly="" data-toggle="popup" data-target="#popup-factory-2">
+            </div>
+            <label class="col-xs-2 col-form-label spacing-m2 p-l-0 hd-none text-xs-center">조회주기</label>
+            <div class="col-xs-3 p-l-0">
+              <input type="text" class="form-control" id="viewtype-1" placeholder="" value="일" readonly="" data-toggle="popup" data-target="#popup-viewtype-1">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-xs-3 col-form-label spacing-m2 hd-none">조회일자</label>
+            <div class="col-xs-9 p-l-0">
+              <div class="row">
+                <div class="col-xs-5">
+                  <input type="date" class="form-control" id="" placeholder=""  value="2016-07-18">
+                </div>
+                <div class="col-xs-5 p-l-0">
+                  <input type="date" class="form-control" id="" placeholder=""  value="2016-07-18">
+                </div>
+                <div class="col-xs-2 p-l-0">
+                  <button type="submit" class="btn btn-primary" style="line-height: 1.3rem"><small>조회</small></button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <thead>
+              <tr>
+                <th>실적일시</th>
+                <th>가동율</th>
+                <th>장입문수</th>
+                <th>장입밀도</th>
+              </tr>
+            </thead>
+
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+            <tbody data-toggle="modal" data-target="#JE_CO_5001">
+              <tr>
+                <td class="text-xs-center spacing-m1">2016.06.18</td>
+                <td>26.66</td>
+                <td>32</td>
+                <td>754.0</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+        <br>
+
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-2" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 조회주기 -->
+    <div id="popup-viewtype-1" class="popup popup-sm zoom">
+    </div>
+
+
+    <!-- modal - 상세보기 -->
+    <div id="JE_CO_5001" class="modal active">
+      <header class="bar bar-nav bg-white">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title"><strong>COKE OVEN 조업관리</strong></h1>
+      </header>
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <tbody>
+              <tr>
+                <th scope="row" class="text-xs-left" colspan="2">실적일시</th>
+                <td>2016.06.16</td>
+              </tr>
+
+              <tr>
+                <th scope="row" rowspan="3" class="text-xs-left">장입량</th>
+                <td class="text-xs-center table-active">Wet</td>
+                <td>6,015.194</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">Dry</td>
+                <td>5,463.741</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">기준</td>
+                <td>59.500</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-left" colspan="2">가동율</th>
+                <td>79.16</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-left" colspan="2">장입문수</th>
+                <td>96</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2" class="text-xs-left">압출문수</th>
+                <td class="text-xs-center table-active">압출</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">감산</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2" class="text-xs-left">문당장입량</th>
+                <td class="text-xs-center table-active">Wet</td>
+                <td>63.147</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">Dry</td>
+                <td>57.495</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-left" colspan="2">장입밀도</th>
+                <td>754.0</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2" class="text-xs-left">압출관리</th>
+                <td class="text-xs-center table-active">건류</td>
+                <td>29:45</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">목표</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="5" class="text-xs-left">Oven<br>온도관리</th>
+                <td class="text-xs-center table-active">목표</td>
+                <td>1217.9</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">MBT</td>
+                <td>1,045.77</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">P/S</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">M/S</td>
+                <td>1,239.98</td>
+              </tr>
+              <tr>
+                <td class="text-xs-center table-active">C/S</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-left" colspan="2">분배관 압력</th>
+                <td>115.3</td>
+              </tr>
+             </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+      </div><!-- /.content -->
+    </div><!-- /.modal -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

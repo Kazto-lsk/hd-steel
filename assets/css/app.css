@@ -919,6 +919,10 @@ input.form-control {
   content : "·";
   color: #9a9eac
 }
+.form-group .col-form-label.hd-none:before {
+  padding-right: 0;
+  content : "";
+}
  .form-group .col-form-label.required::after {
    padding-left: .3125rem;
    content : "*";
@@ -1045,6 +1049,9 @@ hr {
 
 .spacing-m1 {
   letter-spacing: -.0625rem !important;
+}
+.spacing-m2 {
+  letter-spacing: -.125rem !important;
 }
 .nowrap {
   white-space: nowrap;
