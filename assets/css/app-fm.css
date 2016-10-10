@@ -130,6 +130,9 @@
 .bar-header-secondary ~ .content {
     padding-top: 6.36rem;
 }
+.snap-drawer .bar-header-secondary ~ .content {
+    padding-top: 5.1rem;
+}
 
 .content .nav-control {
   margin-top: -.0625rem;
