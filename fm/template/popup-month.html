@@ -5,7 +5,7 @@
   <div class="bar bar-standard bar-header-secondary bg-white" style="border-bottom: none">
   <div class="nav nav-control">
     <a class="nav-link hd-button-prev" role="button">◀</a>
-    <a class="nav-link active swiper-pagination" role="button"></a>
+    <a class="nav-link active swiper-pagination" id="year-title"></a>
     <a class="nav-link hd-button-next" role="button">▶</a>
   </div>
 </div>
@@ -117,23 +117,20 @@
 
   // Initialize Swiper
   var swiper = new Swiper('.swiper-container', {
-
+    initialSlide: 1,
     nextButton: '.hd-button-next',
     prevButton: '.hd-button-prev',
-    loop: false,
-    autoHeight: true,
-    pagination: '.swiper-pagination',
-    paginationType: 'fraction',
 
-    paginationFractionRender: function (swiper, currentClassName, totalClassName) {
-      var title;
-      if (index === 0) title = '2014년';
-      if (index === 1) title = '2015년'
-      if (index === 2) title = '2016년'
-      return '<span>'+title+'</span>';
+    onSlideChangeEnd: function (swiper) {
+      if (swiper.activeIndex == 0) {
+        $('#year-title').text("2015년");
+      } if (swiper.activeIndex == 1) {
+        $('#year-title').text("2016년");
+      } else {
+        
+      }
     }
 
   });
-
 
 </script>
