@@ -576,3 +576,13 @@
 #floating-top .btn img {
   width: 22px
 }
+
+.hd-button-prev.swiper-button-disabled,
+.hd-button-next.swiper-button-disabled {
+  color: #ccc !important
+}
+
+.hd-button-prev.swiper-button-disabled:active,
+.hd-button-next.swiper-button-disabled:active {
+  background-color: transparent;
+}

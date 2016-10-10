@@ -239,7 +239,7 @@ $('#popup-item').on('show.rc.popup',function(){
 
 $('#popup-month').on('show.rc.popup',function(){
   $(this).load('./template/popup-month.html',function(){
-    $('#popup-month .table td').on('tap',function(){
+    $('#popup-month .table td').on('click',function(){
       var value = $(this).data('label');
       $('#month').val(value);
       $(this).popup('hide');
