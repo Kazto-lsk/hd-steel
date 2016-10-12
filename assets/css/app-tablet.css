@@ -560,3 +560,7 @@ body {
   font-size: .9rem;
   line-height: 1rem
 }
+#map .bar-footer .table td {
+  background-color: #e0e0e0;
+  color: #616161;
+}
