@@ -114,6 +114,16 @@ body {
   line-height: 1.5rem
 }
 
+.hd-buttons .btn {
+  position: relative;
+  top: 0.33rem;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.125rem;
+}
+
+
 .bar-nav .btn .icon {
   position: relative;;
   top: .1739rem;
@@ -518,4 +528,27 @@ body {
 #map-open-full {
   background-color: transparent;;
   border-color: #5597e0;
+}
+
+.snapjs-left .hd-buttons .btn,
+.snapjs-expand-left .hd-buttons .btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-radius: 0.125rem;
+}
+
+
+/*지도영역*/
+#map .bar-footer {
+  height: 86px
+}
+#map .bar-footer ~ .content {
+    padding-bottom: 86px;
+}
+#map .bar-footer .table {
+  margin-bottom: 0;
+  font-size: .9rem;
+  line-height: 1rem
 }
