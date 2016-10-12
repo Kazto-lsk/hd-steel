@@ -563,11 +563,11 @@ body {
 
 .snapjs-left .hd-buttons .btn,
 .snapjs-expand-left .hd-buttons .btn {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 0;
-  font-size: 1rem;
-  border-radius: 0.125rem;
+  /*display: block;*/
+  /*width: 100%;*/
+  /*padding: 0.75rem 0;*/
+  /*font-size: 1rem;*/
+  /*border-radius: 0.125rem;*/
 }
 
 
