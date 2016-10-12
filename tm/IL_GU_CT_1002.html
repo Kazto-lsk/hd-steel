@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>작업안내 | 현대제철 스마트팩토리 마크업</title>
+    <title>운송요구현황 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -36,7 +36,7 @@
           <span class="icon icon-window-full"></span>
         </button>
       </div>
-      <h1 class="title">[YDT29097] 작업안내</h1>
+      <h1 class="title">[YDT29097] 운송요구현황</h1>
     </header>
 
     <div class="snap-drawers">
@@ -47,28 +47,6 @@
             <span class="icon icon-close"></span>
           </button>
         </header><!-- /.bar-nav -->
-
-        <div class="bar bar-standard bar-footer p-x-0">
-          <table class="table table-bordered">
-            <colgroup>
-              <col width="70%">
-              <col>
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>
-                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
-                </td>
-                <td rowspan="2">
-                  총 거리:1.5Km &nbsp; 소요시간 : 30분
-                </td>
-              </tr>
-              <tr>
-                <td>하차개소 : [D2Y12] A열연-사</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- /.bar-footer  -->
 
         <div class="content">
           <div id="map-view"></div>
@@ -122,60 +100,51 @@
             </div>
           </div>
 
-          <table class="table table-bordered">
+          <table class="table table-bordered hd-table-02">
             <colgroup>
-              <col width="23%">
+              <col width="10%">
+              <col width="50%">
+              <col>
+              <col>
+              <col>
               <col>
             </colgroup>
+            <thead class="thead-default">
+              <tr>
+                <th>기준ID</th>
+                <th>작업명</th>
+                <th>발지</th>
+                <th>착지</th>
+                <th>요구량</th>
+                <th>실적량</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
-                <th scope="row">￼기준 ID</th>
-                <td>17536</td>
+                <th scope="row">17536</th>
+                <td class="detail spacing-m1 line-clamp-2">2제강-지금 파쇄/절단장 지금 _전로강지금 A열연-사 운송</td>
+                <td>DUY99</td>
+                <td>D2Y99</td>
+                <td>27</td>
+                <td></td>
               </tr>
               <tr>
-                <th scope="row">작업명</th>
-                <td>2제강-지금 파쇄/절단장 지금_전로강지금 A열연-사</td>
-              </tr>
-              <tr>
-                <th scope="row">상차개소</th>
-                <td>2제강-지금 파쇄/절단장</td>
-              </tr>
-              <tr>
-                <th scope="row">하차개소</th>
-                <td>A열연-사</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="table table-bordered">
-            <colgroup>
-              <col width="23%">
-              <col width="27%">
-              <col width="23%">
-              <col width="27%">
-            </colgroup>
-            <tbody>
-              <tr>
-                <th scope="row">요구자</th>
-                <td>홍길동</td>
-                <th scope="row">￼연락처</th>
-                <td>1603</td>
-              </tr>
-              <tr>
-                <th scope="row">요구량</th>
-                <td>120톤</td>
-                <th scope="row">작업횟수</th>
-                <td>2/10회</td>
+                <th scope="row">17536</th>
+                <td class="detail spacing-m1 line-clamp-2">2제강-지금 파쇄/절단장 지금 _전로강지금 A열연-사 운송</td>
+                <td>DUY99</td>
+                <td>D2Y99</td>
+                <td>27</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
 
           <div class="row hd-buttons">
             <div class="col-xs-6">
-              <button type="button" class="btn btn-primary">수행</button>
+              <button type="button" class="btn btn-secondary">이전</button>
             </div>
             <div class="col-xs-6 text-xs-right">
-              <button type="button" class="btn btn-secondary">취소</button>
+              <button type="button" class="btn btn-secondary">다음</button>
             </div>
           </div>
 
