@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>운송요구현황 | 현대제철 스마트팩토리 마크업</title>
+    <title>상차지행선안내 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -36,7 +36,7 @@
           <span class="icon icon-window-full"></span>
         </button>
       </div>
-      <h1 class="title">[YDT29097] 운송요구현황</h1>
+      <h1 class="title">[YDT29097] 상차지행선안내</h1>
     </header>
 
     <div class="snap-drawers">
@@ -48,6 +48,28 @@
           </button>
         </header><!-- /.bar-nav -->
 
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2">
+                  총 거리:1.5Km <br> 소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
         <div class="content">
           <div id="map-view"></div>
         </div><!-- /.content -->
@@ -57,7 +79,16 @@
 
 
     <div class="snap-content" data-extension="drawer">
-
+      <div class="bar bar-standard bar-footer">
+        <div class="row hd-buttons">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-primary">상차지 도착</button>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <button type="button" class="btn btn-secondary">작업상세</button>
+          </div>
+        </div>
+      </div>
       <!-- main content -->
       <div class="content">
 
@@ -68,7 +99,7 @@
               <div class="media">
                 <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
                 <div class="media-body">
-                  안내작업을 수행하십시오.
+                  상차지 도착 처리하세요.
                 </div>
               </div>
             </div>
@@ -79,87 +110,69 @@
           <div class="row">
             <div class="col-xs-12">
               <ul class="progress-indicator">
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  수행
+                </li>
                 <li class="active">
                   <span class="bubble"></span>
                   <span class="icon icon-check2"></span>
                   <span class="time"></span>
-                  수행
-                </li>
-                <li>
-                  <span class="bubble"></span>
                   도착
                 </li>
                 <li>
                   <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
                   상차
                 </li>
                 <li>
                   <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
                   계량
                 </li>
                 <li>
                   <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
                   도착
                 </li>
                 <li>
                   <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
                   하차
                 </li>
                 <li>
                   <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
                   계량
                 </li>
               </ul>
             </div>
           </div>
 
-          <table class="table table-bordered hd-table-02">
-            <colgroup>
-              <col width="10%">
-              <col width="50%">
-              <col>
-              <col>
-              <col>
-              <col>
-            </colgroup>
-            <thead class="thead-default">
-              <tr>
-                <th>기준ID</th>
-                <th>작업명</th>
-                <th>발지</th>
-                <th>착지</th>
-                <th>요구량</th>
-                <th>실적량</th>
-              </tr>
-            </thead>
+          <table class="table table-bordered">
+
             <tbody>
               <tr>
-                <th scope="row">17536</th>
-                <td class="detail spacing-m1 line-clamp-2">2제강-지금 파쇄/절단장 지금 _전로강지금 A열연-사 운송</td>
-                <td>DUY99</td>
-                <td>D2Y99</td>
-                <td>27</td>
-                <td></td>
+                <th scope="row">￼상차개소</th>
+                <td colspan="3">[DUY28] 2제강-지금 파쇄/절단장</td>
               </tr>
               <tr>
-                <th scope="row">17536</th>
-                <td class="detail spacing-m1 line-clamp-2">2제강-지금 파쇄/절단장 지금 _전로강지금 A열연-사 운송</td>
-                <td>DUY99</td>
-                <td>D2Y99</td>
-                <td>27</td>
-                <td></td>
+                <th scope="row">작업횟수</th>
+                <td class="text-xs-center">46/67회</td>
+                <th scope="row">요구자 전화번호</th>
+                <td class="text-xs-center">홍길동 [3874]</td>
               </tr>
             </tbody>
           </table>
 
-          <div class="row hd-buttons">
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-secondary">이전</button>
-            </div>
-            <div class="col-xs-6 text-xs-right">
-              <button type="button" class="btn btn-secondary">다음</button>
-            </div>
-          </div>
+
 
         </div><!-- /.content-padded -->
       </div><!-- /.content -->

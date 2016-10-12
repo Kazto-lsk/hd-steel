@@ -319,7 +319,7 @@ body {
     display: flex;
 }
 .progress-indicator {
-  margin: 1.5rem 0 1.5rem 2rem;
+  margin: 1rem 0 1rem 2rem;
   padding: 0;
   font-size: .9rem;
 }
@@ -607,8 +607,8 @@ body {
 }
 .line-clamp-2 {
   overflow: hidden;
-  display: box;
-  display: -webkit-box;
+  /*display: box;*/
+  /*display: -webkit-box;*/
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   line-clamp: 2 !important;
