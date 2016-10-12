@@ -558,9 +558,12 @@ body {
 #map .bar-footer .table {
   margin-bottom: 0;
   font-size: .9rem;
-  line-height: 1rem
+  line-height: 1rem;
+  border-color: #303840;
 }
 #map .bar-footer .table td {
-  background-color: #e0e0e0;
-  color: #616161;
+  background-color: #3a444d;
+  color: #fff;
+  border-color: #303840;
+  font-weight: normal;
 }
