@@ -508,6 +508,13 @@ body {
   padding-left: 1rem;
   text-align: left;
 }
+
+.hd-card-group .btn .media {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
 .hd-card-group .btn .media-left {
     padding-right: 15px;
 }
