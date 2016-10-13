@@ -614,13 +614,12 @@ body {
 
 /*지도영역*/
 
-
+#map .bar-footer ~ .content {
+  padding-bottom: 0;
+}
 @media (min-width: 641px) {
   #map .bar-footer {
     height: 86px
-  }
-  #map .bar-footer ~ .content {
-      padding-bottom: 86px;
   }
 }
 #map .bar-footer .table {
