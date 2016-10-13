@@ -135,7 +135,7 @@ body {
 
 .hd-buttons .btn {
   position: relative;
-  top: 0.33rem;
+  top: 0;
   padding: 0.75rem 2.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -635,6 +635,10 @@ body {
   font-weight: normal;
   font-size: .8rem
 }
+#map .bar-footer .table td[rowspan="2"] {
+  line-height: 1.6
+}
+
 
 /*utility*/
 .spacing-m1 {
