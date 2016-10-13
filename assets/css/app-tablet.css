@@ -185,6 +185,7 @@ body {
 .btn-primary {
   background-color: #3a444d;
   border-color: #3a444d;
+  color: #fff !important
 }
 .btn-primary:active,
 .btn-primary.active,
