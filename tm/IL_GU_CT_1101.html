@@ -57,8 +57,8 @@
                 <td>
                   상차개소 : [DUY28] 2제강-지금 파쇄/절단장
                 </td>
-                <td rowspan="2">
-                  총 거리:1.5Km <br> 소요시간 : 30분
+                <td rowspan="2" class="nowrap">
+                  총 거리:1.5Km &nbsp;<br class="hidden-sm-up">소요시간 : 30분
                 </td>
               </tr>
               <tr>
@@ -181,10 +181,13 @@
 
     <script>
 
+    // 769px 부터 지도화면 분할 처리
+    if (document.documentElement.clientWidth > 768) {
       // 지도 분할 Screen
       $('#map').drawer({
         backdrop : false
       })
+    }
 
     </script>
 

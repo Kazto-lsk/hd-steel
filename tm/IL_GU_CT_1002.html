@@ -175,10 +175,13 @@
 
     <script>
 
+    // 769px 부터 지도화면 분할 처리
+    if (document.documentElement.clientWidth > 768) {
       // 지도 분할 Screen
       $('#map').drawer({
         backdrop : false
       })
+    }
 
     </script>
 
