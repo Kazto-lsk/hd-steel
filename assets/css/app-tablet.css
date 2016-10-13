@@ -1,5 +1,8 @@
 /*app-tablet.css*/
-@media (min-width: 544px) {
+html {
+  font-size: 16px;
+}
+@media (min-width: 641px) {
   html {
     font-size: 23px;
   }
@@ -100,6 +103,22 @@ body {
   background-color: #f0f0f4;
 }
 
+#hd-menu::after {
+  content: "메뉴"
+}
+
+@media (max-width: 639px) {
+  #hd-menu::after {
+    content: ""
+  }
+ #map-open-half {
+   display: none
+ }
+ #map-open-full {
+  border-bottom-left-radius: .125rem;
+  border-top-left-radius: .125rem;
+ }
+}
 
 .bar-nav .btn-outline-secondary {
   color: #fff;
@@ -535,7 +554,7 @@ body {
 }
 
 .snap-drawer {
-  width: 640px;
+  width: 27.82rem;
 }
 
 .snapjs-left #map-open-half {
@@ -573,11 +592,15 @@ body {
 
 
 /*지도영역*/
-#map .bar-footer {
-  height: 86px
-}
-#map .bar-footer ~ .content {
-    padding-bottom: 86px;
+
+
+@media (min-width: 641px) {
+  #map .bar-footer {
+    height: 86px
+  }
+  #map .bar-footer ~ .content {
+      padding-bottom: 86px;
+  }
 }
 #map .bar-footer .table {
   margin-bottom: 0;
