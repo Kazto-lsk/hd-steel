@@ -580,7 +580,7 @@ body {
 
 .snapjs-left #map-open-half {
   background-color: #105fb7;
-  border-color: #105fb7;
+  border-color: #5597e0;
 }
 .snapjs-left #map-open-full {
   background-color: transparent;;
@@ -590,16 +590,18 @@ body {
 
 .snapjs-expand-left #map-open-half {
   background-color: transparent;;
-  border-color: #5597e0;
 }
 .snapjs-expand-left #map-open-full {
   background-color: #105fb7;
-  border-color: #105fb7;
 }
 #map-open-half,
 #map-open-full {
   background-color: transparent;;
   border-color: #5597e0;
+}
+
+#map-open-full {
+  margin-left: -1px
 }
 
 .snapjs-left .hd-buttons .btn,
