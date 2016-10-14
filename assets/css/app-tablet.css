@@ -208,7 +208,7 @@ body {
 
 
 .bar-footer .btn {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   font-size: 1rem;
   border-radius: 0.125rem;
 }
