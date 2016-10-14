@@ -79,13 +79,13 @@
     <div class="snap-content" data-extension="drawer">
       <div class="bar bar-standard bar-footer">
         <div class="row hd-buttons">
-          <div class="col-xs-9">
-            <button type="button" class="btn btn-primary">계량대도착</button>
-            <button type="button" class="btn btn-secondary">계량기변경</button>
-            <button type="button" class="btn btn-secondary">계량완료</button>
-          </div>
-          <div class="col-xs-3 text-xs-right p-l-0">
+          <div class="col-xs-3">
             <button type="button" class="btn btn-secondary">작업상세</button>
+          </div>
+          <div class="col-xs-9 text-xs-right p-l-0">
+            <button type="button" class="btn btn-primary" disabled>계량완료</button>
+            <button type="button" class="btn btn-primary">계량기변경</button>
+            <button type="button" class="btn btn-primary">계량대도착</button>
           </div>
         </div>
       </div>
@@ -181,18 +181,6 @@
          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
      </script>
 
-    <script>
-
-
-        // 769px 부터 지도화면 분할 처리
-        if (document.documentElement.clientWidth > 768) {
-          // 지도 분할 Screen
-          $('#map').drawer({
-            backdrop : false
-          })
-        }
-
-    </script>
 
   </body>
 </html>

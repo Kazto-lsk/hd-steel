@@ -80,11 +80,11 @@
 
       <div class="bar bar-standard bar-footer">
         <div class="row hd-buttons">
-          <div class="col-xs-6">
-            <button type="button" class="btn btn-secondary">취소</button>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <button type="button" class="btn btn-secondary btn-block">취소</button>
           </div>
-          <div class="col-xs-6 text-xs-right">
-            <button type="button" class="btn btn-primary">수행</button>
+          <div class="col-md-2 offset-md-8 col-sm-4 offset-sm-4 col-xs-6">
+            <button type="button" class="btn btn-primary btn-block">수행</button>
           </div>
         </div>
       </div><!-- /.bar-footer -->
@@ -203,15 +203,6 @@
      </script>
 
     <script>
-
-    // 769px 부터 지도화면 분할 처리
-    if (document.documentElement.clientWidth > 768) {
-      // 지도 분할 Screen
-      $('#map').drawer({
-        backdrop : false
-      })
-    }
-
     </script>
 
   </body>

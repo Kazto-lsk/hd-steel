@@ -106,6 +106,20 @@ body {
   background-color: #f0f0f4;
 }
 
+/*grid*/
+.row {
+  margin-left: -.2173rem !important;
+  margin-right: -.2173rem !important;
+}
+[class^="col-lg-"],[class*=" col-lg-"],
+[class^="col-md-"],[class*=" col-md-"],
+[class^="col-sm-"],[class*=" col-sm-"],
+[class^="col-xs-"],[class*=" col-xs-"] {
+  padding-right: .2173rem !important;
+  padding-left: .2173rem !important;
+}
+
+
 #hd-menu::after {
   content: "메뉴"
 }
@@ -227,14 +241,19 @@ body {
 .btn-primary.active,
 .btn-primary:focus,
 .btn-primary.focus {
-  background-color: #212a32;
-  border-color: #212a32;
+  background-color: #2e363e;
+  border-color: #2e363e;
 }
 .btn.disabled,
 .btn:disabled {
   opacity: 1;
-  color: rgba(255,255,255,0.2)
+  color: rgba(255,255,255,0.2) !important
 }
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #3a444d !important;
+}
+
 .btn-secondary {
     color: #fff;
     background-color: #848896;
@@ -245,8 +264,8 @@ body {
 .btn-secondary:active,
 .btn-secondary.active {
   color: #fff;
-  background-color: #848896;
-  border-color: #848896;
+  background-color: #6a6d78;
+  border-color: #6a6d78;
 }
 
 
