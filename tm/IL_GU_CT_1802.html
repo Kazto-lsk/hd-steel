@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>운송요구현황 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
+    <link rel="stylesheet" href="../assets/extensions/snap/1.9.3/rc-snap.css">
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="btn btn-outline-secondary pull-left" id="hd-menu" href="./IL_GU_MA_1000.html">
+        <span class="icon icon-home2"></span>
+      </a>
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-outline-secondary"  data-target="#map" data-toggle="drawer"  data-backdrop="false" id="map-open-half">
+          <span class="icon icon-window-half"></span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer"  data-showType="expand" data-backdrop="false" id="map-open-full">
+          <span class="icon icon-window-full"></span>
+        </button>
+      </div>
+      <h1 class="title">[DTT10001] 운송요구현황</h1>
+    </header>
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left" id="map">
+
+        <header class="bar bar-nav">
+          <button class="btn btn-link btn-nav pull-right" data-history="back">
+            <span class="icon icon-close"></span>
+          </button>
+        </header><!-- /.bar-nav -->
+
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2" class="nowrap">
+                  총 거리 : 1.5Km<br>소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
+        <div class="content">
+          <div id="map-view"></div>
+        </div><!-- /.content -->
+
+      </div><!-- /.snap-drawer-left -->
+    </div><!-- /.snap-drawers -->
+
+
+    <div class="snap-content" data-extension="drawer">
+
+      <div class="bar bar-standard bar-footer">
+        <div class="row hd-buttons">
+          <div class="col-lg-2 offset-lg-4 col-md-2 offset-md-4 col-sm-6 col-xs-6">
+            <button type="button" class="btn btn-secondary btn-block">이전</button>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <button type="button" class="btn btn-secondary btn-block">다음</button>
+          </div>
+        </div>
+      </div><!-- /.bar-footer -->
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+
+          <div class="hd-message row">
+            <div class="col-md-8 hd-info">
+              <div class="media">
+                <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
+                <div class="media-body">
+                  수행 작업 목록입니다.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 hd-num">
+              2/4
+            </div>
+          </div><!-- /.hd-message -->
+
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="progress-indicator">
+                <li class="active">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
+                  수행
+                </li>
+                <li>
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
+                  도착대기
+                </li>
+                <li>
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
+                  상차개시
+                </li>
+                <li>
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
+                  상차완료
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered hd-table-02">
+              <colgroup>
+                <col width="25%">
+                <col>
+              </colgroup>
+              <thead class="thead-default">
+                <tr>
+                  <th>기준ID</th>
+                  <th>운송기준 ID 명칭</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">11153</th>
+                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 철근옥내 운반</td>
+                </tr>
+                <tr>
+                  <th scope="row">11154</th>
+                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 A열연 옥내 운반</td>
+                </tr>
+                <tr>
+                  <th scope="row">11155</th>
+                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 A열연 제강 전로 옥내</td>
+                </tr>
+                <tr>
+                  <th scope="row">11156</th>
+                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두-1 스크랩 A지구 – 101 야드</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- /.content-padded -->
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap-tm.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+    <!-- 임시 구글맵 데모용 -->
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
+     </script>
+
+    <script>
+    </script>
+
+  </body>
+</html>
