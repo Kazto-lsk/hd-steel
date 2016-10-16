@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>운송요구현황 | 현대제철 스마트팩토리 마크업</title>
+    <title>상차개시 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -34,7 +34,7 @@
           <span class="icon icon-window-full"></span>
         </button>
       </div>
-      <h1 class="title">[DTT10001] 운송요구현황</h1>
+      <h1 class="title">[RDT65853] 상차개시</h1>
     </header>
 
     <div class="snap-drawers">
@@ -80,11 +80,14 @@
 
       <div class="bar bar-standard bar-footer">
         <div class="row hd-buttons">
-          <div class="col-lg-2 offset-lg-4 col-md-2 offset-md-4 col-sm-6 col-xs-6">
-            <button type="button" class="btn btn-secondary btn-block">이전</button>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-secondary btn-block">작업상세</button>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-            <button type="button" class="btn btn-secondary btn-block">다음</button>
+          <div class="col-lg-2 offset-lg-6 col-md-3 offset-md-3 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-primary btn-block">상차개시</button>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-primary btn-block">작업취소</button>
           </div>
         </div>
       </div><!-- /.bar-footer -->
@@ -99,31 +102,30 @@
               <div class="media">
                 <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
                 <div class="media-body">
-                  수행 작업 목록입니다.
+                  ￼상차 처리하세요.
                 </div>
               </div>
             </div>
             <div class="col-md-4 hd-num">
-              2/4
             </div>
           </div><!-- /.hd-message -->
 
           <div class="row">
             <div class="col-xs-12">
               <ul class="progress-indicator">
-                <li class="active">
+                <li class="complated">
                   <span class="bubble"></span>
                   <span class="icon icon-check2"></span>
-                  <span class="time"></span>
+                  <span class="time">5분</span>
                   수행
                 </li>
-                <li>
+                <li class="complated">
                   <span class="bubble"></span>
                   <span class="icon icon-check2"></span>
-                  <span class="time"></span>
+                  <span class="time">5분</span>
                   도착대기
                 </li>
-                <li>
+                <li class="active">
                   <span class="bubble"></span>
                   <span class="icon icon-check2"></span>
                   <span class="time"></span>
@@ -139,33 +141,15 @@
             </div>
           </div>
           <div class="table-responsive">
-            <table class="table table-bordered hd-table-02">
+            <table class="table table-bordered">
               <colgroup>
                 <col width="25%">
                 <col>
               </colgroup>
-              <thead class="thead-default">
-                <tr>
-                  <th>기준ID</th>
-                  <th>운송기준 ID 명칭</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <th scope="row">11153</th>
-                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 철근옥내 운반</td>
-                </tr>
-                <tr>
-                  <th scope="row">11154</th>
-                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 A열연 옥내 운반</td>
-                </tr>
-                <tr>
-                  <th scope="row">11155</th>
-                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두 스크랩 A열연 제강 전로 옥내</td>
-                </tr>
-                <tr>
-                  <th scope="row">11156</th>
-                  <td class="detail spacing-m1 line-clamp-2 nowrap">A지구 부두-1 스크랩 A지구 – 101 야드</td>
+                  <th scope="row">상차개소</th>
+                  <td>[DNY10]</td>
                 </tr>
               </tbody>
             </table>

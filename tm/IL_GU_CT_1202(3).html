@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>운송요구현황 | 현대제철 스마트팩토리 마크업</title>
+    <title>하차안내 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -34,7 +34,7 @@
           <span class="icon icon-window-full"></span>
         </button>
       </div>
-      <h1 class="title">[YDT29097] 운송요구현황</h1>
+      <h1 class="title">[DTR29260] 하차안내</h1>
     </header>
 
     <div class="snap-drawers">
@@ -46,6 +46,28 @@
           </button>
         </header><!-- /.bar-nav -->
 
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2" class="nowrap">
+                  총 거리 : 1.5Km<br>소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
         <div class="content">
           <div id="map-view"></div>
         </div><!-- /.content -->
@@ -55,19 +77,16 @@
 
 
     <div class="snap-content" data-extension="drawer">
-
       <div class="bar bar-standard bar-footer">
         <div class="row hd-buttons">
-          <div class="offset-lg-4 col-lg-2 offset-md-2 col-md-4 col-sm-6 col-xs-6">
-            <button type="button" class="btn btn-secondary btn-block">이전</button>
-          </div>
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-            <button type="button" class="btn btn-secondary btn-block">다음</button>
+            <button type="button" class="btn btn-block btn-secondary">작업상세</button>
+          </div>
+          <div class="col-lg-2 offset-lg-8 col-md-4 offset-md-4 col-sm-6 col-xs-6">
+            <button type="button" class="btn btn-block btn-primary">하차조회</button>
           </div>
         </div>
-      </div><!-- /.bar-footer -->
-
-
+      </div>
       <!-- main content -->
       <div class="content">
 
@@ -78,7 +97,7 @@
               <div class="media">
                 <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
                 <div class="media-body">
-                  안내작업을 수행하십시오.
+                  ￼￼하차를 수행하십시오.
                 </div>
               </div>
             </div>
@@ -89,73 +108,70 @@
           <div class="row">
             <div class="col-xs-12">
               <ul class="progress-indicator">
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  수행
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  도착대기
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  상차진행
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  상차완료
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  도착대기
+                </li>
                 <li class="active">
                   <span class="bubble"></span>
                   <span class="icon icon-check2"></span>
                   <span class="time"></span>
-                  수행
-                </li>
-                <li>
-                  <span class="bubble"></span>
-                  도착대기
-                </li>
-                <li>
-                  <span class="bubble"></span>
-                  상차진행
-                </li>
-                <li>
-                  <span class="bubble"></span>
-                  상차완료
-                </li>
-                <li>
-                  <span class="bubble"></span>
-                  도착대기
-                </li>
-                <li>
-                  <span class="bubble"></span>
                   하차진행
-                </li>
-                <li>
-                  <span class="bubble"></span>
-                  하차완료
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="table-responsive">
-            <table class="table table-bordered hd-table-02">
-              <colgroup>
-                <col width="10%">
-                <col width="50%">
-                <col>
-                <col>
-                <col>
-                <col>
-              </colgroup>
-              <thead class="thead-default">
-                <tr>
-                  <th>기준ID</th>
-                  <th>작업명</th>
-                  <th>요구량</th>
-                  <th>실적량</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">17536</th>
-                  <td class="detail spacing-m1 line-clamp-2 nowrap">
-                    2제강-지금 파쇄/절단장 지금_전로강지금 A열연-사 운송<br>
-                    발지 : [DUY99] 2제강-지금 파쇄/절단장<br>
-                    착지 : [D2Y99] A열연-사
-                  </td>
-                  <td>27</td>
-                  <td></td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="16.6%">
+              <col width="16.6%">
+              <col width="16.6%">
+              <col width="16.6%">
+              <col width="16.6%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">하차개소</th>
+                <td colspan="5">[D2Y12]A열연-사</td>
+              </tr>
+              <tr>
+                <th scope="row">포인트</th>
+                <td>1A20</td>
+                <th scope="row">상차중량</th>
+                <td>22163</td>
+                <th scope="row">상차매수</th>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
 
         </div><!-- /.content-padded -->
       </div><!-- /.content -->
@@ -172,7 +188,6 @@
      </script>
 
     <script>
-
 
     </script>
 
