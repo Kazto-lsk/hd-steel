@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>하차지행선안내 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
+    <link rel="stylesheet" href="../assets/extensions/snap/1.9.3/rc-snap.css">
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="btn btn-outline-secondary pull-left" id="hd-menu" href="./IL_GU_MA_1000.html">
+        <span class="icon icon-home2"></span>
+      </a>
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-outline-secondary"  data-target="#map" data-toggle="drawer"  data-backdrop="false" id="map-open-half">
+          <span class="icon icon-window-half"></span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer"  data-showType="expand" data-backdrop="false" id="map-open-full">
+          <span class="icon icon-window-full"></span>
+        </button>
+      </div>
+      <h1 class="title">[YDT29097] 하차지행선안내</h1>
+    </header>
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left" id="map">
+
+        <header class="bar bar-nav">
+          <button class="btn btn-link btn-nav pull-right" data-history="back">
+            <span class="icon icon-close"></span>
+          </button>
+        </header><!-- /.bar-nav -->
+
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2" class="nowrap">
+                  총 거리 : 1.5Km<br>소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
+        <div class="content">
+          <div id="map-view"></div>
+        </div><!-- /.content -->
+
+      </div><!-- /.snap-drawer-left -->
+    </div><!-- /.snap-drawers -->
+
+
+    <div class="snap-content" data-extension="drawer">
+      <div class="bar bar-standard bar-footer">
+        <div class="row hd-buttons">
+          <div class="col-lg-2 col-md-3 col-ms-6 col-xs-6">
+            <button type="button" class="btn btn-secondary btn-block">작업상세</button>
+          </div>
+
+          <div class="col-lg-2 offset-lg-8 col-md-3 offset-md-6 col-ms-6 col-xs-6">
+            <button type="button" class="btn btn-primary btn-block">하차지 도착</button>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+
+          <div class="hd-message">
+            <div class="hd-info">
+              <div class="media">
+                <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
+                <div class="media-body">
+                  계량기를/을 선택하십시오.
+                </div>
+              </div>
+            </div>
+          </div><!-- /.hd-message -->
+
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="progress-indicator">
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  수행
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  도착대기
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  상차진행
+                </li>
+                <li class="completed">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time">5분</span>
+                  도착수행
+                </li>
+                <li class="active">
+                  <span class="bubble"></span>
+                  <span class="icon icon-check2"></span>
+                  <span class="time"></span>
+                  도착대기
+                </li>
+                <li>
+                  <span class="bubble"></span>
+                  하차안내
+                </li>
+                <li>
+                  <span class="bubble"></span>
+                  계량
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">하차개소</th>
+                  <td colspan="3">[S3Y10] 특) 블룸소재야드</td>
+                </tr>
+                <tr>
+                  <th scope="row">작업횟수</th>
+                  <td>1/2회</td>
+                  <th scope="row">요구자 전화번호</th>
+                  <td>홍길동 [3874]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </div><!-- /.content-padded -->
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap-tm.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+    <!-- 임시 구글맵 데모용 -->
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
+     </script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
