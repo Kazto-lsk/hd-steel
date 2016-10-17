@@ -398,7 +398,11 @@ body {
 }
 
 .bar-tab.bar-dark .tab-item {
-    color: #fff;
+  color: #fff;
+}
+
+.bar-tab.bar-dark .tab-item.disabled {
+  color: #777 !important;
 }
 
 .bar-tab.bar-dark .tab-item:active {
@@ -2228,4 +2232,15 @@ select.form-control {
        appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+}
+
+/*custom-control-indicator*/
+.custom-control-indicator {
+  top: -.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type="search"] {
+  border-radius: 0;
 }
