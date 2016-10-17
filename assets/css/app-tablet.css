@@ -429,8 +429,17 @@ body {
   position: absolute;
   top: -1px;
   left: 7.5px;
-  color: #fff;
+  color: #b9b9b9;
   font-size: 1.2rem;
+}
+.progress-indicator > li .icon-check2:before {
+  content: "\e905";
+}
+.progress-indicator > li.completed .icon-check2 {
+  color: #fff;
+}
+.progress-indicator > li.completed .icon-check2:before {
+  content: "\e913";
 }
 
 .progress-indicator > li .time {
