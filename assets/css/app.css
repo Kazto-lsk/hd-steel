@@ -1627,6 +1627,21 @@ hr {
   height: 1.25rem
 }
 
+
+.snap-drawer .bar-nav.hd-lg {
+  height: 4.2rem
+}
+.snap-drawer .bar-nav.hd-lg .title {
+  padding-top: .7rem;
+  line-height: 1.6rem
+}
+.snap-drawer .bar-nav.hd-lg  + .bar-header-secondary {
+  top: 4.2rem
+}
+.snap-drawer .bar-nav.hd-lg  + .bar-header-secondary ~ .content {
+  padding-top: 6.58rem;
+}
+
 /**
  * Utillity
  * ----------------------------------------------------------------------------
