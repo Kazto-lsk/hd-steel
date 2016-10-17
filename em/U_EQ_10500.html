@@ -192,5 +192,16 @@
 
     </div>
 
+
+    <script>
+
+      $("#accordion .table-view-cell a").tap(function(){
+        $("#accordion .table-view-cell").removeClass('select');
+        $(this).parent().addClass('select');
+      });
+
+    </script>
+
+
   </body>
 </html>

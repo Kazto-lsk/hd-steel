@@ -2244,3 +2244,7 @@ select.form-control {
 input[type="search"] {
   border-radius: 0;
 }
+
+#accordion .table-view-cell.select {
+  background-color: #f4f4f4
+}
