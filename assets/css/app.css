@@ -1033,6 +1033,10 @@ h5.hd-heading {
   background-color: #eeeef2;
 }
 
+.modal {
+  z-index: 14
+}
+
 .modal .content {
   background-color: #fff
 }
