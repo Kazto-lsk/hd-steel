@@ -178,7 +178,7 @@
         if (index === 1) title = '직영/외주사'
         if (index === 2) title = '수시장비'
         if (index === 3) title = '제품출하'
-       return '<a class="' + className + '">'+title+'</a>';
+       return '<a class="' + className + '" role="button">'+title+'</a>';
        },
        onSlideChangeEnd: function (swiper) {
          $('.content').animate({scrollTop:0}, '100');
