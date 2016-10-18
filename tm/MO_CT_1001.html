@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>App Guide | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
+    <link rel="stylesheet" href="../assets/extensions/swiper/3.2.7/css/swiper.css" >
+
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+    <style>
+      .hd-guide {
+        padding-bottom: 30px
+      }
+      #start {
+        opacity: 0;
+      }
+      #start.active {
+        opacity: 1;
+      }
+    </style>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <button class="btn btn-outline-secondary pull-left">
+        <span class="icon icon-home2"></span>
+        메뉴
+      </button>
+
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-outline-secondary">
+          <span class="icon icon-window-half"></span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          <span class="icon icon-window-full"></span>
+        </button>
+      </div>
+      <h1 class="title">앱 가이드</h1>
+    </header>
+
+
+    <!-- main content -->
+    <div class="content">
+
+      <div class="content-padded">
+        <button class="btn btn-secondary btn-block" data-toggle="modal" data-target="#GU_AG_0001">
+          가이드 열기
+        </button>
+
+      </div>
+
+    </div>
+
+  </body>
+
+
+      <div id="GU_AG_0001" class="modal zoom">
+        <div class="bar bar-standard bar-footer" id="start">
+          <a class="btn btn-primary btn-lg btn-block" data-history="back">구내운송 시작하기</a>
+        </div>
+        <div class="content" style="background-color: #eee">
+          <div class="swiper-container hd-guide" >
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                 <div class="content-padded text-xs-center">
+                   <h1 class="h3 p-t-2">효과적인 작업 진행</h1>
+                   <p>효율적인 버튼 배치로 직관적인 작업이 가능하며 쉽고 빠르게 작업을 진행할 수 있습니다.</p>
+                   <img src="../assets/img/tm-guide-01-01.png" class="" alt="" style="height: 320px">
+                 </div>
+              </div><!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                 <div class="content-padded text-xs-center">
+                   <h1 class="h3 p-t-2">작업 진행 상태 파악</h1>
+                   <p>현재 진행 중인 작업을 파악하고 인지할 수 있도록 하여 작업 진행 상태를 확인할 수 있습니다.</p>
+                   <img src="../assets/img/tm-guide-01-02.png" class="" alt="" style="height: 320px">
+                 </div>
+              </div><!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                 <div class="content-padded text-xs-center">
+                   <h1 class="h3 p-t-2">현재위치와 상•하차지 위치 및 경로제공</h1>
+                   <p>작업 진행 경로를 한눈에 알 수 있도록 지도를 제공합니다. 나의 현재 위치와 작업 진행 경로를 인지하여 편하게 작업을 진행할 수 있습니다.</p>
+                   <img src="../assets/img/tm-guide-01-03.png" class="" alt="" style="height: 320px">
+                 </div>
+              </div><!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                 <div class="content-padded text-xs-center">
+                   <h1 class="h3 p-t-2">효율적인 작업진행</h1>
+                   <p>분할모드에서 작업 진행상태에 따라 지도에 위치와 경로를 제공하여 보다 쉽고 빠르게 작업 진행이 가능합니다.</p>
+                   <img src="../assets/img/tm-guide-01-04.png" class="" alt="" style="height: 320px">
+                 </div>
+              </div><!-- /.swiper-slide -->
+
+
+            </div><!-- /.swiper-wrapper -->
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+          </div><!-- /.swiper-container -->
+
+        </div><!-- /.content -->
+
+      </div><!-- /.modal -->
+
+
+      <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+
+      <script>
+        $('#GU_AG_0001').modal('show')
+
+
+        // Initialize Swiper
+        var swiper = new Swiper('.hd-guide', {
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          pagination: '.hd-guide .swiper-pagination',
+          paginationClickable: true,
+          effect: 'slide',
+          loop: false,
+          slideActiveClass :'active',
+          onSlideChangeEnd: function (swiper) {
+            if (swiper.activeIndex == 3) {
+                $('#start').addClass("active fadeIn animated");
+            } else {
+                $('#start').removeClass("active fadeIn animated");
+            }
+          }
+        });
+
+      </script>
+</html>
