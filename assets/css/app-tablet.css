@@ -785,52 +785,6 @@ body {
   border: none;
   box-shadow: 0 .5rem 1.375rem 0 rgba(0,0,0,0.2), 0 .375rem 1.25rem 0 rgba(0,0,0,0.19);
 }
-@media (max-width: 544px) {
-  .hd-login.tm-login .card {
-    margin: 1rem;
-  }
-  .hd-login.tm-login .hd-logo2 {
-    margin: 1rem auto;
-  }
-  .hd-login.tm-login .hd-logo2 img {
-    width: 7rem
-  }
-}
-@media (max-width: 768px) {
-  .hd-login.tm-login .card {
-    margin: 2rem
-  }
-  .hd-login.tm-login .hd-logo2 {
-    margin: 1rem auto;
-  }
-  .hd-login.tm-login .hd-logo2 img {
-    width: 7rem
-  }
-}
-@media (min-width: 768px) {
-  .hd-login.tm-login .card {
-    margin: 2rem
-  }
-  .hd-login.tm-login .hd-logo2 {
-    margin: 2rem auto;
-  }
-  .hd-login.tm-login .hd-logo2 img {
-    width: 7rem
-  }
-}
-
-@media (min-width: 1200px) {
-  .hd-login.tm-login .card {
-    margin: 4.5rem 2rem 2rem 
-  }
-  .hd-login.tm-login .hd-logo {
-    padding-left: 5rem
-  }
-  .hd-login.tm-login .hd-logo2 {
-    margin: 3rem auto;
-  }
-}
-
 
 .hd-login.tm-login .card-header {
   padding: 0;
@@ -883,4 +837,62 @@ body {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
+}
+
+
+@media (min-width: 768px) {
+  .hd-login.tm-login .card {
+    margin: 2rem
+  }
+  .hd-login.tm-login .hd-logo2 {
+    margin: 2rem auto;
+  }
+  .hd-login.tm-login .hd-logo2 img {
+    width: 7rem
+  }
+}
+
+@media (min-width: 1200px) {
+  .hd-login.tm-login .card {
+    margin: 4.5rem 2rem 2rem
+  }
+  .hd-login.tm-login .hd-logo {
+    padding-left: 5rem
+  }
+  .hd-login.tm-login .hd-logo2 {
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hd-login.tm-login .card {
+    margin: 2rem
+  }
+  .hd-login.tm-login .hd-logo2 {
+    margin: 1rem auto;
+  }
+  .hd-login.tm-login .hd-logo2 img {
+    width: 7rem
+  }
+  .hd-login.tm-login.active .hd-logo2 {
+    display: none
+  }
+}
+
+@media (max-width: 544px) {
+  .hd-login.tm-login .card {
+    margin: 1rem;
+  }
+  .hd-login.tm-login .hd-logo2 {
+    margin: 1rem auto;
+  }
+  .hd-login.tm-login .hd-logo2 img {
+    width: 7rem
+  }
+  .hd-login.tm-login .card-header .nav-inline .nav-link {
+    font-size: 1rem;
+  }
+  .hd-login.tm-login.active .hd-logo2 {
+    display: none
+  }
 }
