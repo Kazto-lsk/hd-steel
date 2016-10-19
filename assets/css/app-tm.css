@@ -1058,6 +1058,7 @@
     max-height: 300px;
   }
 }
+
 .popup .tab-item.bg-secondary {
   background-color: #848896;
   color: #fff !important
@@ -1070,7 +1071,13 @@
   height: 0;
 }
 
-
+.modal .tab-item.bg-secondary {
+  background-color: #848896;
+  color: #fff !important
+}
+.modal .bar-tab .tab-item {
+  border-right: none;
+}
 
 /*table*/
 
@@ -1197,4 +1204,33 @@
 }
 .hd-data.card {
   margin: .625rem !important
+}
+
+/*hd-floating*/
+#floating-top .btn:focus,
+#floating-top .btn:active {
+  outline: none;
+  background-color: #eee
+}
+#floating-top .btn img {
+  width: 22px
+}
+
+
+.collapse.table,
+.collapse.table td {
+  border: none;
+  background-color: transparent;
+}
+.collapse.nav-control .nav-link {
+  width: 180px !important
+}
+
+.hd-ctable tbody:active {
+  background-color: #f4f8fd !important;
+  border: .125rem solid #74a9e3
+}
+
+.collapse {
+  display: none;
 }

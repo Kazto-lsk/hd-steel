@@ -14,6 +14,19 @@ $('#map').on('hide.rc.drawer', function () {
   $('.snap-content').css("width","100%");
 })
 
+// Scolltop
+var doScolltop = function(){
+  $('.content').on('up.rc.scroll', function() {
+    $('#floating-top').css('display','block').addClass('animated bounceIn')
+  })
+  $('.content').on('down.rc.scroll', function() {
+    $('#floating-top').css('display','block').addClass('animated bounceIn')
+  })
+  $('.content').on('default.rc.scroll', function() {
+    $('#floating-top').css('display','none').removeClass('animated bounceIn')
+  })
+};
+doScolltop();
 
 // 임시 구글맵
 

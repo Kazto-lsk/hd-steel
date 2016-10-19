@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>장비위치 모니터링 | 현대제철 스마트팩토리 마크업</title>
+    <title>장비종합현황 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -33,7 +33,8 @@
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-simbol pull-left"></a>
         <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
-        <h1 class="title left">장비위치 모니터링</h1>
+        <a class="icon icon-push pull-right" data-target="#MO_CT_2006" data-toggle="modal" data-template="./template/push.html"></a>
+        <h1 class="title left">장비종합현황</h1>
 
       </header>
 
@@ -46,14 +47,8 @@
 
       <div class="content" data-control="scroll" data-type="updown">
 
+        <!-- 점검내용 시작 -->
         <div class="card hd-search hd-search-result p-a-1">
-
-          <div class="form-group row">
-            <label class="col-sm-2 col-xs-4 col-form-label hd-none">운송회사코드</label>
-            <div class="col-sm-10 col-xs-8">
-              <input type="text" class="form-control hd-sm" id="group-01" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-group-01">
-            </div>
-          </div><!-- /.form-group -->
 
           <div class="form-group row">
             <label class="col-sm-2 col-xs-4 col-form-label hd-none">장비유형분류</label>
@@ -145,6 +140,7 @@
           </table>
         </div>
 
+
         <div class="content-padded m-t-2 m-b-0 row">
           <div class="col-xs-6 p-l-0 p-t-05">
             장비대수 : <span class="text-primary">257</span> 대
@@ -206,12 +202,14 @@
           </table>
         </div>
 
-
         <div class="card hd-search hd-search-result m-t-1" role="button">
           <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
         </div>
 
-      </div><!-- /.content -->
+
+        <!-- 점검내용 끝 -->
+
+      </div>
 
       <!-- floating top -->
       <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
@@ -221,8 +219,6 @@
       </div>
 
     </div><!-- /.snap-content -->
-
-
 
     <!-- 팝업들 -->
     <div id="popup-group-01" class="popup zoom"></div>
@@ -346,11 +342,16 @@
         </div>
 
         <br>
-      </div><!-- /.content -->
-    </div><!-- /.modal -->
+
+      </div>
+    </div>
+
+    <!-- push 모달-->
+    <div id="MO_CT_2006" class="modal"></div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app-tm.js"></script>
+
     <script>
       $('.collapse').on('show.rc.collapse hide.rc.collapse', function(e) {
           e.preventDefault();
@@ -360,5 +361,6 @@
           $($(this).data('target')).toggleClass('in');
       });
     </script>
+
   </body>
 </html>

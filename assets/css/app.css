@@ -96,6 +96,9 @@ body {
 .icon-simbol:before {
   content: "\e909";
 }
+.icon-push:before {
+  content: "\e918";
+}
 
 
 .collapsed .icon-up-nav:before {
