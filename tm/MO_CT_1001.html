@@ -159,7 +159,7 @@
         </div>
 
         <div class="table-responsive">
-          <table class="table table-sm table-bordered panzoom hd-data">
+          <table class="table table-sm table-bordered panzoom hd-data" id="tree">
             <thead>
               <tr>
                 <th>회사</th>
@@ -171,7 +171,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr data-toggle="collapse" data-target="#" class="text-xs-center">
+              <tr data-toggle="collapse" data-parent="#tree" data-target="#1" class="collapsed text-xs-center">
                 <td>Y</td>
                 <td>CE</td>
                 <td>GCE1A</td>
@@ -179,7 +179,7 @@
                 <td>JD</td>
                 <td>12:55</td>
               </tr>
-              <tr class="text-xs-center bg-primary">
+              <tr class="text-xs-center bg-primary collapse" id="1">
                 <td colspan="3" data-toggle="modal" data-target="#MO_CT_1001">
                   장비상세정보
                 </td>
@@ -190,7 +190,8 @@
             </tbody>
 
             <tbody>
-              <tr data-toggle="collapse" data-target="#" class="text-xs-center">
+              <tr data-toggle="collapse" data-parent="#tree" data-target="#2" class="collapsed text-xs-center">
+                <td>Y</td>
                 <td>Y</td>
                 <td>CE</td>
                 <td>GCE1A</td>
@@ -198,7 +199,7 @@
                 <td>JD</td>
                 <td>12:55</td>
               </tr>
-              <tr class="text-xs-center bg-primary">
+              <tr class="text-xs-center bg-primary collapse" id="2">
                 <td colspan="3" data-toggle="modal" data-target="#MO_CT_1001">
                   장비상세정보
                 </td>
@@ -228,14 +229,121 @@
 
     <!-- 모달 -->
     <div id="MO_CT_1001" class="modal">
-      <header class="bar bar-nav bar-light bg-faded">
+      <header class="bar bar-nav bar-inverse bg-primary">
         <a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
-        <h1 class="title">장비상세정보</h1>
+        <h1 class="title left p-l-2">장비상세정보</h1>
       </header>
       <div class="content">
-        <p class="content-padded">
-          The contents of my modal go here.
-        </p>
+
+        <div class="content-padded text-xs-right">
+          <button type="button" class="btn btn-secondary">위치보기</button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>회사</th>
+                <th>유형</th>
+                <th>그룹</th>
+                <th>장비</th>
+                <th>상태</th>
+                <th>시작</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-xs-center">
+                <td>Y</td>
+                <td>CE</td>
+                <td>GCE1A</td>
+                <td>4567</td>
+                <td>JD</td>
+                <td>12:55</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered panzoom hd-data">
+            <tbody>
+              <tr>
+                <th scope="row">운송 ID</th>
+                <td colspan="3" class="text-xs-left">[12345] <br>코크스 침전지 분코크스 코크스 Yard 운송</td>
+              </tr>
+              <tr>
+                <th scope="row">현 위치개소</th>
+                <td colspan="3" class="text-xs-left">[DPY99] 코크스 침전지</td>
+              </tr>
+              <tr class="text-xs-center">
+                <th scope="row">장비번호</th>
+                <td>YDT1008</td>
+                <th scope="row">근무형태</th>
+                <td>24hr</td>
+              </tr>
+              <tr>
+                <th scope="row">상태</th>
+                <td colspan="3" class="text-xs-left">[SJ] 상차진행 (25분)</td>
+              </tr>
+              <tr>
+                <th scope="row">작업실적</th>
+                <td colspan="3" class="text-xs-left">125톤</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>시각</th>
+                <th>작업량</th>
+                <th>운송 ID/위치개소</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">07</th>
+                <th scope="row"></th>
+                <td class="text-xs-left">
+                  [16348] 고로-#1주선기 냉선(자가) A지 구-2야드-3
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">08</th>
+                <th scope="row">999</th>
+                <td class="text-xs-left">
+                  [16348] 고로-#1주선기 냉선(자가) A지 구-2야드-3
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">09</th>
+                <th scope="row">30</th>
+                <td class="text-xs-left">
+                  [16348] 고로-#1주선기 냉선(자가) A지 구-2야드-3
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <th scope="row">20</th>
+                <td class="text-xs-left">
+                  [16348] 고로-#1주선기 냉선(자가) A지 구-2야드-3
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <th scope="row">15</th>
+                <td class="text-xs-left">
+                  [16348] 고로-#1주선기 냉선(자가) A지 구-2야드-3
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <br>
+
       </div>
     </div>
 
