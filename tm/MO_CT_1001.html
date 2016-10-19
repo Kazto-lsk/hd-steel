@@ -5,146 +5,108 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>App Guide | 현대제철 스마트팩토리 마크업</title>
+    <title>장비위치 모니터링 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
-    <link rel="stylesheet" href="../assets/css/rc.css">
-    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
-    <link rel="stylesheet" href="../assets/extensions/swiper/3.2.7/css/swiper.css" >
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/photoswipe.css" rel="stylesheet">
+    <link href="../assets/extensions/photoSwipe/4.1.1/default-skin/default-skin.css" rel="stylesheet" >
 
-    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-tm.css" rel="stylesheet">
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/rc.js"></script>
 
-    <style>
-      .hd-guide {
-        padding-bottom: 30px
-      }
-      #start {
-        opacity: 0;
-      }
-      #start.active {
-        opacity: 1;
-      }
-    </style>
-
   </head>
-  <body class="hd-sub">
+  <body class="hd-sub hd-sm">
 
-    <!-- header -->
-    <header class="bar bar-nav bar-dark bg-primary">
-      <button class="btn btn-outline-secondary pull-left">
-        <span class="icon icon-home2"></span>
-        메뉴
-      </button>
-
-      <div class="btn-group pull-right" role="group">
-        <button type="button" class="btn btn-outline-secondary">
-          <span class="icon icon-window-half"></span>
-        </button>
-        <button type="button" class="btn btn-outline-secondary">
-          <span class="icon icon-window-full"></span>
-        </button>
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
       </div>
-      <h1 class="title">앱 가이드</h1>
-    </header>
-
-
-    <!-- main content -->
-    <div class="content">
-
-      <div class="content-padded">
-        <button class="btn btn-secondary btn-block" data-toggle="modal" data-target="#GU_AG_0001">
-          가이드 열기
-        </button>
-
-      </div>
-
     </div>
 
-  </body>
+    <div class="snap-content" data-extension="drawer">
 
+      <!-- 안전점검내용_상세 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">장비위치 모니터링</h1>
 
-      <div id="GU_AG_0001" class="modal zoom">
-        <div class="bar bar-standard bar-footer" id="start">
-          <a class="btn btn-primary btn-lg btn-block" data-history="back">구내운송 시작하기</a>
+      </header>
+
+      <div class="bar bar-standard bar-header-secondary hd-tabs hd-swiper-02">
+        <nav class="nav nav-inline">
+          <a class="nav-link active" href="#">장비</a>
+          <a class="nav-link" href="#">지도</a>
+        </nav>
+  		</div>
+
+      <div class="content">
+
+        <!-- 점검내용 시작 -->
+        <div class="card hd-search hd-search-result p-a-1">
+          <div class="card-block">
+            <dl class="row">
+              <dt class="col-xs-3">요청일</dt>
+              <dd class="col-xs-9">2016.07.07</dd>
+              <dt class="col-xs-3">요청자</dt>
+              <dd class="col-xs-9">김일표</dd>
+            </dl>
+          </div>
+        </div><!-- card 끝 -->
+
+        <div class="content-padded">
+          <div class="row btn-group">
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-secondary btn-block">
+                삭제
+              </button>
+            </div>
+            <div class="col-xs-6">
+              <button type="button" class="btn btn-secondary btn-block" role="button" data-toggle="page" data-start="#U_SM_A10006" data-target="#U_SM_A10002">
+                수정
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="content" style="background-color: #eee">
-          <div class="swiper-container hd-guide" >
-            <div class="swiper-wrapper">
+        <!-- 점검내용 끝 -->
 
-              <div class="swiper-slide">
-                 <div class="content-padded text-xs-center">
-                   <h1 class="h3 p-t-2">효과적인 작업 진행</h1>
-                   <p>효율적인 버튼 배치로 직관적인 작업이 가능하며 쉽고 빠르게 작업을 진행할 수 있습니다.</p>
-                   <img src="../assets/img/tm-guide-01-01.png" class="" alt="" style="height: 320px">
-                 </div>
-              </div><!-- /.swiper-slide -->
+      </div>
+    </div>
 
-              <div class="swiper-slide">
-                 <div class="content-padded text-xs-center">
-                   <h1 class="h3 p-t-2">작업 진행 상태 파악</h1>
-                   <p>현재 진행 중인 작업을 파악하고 인지할 수 있도록 하여 작업 진행 상태를 확인할 수 있습니다.</p>
-                   <img src="../assets/img/tm-guide-01-02.png" class="" alt="" style="height: 320px">
-                 </div>
-              </div><!-- /.swiper-slide -->
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/rc-photoswipe.js"></script>
+    <script src="../assets/extensions/photoSwipe/4.1.1/photoswipe-ui-default.min.js"></script>
 
-              <div class="swiper-slide">
-                 <div class="content-padded text-xs-center">
-                   <h1 class="h3 p-t-2">현재위치와 상•하차지 위치 및 경로제공</h1>
-                   <p>작업 진행 경로를 한눈에 알 수 있도록 지도를 제공합니다. 나의 현재 위치와 작업 진행 경로를 인지하여 편하게 작업을 진행할 수 있습니다.</p>
-                   <img src="../assets/img/tm-guide-01-03.png" class="" alt="" style="height: 320px">
-                 </div>
-              </div><!-- /.swiper-slide -->
+    <script src="../assets/js/autosize.min.js"></script>
 
-              <div class="swiper-slide">
-                 <div class="content-padded text-xs-center">
-                   <h1 class="h3 p-t-2">효율적인 작업진행</h1>
-                   <p>분할모드에서 작업 진행상태에 따라 지도에 위치와 경로를 제공하여 보다 쉽고 빠르게 작업 진행이 가능합니다.</p>
-                   <img src="../assets/img/tm-guide-01-04.png" class="" alt="" style="height: 320px">
-                 </div>
-              </div><!-- /.swiper-slide -->
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+
+      var swiper = new Swiper('.swiper-container.hd-photoset-01', {
+        pagination: '.hd-photoset-01 .swiper-pagination',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        nextButton: '.hd-photoset-01 .swiper-button-next',
+        prevButton: '.hd-photoset-01 .swiper-button-prev',
+        spaceBetween: 5
+      });
+
+      // 포토스와이프 초기화
+      RC_initPhotoSwipe()
+
+    </script>
 
 
-            </div><!-- /.swiper-wrapper -->
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <div class="swiper-pagination"></div>
-          </div><!-- /.swiper-container -->
-
-        </div><!-- /.content -->
-
-      </div><!-- /.modal -->
-
-
-      <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
-
-      <script>
-        $('#GU_AG_0001').modal('show')
-
-
-        // Initialize Swiper
-        var swiper = new Swiper('.hd-guide', {
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          pagination: '.hd-guide .swiper-pagination',
-          paginationClickable: true,
-          effect: 'slide',
-          loop: false,
-          slideActiveClass :'active',
-          onSlideChangeEnd: function (swiper) {
-            if (swiper.activeIndex == 3) {
-                $('#start').addClass("active fadeIn animated");
-            } else {
-                $('#start').removeClass("active fadeIn animated");
-            }
-          }
-        });
-
-      </script>
+  </body>
 </html>
