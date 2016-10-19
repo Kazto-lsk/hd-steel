@@ -1134,6 +1134,7 @@
   border-top: 0.0625rem solid #eceeef;
   font-weight: normal;
 }
+
 .hd-data.hd-sm.table th,
 .hd-data.hd-sm.table td {
   padding: 0.4rem 0.4rem ;
@@ -1302,4 +1303,20 @@
   .bar-header-secondary.hd-form .form-control.hd-md {
     width: 155px;
   }
+}
+
+.text-success {
+  color: #74a9e3 !important
+}
+.text-danger {
+  color: #f22258 !important
+}
+.badge-outline.badge-danger {
+  border-color: #f22258 !important;
+  color: #f22258 !important;
+}
+
+.card.hd-search .table td {
+  border: 0.0625rem solid #d8dce2;
+  border-bottom: none
 }

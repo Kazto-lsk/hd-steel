@@ -70,6 +70,93 @@
         </div>
 
 
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
+                  <span class="badge badge-outline badge-primary hd-left">이상없음</span>
+                  <span class="hd-left-padded text-success">07:05</span>
+                </a>
+              </li>
+            </ul>
+           </div>
+           <table class="table hd-sm table-bordered hd-data">
+             <thead>
+               <th>장비명</th>
+               <th>유형</th>
+               <th>장비번호</th>
+               <th>운전원</th>
+             </thead>
+             <tbody>
+               <tr class="text-xs-center">
+                 <td>이티</td>
+                 <td>ET</td>
+                 <td>4567</td>
+                 <td>홍길동</td>
+               </tr>
+             </tbody>
+           </table>
+        </div><!-- /.card -->
+
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
+                  <span class="badge badge-outline badge-primary hd-left">이상없음</span>
+                  <span class="hd-left-padded text-success">07:05</span>
+                </a>
+              </li>
+            </ul>
+           </div>
+           <table class="table hd-sm table-bordered hd-data">
+             <thead>
+               <th>장비명</th>
+               <th>유형</th>
+               <th>장비번호</th>
+               <th>운전원</th>
+             </thead>
+             <tbody>
+               <tr class="text-xs-center">
+                 <td>이티</td>
+                 <td>ET</td>
+                 <td>4567</td>
+                 <td>홍길동</td>
+               </tr>
+             </tbody>
+           </table>
+        </div><!-- /.card -->
+
+        <div class="card hd-search hd-search-result">
+          <div class="card-header">
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
+                  <span class="badge badge-outline badge-danger hd-left">이상발견</span>
+                  <span class="hd-left-padded text-danger">07:05</span>
+                </a>
+              </li>
+            </ul>
+           </div>
+           <table class="table hd-sm table-bordered hd-data">
+             <thead>
+               <th>장비명</th>
+               <th>유형</th>
+               <th>장비번호</th>
+               <th>운전원</th>
+             </thead>
+             <tbody>
+               <tr class="text-xs-center text-danger">
+                 <td>이티</td>
+                 <td>ET</td>
+                 <td>4567</td>
+                 <td>홍길동</td>
+               </tr>
+             </tbody>
+           </table>
+        </div><!-- /.card -->
 
 
       </div><!-- /.content -->
@@ -86,8 +173,24 @@
     <!-- push 모달-->
     <div id="MO_CT_2006" class="modal"></div>
 
-     <!-- popup 장비번호  -->
-     <div id="popup-equipment" class="popup zoom"></div>
+   <!-- popup 장비번호  -->
+   <div id="popup-equipment" class="popup zoom"></div>
+
+  <!-- 점검 항목별 상세 결과 -->
+  <div id="MO_CT_2003" class="modal">
+    <header class="bar bar-nav bar-inverse bg-primary">
+      <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+      <h1 class="title left p-l-2">점검 항목별 상세결과</h1>
+    </header>
+    <div class="content">
+      <p class="content-padded">
+        The contents of my modal go here.
+      </p>
+    </div>
+
+  </div>
+
+
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app-tm.js"></script>
