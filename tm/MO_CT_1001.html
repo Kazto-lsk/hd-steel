@@ -101,6 +101,119 @@
 
 
 
+        <h3 class="h6 content-padded m-t-2 m-b-0">운송사별 장비현황</h3>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>운송사</th>
+                <th>가동</th>
+                <th>미가동</th>
+                <th>합계</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-toggle="modal" data-target="#">
+                <th scope="row">운송사A</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#">
+                <th scope="row">운송사B</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#">
+                <th scope="row">운송사C</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#">
+                <th scope="row">기타</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <th scope="row">합계</th>
+                <td>290</td>
+                <td>170</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="content-padded m-t-2 m-b-0 row">
+          <div class="col-xs-6 p-l-0 p-t-05">
+            장비대수 : <span class="text-primary">257</span> 대
+          </div>
+          <div class="col-xs-6 text-xs-right p-r-0">
+            <button type="button" class="btn btn-secondary">전체 지도보기</button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>회사</th>
+                <th>유형</th>
+                <th>그룹</th>
+                <th>장비</th>
+                <th>상태</th>
+                <th>시작</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-toggle="collapse" data-target="#" class="text-xs-center">
+                <td>Y</td>
+                <td>CE</td>
+                <td>GCE1A</td>
+                <td>4567</td>
+                <td>JD</td>
+                <td>12:55</td>
+              </tr>
+              <tr class="text-xs-center bg-primary">
+                <td colspan="3" data-toggle="modal" data-target="#MO_CT_1001">
+                  장비상세정보
+                </td>
+                <td colspan="3">
+                  위치보기
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr data-toggle="collapse" data-target="#" class="text-xs-center">
+                <td>Y</td>
+                <td>CE</td>
+                <td>GCE1A</td>
+                <td>4567</td>
+                <td>JD</td>
+                <td>12:55</td>
+              </tr>
+              <tr class="text-xs-center bg-primary">
+                <td colspan="3" data-toggle="modal" data-target="#MO_CT_1001">
+                  장비상세정보
+                </td>
+                <td colspan="3">
+                  위치보기
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card hd-search hd-search-result m-t-1" role="button">
+          <div class="hd-infinite-scroll btn btn-block btn-link">20개씩 더보기 (1/20)</div>
+        </div>
+
 
         <!-- 점검내용 끝 -->
 
@@ -112,6 +225,19 @@
     <div id="popup-group-02" class="popup zoom"></div>
     <div id="popup-group-03" class="popup zoom"></div>
     <div id="popup-group-04" class="popup zoom"></div>
+
+    <!-- 모달 -->
+    <div id="MO_CT_1001" class="modal">
+      <header class="bar bar-nav bar-light bg-faded">
+        <a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
+        <h1 class="title">장비상세정보</h1>
+      </header>
+      <div class="content">
+        <p class="content-padded">
+          The contents of my modal go here.
+        </p>
+      </div>
+    </div>
 
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
