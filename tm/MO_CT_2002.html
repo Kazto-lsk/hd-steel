@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>장비점검확인 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-tm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- 안전점검내용_상세 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <a class="icon icon-push pull-right" data-target="#MO_CT_2006" data-toggle="modal" data-template="./template/push.html"></a>
+        <h1 class="title left">장비점검확인</h1>
+
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-form">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+
+            <div class="form-group p-l-1">
+              <label>장비번호</label>
+              <input type="text" class="form-control hd-md" id="equipment" placeholder="장비번호"  value="" readonly="" data-toggle="popup" data-target="#popup-equipment">
+            </div>
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <div class="content-padded">
+          <div class="row">
+            <div class="col-xs-6" style="padding-top: .3rem">
+              장비 점검 필요 : <span class="text-primary">1</span> 건
+            </div>
+            <div class="col-xs-6">
+              <select class="form-control form-control-sm" id="exampleSelect2">
+                <option>전체보기</option>
+                <option>이상발견건 보기</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div><!-- /.content -->
+
+      <!-- floating top -->
+      <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+        <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+          <img src="../assets/img/btn_floating_top.png" alt="">
+        </button>
+      </div>
+
+    </div><!-- /.snap-content -->
+
+    <!-- push 모달-->
+    <div id="MO_CT_2006" class="modal"></div>
+
+     <!-- popup 장비번호  -->
+     <div id="popup-equipment" class="popup zoom"></div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+  </body>
+</html>

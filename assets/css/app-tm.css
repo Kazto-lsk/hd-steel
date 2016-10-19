@@ -1234,3 +1234,72 @@
 .collapse {
   display: none;
 }
+
+.bar-header-secondary.hd-form {
+  height: 3.5625rem;
+  line-height: 3.5625rem;
+  border-bottom: .0625rem solid #d8dce2;
+}
+.bar-header-secondary.hd-form  ~ .content {
+  padding-top: 6.31rem;
+}
+.bar-header-secondary.hd-form  .form-inline {
+  line-height: inherit
+}
+.bar-header-secondary.hd-form  .form-inline label {
+  margin-bottom: 0;
+  color: #626470;
+}
+.bar-header-secondary.hd-form  .form-inline input {
+  margin-left: .3rem
+}
+.bar-header-secondary.hd-form  .form-inline .btn {
+  position: static;
+  display: inline-block;
+  top:auto;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  margin-top: .45rem;
+  padding: 0 .75rem;
+  font-size: 1rem;
+  background-color: #3a444d !important;
+  border-color: #3a444d !important;
+  border-radius: 0
+}
+.bar-header-secondary.hd-form  .form-inline .btn:active {
+  background-color: #000 !important
+}
+
+.form-inline .form-group,
+.form-inline .form-group label,
+.form-inline .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form-inline .btn {
+  /*margin-top: .4rem;*/
+  margin-left: .5rem
+}
+
+@media (max-width: 640px) {
+  .bar-header-secondary.hd-form {
+      text-align: left;
+      line-height: 2.5rem;
+  }
+  .bar-header-secondary.hd-form .form-inline {
+    vertical-align: middle;
+  }
+  .bar-header-secondary.hd-form .form-inline .form-group {
+    line-height: 2.5rem;
+  }
+  .bar-header-secondary.hd-form .form-control.hd-md {
+    width: 155px;
+  }
+}

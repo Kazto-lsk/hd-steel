@@ -2251,6 +2251,12 @@ select.form-control {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
+select.form-control-sm {
+  background-position:
+    calc(100% - 1.25rem) calc(1em + -.05rem),
+    calc(100% - .9375rem) calc(1em + -.05rem),
+    calc(100% - 2.5rem) .1rem;
+}
 
 /*custom-control-indicator*/
 .custom-control-indicator {

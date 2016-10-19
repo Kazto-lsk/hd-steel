@@ -77,3 +77,13 @@ $('#popup-group-04').on('show.rc.popup',function(){
     });
   })
 });
+
+$('#popup-equipment').on('show.rc.popup',function(){
+  $(this).load('./template/popup-equipment.html',function(){
+    $('#popup-equipment .table tr').on('tap',function(){
+      var value = $(this).data('label');
+      $('#equipment').val(value);
+      $(this).popup('hide');
+    });
+  })
+});
