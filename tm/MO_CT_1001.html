@@ -51,15 +51,65 @@
 
         <!-- 점검내용 시작 -->
         <div class="card hd-search hd-search-result p-a-1">
-          <div class="card-block">
-            <dl class="row">
-              <dt class="col-xs-3">요청일</dt>
-              <dd class="col-xs-9">2016.07.07</dd>
-              <dt class="col-xs-3">요청자</dt>
-              <dd class="col-xs-9">김일표</dd>
-            </dl>
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-xs-4 col-form-label hd-none">운송회사코드</label>
+            <div class="col-sm-10 col-xs-8">
+              <input type="text" class="form-control hd-sm" id="group-1" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-group-1">
+            </div>
+          </div><!-- /.form-group -->
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-xs-4 col-form-label hd-none">장비유형분류</label>
+            <div class="col-sm-10 col-xs-8">
+              <input type="text" class="form-control hd-sm" id="group-2" placeholder="선택" value="전체" readonly="" data-toggle="popup" data-target="#popup-group-2">
+            </div>
+          </div><!-- /.form-group -->
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-xs-4 col-form-label hd-none">운송그룹</label>
+            <div class="col-sm-10 col-xs-8">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="운송그룹입력" value="">
+                <span class="input-group-btn">
+                  <button class="btn btn-white" type="button">
+                    <span class="icon icon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div><!-- /.form-group -->
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-xs-4 col-form-label hd-none">장비코드</label>
+            <div class="col-sm-10 col-xs-8">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="장비코드입력" value="">
+                <span class="input-group-btn">
+                  <button class="btn btn-white" type="button">
+                    <span class="icon icon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div><!-- /.form-group -->
+
+          <div class="m-t-1">
+            <button type="button" class="btn btn-primary btn-block">
+              조회
+            </button>
           </div>
+
         </div><!-- card 끝 -->
+
+
+        <div class="hd-data-none" style="height: 60%">
+          <div>
+            <img src="../assets/img/data-none.png" alt="">
+            <span>등록된 정보가 없습니다.</span>
+          </div>
+        </div>
+
 
         <div class="content-padded">
           <div class="row btn-group">
