@@ -2341,9 +2341,9 @@ input[type="search"] {
 }
 .hd-guide .content .swiper-slide {
   color: #fff;
-  padding-top: .2rem
+  padding-top: 2rem
 }
-@media (min-width: 544px) {
+@media (min-width: 400px) {
   .hd-guide .content .swiper-slide {
     padding-top: 3rem
   }
