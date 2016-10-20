@@ -6,7 +6,7 @@
   <a class="tab-item bg-secondary" role="button" data-history="back">
     닫기
   </a>
-  <a class="tab-item bg-primary" role="button">
+  <a class="tab-item bg-primary" role="button" id="push-send">
     발송
   </a>
 </nav>
@@ -61,13 +61,20 @@
     <!-- Target Page -->
     <div id="push-target1" class="page right">
       <ul class="table-view">
-        <li class="table-view-cell table-view-active">
+        <li class="table-view-cell">
           <a data-history="back">
             <span class="media-object pull-left icon icon-left-nav"></span>
-            <div class="media-body p-l-05">
-              장비번호
+            <div class="media-body">
+              이전
             </div>
           </a>
+        </li>
+        <li class="table-view-cell checkbox table-view-active">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">장비번호 전체</span>
+          </label>
         </li>
         <li class="table-view-cell checkbox">
           <label class="custom-control custom-checkbox">
@@ -124,13 +131,20 @@
     <!-- Target Page -->
     <div id="push-target2" class="page right">
       <ul class="table-view">
-        <li class="table-view-cell table-view-active">
+        <li class="table-view-cell">
           <a data-history="back">
             <span class="media-object pull-left icon icon-left-nav"></span>
-            <div class="media-body p-l-05">
-              장비유형
+            <div class="media-body">
+              이전
             </div>
           </a>
+        </li>
+        <li class="table-view-cell checkbox table-view-active">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">장비유형 전체</span>
+          </label>
         </li>
         <li class="table-view-cell checkbox">
           <label class="custom-control custom-checkbox">
@@ -187,13 +201,20 @@
     <!-- Target Page -->
     <div id="push-target3" class="page right">
       <ul class="table-view">
-        <li class="table-view-cell table-view-active">
+        <li class="table-view-cell">
           <a data-history="back">
             <span class="media-object pull-left icon icon-left-nav"></span>
-            <div class="media-body p-l-05">
-              운송그룹
+            <div class="media-body">
+              이전
             </div>
           </a>
+        </li>
+        <li class="table-view-cell checkbox table-view-active">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">운송그룹 전체</span>
+          </label>
         </li>
         <li class="table-view-cell checkbox">
           <label class="custom-control custom-checkbox">
@@ -256,5 +277,12 @@
 <script>
 
   autosize($('textarea'));
+
+
+
+  $('#push-send').click(function(){
+    $('#MO_CT_2006').modal('hide');
+    $.notify("푸시 메시지가 발송되었습니다.");
+  });
 
 </script>

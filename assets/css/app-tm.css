@@ -1325,7 +1325,6 @@
 .page-container {
   position: relative;
 }
-
 .page-container .page {
-  position: absolute;;
+  position: absolute;
 }
