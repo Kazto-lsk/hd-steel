@@ -276,13 +276,17 @@
 
 <script>
 
+  // 입력창 크기 변경
   autosize($('textarea'));
 
-
-
+  // 메시지 발송 관련
   $('#push-send').click(function(){
+
     $('#MO_CT_2006').modal('hide');
-    $.notify("푸시 메시지가 발송되었습니다.");
+
+    setTimeout(function() {
+      $.notify("푸시 메시지가 발송되었습니다.");
+    }, 500);
   });
 
 </script>
