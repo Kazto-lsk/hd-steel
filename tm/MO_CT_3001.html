@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>운전원 자가점검 확인 | 현대제철 스마트팩토리 마크업</title>
+    <title>수시장비 실적확인 요청 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -33,131 +33,37 @@
       <header class="bar bar-nav bar-dark bg-primary">
         <a class="icon icon-simbol pull-left"></a>
         <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer3.html"></a>
-        <a class="icon icon-push pull-right" data-target="#MO_CT_2006" data-toggle="modal" data-template="./template/push.html"></a>
-        <h1 class="title left">운전원 자가점검 확인</h1>
+        <h1 class="title left">수시장비 실적확인 요청</h1>
 
       </header>
 
-      <!-- secondary header-->
-      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-form">
-        <div class="table-responsive">
-          <div class="form-inline nowrap">
-
-            <div class="form-group p-l-1">
-              <label>장비번호</label>
-              <input type="text" class="form-control hd-md" id="equipment" placeholder="장비번호"  value="" readonly="" data-toggle="popup" data-target="#popup-equipment">
-            </div>
-
-            <button type="submit" class="btn btn-primary">조회</button>
-          </div><!-- /.form-inline -->
-        </div><!-- /.table-responsive -->
-      </div>
 
       <div class="content" data-control="scroll" data-type="updown">
 
-        <div class="content-padded">
-          <div class="row">
-            <div class="col-xs-6" style="padding-top: .2rem">
-              운전원 점검 필요 : <span class="text-primary">1</span> 건
-            </div>
-            <div class="col-xs-6">
-              <select class="form-control form-control-sm" id="exampleSelect2">
-                <option>전체보기</option>
-                <option>점검필요건 보기</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card hd-search hd-search-result">
-          <div class="card-header">
-            <ul class="table-view">
-              <li class="table-view-cell">
-                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
-                  <span class="badge badge-outline badge-primary hd-left">이상없음</span>
-                  <span class="hd-left-padded text-success">07:05</span>
-                </a>
-              </li>
-            </ul>
-           </div>
-           <table class="table hd-sm table-bordered hd-data">
-             <thead>
-               <th>장비명</th>
-               <th>유형</th>
-               <th>장비번호</th>
-               <th>운전원</th>
-             </thead>
-             <tbody>
-               <tr class="text-xs-center">
-                 <td>이티</td>
-                 <td>ET</td>
-                 <td>4567</td>
-                 <td>홍길동</td>
-               </tr>
-             </tbody>
-           </table>
-        </div><!-- /.card -->
-
-
-        <div class="card hd-search hd-search-result">
-          <div class="card-header">
-            <ul class="table-view">
-              <li class="table-view-cell">
-                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
-                  <span class="badge badge-outline badge-primary hd-left">이상없음</span>
-                  <span class="hd-left-padded text-success">07:05</span>
-                </a>
-              </li>
-            </ul>
-           </div>
-           <table class="table hd-sm table-bordered hd-data">
-             <thead>
-               <th>장비명</th>
-               <th>유형</th>
-               <th>장비번호</th>
-               <th>운전원</th>
-             </thead>
-             <tbody>
-               <tr class="text-xs-center">
-                 <td>이티</td>
-                 <td>ET</td>
-                 <td>4567</td>
-                 <td>홍길동</td>
-               </tr>
-             </tbody>
-           </table>
-        </div><!-- /.card -->
-
-        <div class="card hd-search hd-search-result">
-          <div class="card-header">
-            <ul class="table-view">
-              <li class="table-view-cell">
-                <a class="navigate-right" data-toggle="modal" data-target="#MO_CT_2003">
-                  <span class="badge badge-outline badge-danger hd-left">이상발견</span>
-                  <span class="hd-left-padded text-danger">07:05</span>
-                </a>
-              </li>
-            </ul>
-           </div>
-           <table class="table hd-sm table-bordered hd-data">
-             <thead>
-               <th>장비명</th>
-               <th>유형</th>
-               <th>장비번호</th>
-               <th>운전원</th>
-             </thead>
-             <tbody>
-               <tr class="text-xs-center text-danger">
-                 <td>이티</td>
-                 <td>ET</td>
-                 <td>4567</td>
-                 <td>홍길동</td>
-               </tr>
-             </tbody>
-           </table>
-        </div><!-- /.card -->
-
+        <table class="table hd-sm table-bordered hd-data">
+          <thead>
+            <tr>
+              <th>시작일시</th>
+              <th>종료일시</th>
+              <th>요청부서</th>
+              <th>진행상태</th>
+            </tr>
+          </thead>
+           <tbody>
+             <tr class="text-xs-center" data-toggle="modal" data-target="#MO_CT_3003" role="button">
+               <td class="spacing-m1">2016.08.01<br>08:00</td>
+               <td class="spacing-m1">2016.08.01<br>08:00</td>
+               <td>구내운송팀</td>
+               <td>진행</td>
+             </tr>
+             <tr class="text-xs-center" data-toggle="modal" data-target="#MO_CT_3002" role="button">
+               <td class="spacing-m1">2016.08.01<br>08:00</td>
+               <td class="spacing-m1">2016.08.01<br>08:00</td>
+               <td>구내운송팀</td>
+               <td>예약</td>
+             </tr>
+           </tbody>
+         </table>
 
       </div><!-- /.content -->
 
@@ -170,194 +76,255 @@
 
     </div><!-- /.snap-content -->
 
-    <!-- push 모달-->
-    <div id="MO_CT_2006" class="modal"></div>
-
-   <!-- popup 장비번호  -->
-   <div id="popup-equipment" class="popup zoom"></div>
-
-   <!-- popup 장비확인  -->
+   <!-- popup 작업시작 확인  -->
    <div id="popup-confirm" class="popup zoom">
      <div class="popup-content">
+       <header class="bar bar-nav">
+         <h1 class="title">안내</h1>
+       </header>
        <nav class="bar bar-standard bar-footer">
-         <button type="button" class="btn btn-primary btn-block" data-history="back">조치완료</button>
+         <button type="button" class="btn btn-primary btn-block" id="popup-confirm-btn">확인</button>
        </nav>
        <div class="content">
          <div class="p-x-2 p-y-3 text-xs-center">
-           <h3 class="h5">운전원 면담 및 적절한 조치가 <br>완료되었습니까?</h3>
-           일시 : 16.08.31 16:30</div>
+           <h3 class="h5">작업시간 요청이 완료되었습니다.</h3>
+           오늘도 안전 작업 하시기 바랍니다.
+         </div>
        </div>
      </div>
    </div>
 
-  <!-- 점검 항목별 상세 결과 -->
-  <div id="MO_CT_2003" class="modal">
+   <!-- popup 작업종료 확인  -->
+   <div id="popup-confirm-1" class="popup zoom">
+     <div class="popup-content">
+       <header class="bar bar-nav">
+         <h1 class="title">안내</h1>
+       </header>
+       <nav class="bar bar-standard bar-footer">
+         <button type="button" class="btn btn-primary btn-block" id="popup-confirm-btn-1">확인</button>
+       </nav>
+       <div class="content">
+         <div class="p-x-2 p-y-3 text-xs-center">
+           <h3 class="h5">작업 종료 요청이 완료되었습니다.</h3>
+           수고하셨습니다.
+         </div>
+       </div>
+     </div>
+   </div>
+
+  <!--  작업시작 -->
+  <div id="MO_CT_3002" class="modal zoom">
     <header class="bar bar-nav bar-inverse bg-primary">
       <a class="icon icon-close pull-right" data-history="back" role="button"></a>
-      <h1 class="title left p-l-2">점검 항목별 상세결과</h1>
+      <h1 class="title left p-l-2">수시장비 작업시작</h1>
     </header>
+    <nav class="bar bar-tab">
+      <a class="tab-item bg-secondary" role="button" data-history="back">
+        닫기
+      </a>
+      <a class="tab-item bg-primary" role="button" data-toggle="popup" data-target="#popup-confirm">
+        작업시작
+      </a>
+    </nav>
     <div class="content">
 
       <table class="table hd-sm table-bordered hd-data">
-        <thead>
-          <tr>
-            <th>상태</th>
-            <th>점검일시</th>
-          </tr>
-        </thead>
-       <tbody>
-         <tr class="text-xs-center">
-           <td>
-             <button type="button" class="btn btn-link text-danger" data-toggle="popup" data-target="#popup-confirm">면담필요</button>
-           </td>
-           <td>
-             -
-           </td>
-         </tr>
-       </tbody>
-     </table>
-
-
-       <table class="table table-bordered hd-data">
-         <thead>
-           <tr>
-             <th colspan="2">현재 수면이 부족하십니까?</th>
-           </tr>
-         </thead>
+        <colgroup>
+          <col width="25%">
+          <col>
+        </colgroup>
         <tbody>
-          <tr class="text-xs-center">
-            <td>
-              <label class="custom-control custom-radio">
-                <input id="radio1" name="radio1" type="radio" class="custom-control-input" checked>
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">양호</span>
-              </label>
+          <tr>
+            <th scope="row">운송 ID</th>
+            <td class="text-xs-left">
+              [12345] 코크스 침전지 분코크스 코크스 Yard 운송.
             </td>
-            <td>
-              <label class="custom-control custom-radio">
-                <input id="radio2" name="radio1" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">불량</span>
-              </label>
+          </tr>
+          <tr>
+            <th scope="row">위치개소</th>
+            <td class="text-xs-left">
+              DPY99] 코크스 침전지
             </td>
           </tr>
         </tbody>
       </table>
 
-      <table class="table table-bordered hd-data">
-        <thead>
+      <table class="table hd-sm table-bordered hd-data">
+        <colgroup>
+          <col width="25%">
+          <col>
+        </colgroup>
+        <tbody>
           <tr>
-            <th colspan="2"><span class="text-danger">5시간 이내 술을 드셨습니까?(반병이상)</span></th>
+            <th scope="row">운전원</th>
+            <td class="text-xs-left">
+              홍길동
+            </td>
           </tr>
-        </thead>
-       <tbody>
-         <tr class="text-xs-center">
-           <td>
-             <label class="custom-control custom-radio">
-               <input id="radio3" name="radio2" type="radio" class="custom-control-input" checked>
-               <span class="custom-control-indicator"></span>
-               <span class="custom-control-description">양호</span>
-             </label>
-           </td>
-           <td>
-             <label class="custom-control custom-radio">
-               <input id="radio4" name="radio2" type="radio" class="custom-control-input">
-               <span class="custom-control-indicator"></span>
-               <span class="custom-control-description">불량</span>
-             </label>
-           </td>
-         </tr>
-       </tbody>
-     </table>
+          <tr>
+            <th scope="row">장비명</th>
+            <td class="text-xs-left">
+              스카이마스터(21m)
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">요청부서</th>
+            <td class="text-xs-left">
+              제강정비팀
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">진행상태</th>
+            <td class="text-xs-left">
+              작업진행
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-     <table class="table table-bordered hd-data">
-       <thead>
-         <tr>
-           <th colspan="2"><span class="">잠이 오는 성분이 있는 약을 복용하셨습니까?</span></th>
-         </tr>
-       </thead>
-      <tbody>
-        <tr class="text-xs-center">
-          <td>
-            <label class="custom-control custom-radio">
-              <input id="radio5" name="radio3" type="radio" class="custom-control-input" checked>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">양호</span>
-            </label>
-          </td>
-          <td>
-            <label class="custom-control custom-radio">
-              <input id="radio6" name="radio3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">불량</span>
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-     <table class="table table-bordered hd-data">
-       <thead>
-         <tr>
-           <th colspan="2"><span class="text-danger">어지러움, 구토, 설사 등 증상이 있습니까?</span></th>
-         </tr>
-       </thead>
-      <tbody>
-        <tr class="text-xs-center">
-          <td>
-            <label class="custom-control custom-radio">
-              <input id="radio7" name="radio4" type="radio" class="custom-control-input" checked>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">양호</span>
-            </label>
-          </td>
-          <td>
-            <label class="custom-control custom-radio">
-              <input id="radio8" name="radio4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">불량</span>
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <table class="table table-bordered hd-data">
-      <thead>
-        <tr>
-          <th colspan="2"><span class="">운전 시, 불편함을 느낄 정도의<br> 컨디션이 좋지 않으십 니까?</span></th>
-        </tr>
-      </thead>
-     <tbody>
-       <tr class="text-xs-center">
-         <td>
-           <label class="custom-control custom-radio">
-             <input id="radio5" name="radio5" type="radio" class="custom-control-input" checked>
-             <span class="custom-control-indicator"></span>
-             <span class="custom-control-description">양호</span>
-           </label>
-         </td>
-         <td>
-           <label class="custom-control custom-radio">
-             <input id="radio6" name="radio5" type="radio" class="custom-control-input">
-             <span class="custom-control-indicator"></span>
-             <span class="custom-control-description">불량</span>
-           </label>
-         </td>
-       </tr>
-     </tbody>
-   </table>
-
-    <br>
+      <table class="table hd-sm table-bordered hd-data">
+        <colgroup>
+          <col width="25%">
+          <col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th scope="row">시작일시</th>
+            <td class="text-xs-left">
+              2016.08.02 08:00
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">종료일시</th>
+            <td class="text-xs-left">
+              2016.08.02 17:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
   </div><!-- /.content -->
 </div><!-- /.modal -->
 
+<!--  작업종료 -->
+<div id="MO_CT_3003" class="modal zoom">
+  <header class="bar bar-nav bar-inverse bg-primary">
+    <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+    <h1 class="title left p-l-2">수시장비 실적확인&담당자</h1>
+  </header>
+  <nav class="bar bar-tab">
+    <a class="tab-item bg-secondary" role="button" data-history="back">
+      닫기
+    </a>
+    <a class="tab-item bg-primary" role="button" data-toggle="popup" data-target="#popup-confirm-1">
+      작업종료
+    </a>
+  </nav>
+  <div class="content">
 
+    <table class="table hd-sm table-bordered hd-data">
+      <colgroup>
+        <col width="25%">
+        <col>
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">운송 ID</th>
+          <td class="text-xs-left">
+            [12345] 코크스 침전지 분코크스 코크스 Yard 운송.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">위치개소</th>
+          <td class="text-xs-left">
+            DPY99] 코크스 침전지
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table hd-sm table-bordered hd-data">
+      <colgroup>
+        <col width="25%">
+        <col>
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">운전원</th>
+          <td class="text-xs-left">
+            홍길동
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">장비명</th>
+          <td class="text-xs-left">
+            스카이마스터(21m)
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">요청부서</th>
+          <td class="text-xs-left">
+            제강정비팀
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">진행상태</th>
+          <td class="text-xs-left">
+            작업진행
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table hd-sm table-bordered hd-data">
+      <colgroup>
+        <col width="25%">
+        <col>
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">시작일시</th>
+          <td class="text-xs-left">
+            2016.08.02 08:00
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">투입일시</th>
+          <td class="text-xs-left">
+            2016.08.02 17:00
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">종료일시</th>
+          <td class="text-xs-left">
+            2016.08.02 17:00
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+</div><!-- /.content -->
+</div><!-- /.modal -->
 
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/js/app-tm.js"></script>
+
+    <script>
+
+
+    $('#popup-confirm-btn').tap(function(){
+      $('#MO_CT_3002').modal('hide')
+      $('#popup-confirm').popup('hide');
+    });
+
+    $('#popup-confirm-btn-1').tap(function(){
+      $('#MO_CT_3003').modal('hide')
+      $('#popup-confirm-1').popup('hide');
+    });
+
+
+    </script>
 
   </body>
 </html>
