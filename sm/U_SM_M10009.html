@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>가이드 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link href="../assets/extensions/swiper/3.2.7/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body>
+
+
+    <header class="bar bar-nav bar-light bg-faded">
+        <h1 class="title">안전관리</h1>
+    </header>
+
+    <div class="content">
+
+      <div class="content-padded">
+        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#U_SM_M10009">
+          가이드 모달 띄우기
+        </button>
+      </div>
+
+    </div>
+
+
+    <div class="modal zoom hd-guide" id="U_SM_M10009">
+
+          <div class="bar bar-standard bar-footer">
+
+            <div class="row">
+              <div class="col-xs-6 offset-xs-3 text-xs-center">
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="col-xs-3 text-xs-right">
+                <button type="button" class="btn btn-link" data-history="back">
+                  <span class="icon icon-right-nav"></span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="content">
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="p-x-1 text-xs-center">
+                    <h1 class="h3 p-t-2">안전관리 홈</h1>
+                    <p class="lead">게스트를 위한 서비스 메뉴 제공</p>
+                    <p style="margin-top: -.5rem">
+                      <small>
+                        비상대피로, 안전자료실 둘러보기 메뉴<br>
+                        로그인 없이도 서비스 이용가능
+                      </small>
+                    </p>
+                  </div>
+                  <img src="../assets/img/guide/sm-01.png" class="img-fluid" alt="" style="width:276px">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-x-1 text-xs-center">
+                    <h1 class="h3 p-t-2">메뉴이동하기</h1>
+                    <p class="lead">퀵 & 전체메뉴로 이동하기</p>
+                    <p style="margin-top: -.5rem">
+                      <small>
+                        퀵메뉴 : 로고, 로그아웃, QR CODE <br>
+                        전체메뉴 : 서비스메뉴확인 및 각 해당 메뉴로 이동가능
+                      </small>
+                    </p>
+                  </div>
+                  <img src="../assets/img/guide/sm-02.png" class="img-fluid" alt="" style="width:293px">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-x-1 text-xs-center">
+                    <h1 class="h3 p-t-2">조회목록</h1>
+                    <p class="lead">검색, 더보기, 이전, 상세페이지로의 이동</p>
+                    <p style="margin-top: -.5rem"><small>&nbsp; <br>&nbsp;</small></p>
+                  </div>
+                  <img src="../assets/img/guide/sm-03.png" class="img-fluid" alt="" style="width:299px">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-x-1 text-xs-center">
+                    <h1 class="h3 p-t-2">플리킹 기능</h1>
+                    <p class="lead">좌우 슬라이딩으로 화면 넘기기</p>
+                    <p style="margin-top: -.5rem">
+                      <small>
+                        좌우로 화면을 밀면 이전, 다음 화면 페이지로 이동함<br>
+                        * 비상대피로 상세, 처리상태값 탭이 있는 목록
+                      </small>
+                    </p>
+                  </div>
+                  <img src="../assets/img/guide/sm-04.png" class="img-fluid" alt="" style="width:281px">
+                </div>
+
+              </div><!-- /.swiper-wrapper -->
+            </div><!-- /.swiper-container -->
+
+          </div><!-- /.content -->
+    </div>
+    <!-- /.modal -->
+
+
+
+    <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <script>
+      $('#U_SM_M10009').modal('show')
+
+      // Initialize Swiper
+      var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        slideActiveClass :'active',
+        onSlideChangeEnd: function (swiper) {
+          if (swiper.activeIndex == 3) {
+              $('.hd-guide .btn-link').addClass("active shake animated");
+          } else {
+              $('.hd-guide .btn-link').removeClass("active shake animated");
+          }
+        }
+      });
+    </script>
+
+  </body>
+</html>
