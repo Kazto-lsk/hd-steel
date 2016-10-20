@@ -11,7 +11,255 @@
   </a>
 </nav>
 <div class="content">
-  <p class="content-padded">
-    The contents of my modal go here.
-  </p>
+
+  <div class="content-padded">
+    <h4 class="h6 m-t-1">Push 메시지 작성</h4>
+    <textarea class="form-control" rows="5" placeholder="메시지 작성을 하려면 Tap 하세요."></textarea>
+  </div>
+
+  <h4 class="h6 m-t-1 content-padded">메시지를 발송할 대상을 선택하세요.</h4>
+
+  <div class="page-container">
+
+    <!-- Start Page -->
+    <div id="push-start" class="page center">
+      <ul class="table-view">
+        <li class="table-view-cell control table-view-active">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" checked>
+            <span class="custom-control-indicator"></span>
+          </label>
+          <a class="">전체</a>
+        </li>
+        <li class="table-view-cell control">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+          </label>
+          <a class="navigate-right" data-toggle="page" data-start="#push-start" data-target="#push-target1">장비번호</a>
+          </a>
+        </li>
+        <li class="table-view-cell control">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+          </label>
+          <a class="navigate-right" data-toggle="page" data-start="#push-start" data-target="#push-target2">장비유형</a>
+          </a>
+        </li>
+        <li class="table-view-cell control">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+          </label>
+          <a class="navigate-right" data-toggle="page" data-start="#push-start" data-target="#push-target3">운송그룹</a>
+          </a>
+        </li>
+      </ul>
+    </div><!-- /#page1 -->
+
+    <!-- Target Page -->
+    <div id="push-target1" class="page right">
+      <ul class="table-view">
+        <li class="table-view-cell table-view-active">
+          <a data-history="back">
+            <span class="media-object pull-left icon icon-left-nav"></span>
+            <div class="media-body p-l-05">
+              장비번호
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[CE] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 장비번호명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비번호명</span>
+          </label>
+        </li>
+      </ul>
+    </div><!-- /.page -->
+
+    <!-- Target Page -->
+    <div id="push-target2" class="page right">
+      <ul class="table-view">
+        <li class="table-view-cell table-view-active">
+          <a data-history="back">
+            <span class="media-object pull-left icon icon-left-nav"></span>
+            <div class="media-body p-l-05">
+              장비유형
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[CE] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 장비유형명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 장비유형명</span>
+          </label>
+        </li>
+      </ul>
+    </div><!-- /.page -->
+
+    <!-- Target Page -->
+    <div id="push-target3" class="page right">
+      <ul class="table-view">
+        <li class="table-view-cell table-view-active">
+          <a data-history="back">
+            <span class="media-object pull-left icon icon-left-nav"></span>
+            <div class="media-body p-l-05">
+              운송그룹
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[CE] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[DT] 운송그룹명</span>
+          </label>
+        </li>
+        <li class="table-view-cell checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">[WL] 운송그룹명</span>
+          </label>
+        </li>
+      </ul>
+    </div><!-- /.page -->
+
+  </div><!-- /.page-container -->
+
+
+
+
+
+
 </div>
+
+<script src="../assets/js/autosize.min.js"></script>
+
+<script>
+
+  autosize($('textarea'));
+
+</script>

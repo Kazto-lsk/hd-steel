@@ -1320,3 +1320,12 @@
   border: 0.0625rem solid #d8dce2;
   border-bottom: none
 }
+
+
+.page-container {
+  position: relative;
+}
+
+.page-container .page {
+  position: absolute;;
+}
