@@ -2316,3 +2316,77 @@ input[type="search"] {
 .hd-deck-em .card-deck .card-text {
   font-size: 1.2rem
 }
+
+
+/*guide*/
+
+.hd-guide .content {
+  background-color: #fff
+}
+.hd-guide .content .swiper-container:after {
+  content:"";
+  background:#1c74d5;
+  position:fixed;
+  top:0;
+  bottom:10%;
+  right:0;
+  left:0;
+  content:" ";
+  z-index:-1;
+}
+.hd-guide .content .img-fluid {
+  margin: 0 auto;
+}
+
+.hd-guide .content .swiper-slide {
+  color: #fff
+}
+.hd-guide .content .swiper-slide .lead {
+  position: relative;
+  padding-bottom: .8rem;
+  font-size: 1rem;
+  letter-spacing: -.0625rem;
+}
+.hd-guide .content .swiper-slide .lead:after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 30px;
+  margin-left: -15px;
+  height: .11rem;
+  background-color: #fff;
+  content: '';
+}
+.hd-guide .bar-footer {
+  border-top: none
+}
+.hd-guide .swiper-pagination {
+  left: 50%;
+  margin-left: -2.5rem
+}
+.hd-guide .swiper-pagination-bullet {
+  margin: 0 2px;
+  width: .6rem;
+  height: .6rem;
+}
+.hd-guide .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007aff;
+  width: 2rem;
+  border-radius: 50px;
+}
+.hd-guide .btn-link,
+.hd-guide .btn-link .icon {
+  color: #1c74d5;
+  letter-spacing: -.0625rem
+}
+.hd-guide .btn-link .icon {
+  top: .32rem
+}
+.hd-guide .btn-link::before {
+  content: "건너뛰기"
+}
+.hd-guide .btn-link.active::before {
+  content: "시작하기";
+  color: #1c74d5
+}
