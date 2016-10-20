@@ -176,6 +176,21 @@
    <!-- popup 장비번호  -->
    <div id="popup-equipment" class="popup zoom"></div>
 
+   <!-- popup 장비확인  -->
+   <div id="popup-confirm" class="popup zoom">
+     <div class="popup-content">
+       <header class="bar bar-nav">
+         <h1 class="title">정비가 완료되었습니까?</h1>
+       </header>
+       <nav class="bar bar-standard bar-footer">
+         <button type="button" class="btn btn-primary btn-block" data-history="back">정비완료</button>
+       </nav>
+       <div class="content">
+         <div class="p-a-3 text-xs-center">일시 : 16.08.31 16:30</div>
+       </div>
+     </div>
+   </div>
+
   <!-- 점검 항목별 상세 결과 -->
   <div id="MO_CT_2003" class="modal">
     <header class="bar bar-nav bar-inverse bg-primary">
@@ -183,12 +198,139 @@
       <h1 class="title left p-l-2">점검 항목별 상세결과</h1>
     </header>
     <div class="content">
-      <p class="content-padded">
-        The contents of my modal go here.
-      </p>
-    </div>
 
-  </div>
+      <table class="table hd-sm table-bordered hd-data">
+        <thead>
+          <tr>
+            <th>상태</th>
+            <th>점검일시</th>
+          </tr>
+        </thead>
+       <tbody>
+         <tr class="text-xs-center">
+           <td>
+             <button type="button" class="btn btn-link text-danger" data-toggle="popup" data-target="#popup-confirm">정비필요</button>
+           </td>
+           <td>
+             -
+           </td>
+         </tr>
+       </tbody>
+     </table>
+
+      <h3 class="h6 content-padded m-t-2">일상점검</h3>
+
+       <table class="table table-bordered hd-data">
+         <thead>
+           <tr>
+             <th colspan="2">오일누유</th>
+           </tr>
+         </thead>
+        <tbody>
+          <tr class="text-xs-center">
+            <td>
+              <label class="custom-control custom-radio">
+                <input id="radio1" name="radio1" type="radio" class="custom-control-input" checked>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">양호</span>
+              </label>
+            </td>
+            <td>
+              <label class="custom-control custom-radio">
+                <input id="radio2" name="radio1" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">불량</span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-bordered hd-data">
+        <thead>
+          <tr>
+            <th colspan="2">타이어 공기압/마모</th>
+          </tr>
+        </thead>
+       <tbody>
+         <tr class="text-xs-center">
+           <td>
+             <label class="custom-control custom-radio">
+               <input id="radio3" name="radio2" type="radio" class="custom-control-input" checked>
+               <span class="custom-control-indicator"></span>
+               <span class="custom-control-description">양호</span>
+             </label>
+           </td>
+           <td>
+             <label class="custom-control custom-radio">
+               <input id="radio4" name="radio2" type="radio" class="custom-control-input">
+               <span class="custom-control-indicator"></span>
+               <span class="custom-control-description">불량</span>
+             </label>
+           </td>
+         </tr>
+       </tbody>
+     </table>
+
+     <table class="table table-bordered hd-data">
+       <thead>
+         <tr>
+           <th colspan="2">덤핑장치 작동유무</th>
+         </tr>
+       </thead>
+      <tbody>
+        <tr class="text-xs-center">
+          <td>
+            <label class="custom-control custom-radio">
+              <input id="radio5" name="radio3" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">양호</span>
+            </label>
+          </td>
+          <td>
+            <label class="custom-control custom-radio">
+              <input id="radio6" name="radio3" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">불량</span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="h6 content-padded m-t-2">안전장치</h3>
+
+     <table class="table table-bordered hd-data">
+       <thead>
+         <tr>
+           <th colspan="2">전조등/후미등</th>
+         </tr>
+       </thead>
+      <tbody>
+        <tr class="text-xs-center">
+          <td>
+            <label class="custom-control custom-radio">
+              <input id="radio7" name="radio4" type="radio" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">양호</span>
+            </label>
+          </td>
+          <td>
+            <label class="custom-control custom-radio">
+              <input id="radio8" name="radio4" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">불량</span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+  </div><!-- /.content -->
+</div><!-- /.modal -->
+
 
 
 
