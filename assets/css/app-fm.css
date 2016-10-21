@@ -609,3 +609,44 @@
 .hd-login.fm-login .custom-control-description {
   color: #fff
 }
+
+/*main*/
+
+.fm-main .bar-footer {
+  background-color: transparent;;
+  border-top: none
+}
+.fm-main .content {
+  background-image: url("../img/fm-main-bg.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.em-main .hd-title {
+  width: 8.625rem;
+  padding-top: .3rem;
+}
+.em-main .table td.hd-qr {
+  background-color: #23335d;
+  background-image: url(../img/em-main-03-bg.png);
+  background-size: cover;
+}
+.em-main .table td.hd-so {
+  height: 5.5rem;
+  background-color: #3a444d;
+  background-size: cover;
+}
+.em-main .table td.hd-so:active {
+  background-color: #333
+}
+.em-main .table td.hd-so img {
+  height: 1.3rem
+}
+.em-main .table td.hd-wo {
+  background-color: #6d8ca4;
+}
+.em-main .table td.hd-wo:active {
+  background-color: #32536d;
+}
