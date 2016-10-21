@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>소결광품질 분석실적조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">소결광품질 분석실적조회</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>공장</label>
+              <input type="text" class="form-control hd-sm" id="factory-2" placeholder="선택" value="1소결" readonly="" data-toggle="popup" data-target="#popup-factory-2">
+            </div>
+            <div class="form-group">
+              <label>주기</label>
+              <input type="text" class="form-control hd-sm" id="cycle-1" placeholder="선택" value="일" readonly="" data-toggle="popup" data-target="#popup-cycle-1">
+            </div>
+            <div class="form-group p-l-1">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" value="2016-10-01"> <label>~</label>
+              <input type="date" class="form-control hd-md" value="2016-10-10">
+            </div>
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th rowspan="2">일자</th>
+                <th colspan="2">소결광화학성분</th>
+                <th>소결광입도</th>
+                <th>물리특성</th>
+              </tr>
+              <tr>
+                <th>T.Fe</th>
+                <th>FeO</th>
+                <th>+50</th>
+                <th>SI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+              <tr data-toggle="modal" data-target="#JE_SO_2001">
+                <th scope="row">2016.07.13</th>
+                <td>57.18</td>
+                <td>8.18</td>
+                <td>5.57</td>
+                <td>1.91</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- floating top -->
+        <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+          <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+            <img src="../assets/img/btn_floating_top.png" alt="">
+          </button>
+        </div>
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 공장구분 -->
+    <div id="popup-factory-2" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 주기 -->
+    <div id="popup-cycle-1" class="popup popup-sm zoom">
+    </div>
+
+    <!-- modal 소입결광탄 품및질CO분K석E 분실석적조일회보 -->
+    <div id="JE_SO_2001" class="modal">
+      <header class="bar bar-nav bg-primary">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title left p-l-2">소결광 품질 분석 실적조회</h1>
+      </header>
+      <div class="content">
+
+        <table class="table table-bordered hd-data hd-sm">
+          <tbody>
+            <tr>
+              <th scope="row">일자</th>
+              <td class="text-xs-left">2016.07.14</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h6 m-t-2 content-padded-x">
+          소결광 화학성분
+        </h3>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>T.Fe</th>
+                <th>FeO</th>
+                <th>SiO2</th>
+                <th>AI2O3</th>
+                <th>CaO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>MgO</th>
+                <th>S</th>
+                <th>P</th>
+                <th>Mn</th>
+                <th>TiO2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Zn</th>
+                <th>K2O</th>
+                <th>Na2O</th>
+                <th>C/S</th>
+                <th>SV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <h3 class="h6 m-t-2 content-padded-x">
+          소결광 입도
+        </h3>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>+50</th>
+                <th>+30</th>
+                <th>+20</th>
+                <th>+15</th>
+                <th>+10</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>+5</th>
+                <th>-5</th>
+                <th>-10</th>
+                <th>MS(mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <h3 class="h6 m-t-2 content-padded-x">
+          물리특성
+        </h3>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data hd-sm">
+            <colgroup>
+              <col width="33.3%">
+              <col width="33.3%">
+              <col width="33.3%">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>SI</th>
+                <th>RDI</th>
+                <th>RI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>56.94</td>
+                <td>56.94</td>
+                <td>56.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-responsive -->
+
+        <br>
+
+      </div><!-- /.content -->
+
+    </div>
+    <!-- /.modal -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
