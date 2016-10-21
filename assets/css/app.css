@@ -2411,6 +2411,7 @@ input[type="search"] {
 
 /*intro*/
 .hd-login.em-login .card.hd-intro,
+.hd-login.sm-login .card.hd-intro,
 .hd-login.fm-login .card.hd-intro {
   padding: 57px 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -2420,6 +2421,7 @@ input[type="search"] {
   color: #fff
 }
 .hd-login.em-login .card.hd-intro h1,
+.hd-login.sm-login .card.hd-intro h1,
 .hd-login.fm-login .card.hd-intro h1 {
   position: relative;
   padding-bottom: 1.5rem;
@@ -2427,6 +2429,7 @@ input[type="search"] {
 }
 
 .hd-login.em-login .card.hd-intro h1::after,
+.hd-login.sm-login .card.hd-intro h1::after,
 .hd-login.fm-login .card.hd-intro h1::after {
   position: absolute;
   left: 50%;
@@ -2438,15 +2441,18 @@ input[type="search"] {
   content: '';
 }
 .hd-login.em-login .card.hd-intro h1 img,
+.hd-login.sm-login .card.hd-intro h1 img,
 .hd-login.fm-login .card.hd-intro h1 img {
   width: 117px
 }
 .hd-login.em-login .hd-loader,
+.hd-login.sm-login .hd-loader,
 .hd-login.fm-login .hd-loader {
   color: #fff;
   text-align: center;
 }
 .hd-login.em-login .progress[value],
+.hd-login.sm-login .progress[value],
 .hd-login.fm-login .progress[value] {
   background-color: #eee;
   border: 0;
