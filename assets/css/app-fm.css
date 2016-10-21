@@ -610,6 +610,44 @@
   color: #fff
 }
 
+/*intro*/
+.hd-login.fm-login .card.hd-intro {
+  padding: 57px 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: .3rem solid #fff;
+  border-radius: .5rem;
+  color: #fff
+}
+.hd-login.fm-login .card.hd-intro h1 {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem
+}
+.hd-login.fm-login .card.hd-intro h1::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 30px;
+  margin-left: -15px;
+  height: .11rem;
+  background-color: #fff;
+  content: '';
+}
+.hd-login.fm-login .card.hd-intro h1 img {
+  width: 117px
+}
+.hd-login.fm-login .hd-loader {
+  color: #fff;
+  text-align: center;
+}
+.hd-login.fm-login .progress[value] {
+  background-color: #eee;
+  border: 0;
+  appearance: none;
+  border-radius: 0.4rem;
+}
+
 /*main*/
 
 .fm-main .bar-footer {
