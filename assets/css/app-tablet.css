@@ -896,3 +896,15 @@ body {
     display: none
   }
 }
+.hd-intro-wrap {
+  width: 70%;
+  margin: 0 auto
+}
+@media (min-width: 1200px) {
+  .hd-intro-wrap {
+    width: 50%;
+  }
+}
+.hd-login.tm-login .card.hd-intro h1 img {
+  width: 134px
+}

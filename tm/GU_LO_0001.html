@@ -5,78 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>로그인 | 현대제철 스마트팩토리 마크업</title>
+    <title>인트로 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
     <link rel="stylesheet" href="../assets/css/rc.css">
     <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/css/app-sm.css">
+    <link rel="stylesheet" href="../assets/css/rc-progress.css">
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/rc.js"></script>
 
   </head>
-  <body class="hd-login sm-login">
-
-    <div class="bar bar-standard bar-footer-secondary">
-      <ul class="nav nav-inline">
-        <li class="nav-item">
-          <a class="nav-link" href="#">이용약관</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">개인정보수집동의</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="bar bar-standard bar-footer text-muted">
-      COPYRIGHT(C) HYUNDAI STEEL. ALL RIGHTS RESERVED.
-    </div>
-
+  <body class="hd-login tm-login">
 
     <!-- main content -->
     <div class="content">
 
-      <div class="content-padded hd-logo"><img src="../assets/img/logo-white.png" alt=""></div>
-
-      <form>
-        <div class="card animated bounceIn delay-3">
-          <div class="card-block">
-            <h4 class="card-title text-primary text-xs-center"><img src="../assets/img/login-title-sm.png" class="hd-title" alt=""></h4>
-            <div class="form-group">
-              <label for=""><img src="../assets/img/login-ico-user.png" alt=""></label>
-              <input type="text" class="form-control form-control-lg" id="" placeholder="아이디">
-            </div>
-            <div class="form-group">
-              <label for=""><img src="../assets/img/login-ico-lock.png" alt=""></label>
-              <input type="password" class="form-control form-control-lg" id="" placeholder="비밀번호">
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">로그인</button>
-          </div>
+      <div class="hd-intro-wrap">
+        <div class="p-x-2 p-t-1 hd-logo">
+          <img src="../assets/img/logo-white.png" alt="">
         </div>
-      </form>
 
-    </div>
+        <div class="card hd-intro">
+          <h1><img src="../assets/img/intro-title-tm.png" alt=""></h1>
+          <p class="m-b-0">GPS가 켜졌습니다.</p>
+        </div><!-- /.card -->
+
+        <p class="hd-loader m-a-3">
+          <progress class="progress progress-animated" value="10" max="100">10%</progress>
+          <span>시스템을 가동 중입니다.  잠시만 기다리세요.</span>
+        </p>
+      </div>
+
+    </div><!-- /.content -->
 
    <script>
-
-
-     $(document).ready(function(){
-       var _originalSize = $(window).width() + $(window).height()
-       $(window).resize(function(){
-         if($(window).width() + $(window).height() != _originalSize){
-           console.log("keyboard show up");
-           $("body").addClass("active");
-         }else{
-           console.log("keyboard closed");
-           $("body").removeClass("active");
-         }
-       });
-     });
 
 
    </script>
