@@ -599,3 +599,13 @@
   font-size: .92rem;
   letter-spacing: -.0625rem
 }
+.hd-login.fm-login .content {
+    background-image: url(../img/login-fm-bg.png);
+}
+.hd-login.fm-login .modal .content,
+.hd-login.fm-login .popup .content {
+    background-image: none;
+}
+.hd-login.fm-login .custom-control-description {
+  color: #fff
+}
