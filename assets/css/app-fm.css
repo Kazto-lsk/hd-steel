@@ -655,3 +655,9 @@
 .em-main .table td.hd-wo:active {
   background-color: #32536d;
 }
+
+
+.fm-main .modal .content,
+.fm-main .popup .content {
+  background-image: none
+}

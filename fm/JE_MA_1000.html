@@ -49,23 +49,23 @@
         <div class="p-x-1 animated fadeInUp">
           <table class="table">
             <tr>
-              <td class="hd-info">
+              <td class="hd-info" data-toggle="popup" data-target="#submenu" role="button" data-title="배합">
                 <img src="../assets/img/fm-main-01.png" alt="">
               </td>
-              <td class="hd-wo">
+              <td class="hd-wo" data-toggle="popup" data-target="#submenu" role="button" data-title="원료">
                 <img src="../assets/img/fm-main-02.png" alt="">
               </td>
             </tr>
             <tr>
-              <td class="hd-qr">
+              <td class="hd-qr" data-toggle="popup" data-target="#submenu" role="button" data-title="고로">
                 <img src="../assets/img/fm-main-03.png" alt="">
               </td>
-              <td class="hd-manual">
+              <td class="hd-manual" data-toggle="popup" data-target="#submenu" role="button" data-title="코크스&화성">
                 <img src="../assets/img/fm-main-04.png" alt="">
               </td>
             </tr>
             <tr>
-              <td class="hd-so" colspan="2">
+              <td class="hd-so" colspan="2" data-toggle="popup" data-target="#submenu" role="button" data-title="소결&소성">
                 <img src="../assets/img/fm-main-05.png" alt="">
               </td>
             </tr>
@@ -73,6 +73,38 @@
         </div>
       </div>
 
+    </div>
+
+    <div id="submenu" class="popup zoom">
+      <div class="popup-content bg-white">
+        <header class="bar bar-nav">
+          <h1 class="title" data-role="title"></h1>
+        </header>
+        <nav class="bar bar-tab">
+          <a class="tab-item bg-secondary" role="button" data-history="back">
+            닫기
+          </a>
+        </nav>
+        <div class="content">
+          <ul class="table-view">
+            <li class="table-view-cell">
+              <a class="navigate-right">
+                원저장료고Map재고
+              </a>
+            </li>
+            <li class="table-view-cell">
+              <a class="navigate-right">
+                배합 적치 실적 조회(층별)
+              </a>
+            </li>
+            <li class="table-view-cell">
+              <a class="navigate-right">
+                배합 기준 원료 Brand 성분 관리
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
