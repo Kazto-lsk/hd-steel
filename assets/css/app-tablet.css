@@ -813,7 +813,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #626470;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: -.0625rem
 }
 .hd-login.tm-login .card-header .nav-inline .nav-link.active:after {
@@ -840,7 +840,30 @@ body {
 }
 
 
-@media (min-width: 768px) {
+/*엑티브 가로화면 */
+@media (min-width: 962px) {
+
+
+  .hd-login.tm-login .hd-col-logo {
+    display: block
+  }
+  .hd-login.tm-login .hd-logo {
+    display: block;
+  }
+  .hd-login.tm-login .card {
+    margin: 2.5rem 2rem 2rem
+  }
+  .hd-login.tm-login .hd-logo {
+    padding-left: 3.5rem
+  }
+  .hd-login.tm-login small,
+  .hd-login.tm-login .small {
+    font-size: 50%;
+    font-weight: normal;
+  }
+  .hd-login.tm-login .hd-col-login .hd-logo2 {
+    display: none
+  }
   .hd-login.tm-login .card {
     margin: 2rem
   }
@@ -852,19 +875,15 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .hd-login.tm-login .card {
-    margin: 4.5rem 2rem 2rem
+/*엑티브 세로화면*/
+@media (min-width: 602px) and (max-width: 961px) {
+  .hd-login.tm-login .hd-col-logo {
+    display: none
   }
-  .hd-login.tm-login .hd-logo {
-    padding-left: 5rem
+  .hd-login.tm-login .hd-col-login .hd-logo2 {
+    display: block;
+    margin: 2rem auto;
   }
-  .hd-login.tm-login .hd-logo2 {
-    margin: 3rem auto;
-  }
-}
-
-@media (max-width: 768px) {
   .hd-login.tm-login .card {
     margin: 2rem
   }
@@ -879,7 +898,12 @@ body {
   }
 }
 
-@media (max-width: 544px) {
+
+/*스마트폰 구간*/
+@media (max-width: 601px) {
+  .hd-login.tm-login .hd-col-logo {
+    display: none
+  }
   .hd-login.tm-login .card {
     margin: 1rem;
   }
