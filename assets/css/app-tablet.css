@@ -545,6 +545,7 @@ body {
   padding-bottom: .1086rem;
 }
 .hd-card-group .btn{
+  margin-bottom: .25rem;
   padding: 0.7375rem 0;
   padding-left: 1rem;
   text-align: left;
