@@ -8,7 +8,7 @@ $('#map-close').tap(function() {
 });
 
 $('#map').on('show.rc.drawer', function () {
-  $('.snap-content').css("width","calc(100% - 28rem)");
+  $('.snap-content').css("width","calc(100% - 21rem)");
 })
 $('#map').on('hide.rc.drawer', function () {
   $('.snap-content').css("width","100%");
