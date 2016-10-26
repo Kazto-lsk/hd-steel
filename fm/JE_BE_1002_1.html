@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼저장고 MAP 재고 수정 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- header -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <a class="icon icon-bars pull-right" data-target="#drawer" data-toggle="drawer" data-direction="right" data-template="./template/drawer.html"></a>
+        <h1 class="title left">저장고 MAP 재고 수정</h1>
+      </header>
+
+      <!-- secondary header-->
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+        <div class="table-responsive">
+        <div class="form-inline nowrap">
+          <div class="form-group">
+            <label>조회일시</label>
+            <input type="date" class="form-control hd-md" id="" placeholder=""  value="2016-07-18">
+            <input type="text" class="form-control hd-sm" id="time" placeholder=""  value="11시" readonly="" data-toggle="popup" data-target="#popup-time">
+          </div>
+          <div class="form-group p-l-1">
+            <label>구분</label>
+            <input type="text" class="form-control hd-sm" id="humidity" placeholder="선택"  value="습량" readonly="" data-toggle="popup" data-target="#popup-humidity">
+          </div>
+          <div class="form-group p-l-1">
+            <label>광석구분</label>
+            <input type="text" class="form-control hd-sm" id="ore" placeholder="선택" value="석탄" readonly="" data-toggle="popup" data-target="#popup-ore">
+          </div>
+          <button type="submit" class="btn btn-primary">조회</button>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+      </div><!-- /.bar-header-secondary -->
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button" id="panzoom-remove">
+          스크롤보기
+        </a>
+        <a class="tab-item" role="button" id="panzoom-start">
+          줌보기
+        </a>
+      </nav>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="nav nav-control">
+          <a class="nav-link active" role="button" data-toggle="tab" href="./JE_BE_1002.html" data-control="push" data-transition="fade">CL-1 ~ CL-3</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_BE_1002_1.html" data-control="push" data-transition="fade">CL-4 ~ CL-6L</a>
+          <a class="nav-link" role="button" data-toggle="tab" href="./JE_BE_1002_2.html" data-control="push" data-transition="fade">CL-7 ~ CL-8</a>
+        </div>
+
+
+        <table class="table table-bordered hd-filter content-padded-y">
+          <tbody>
+            <tr>
+              <td>CL-1 : 99,538톤</td>
+              <td class="table-active">CL-2 : 181,378톤</td>
+              <td>CL-3 : 117,890톤</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-responsive">
+          <table class="table table-bordered panzoom hd-data">
+            <thead>
+              <tr>
+                <th>Cell No</th>
+                <th>Cell 길이(m)</th>
+                <th>브랜드1</th>
+                <th>불출각도1</th>
+                <th>재고량1</th>
+                <th>브랜드2</th>
+                <th>불출각도2</th>
+                <th>재고량2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-xs-center hd-serial"></th>
+                <td class="text-xs-center">30</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+                <th scope="row" class="text-xs-center">PILS</th>
+                <td>4.08</td>
+                <td>22,290</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
+      </div><!-- /.content -->
+    </div><!-- /.snap-content -->
+
+
+    <!-- Popup 시간 -->
+    <div id="popup-time" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 습량/건량 -->
+    <div id="popup-humidity" class="popup popup-sm zoom">
+    </div>
+
+    <!-- Popup 광석구분 -->
+    <div id="popup-ore" class="popup popup-sm zoom">
+    </div>
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
+    <script src="../assets/js/app-fm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
