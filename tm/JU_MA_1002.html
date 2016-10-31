@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>이동 주유 차량 운전원 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
+    <link rel="stylesheet" href="../assets/extensions/snap/1.9.3/rc-snap.css">
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="btn btn-outline-secondary pull-left" id="hd-menu" href="./IL_GU_MA_1000.html">
+        <span class="icon icon-home2"></span>
+      </a>
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-outline-secondary"  data-target="#map" data-toggle="drawer"  data-backdrop="false" id="map-open-half">
+          <span class="icon icon-window-half"></span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer"  data-showType="expand" data-backdrop="false" id="map-open-full">
+          <span class="icon icon-window-full"></span>
+        </button>
+      </div>
+      <h1 class="title">이동 주유 차량 운전원</h1>
+    </header>
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left" id="map">
+
+        <header class="bar bar-nav">
+          <button class="btn btn-link btn-nav pull-right" data-history="back">
+            <span class="icon icon-close"></span>
+          </button>
+        </header><!-- /.bar-nav -->
+
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2" class="nowrap">
+                  총 거리 : 1.5Km<br>소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
+        <div class="content">
+          <div id="map-view"></div>
+        </div><!-- /.content -->
+
+      </div><!-- /.snap-drawer-left -->
+    </div><!-- /.snap-drawers -->
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+
+          <div class="hd-message row">
+            <div class="col-xs-8 hd-info">
+              <div class="media">
+                <span class="media-left" ><span class="media-object icon icon-rc icon-info"></span></span>
+                <div class="media-body">
+                  ￼주유원 수행 작업목록입니다.
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4 hd-num">
+              [2/4]
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered hd-table-01">
+              <colgroup>
+                <col width="18%">
+                <col width="20%">
+                <col width="18%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">주유원</th>
+                  <td colspan="3">홍길동</td>
+                </tr>
+                <tr>
+                  <th scope="row">단말기 번호</th>
+                  <td>4001</td>
+                  <th scope="row">차량번호</th>
+                  <td>충남06가9999</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">마지막 주유량</th>
+                  <td>20l (100~120)</td>
+                  <th scope="row">현재 주유 계기값</th>
+                  <td>120</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div><!-- /.table-responsive -->
+
+          <div class="row hd-card-group">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">
+                <div class="media">
+                  <a class="media-left" href="./IL_GU_CT_1001.html">
+                    <img class="media-object" src="../assets/img/JU_MA_icon_01.png" alt="">
+                  </a>
+                  <div class="media-body" style="height: 2.9rem; line-height: 2.9rem">
+                    주유시작
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">
+                <div class="media">
+                  <a class="media-left" href="#">
+                    <img class="media-object" src="../assets/img/JU_MA_icon_02.png" alt="">
+                  </a>
+                  <div class="media-body">
+                    주유차량<br>초기화
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">
+                <div class="media">
+                  <a class="media-left" href="#">
+                    <img class="media-object" src="../assets/img/JU_MA_icon_03.png" alt="" style="height: 2.87rem">
+                  </a>
+                  <div class="media-body">
+                    차량상태<br>초기화
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">
+                <div class="media">
+                  <a class="media-left" href="#">
+                    <img class="media-object" src="../assets/img/JU_MA_icon_04.png" alt="">
+                  </a>
+                  <div class="media-body" style="height: 2.9rem; line-height: 2.9rem">
+                    주유이력
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <button type="button" class="btn btn-primary btn-block">
+                <div class="media">
+                  <a class="media-left" href="#">
+                    <img class="media-object" src="../assets/img/JU_MA_icon_05.png" alt="">
+                  </a>
+                  <div class="media-body" style="height: 2.9rem; line-height: 2.9rem">
+                    작업종료
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div><!-- /.row -->
+
+        </div><!-- /.content-padded -->
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap-tm.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+    <!-- 임시 구글맵 데모용 -->
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
+     </script>
+
+    <script>
+
+
+
+    </script>
+
+  </body>
+</html>
