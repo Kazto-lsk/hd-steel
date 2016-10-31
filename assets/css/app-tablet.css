@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*app-tablet.css*/
 html {
   font-size: 16px;
@@ -939,4 +941,37 @@ body {
   left: .3rem;
   width: 1.3rem;
   height: 1.3rem;
+}
+
+.card.hd-well {
+  margin: 0 0 .7rem;
+  padding: .625rem 0;
+  text-align: center;
+  border-radius: 0;
+  border-left: none;
+  border-right: none
+}
+
+.card.hd-well .form-group label {
+  margin-bottom: 0;
+  padding-right: 1rem;
+  color: #666666
+}
+.card.hd-well .form-control {
+  margin-bottom: 0;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+}
+.card.hd-well .form-inline .btn {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+.card.hd-well .form-inline .btn-primary {
+  background-color: #297bd2;
+  border-color: #297bd2;
 }
