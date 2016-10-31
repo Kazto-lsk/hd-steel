@@ -387,6 +387,14 @@ body {
   border-radius: 0;
 }
 
+.popup .popup-content {
+  position: relative;
+}
+.popup .page {
+  position: absolute;
+}
+
+
 /*process*/
 .flexer, .progress-indicator {
     display: -webkit-box;
