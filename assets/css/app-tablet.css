@@ -233,7 +233,7 @@ body {
   background-color: #f0f0f4
 }
 .content-padded {
-    margin: 0.9375rem;
+    margin: 0.4375rem 0.9375rem;
 }
 
 
@@ -519,7 +519,7 @@ body {
 .hd-message {
   margin-bottom: .3rem;
   font-size: .85rem;
-  line-height: 1.5rem
+  line-height: 1.6rem
 }
 .hd-message .media-left {
     padding-right: 5px;
@@ -944,7 +944,7 @@ body {
 }
 
 .card.hd-well {
-  margin: 0 0 .7rem;
+  margin: -.325rem 0 .7rem;
   padding: .625rem 0;
   text-align: center;
   border-radius: 0;
