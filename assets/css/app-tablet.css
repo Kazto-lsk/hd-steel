@@ -371,12 +371,21 @@ body {
   font-size: 1.125rem;
   border-radius: 0.125rem;
 }
-
 .popup .btn-primary {
   background-color: #1c74d5;
   border-color: #1c74d5
 }
 
+.popup .table-view {
+  max-height: 300px;
+  margin-bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  border-top: .0625rem solid #cccccc;
+  border-bottom: .0625rem solid #cccccc;
+  border-radius: 0;
+}
 
 /*process*/
 .flexer, .progress-indicator {
