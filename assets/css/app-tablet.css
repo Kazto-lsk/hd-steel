@@ -387,11 +387,19 @@ body {
   border-radius: 0;
 }
 
+
+/*page in popup*/
+.popup {
+  overflow: hidden;
+}
 .popup .popup-content {
   position: relative;
 }
 .popup .page {
   position: absolute;
+}
+.popup .page .content {
+  height: 100%
 }
 
 
