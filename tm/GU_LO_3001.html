@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>￼운전원변경 | 현대제철 스마트팩토리 마크업</title>
+    <title>건강확인 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -23,7 +23,7 @@
 
     <!-- header -->
     <header class="bar bar-nav bar-dark bg-primary">
-      <h1 class="title">￼운전원변경</h1>
+      <h1 class="title">차량상태점검</h1>
     </header>
 
     <div class="snap-drawers">
@@ -69,11 +69,17 @@
 
       <div class="bar bar-standard bar-footer">
         <div class="row hd-buttons">
-          <div class="col-md-2 offset-md-4 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-sm-3 col-xs-3">
+            <button type="button" class="btn btn-primary btn-block">차량 변경</button>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-3 col-xs-3">
             <button type="button" class="btn btn-secondary btn-block">이전</button>
           </div>
-          <div class="col-md-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-sm-3 col-xs-3">
             <button type="button" class="btn btn-secondary btn-block">다음</button>
+          </div>
+          <div class="col-md-2 offset-md-2 col-sm-3 col-xs-3">
+            <button type="button" class="btn btn-primary btn-block">확인</button>
           </div>
         </div>
       </div><!-- /.bar-footer -->
@@ -89,7 +95,7 @@
                 <div class="media">
                   <span class="media-left"><span class="media-object icon icon-rc icon-info"></span></span>
                   <div class="media-body">
-                    ￼선택 가능한 운전원 정보 입니다.
+                    ￼￼￼현재 차량상태를 점검한 결과를 등록 해 주세요.
                   </div>
                 </div>
               </div>
@@ -99,53 +105,88 @@
             </div>
           </div><!-- /.hd-message -->
 
-          <div class="card hd-well">
-            <form class="form-inline">
-              <div class="form-group">
-                <label for="">성명</label>
-                <input type="text" class="form-control" id="" placeholder="">
-              </div>
-              <button type="submit" class="btn btn-primary">검색</button>
-            </form>
-          </div>
+          <table class="table table-bordered hd-table-01">
+            <colgroup>
+              <col width="20%">
+              <col>
+              <col width="20%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">차량번호</th>
+                <td>충남06고9999</td>
+                <th scope="row">운전자</th>
+                <td>홍길동</td>
+              </tr>
+            </tbody>
+          </table>
 
           <div class="table-responsive">
             <table class="table table-bordered hd-table-02">
               <colgroup>
-
+                <col>
+                <col width="15%">
+                <col width="15%">
               </colgroup>
               <thead class="thead-default">
                 <tr>
-                  <th>회사명</th>
-                  <th>사번</th>
-                  <th>이름</th>
-                  <th>현재 탑승장비</th>
+                  <th>차량상태</th>
+                  <th>정상</th>
+                  <th>이상</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>OOOO社</td>
-                  <td>1001</td>
-                  <td class="text-primary">한OO</td>
-                  <td>(없음)</td>
+                  <td class="detail">
+                    1. 등화장치 이상여부
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio1" type="radio" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio1" type="radio" class="custom-control-input" checked>
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
                 </tr>
                 <tr>
-                  <td>OOOO社</td>
-                  <td>1002</td>
-                  <td class="text-primary">이OO</td>
-                  <td>충남06고1111</td>
+                  <td class="detail">
+                    2. 제동장치 이상여부
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio2" type="radio" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio2" type="radio" class="custom-control-input" checked>
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
                 </tr>
                 <tr>
-                  <td>OOOO社</td>
-                  <td>1001</td>
-                  <td class="text-primary">한OO</td>
-                  <td>(없음)</td>
-                </tr>
-                <tr>
-                  <td>OOOO社</td>
-                  <td>1002</td>
-                  <td class="text-primary">이OO</td>
-                  <td>충남06고1111</td>
+                  <td class="detail">
+                    3. 차량의 점검상태는 ...
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio3" type="radio" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input id="" name="radio3" type="radio" class="custom-control-input" checked>
+                      <span class="custom-control-indicator"></span>
+                    </label>
+                  </td>
                 </tr>
               </tbody>
             </table>
