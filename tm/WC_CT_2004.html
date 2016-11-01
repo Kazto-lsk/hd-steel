@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼후판 출하장 순회검사 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+    <link href="../assets/css/app-qm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <h1 class="title left">제품 반납 요청</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+      <div class="table-responsive">
+        <div class="form-inline nowrap">
+          <div class="form-group">
+            <label for="">제품번호</label>
+            <input type="number" class="form-control hd-sm" id="" placeholder="">
+          </div>
+          <button type="button" class="btn btn-secondary">바코드인식</button>
+          <button type="submit" class="btn btn-primary">조회</button>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data hd-sm">
+          <thead>
+            <tr>
+              <th>제품번호</th>
+              <th>진도코드</th>
+              <th>고객사</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center">
+              <td>FAXXXXXXXX</td>
+              <td>종판대기</td>
+              <td>현대중공업</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data hd-sm">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>내용</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center">
+              <td>요청자(사번)</td>
+              <!-- 수정시에 input의 readonly 속성을 제거합니다. -->
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="XXXXXXX" readonly></td>
+              <td rowspan="3">공용</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>사내전화</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value=""></td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>요청부서</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="당)품질보증팀" readonly></td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>반납구분</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="실물반납" readonly></td>
+              <td rowspan="4"></td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>반납원인</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="보수 및 재검사" readonly></td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>차공정</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="정정야드" readonly></td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>기타사항</td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력" value="부적합 QA 반납재" readonly></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <div class="content-padded">
+        <button type="button" class="btn btn-secondary btn-block">수정</button>
+      </div>
+      <div class="content-padded">
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-secondary btn-block">이전화면</button>
+          </div>
+          <div class="col-xs-6 p-l-0">
+            <button type="button" class="btn btn-secondary btn-block">반납요청</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <br>
+
+    </div><!-- /.content -->
+
+
+
+    <script src="../assets/js/app-qm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
