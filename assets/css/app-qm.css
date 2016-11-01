@@ -1,0 +1,21 @@
+.bar-header-secondary {
+  text-align: center;
+  line-height: 3.2rem;
+}
+
+tr[role="button"]:active {
+  background-color: #f4f8fd;
+  border: .125rem solid #74a9e3;
+}
+.hd-data.table td.table-active {
+  background-color: #f0f4fb;
+}
+
+@media (max-width: 640px){
+.form-control.hd-sm {
+    width: 100px;
+  }
+}
+.form-control.hd-sm {
+    width: 100px;
+}

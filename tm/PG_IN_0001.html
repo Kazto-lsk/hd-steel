@@ -14,6 +14,31 @@
     <link rel="stylesheet" href="../assets/css/rc-progress.css">
     <link rel="stylesheet" href="../assets/css/app-tablet.css">
 
+    <style>
+
+    /*엑티브 가로화면 */
+    @media (min-width: 962px) {
+      .hd-login .hd-logo {
+        margin: 1.125rem 0 2rem;
+      }
+      .hd-login .hd-logo img {
+        width: 6rem;
+      }
+      .hd-login.tm-login .card.hd-intro {
+        padding: 37px 1rem;
+      }
+      .hd-login.tm-login .card.hd-intro h1 img {
+        width: 6rem;
+      }
+    }
+    .hd-login .hd-logo img {
+      width: 6rem;
+    }
+    .hd-login.tm-login .card.hd-intro h1 img {
+      width: 7rem;
+    }
+    </style>
+
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/rc.js"></script>
@@ -34,7 +59,7 @@
           <p class="m-b-0">네트워크 정상</p>
         </div><!-- /.card -->
 
-        <p class="hd-loader m-a-3">
+        <p class="hd-loader m-x-3 m-y-2">
           <progress class="progress progress-animated" value="10" max="100">10%</progress>
           <span>시스템을 가동 중입니다. <br> 잠시만 기다리세요.</span>
         </p>
