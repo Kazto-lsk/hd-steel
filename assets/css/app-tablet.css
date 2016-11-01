@@ -796,7 +796,10 @@ body {
 .hd-login.tm-login .content {
   background-image: url(../img/login-tm-bg.png);
 }
-
+.hd-login.tm-login .modal .content ,
+.hd-login.tm-login .popup .content {
+  background-image: url();
+}
 .hd-login .hd-logo h1 {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -870,8 +873,9 @@ body {
 
 /*엑티브 가로화면 */
 @media (min-width: 962px) {
-
-
+  .hd-intro-wrap {
+    width: 50%;
+  }
   .hd-login.tm-login .hd-col-logo {
     display: block
   }
@@ -905,6 +909,9 @@ body {
 
 /*엑티브 세로화면*/
 @media (min-width: 602px) and (max-width: 961px) {
+  .hd-intro-wrap {
+    width: 70%;
+  }
   .hd-login.tm-login .hd-col-logo {
     display: none
   }
@@ -929,6 +936,12 @@ body {
 
 /*스마트폰 구간*/
 @media (max-width: 601px) {
+  .hd-intro-wrap {
+    width: 90%;
+  }
+  .hd-login .hd-logo {
+    margin: 3rem 0 1rem !important;
+  }
   .hd-login.tm-login .hd-col-logo {
     display: none
   }
@@ -949,7 +962,6 @@ body {
   }
 }
 .hd-intro-wrap {
-  width: 70%;
   margin: 0 auto
 }
 @media (min-width: 1200px) {
@@ -999,4 +1011,40 @@ body {
 .card.hd-well .form-inline .btn-primary {
   background-color: #297bd2;
   border-color: #297bd2;
+}
+
+/*popup*/
+@media (max-width: 640px) {
+  .hd-datapopup .content {
+    min-height: 100px;
+    max-height: 300px;
+  }
+}
+.popup .bar.bar-nav {
+  border-bottom: .0625rem solid #000;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.popup .table td {
+  text-align: center;
+}
+.popup .table tr:active {
+  background-color: #f4f8fd;
+  border: .125rem solid #74a9e3
+}
+@media (max-width: 580px) {
+  .popup.popup-sm .content {
+    max-height: 300px;
+  }
+}
+.popup .tab-item.bg-secondary {
+  background-color: #848896;
+  color: #fff !important
+}
+.popup .nav-control .nav-link.active {
+  color: #333 !important;
+  font-weight: 700
+}
+.popup .nav-control .nav-link.active:after {
+  height: 0;
 }

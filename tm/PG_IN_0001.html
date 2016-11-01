@@ -42,8 +42,29 @@
 
     </div><!-- /.content -->
 
+    <!-- popup 오류안내 -->
+    <div id="PG_IN_0001" class="popup zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav m-x-1">
+          <h1 class="title">오류안내</h1>
+        </header>
+        <nav class="bar bar-tab">
+          <a class="tab-item bg-secondary active" role="button" data-history="back">
+            다시시도
+          </a>
+        </nav>
+        <div class="content">
+          <div class="p-a-3 text-xs-center">
+            네크워크 상태 확인 및 서버통신이 원할하 지 않습니다.
+            다시시도 해 주시기 바랍니다.
+          </div>
+        </div>
+      </div>
+    </div>
+
    <script>
 
+    $('#PG_IN_0001').popup('show')
 
    </script>
   </body>
