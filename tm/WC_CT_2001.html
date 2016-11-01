@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼후판 출하장 순회검사 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+    <link href="../assets/css/app-qm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <h1 class="title left">제품 정보 조회</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+      <div class="table-responsive">
+        <div class="form-inline nowrap">
+          <div class="form-group">
+            <label for="">제품번호</label>
+            <input type="number" class="form-control hd-sm" id="" placeholder="">
+          </div>
+          <button type="button" class="btn btn-secondary">바코드인식</button>
+          <button type="submit" class="btn btn-primary">조회</button>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data hd-sm">
+          <thead>
+            <tr>
+              <th>사이즈</th>
+              <th>강종</th>
+              <th>고객사</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center">
+              <td>20 x 2810 x 13310</td>
+              <td>LR-E</td>
+              <td>현대중공업</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data hd-sm">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>기준</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center">
+              <td>용접/보수</td>
+              <td>불가 또는 허용(2%)</td>
+              <td rowspan="6">표면등급<br>A</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>두께공차</td>
+              <td>-0.0 / +0.90</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>폭공차</td>
+              <td>-0.0 / +0.90</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>길이공차</td>
+              <td>-0.0 / +0.90</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>평탄도</td>
+              <td>-0.0 / +0.90</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td>생산기한일/긴급재</td>
+              <td>-0.0 / +0.90</td>
+            </tr>
+            <tr class="text-xs-center">
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력"></td>
+              <td><input type="text" class="form-control hd-md" id="" placeholder="입력"></td>
+              <td><input type="text" class="form-control hd-sm" id="" placeholder="입력"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <div class="content-padded">
+        <div class="row">
+          <div class="col-xs-4">
+            <button type="button" class="btn btn-secondary btn-block">행추가</button>
+          </div>
+          <div class="col-xs-4 p-l-0">
+            <button type="button" class="btn btn-primary btn-block">저장</button>
+          </div>
+          <div class="col-xs-4 p-l-0">
+            <button type="button" class="btn btn-secondary btn-block">반납요청</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data hd-sm">
+          <thead>
+            <tr>
+              <th>상면결함</th>
+              <th>하면결함</th>
+              <th>결함위치</th>
+              <th>첨부파일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center">
+              <td role="button" data-toggle="modal" data-target="#WC_CT_2002"><span class="text-muted">선택</span></td>
+              <td role="button" data-toggle="modal" data-target="#WC_CT_2002"><span class="text-muted">선택</span></td>
+              <td role="button" data-toggle="modal" data-target="#WC_CT_2003"><span class="text-muted">선택</span></td>
+              <td role="button"><span class="text-muted">첨부</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+
+      <br>
+
+    </div><!-- /.content -->
+
+
+    <!-- 상(or 하)면 결함코드 선택 모달 -->
+    <div id="WC_CT_2002" class="modal">
+      <header class="bar bar-nav bar-inverse bg-primary">
+        <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+        <h1 class="title left p-l-2">상(or 하)면 결함코드 선택</h1>
+      </header>
+      <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary active" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+      <div class="content">
+        <table class="table table-bordered panzoom hd-data">
+          <thead>
+            <tr>
+              <th>코드</th>
+              <th>결함명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center" role="button">
+              <td>111</td>
+              <td>Lamination(이중판)</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <td>112</td>
+              <td>표면기포흠</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <td>113</td>
+              <td>부푼흠</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <td>114</td>
+              <td>띠크랙</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /.modal -->
+
+
+        <!-- 결함위치  선택 모달 -->
+        <div id="WC_CT_2003" class="modal">
+          <header class="bar bar-nav bar-inverse bg-primary">
+            <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+            <h1 class="title left p-l-2">결함위치 선택</h1>
+          </header>
+          <nav class="bar bar-tab">
+            <a class="tab-item bg-secondary active" role="button" data-history="back">
+              닫기
+            </a>
+          </nav>
+          <div class="content">
+            <table class="table table-bordered panzoom hd-data">
+              <thead>
+                <tr>
+                  <th>코드</th>
+                  <th>결함명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="text-xs-center" role="button">
+                  <td>11</td>
+                  <td>TOP / DS</td>
+                </tr>
+                <tr class="text-xs-center" role="button">
+                  <td>12</td>
+                  <td>TOP / CENTER</td>
+                </tr>
+                <tr class="text-xs-center" role="button">
+                  <td>13</td>
+                  <td>TOP / OS</td>
+                </tr>
+                <tr class="text-xs-center" role="button">
+                  <td>14</td>
+                  <td>MIDDLE / DS</td>
+                </tr>
+                <tr class="text-xs-center" role="button">
+                  <td>기타</td>
+                  <td>직접입력</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!-- /.modal -->
+
+
+    <script src="../assets/js/app-qm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
