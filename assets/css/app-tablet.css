@@ -796,7 +796,8 @@ body {
 .hd-login.tm-login .content {
   background-image: url(../img/login-tm-bg.png);
 }
-.hd-login.tm-login .modal .content ,
+.hd-login .modal .content,
+.hd-login.tm-login .modal .content,
 .hd-login.tm-login .popup .content {
   background-image: url();
 }
