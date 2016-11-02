@@ -1286,6 +1286,10 @@ hr {
   -o-background-size: cover;
 }
 
+.hd-login .modal .content,
+.hd-login .popup .content {
+  background-image: url();
+}
 
 .hd-login .content-padded {
   padding: 1rem
