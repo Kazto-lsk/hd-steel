@@ -85,9 +85,9 @@
   border-top: 0.0625rem solid rgba(0, 0, 0, 0.075);
   border-bottom: 0;
 }
-
+.table input.form-control,
 .table select.form-control {
-  margin-bottom: 0
+  margin-bottom: 0 !important
 }
 
 .table .padding-sm {

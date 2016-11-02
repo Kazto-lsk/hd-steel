@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼해송 영PT조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+    <link href="../assets/css/app-ch.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <a class="icon icon-marker pull-right"></a>
+      <h1 class="title left">영PALLET 조회</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white text-primary">
+      <span class="icon icon-rc icon-info text-primary"></span> 영PALLET 조회하기를 선택하세요.
+    </div>
+
+
+    <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" role="button">
+        종료
+      </a>
+    </nav>
+
+    <!-- main content -->
+    <div class="content">
+
+      <div class="table-responsive">
+        <table class="table table-bordered hd-data">
+          <colgroup>
+            <col width="20%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="text-xs-left" scope="row">선명</th>
+              <td class="text-xs-left padding-sm">
+                <input type="text" class="form-control m-b-0" id="01" placeholder=""  value="제19금진호 " readonly="" data-toggle="popup" data-target="#popup-01">
+              </td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">홀드</th>
+              <td class="text-xs-left padding-sm">
+                <input type="text" class="form-control m-b-0" id="02" placeholder=""  value="전체 " readonly="" data-toggle="popup" data-target="#popup-02">
+              </td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">위치</th>
+              <td class="text-xs-left padding-sm">
+                <input type="text" class="form-control m-b-0" id="03" placeholder=""  value="후판2대기장 " readonly="" data-toggle="popup" data-target="#popup-03">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="content-padded">
+        <button class="btn btn-primary btn-block">조회하기</button>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered hd-data">
+          <colgroup>
+            <col width="20%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="text-xs-left" scope="row">PALLET</th>
+              <td class="text-xs-left" colspan="3">YP002</td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">그룹1</th>
+              <td class="text-xs-left">40</td>
+              <th class="text-xs-left" scope="row">그룹2</th>
+              <td class="text-xs-left">-</td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">수량</th>
+              <td class="text-xs-left">21</td>
+              <th class="text-xs-left" scope="row">중량</th>
+              <td class="text-xs-left">84,914</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <div class="table-responsive">
+        <table class="table table-bordered hd-data">
+          <colgroup>
+            <col width="20%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="text-xs-left" scope="row">PALLET</th>
+              <td class="text-xs-left" colspan="3">YP010</td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">그룹1</th>
+              <td class="text-xs-left">40</td>
+              <th class="text-xs-left" scope="row">그룹2</th>
+              <td class="text-xs-left">-</td>
+            </tr>
+            <tr>
+              <th class="text-xs-left" scope="row">수량</th>
+              <td class="text-xs-left">21</td>
+              <th class="text-xs-left" scope="row">중량</th>
+              <td class="text-xs-left">84,914</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive -->
+
+      <br>
+    </div><!-- /.content -->
+
+    <!-- Popup 검사유무 -->
+    <div id="popup-01" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">선명</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="item 1" id="">item 1</td>
+                </tr>
+                <tr>
+                  <td data-value="02" data-label="item 2" id="">item 2</td>
+                </tr>
+                <tr>
+                  <td data-value="03" data-label="item 3" id="">item 3</td>
+                </tr>
+                <tr>
+                  <td data-value="04" data-label="item 4" id="">item 4</td>
+                </tr>
+                <tr>
+                  <td data-value="05" data-label="item 5" id="">item 5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Popup 검사유무 -->
+    <div id="popup-02" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">홀드</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="" id="">전체</td>
+                </tr>
+                <tr>
+                  <td data-value="02" data-label="" id="">item01</td>
+                </tr>
+                <tr>
+                  <td data-value="03" data-label="" id="">item02</td>
+                </tr>
+                <tr>
+                  <td data-value="04" data-label="" id="">item03</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 검사유무 -->
+    <div id="popup-03" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">위치</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="item 1" id="">후판1 대기장</td>
+                </tr>
+                <tr>
+                  <td data-value="01" data-label="item 2" id="">후판2 대기장</td>
+                </tr>
+                <tr>
+                  <td data-value="01" data-label="item 3" id="">C열연 대기장</td>
+                </tr>
+                <tr>
+                  <td data-value="01" data-label="item 4" id="">부두 대기장</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
