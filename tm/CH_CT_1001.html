@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>￼검사 대상재 조회 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+    <link href="../assets/css/app-qm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="icon icon-simbol pull-left"></a>
+      <h1 class="title left">검사 대상재 조회</h1>
+    </header>
+
+    <!-- secondary header-->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
+      <div class="table-responsive">
+        <div class="form-inline nowrap">
+          <div class="form-group">
+            <label class="sr-only" for="">HEAT NO</label>
+            <input type="number" class="form-control hd-sm" id="" placeholder="HEAT NO">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="">주문번호</label>
+            <input type="number" class="form-control hd-sm" id="" placeholder="주문번호">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" >야드위치</label>
+            <input type="text" class="form-control hd-sm" id="01" placeholder="야드위치"  value="" readonly="" data-toggle="popup" data-target="#popup-01">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" >진도코드</label>
+            <input type="text" class="form-control hd-sm" id="02" placeholder="진도코드" value="" readonly="" data-toggle="popup" data-target="#popup-02">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" >검사유무</label>
+            <input type="text" class="form-control hd-sm" id="03" placeholder="검사유무" value="" readonly="" data-toggle="popup" data-target="#popup-03">
+          </div>
+          <button type="submit" class="btn btn-primary">조회</button>
+        </div><!-- /.form-inline -->
+      </div><!-- /.table-responsive -->
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+
+      <div class="table-responsive">
+        <table class="table table-bordered panzoom hd-data">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>주편번호</th>
+              <th>강종</th>
+              <th>MS두께</th>
+              <th>MS폭</th>
+              <th>MS길이</th>
+              <th>진도</th>
+              <th>위치</th>
+              <th>처리상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+            <tr class="text-xs-center" role="button">
+              <th scope="row" class="hd-serial"></th>
+              <td class="table-active">NOOOOOOO</td>
+              <td>XXX</td>
+              <td>250</td>
+              <td>1200</td>
+              <td>7000</td>
+              <td>A</td>
+              <td>SMXXXXXX</td>
+              <td>미실시</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br>
+
+    </div><!-- /.content -->
+
+
+    <!-- Popup 야드위치 -->
+    <div id="popup-01" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">야드위치</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="item 1" id="">item 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 진도코드 -->
+    <div id="popup-02" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">진도코드</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="item 1" id="">item 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 검사유무 -->
+    <div id="popup-03" class="popup popup-sm zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav content-padded-x bg-white">
+          <h1 class="title">검사유무</h1>
+        </header>
+        <nav class="bar bar-tab">
+        <a class="tab-item bg-secondary" role="button" data-history="back">
+          닫기
+        </a>
+      </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td data-value="01" data-label="item 1" id="">item 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/app-qm.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>
