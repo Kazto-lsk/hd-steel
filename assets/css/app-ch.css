@@ -67,6 +67,9 @@
   font-size: 1.5rem;
 }
 
+.bar-tab.bar-footer-secondary ~ .content {
+    padding-bottom: 6.3rem;
+}
 
 .hd-data.table tbody th,
 .hd-data.table tbody td {
