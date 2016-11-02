@@ -783,9 +783,9 @@ body {
    font-size: 1rem;
 }
 .popup .btn-secondary {
-  color: #444;
-  background-color: #fff;
-  border-color: #848896;
+  /*color: #444;*/
+  /*background-color: #fff;*/
+  /*border-color: #848896;*/
   box-shadow: none
 }
 .popup .content .table {
