@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <title>￼검사 대상재 조회 | 현대제철 스마트팩토리 마크업</title>
+    <title>￼열연-열연 스케줄 | 현대제철 스마트팩토리 마크업</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- kimsQ RC CSS -->
@@ -13,7 +13,7 @@
 
     <link href="../assets/css/app.css" rel="stylesheet">
     <link href="../assets/css/app-fm.css" rel="stylesheet">
-    <link href="../assets/css/app-qm.css" rel="stylesheet">
+    <link href="../assets/css/app-ch.css" rel="stylesheet">
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -29,155 +29,61 @@
     <!-- header -->
     <header class="bar bar-nav bar-dark bg-primary">
       <a class="icon icon-simbol pull-left"></a>
-      <h1 class="title left">검사 대상재 조회</h1>
+      <h1 class="title left">Trailer 작업</h1>
     </header>
 
     <!-- secondary header-->
-    <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary">
-      <div class="table-responsive">
-        <div class="form-inline nowrap">
-          <div class="form-group">
-            <label class="sr-only" for="">HEAT NO</label>
-            <input type="number" class="form-control hd-sm" id="" placeholder="HEAT NO">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" for="">주문번호</label>
-            <input type="number" class="form-control hd-sm" id="" placeholder="주문번호">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" >야드위치</label>
-            <input type="text" class="form-control hd-sm" id="01" placeholder="야드위치"  value="" readonly="" data-toggle="popup" data-target="#popup-01">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" >진도코드</label>
-            <input type="text" class="form-control hd-sm" id="02" placeholder="진도코드" value="" readonly="" data-toggle="popup" data-target="#popup-02">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" >검사유무</label>
-            <input type="text" class="form-control hd-sm" id="03" placeholder="검사유무" value="" readonly="" data-toggle="popup" data-target="#popup-03">
-          </div>
-          <button type="submit" class="btn btn-primary">조회</button>
-        </div><!-- /.form-inline -->
-      </div><!-- /.table-responsive -->
+    <div class="bar bar-standard bar-header-secondary hd-bar-white text-primary">
+      <span class="icon icon-rc icon-info text-primary"></span>  작업요구 버튼을 눌러 주세요.
     </div>
+    <nav class="bar bar-tab bar-dark bg-inverse">
+      <a class="tab-item active" role="button">
+        종료하기
+      </a>
+      <a class="tab-item" role="button">
+        도착등록
+      </a>
+      <a class="tab-item" role="button">
+        작업요구
+      </a>
+      <a class="tab-item active" role="button">
+        조회하기
+      </a>
+    </nav>
 
     <!-- main content -->
     <div class="content">
 
+      <h5 class="text-xs-center m-t-1">충남99사6398(G6398)</h5>
       <div class="table-responsive">
-        <table class="table table-bordered panzoom hd-data">
-          <thead>
-            <tr>
-              <th>NO</th>
-              <th>주편번호</th>
-              <th>강종</th>
-              <th>MS두께</th>
-              <th>MS폭</th>
-              <th>MS길이</th>
-              <th>진도</th>
-              <th>위치</th>
-              <th>처리상태</th>
-            </tr>
-          </thead>
+        <table class="table table-bordered hd-data">
+          <colgroup>
+            <col width="40%">
+          </colgroup>
           <tbody>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">배차 창고명</th>
+              <td class="text-xs-left">B열연 창고</td>
             </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">지시(조합)번호</th>
+              <td class="text-xs-left">[조합상차번호]</td>
             </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">차량 현위치</th>
+              <td class="text-xs-left">3100</td>
             </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">행선 위치</th>
+              <td class="text-xs-left">B열연 창고</td>
             </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">상차 수량/중량</th>
+              <td class="text-xs-left">B열연 창고</td>
             </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
-            </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
-            </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
-            </tr>
-            <tr class="text-xs-center" role="button">
-              <th scope="row" class="hd-serial"></th>
-              <td class="table-active">NOOOOOOO</td>
-              <td>XXX</td>
-              <td>250</td>
-              <td>1200</td>
-              <td>7000</td>
-              <td>A</td>
-              <td>SMXXXXXX</td>
-              <td>미실시</td>
+            <tr>
+              <th class="text-xs-left" scope="row">검수상태</th>
+              <td class="text-xs-left">완료 or 미완료</td>
             </tr>
           </tbody>
         </table>

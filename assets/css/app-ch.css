@@ -48,3 +48,30 @@
 .em-main .table td img {
   height: 5rem;
 }
+
+
+
+.bar-header-secondary {
+  top: 2.8125rem;
+  height: 2.34375rem;
+  line-height: 2.34375rem;
+  background-color: #fff;
+}
+.bar-header-secondary ~ .content {
+  padding-top: 5.5rem;
+}
+.bar-header-secondary .icon {
+  top: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+}
+
+
+.hd-data.table tbody th,
+.hd-data.table tbody td {
+  padding: 0.75rem 0.75rem ;
+  vertical-align: top;
+  border-top: 0.0625rem solid #b4b8c4;
+  font-weight: normal;
+}
