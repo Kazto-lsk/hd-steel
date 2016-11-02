@@ -1,0 +1,50 @@
+/*main*/
+
+.fm-main .bar-footer {
+  background-color: transparent;;
+  border-top: none
+}
+.fm-main .content {
+  background-image: url("../img/fm-main-bg.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.em-main .hd-title {
+  width: 8.625rem;
+  padding-top: .3rem;
+}
+.em-main .table td.hd-ps-345 {
+  background-image: url('../img/ch-main-345-bg.png');
+  background-size: cover;
+}
+.em-main .table td.hd-ps-345.hd-02 {
+  background-position: 50% 0
+}
+.em-main .table td.hd-ps-345.hd-03 {
+  background-position: 90% 0
+}
+.em-main .table td.hd-wc {
+  background-color: #23335d;
+  background-image: url('../img/qm-main-02-bg.png');
+  background-size: cover;
+}
+.em-main .table td.hd-pt {
+  background-color: #636c73;
+  background-size: cover;
+}
+.em-main .table td.hd-photoset {
+  height: 5.5rem;
+  background-color: #1c74d5;
+  background-size: cover;
+}
+
+.fm-main .modal .content,
+.fm-main .popup .content {
+  background-image: none
+}
+.em-main .table td img {
+  height: 5rem;
+}
