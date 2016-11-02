@@ -285,7 +285,7 @@ body {
 .table th,
 .table td {
   padding: 0.43rem 0.5rem;
-  border: 0.043rem solid #ccc;
+  border: 1px solid #ccc;
 }
 .table-bordered th {
   background-color: #e6e6ea;
@@ -749,13 +749,13 @@ body {
 
 @media (min-width: 768px) {
   .popup.popup-lg {
-    max-width: 980px;
+    max-width: 580px;
     min-width: 320px;
     width: 100%
   }
   .popup.popup-lg .content {
       min-height: 210px;
-      max-height: 650px;
+      max-height: 450px;
       border-top: 0;
       border-bottom: 0;
       border-radius: 0;
@@ -1048,4 +1048,13 @@ body {
 }
 .popup .nav-control .nav-link.active:after {
   height: 0;
+}
+
+.bar .bar-text {
+  position: relative;
+  z-index: 20;
+  padding-top: .685rem;
+  padding-bottom: .625rem;
+  font-size: 1rem;
+  color: #373a3c;
 }
