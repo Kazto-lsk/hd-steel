@@ -20,6 +20,19 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/rc.js"></script>
 
+    <style>
+      .tab-content {
+        position: relative;
+      }
+      .tab-content .tab-pane.active {
+        position: absolute;
+        top:0;
+        left: 0;
+        right:0;
+        width: 100%
+      }
+    </style>
+
   </head>
   <body class="hd-sub hd-sm">
 
@@ -52,6 +65,9 @@
       </div>
       <nav class="bar bar-tab bar-dark bg-inverse">
         <a class="tab-item active" role="button">
+          전체목록
+        </a>
+        <a class="tab-item active" role="button" data-toggle="modal" data-target="#U_SM_C11100">
           가이드 로드맵
         </a>
         <a class="tab-item active" role="button">
@@ -75,14 +91,28 @@
         </div>
 
         <div class="nav nav-control hd-exit">
-          <a class="nav-link active" role="button">소화전</a>
-          <a class="nav-link" role="button">H빔번호</a>
-          <a class="nav-link" role="button">구역</a>
-          <a class="nav-link" role="button">신고위치번호</a>
+          <a class="nav-link hd-exit-item-01 active" role="button">소화전</a>
+          <a class="nav-link hd-exit-item-02" role="button">H빔번호</a>
+          <a class="nav-link hd-exit-item-03" role="button">구역</a>
+          <a class="nav-link hd-exit-item-04" role="button">신고위치번호</a>
         </div>
 
-        <div class="">
-          <img src="../assets/img/U_SM_C11100-01.png" class="img-fluid" alt="">
+        <div class="tab-content">
+          <div class="tab-pane active" role="tabpanel">
+            <img src="../assets/img/U_SM_C11100-01.png" class="img-fluid" alt=""><br><br><br>
+          </div>
+          <div class="tab-pane active" id="exit-map-01" role="tabpanel">
+            <img src="../assets/img/sm-exit-map-01.png" class="img-fluid" alt=""><br><br><br>
+          </div>
+          <div class="tab-pane" id="exit-map-02" role="tabpanel">
+            <img src="../assets/img/sm-exit-map-02.png" class="img-fluid" alt=""><br><br><br>
+          </div>
+          <div class="tab-pane" id="exit-map-03" role="tabpanel">
+            <img src="../assets/img/sm-exit-map-03.png" class="img-fluid" alt=""><br><br><br>
+          </div>
+          <div class="tab-pane" id="exit-map-04" role="tabpanel">
+            <img src="../assets/img/sm-exit-map-04.png" class="img-fluid" alt=""><br><br><br>
+          </div>
         </div>
 
 
@@ -90,29 +120,131 @@
       </div><!-- /.content -->
     </div><!-- /.snap-content -->
 
+
+    <div id="U_SM_C11100" class="modal">
+      <header class="bar bar-nav bar-light bg-white">
+        <a class="icon icon-close pull-right" data-dismiss="modal" role="button"></a>
+        <h1 class="title">가이드 로드맵</h1>
+      </header>
+      <nav class="bar bar-tab bg-primary">
+        <a class="tab-item active" role="button">
+          검색
+        </a>
+      </nav>
+      <div class="content">
+
+        <div class="content-padded">
+          <div class="swiper-container hd-photoset">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
+              </div>
+            </div>
+            <div class="swiper-button-prev"><span class="icon icon-left-nav"></span></div>
+            <div class="swiper-button-next"><span class="icon icon-right-nav"></span></div>
+          </div><!-- /.swiper-container -->
+        </div>
+
+        <div class="content-padded">
+          <div class="row">
+            <div class="col-xs-12">
+              <select class="form-control m-b-05">
+                <option>지구선택</option>
+                <option>A지구</option>
+                <option>B지구</option>
+                <option>C지구</option>
+              </select>
+            </div>
+            <div class="col-xs-6">
+              <select class="form-control m-b-05">
+                <option>공장선택</option>
+                <option>A지구</option>
+                <option>B지구</option>
+                <option>C지구</option>
+              </select>
+            </div>
+            <div class="col-xs-6 p-l-0">
+              <select class="form-control m-b-05">
+                <option>장소선택</option>
+                <option>A지구</option>
+                <option>B지구</option>
+                <option>C지구</option>
+              </select>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.content-padded -->
+
+      </div><!-- /.content -->
+    </div><!-- /.modal -->
+
+
     <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
     <script src="../assets/extensions/swiper/3.2.7/js/swiper.jquery.js"></script>
+
+    <script src="../assets/js/bs-button.js"></script>
+
+
     <script src="../assets/js/app.js"></script>
 
     <script>
 
-      var doAffix = function(){
-        $('#tabs').scroll({
-          type: 'affix',
-          offset:{top:50}
-        });
-        // apply animation
-        $('#tabs').on('affixed.rc.scroll',function(){
-          $(this).addClass('animated fadeInDown')
-        })
-        $('#tabs').on('affixed-top.rc.scroll',function(){
-          $(this).removeClass('animated fadeInDown')
-        })
-      };
+      $(".hd-exit .nav-link").tap(function(){
+         $(this).button('toggle');
+      });
 
-      // push bind , http://rc.kimsq.com/controls/push/#push-bind
-      window.addEventListener('push', doAffix);
-      doAffix();
+      $(".hd-exit-item-01").tap(function(){
+        if ($(this).hasClass("active")) {
+          $('#exit-map-01').addClass('active');
+          $('#exit-map-01 img').addClass('animated bounce')
+        } else {
+          $('#exit-map-01').removeClass('active');
+          $('#exit-map-01 img').removeClass('animated bounce')
+        }
+      });
+
+      $(".hd-exit-item-02").tap(function(){
+        if ($(this).hasClass("active")) {
+          $('#exit-map-02').addClass('active');
+          $('#exit-map-02 img').addClass('animated bounce')
+        } else {
+          $('#exit-map-02').removeClass('active');
+          $('#exit-map-02 img').removeClass('animated bounce')
+        }
+      });
+      $(".hd-exit-item-03").tap(function(){
+        if ($(this).hasClass("active")) {
+          $('#exit-map-03').addClass('active');
+          $('#exit-map-03 img').addClass('animated bounce')
+        } else {
+          $('#exit-map-03').removeClass('active');
+          $('#exit-map-03 img').removeClass('animated bounce')
+        }
+      });
+      $(".hd-exit-item-04").tap(function(){
+        if ($(this).hasClass("active")) {
+          $('#exit-map-04').addClass('active');
+          $('#exit-map-04 img').addClass('animated bounce')
+        } else {
+          $('#exit-map-04').removeClass('active');
+          $('#exit-map-04 img').removeClass('animated bounce')
+        }
+      });
+
+
+      var swiper = new Swiper('.swiper-container.hd-photoset', {
+        paginationClickable: true,
+        effect: 'slide',
+        loop: false,
+        nextButton: '.hd-photoset .swiper-button-next',
+        prevButton: '.hd-photoset .swiper-button-prev',
+        spaceBetween: 5
+      });
 
 
     </script>

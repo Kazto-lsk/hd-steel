@@ -398,6 +398,16 @@ body {
   line-height: 2.6875rem;
   color: #fff !important
 }
+
+.bar-tab.bg-primary .tab-item {
+  background-color: #1C74D5;
+  border-right: 0.0312rem solid #303840;
+}
+.bar-tab.bg-primary .tab-item:active {
+  background-color: #165daa;
+}
+
+
 .bar-tab .tab-item:last-child {
   border-right: none
 }
