@@ -112,7 +112,7 @@
 /*스마트폰 구간*/
 @media (max-width: 601px) {
   .hd-intro-wrap {
-    width: 90%;
+    width: 100%;
   }
 }
 .hd-intro-wrap {
