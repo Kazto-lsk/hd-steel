@@ -31,6 +31,9 @@
         right:0;
         width: 100%
       }
+      .img-fluid {
+        width: 1000px !important
+      }
     </style>
 
   </head>
@@ -94,24 +97,20 @@
           <a class="nav-link hd-exit-item-01 active" role="button">소화전</a>
           <a class="nav-link hd-exit-item-02" role="button">H빔번호</a>
           <a class="nav-link hd-exit-item-03" role="button">구역</a>
-          <a class="nav-link hd-exit-item-04" role="button">신고위치번호</a>
         </div>
 
         <div class="tab-content">
           <div class="tab-pane active" role="tabpanel">
-            <img src="../assets/img/U_SM_C11100-01.png" class="img-fluid" alt=""><br><br><br>
+            <img src="../assets/img/sm-exit/exit-map-bg.png" class="img-fluid" alt="">
           </div>
           <div class="tab-pane active" id="exit-map-01" role="tabpanel">
-            <img src="../assets/img/sm-exit-map-01.png" class="img-fluid" alt=""><br><br><br>
+            <img src="../assets/img/sm-exit/sm-exit-map-01.png" class="img-fluid" alt="">
           </div>
           <div class="tab-pane" id="exit-map-02" role="tabpanel">
-            <img src="../assets/img/sm-exit-map-02.png" class="img-fluid" alt=""><br><br><br>
+            <img src="../assets/img/sm-exit/sm-exit-map-02.png" class="img-fluid" alt="">
           </div>
           <div class="tab-pane" id="exit-map-03" role="tabpanel">
-            <img src="../assets/img/sm-exit-map-03.png" class="img-fluid" alt=""><br><br><br>
-          </div>
-          <div class="tab-pane" id="exit-map-04" role="tabpanel">
-            <img src="../assets/img/sm-exit-map-04.png" class="img-fluid" alt=""><br><br><br>
+            <img src="../assets/img/sm-exit/sm-exit-map-03.png" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -137,13 +136,10 @@
           <div class="swiper-container hd-photoset">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
+                <img src="../assets/img/sm-exit/U_SM_C23000_Guide01.png" alt="" class="img-fluid" style="border:none">
               </div>
               <div class="swiper-slide">
-                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
-              </div>
-              <div class="swiper-slide">
-                <img src="../assets/img/tmp-map-01.png" alt="" class="img-fluid" style="border:none">
+                <img src="../assets/img/sm-exit/U_SM_C23000_Guide02.png" alt="" class="img-fluid" style="border:none">
               </div>
             </div>
             <div class="swiper-button-prev"><span class="icon icon-left-nav"></span></div>
@@ -226,16 +222,6 @@
           $('#exit-map-03 img').removeClass('animated bounce')
         }
       });
-      $(".hd-exit-item-04").tap(function(){
-        if ($(this).hasClass("active")) {
-          $('#exit-map-04').addClass('active');
-          $('#exit-map-04 img').addClass('animated bounce')
-        } else {
-          $('#exit-map-04').removeClass('active');
-          $('#exit-map-04 img').removeClass('animated bounce')
-        }
-      });
-
 
       var swiper = new Swiper('.swiper-container.hd-photoset', {
         paginationClickable: true,
