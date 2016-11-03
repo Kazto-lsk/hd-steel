@@ -23,6 +23,11 @@
     <style>
       .tab-content {
         position: relative;
+        display: block;
+        width: 100%;
+        /*min-height: .01%;*/
+        /*overflow-x: auto;*/
+        /*overflow-y: auto;*/
       }
       .tab-content .tab-pane.active {
         position: absolute;
@@ -32,8 +37,9 @@
         width: 100%
       }
       .img-fluid {
-        width: 1000px !important
+        max-width: 1000px !important
       }
+
     </style>
 
   </head>
@@ -81,7 +87,7 @@
       <!-- main content -->
       <div class="content">
 
-        <div class="page-header hd-exit">
+        <div class="page-header hd-exit panzoom">
           <h1>[B지구]공장정비동</h1>
           <span class="badge badge-pill badge-primary">옥외소화전</span>
 
@@ -99,7 +105,7 @@
           <a class="nav-link hd-exit-item-03" role="button">구역</a>
         </div>
 
-        <div class="tab-content">
+        <div class="tab-content panzoom">
           <div class="tab-pane active" role="tabpanel">
             <img src="../assets/img/sm-exit/exit-map-bg.png" class="img-fluid" alt="">
           </div>
@@ -185,10 +191,14 @@
 
     <script src="../assets/js/bs-button.js"></script>
 
+    <!-- http://timmywil.github.io/jquery.panzoom/ -->
+    <script src="../assets/js/jquery.panzoom.min.js"></script>
+
 
     <script src="../assets/js/app.js"></script>
 
     <script>
+
 
       $(".hd-exit .nav-link").tap(function(){
          $(this).button('toggle');
