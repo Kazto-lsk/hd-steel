@@ -96,3 +96,30 @@
 .table .padding-sm {
   padding: 0.5rem !important;
 }
+
+/*엑티브 가로화면 */
+@media (min-width: 962px) {
+  .hd-intro-wrap {
+    width: 50%;
+  }
+}
+/*엑티브 세로화면*/
+@media (min-width: 602px) and (max-width: 961px) {
+  .hd-intro-wrap {
+    width: 70%;
+  }
+}
+/*스마트폰 구간*/
+@media (max-width: 601px) {
+  .hd-intro-wrap {
+    width: 90%;
+  }
+}
+.hd-intro-wrap {
+  margin: 0 auto
+}
+@media (min-width: 1200px) {
+  .hd-intro-wrap {
+    width: 50%;
+  }
+}
