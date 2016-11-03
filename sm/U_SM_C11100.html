@@ -34,10 +34,36 @@
         top:0;
         left: 0;
         right:0;
+        bottom: 80px;
         width: 100%
       }
       .img-fluid2 {
         max-width: 1000px !important
+      }
+      .exit-affix.affix {
+        top: 5.125rem !important;
+        border-bottom: none;
+        box-shadow: 0 .375rem .25rem -.25rem rgba(0,0,0,.3);
+      }
+
+      #map-full::before {
+        content: '확대 맵'
+      }
+      #map-full.active::before {
+        content: '축소 맵'
+      }
+      .map-full .bar-nav,
+      .map-full .bar-header-secondary,
+      .map-full .page-header{
+        display: none !important
+      }
+      .map-full .content {
+        padding-top: 0
+      }
+
+      .map-full .nav-control.affix {
+        position: fixed !important;
+        top: 0 !important;
       }
 
     </style>
@@ -79,15 +105,14 @@
         <a class="tab-item active" role="button" data-toggle="modal" data-target="#U_SM_C11100">
           가이드 로드맵
         </a>
-        <a class="tab-item active" role="button">
-          확대 맵
+        <a class="tab-item" role="button" id="map-full">
         </a>
       </nav>
 
       <!-- main content -->
       <div class="content">
 
-        <div class="page-header hd-exit panzoom">
+        <div class="page-header hd-exit">
           <h1>[B지구]공장정비동</h1>
           <span class="badge badge-pill badge-primary">옥외소화전</span>
 
@@ -99,7 +124,7 @@
           </div>
         </div>
 
-        <div class="nav nav-control hd-exit">
+        <div class="nav nav-control hd-exit affix-top exit-affix">
           <a class="nav-link hd-exit-item-01 active" role="button">소화전</a>
           <a class="nav-link hd-exit-item-02" role="button">H빔번호</a>
           <a class="nav-link hd-exit-item-03" role="button">구역</a>
@@ -203,6 +228,25 @@
       $(".hd-exit .nav-link").tap(function(){
          $(this).button('toggle');
       });
+
+      $('.exit-affix').scroll({
+        type: 'affix',
+        offset:{top:130}
+      });
+
+      $("#map-full").tap(function(){
+         $(this).button('toggle');
+         $('.snap-content').toggleClass('map-full');
+      });
+
+      // apply animation
+      $('.exit-affix').on('affixed.rc.scroll',function(){
+          $(this).addClass('animated fadeInDown')
+			})
+      $('.exit-affix').on('affixed-top.rc.scroll',function(){
+          $(this).removeClass('animated fadeInDown')
+			})
+
 
       $(".hd-exit-item-01").tap(function(){
         if ($(this).hasClass("active")) {
