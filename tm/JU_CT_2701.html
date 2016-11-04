@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>주유 PDA | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="../assets/css/rc.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css">
+    <link rel="stylesheet" href="../assets/extensions/snap/1.9.3/rc-snap.css">
+    <link rel="stylesheet" href="../assets/css/app-tablet.css">
+
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub">
+
+    <!-- header -->
+    <header class="bar bar-nav bar-dark bg-primary">
+      <a class="btn btn-outline-secondary pull-left" id="hd-menu" href="./IL_GU_MA_1000.html">
+        <span class="icon icon-home2"></span>
+      </a>
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-outline-secondary"  data-target="#map" data-toggle="drawer"  data-backdrop="false" id="map-open-half">
+          <span class="icon icon-window-half"></span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary" data-target="#map" data-toggle="drawer"  data-showType="expand" data-backdrop="false" id="map-open-full">
+          <span class="icon icon-window-full"></span>
+        </button>
+      </div>
+      <h1 class="title">주유 이력 조회</h1>
+    </header>
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left" id="map">
+
+        <header class="bar bar-nav">
+          <button class="btn btn-link btn-nav pull-right" data-history="back">
+            <span class="icon icon-close"></span>
+          </button>
+        </header><!-- /.bar-nav -->
+
+        <div class="bar bar-standard bar-footer p-x-0">
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="70%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  상차개소 : [DUY28] 2제강-지금 파쇄/절단장
+                </td>
+                <td rowspan="2" class="nowrap">
+                  총 거리 : 1.5Km<br>소요시간 : 30분
+                </td>
+              </tr>
+              <tr>
+                <td>하차개소 : [D2Y12] A열연-사</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.bar-footer  -->
+
+        <div class="content">
+          <div id="map-view"></div>
+        </div><!-- /.content -->
+
+      </div><!-- /.snap-drawer-left -->
+    </div><!-- /.snap-drawers -->
+
+    <div class="snap-content" data-extension="drawer">
+      <div class="bar bar-standard bar-footer">
+        <div class="row hd-buttons">
+          <div class="col-md-2 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-secondary btn-block">종료</button>
+          </div>
+
+          <div class="col-md-2 offset-md-2 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-secondary btn-block">이전</button>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4">
+            <button type="button" class="btn btn-secondary btn-block">다음</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="content">
+
+        <div class="content-padded">
+
+          <div class="hd-message row">
+            <div class="col-xs-12 hd-info">
+              <div class="media">
+                <span class="media-left" ><span class="media-object icon icon-rc icon-info"></span></span>
+                <div class="media-body">
+                  ￼￼유형별 주유 이력을 확인하세요.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered m-b-0 form-inline">
+              <colgroup>
+                <col width="18%">
+                <col>
+                <col width="15%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-xs-left">1. 일자</th>
+                  <td>
+                    <div class="form-group">
+                      <label class="sr-only" for="">일자</label>
+                      <input type="text" class="form-control m-r-05" id="" placeholder="">
+                      <span class="text-muted">
+                        일자 입력 예) 20120101
+                      </span>
+                    </div>
+                  </td>
+                  <td rowspan="3" class="text-xs-center p-a-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="line-height: 100px">조회</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-left">2. 운송사</th>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control m-r-05" id="" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-toggle="popup" data-target="#JU_CT_2702">검색</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-left">3. 차량번호</th>
+                  <td>
+                    <div class="form-group">
+                      <label class="sr-only" for="">일자</label>
+                      <input type="text" class="form-control m-r-05" id="" placeholder="">
+                      <span class="text-muted">
+                        차량 번호 4자리 숫자
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card card-outline-secondary text-xs-center m-a-0">
+            <div class="card-block bg-white">
+              총 대수 : <span class="text-primary">3</span> /  총 주유량 : <span class="text-primary">60</span>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered hd-table-02  m-t-05">
+              <colgroup>
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+              </colgroup>
+              <thead class="thead-default">
+                <tr>
+                  <th>운송사</th>
+                  <th>장비번호</th>
+                  <th>주유량</th>
+                  <th>시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>DTT10002[1]</td>
+                  <td>10</td>
+                  <td>13:28</td>
+                </tr>
+                <tr>
+                  <th scope="row">D</th>
+                  <td>DTT10002[1]</td>
+                  <td>10</td>
+                  <td>13:28</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </div><!-- /.content-padded -->
+      </div><!-- /.content -->
+
+    </div><!-- /.snap-content -->
+
+    <div id="JU_CT_2702" class="popup zoom">
+      <div class="popup-content">
+        <header class="bar bar-nav m-x-1">
+          <h1 class="title">운송사 선택</h1>
+        </header>
+        <nav class="bar bar-standard bar-footer">
+          <div class="row">
+            <div class="col-md-2 col-sm-4 col-xs-4">
+              <button type="button" class="btn btn-secondary btn-block" data-history="back">닫기</button>
+            </div>
+            <div class="col-md-2 offset-md-2 col-sm-4 col-xs-4">
+              <button type="button" class="btn btn-secondary btn-block">이전</button>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+              <button type="button" class="btn btn-secondary btn-block">다음</button>
+            </div>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="content-padded">
+            <table class="table table-bordered hd-table-02">
+              <thead>
+                <th>운송사 코드</th>
+                <th>운송사명</th>
+              </thead>
+              <tbody>
+                <tr data-value="01" data-label="운송회사명1">
+                  <td>[코드1]</td>
+                  <td>전체</td>
+                </tr>
+                <tr data-value="02" data-label="운송회사명2">
+                  <td>[코드2]</td>
+                  <td>운송회사명2</td>
+                </tr>
+                <tr data-value="03" data-label="운송회사명3">
+                  <td>[코드3]</td>
+                  <td>운송회사명3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.popup -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap-tm.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+    <!-- 임시 구글맵 데모용 -->
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP8AdyTxp3vZc2EMPp2jsMQbkzdOZPHyI&callback=initMap">
+     </script>
+
+    <script>
+
+
+
+    </script>
+
+  </body>
+</html>

@@ -743,6 +743,21 @@ body {
 .bg-white {
   background-color: #fff
 }
+.p-l-05 {
+  padding-left: .5rem
+}
+.m-l-05 {
+  margin-left: .5rem
+}
+.p-r-05 {
+  padding-right: .5rem
+}
+.m-r-05 {
+  margin-right: .5rem
+}
+.m-t-05 {
+  margin-top: .5rem
+}
 
 /*popup*/
 
@@ -1057,7 +1072,11 @@ body {
   font-size: 1rem;
   color: #373a3c;
 }
-
+.card-outline-secondary .card-block,
 .card.card-outline-primary .card-block{
   padding: .625rem;
+}
+.table .form-control {
+  margin-bottom: 0;
+  padding: .3rem .75rem;
 }
