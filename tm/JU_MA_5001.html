@@ -160,9 +160,9 @@
               </button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <button type="button" class="btn btn-primary btn-block">
+              <button type="button" class="btn btn-primary btn-block" target="#JU_MA_5001" data-toggle="popup">
                 <div class="media">
-                  <a class="media-left" href="#JU_MA_5001" data-toggle="popup">
+                  <a class="media-left">
                     <img class="media-object" src="../assets/img/JU_MA_icon_03.png" alt="" style="height: 2.37rem">
                   </a>
                   <div class="media-body">
@@ -209,7 +209,7 @@
           <div class="content-padded text-xs-center">
 
             <p class="p-t-1 text-xs-center">차량 상태 초기화를 위해서는 <br>비밀번호를 입력하셔야 합니다.</p>
-            <input class="form-control form-control-lg" type="password" placeholder="" id="pw">
+            <input class="form-control form-control-lg" type="password" placeholder="" id="pw_input">
 
           </div>
         </div>
@@ -226,8 +226,8 @@
 
     $('#JU_MA_5001').on('show.rc.popup', function () {
         setTimeout(function() {
-          $('#pw').focus();
-        }, 500);
+          $('#pw_input').focus();
+        }, 50);
     })
 
 
