@@ -673,13 +673,9 @@ body {
   margin-left: -1px
 }
 
-.snapjs-left .hd-buttons .btn,
-.snapjs-expand-left .hd-buttons .btn {
-  /*display: block;*/
-  /*width: 100%;*/
-  /*padding: 0.75rem 0;*/
-  /*font-size: 1rem;*/
-  /*border-radius: 0.125rem;*/
+.hd-map-open .hd-buttons .btn {
+  font-size: .8rem;
+  letter-spacing: -1px
 }
 
 
