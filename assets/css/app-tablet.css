@@ -1080,3 +1080,12 @@ body {
   margin-bottom: 0;
   padding: .3rem .75rem;
 }
+
+.bar-header-secondary .nav-control {
+  top: 0.5375rem;
+}
+.nav-control.bg-primary .nav-link:hover,
+.nav-control.bg-primary .nav-link:focus,
+.nav-control.bg-primary .nav-link:active {
+  color: #666
+}
