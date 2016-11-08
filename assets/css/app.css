@@ -101,7 +101,9 @@ body {
 .icon-push:before {
   content: "\e918";
 }
-
+.icon-marker:before {
+  content: "\e90c";
+}
 
 .collapsed .icon-up-nav:before {
   content: "\e902";
