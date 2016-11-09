@@ -1,5 +1,6 @@
 // script
 
+$(".progress-indicator").wrap("<div class='progress-indicator-wrapper'></div>");
 
 RC_initDrawer();
 
