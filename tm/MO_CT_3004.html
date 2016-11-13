@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>수시장비 요구 리스트 | 현대제철 스마트팩토리 마크업</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- kimsQ RC CSS -->
+    <link href="../assets/css/rc.css" rel="stylesheet" >
+    <link href="../assets/extensions/snap/1.9.3/rc-snap.css" rel="stylesheet">
+
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/app-fm.css" rel="stylesheet">
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/rc.js"></script>
+
+  </head>
+  <body class="hd-sub hd-sm">
+
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-right" id="drawer">
+      </div>
+    </div>
+
+    <div class="snap-content" data-extension="drawer">
+
+      <!-- 안전점검내용_상세 시작 -->
+      <header class="bar bar-nav bar-dark bg-primary">
+        <a class="icon icon-simbol pull-left"></a>
+        <button class="btn btn-outline-secondary pull-right" data-toggle="popup" data-target="#MO_CT_3004" style="margin-right: .5rem">
+          확정
+        </button>
+        <h1 class="title left">수시장비 요구 (진행관리)</h1>
+      </header>
+
+      <div class="bar bar-standard bar-header-secondary hd-bar-white hd-sm" id="header-secondary" style="line-height: 3.8rem;">
+        <div class="table-responsive">
+          <div class="form-inline nowrap">
+            <div class="form-group">
+              <label>진행상태</label>
+              <input type="text" class="form-control hd-sm" id="" placeholder="" value="요청" readonly="" data-toggle="popup" data-target="#">
+            </div>
+            <div class="form-group p-l-1">
+              <label>조회일자</label>
+              <input type="date" class="form-control hd-md" id="" placeholder="" value="2016-07-18">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">조회</button>
+          </div><!-- /.form-inline -->
+        </div><!-- /.table-responsive -->
+      </div>
+
+      <div class="content" data-control="scroll" data-type="updown">
+
+        <table class="table hd-sm table-bordered hd-data">
+          <thead>
+            <tr>
+              <th>선택</th>
+              <th>요구ID</th>
+              <th>요청부서</th>
+              <th>요청자</th>
+              <th>진행상태</th>
+            </tr>
+          </thead>
+           <tbody>
+             <tr class="text-xs-center">
+               <td>
+                 <label class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input" checked>
+                   <span class="custom-control-indicator"></span>
+                 </label>
+               </td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">58157</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">자원재활용팀</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">홍길동</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">요청</td>
+             </tr>
+             <tr class="text-xs-center">
+               <td>
+                 <label class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input">
+                   <span class="custom-control-indicator"></span>
+                 </label>
+               </td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">58157</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">자원재활용팀</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">홍길동</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">요청</td>
+             </tr>
+             <tr class="text-xs-center">
+               <td>
+                 <label class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input">
+                   <span class="custom-control-indicator"></span>
+                 </label>
+               </td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">58157</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">제강정비팀</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">김길동</td>
+               <td data-toggle="modal" data-target="#MO_CT_3005" role="button">요청</td>
+             </tr>
+           </tbody>
+         </table>
+
+      </div><!-- /.content -->
+
+      <!-- floating top -->
+      <div class="pos-f-b-r m-a-1" id="floating-top" style="display:none">
+        <button type="button" class="btn btn-circle-secondary" data-scroll="top">
+          <img src="../assets/img/btn_floating_top.png" alt="">
+        </button>
+      </div>
+
+    </div><!-- /.snap-content -->
+
+
+<!-- 확인 팝업 -->
+<div class="popup zoom" id="MO_CT_3004">
+  <div class="popup-content">
+    <nav class="bar bar-standard bar-footer">
+      <button type="button" class="btn btn-primary btn-block" data-history="back">네</button>
+    </nav>
+    <div class="content">
+      <div class="p-a-3 text-xs-center">선택된 요구 ID에 대하여<br> 요청 및 승인 단계에서<br> 확정 단계 처리를<br> 실행 하시겠습니까?</div>
+    </div>
+  </div>
+</div>
+
+
+<!--  수시장비 요구 상세 -->
+<div id="MO_CT_3005" class="modal zoom">
+  <header class="bar bar-nav bar-inverse bg-primary">
+    <a class="icon icon-close pull-right" data-history="back" role="button"></a>
+    <h1 class="title left p-l-2">수시장비 요구 상세</h1>
+  </header>
+  <nav class="bar bar-tab">
+    <a class="tab-item bg-secondary active" role="button" data-history="back">
+      닫기
+    </a>
+    <a class="tab-item bg-primary active" role="button" data-toggle="popup" data-target="#popup-confirm-1">
+      확정
+    </a>
+  </nav>
+  <div class="content">
+
+    <table class="table hd-sm table-bordered hd-data">
+      <colgroup>
+        <col width="25%">
+        <col>
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">요구 ID</th>
+          <td class="text-xs-left">
+            [58158]
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">요청부서</th>
+          <td class="text-xs-left">
+            자원재활용팀
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">요청자</th>
+          <td class="text-xs-left">
+            장철수 / 010-3948-8888
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">장비명</th>
+          <td class="text-xs-left">
+            수시 지원-굴삭기(바켓-타이어)-0.3m³
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">진행상태</th>
+          <td class="text-xs-left">
+            요청
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">요청 시작 시각</th>
+          <td class="text-xs-left">
+            2016.08.02 08:00
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">요청 종료 시각</th>
+          <td class="text-xs-left">
+            2016.08.02 23:00
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</div><!-- /.content -->
+</div><!-- /.modal -->
+
+
+    <script src="../assets/extensions/snap/1.9.3/rc-snap.js"></script>
+    <script src="../assets/js/app-tm.js"></script>
+
+    <script>
+
+
+    </script>
+
+  </body>
+</html>
