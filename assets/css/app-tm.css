@@ -531,7 +531,7 @@
 
 /*popup*/
 .hd-sub.hd-sm .popup .content {
-  max-height: 33.75rem;
+  max-height: 23.75rem;
 }
 .hd-sub.hd-sm .popup .bar.bar-nav {
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.075);
