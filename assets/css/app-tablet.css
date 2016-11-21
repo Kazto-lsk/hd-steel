@@ -441,14 +441,17 @@ body {
     list-style: none;
     /*text-align: center;*/
     width: auto;
-    padding: 0;
+    padding: 0 1rem;
     margin: 0;
     position: relative;
     text-overflow: ellipsis;
     color: #bbbbbb;
     display: block;
     padding-top: 40px;
-    text-indent: -2px
+    text-indent: -2px;
+    white-space: nowrap;
+    line-height: 1rem;
+    text-align: center
 }
 .progress-indicator > li.completed,
 .progress-indicator > li.active {
@@ -492,7 +495,24 @@ body {
   text-align: center;
   color: #666;
   font-size: .9rem;
-  margin-left: -.4rem
+  margin-left: -.6rem
+}
+.progress-indicator > li .label {
+  display: inline-block;
+  min-width: 3rem;
+  margin-top: -.6rem;
+  margin-left: 1.2rem;
+  text-align: center;
+}
+.progress-indicator > li.active .label {
+  margin-left: 2rem;
+}
+.progress-indicator > li:last-child .label {
+  margin-left: -.5rem;
+}
+
+.progress-indicator > li .label small {
+  display: block;
 }
 
 .progress-indicator > li.completed .bubble {
