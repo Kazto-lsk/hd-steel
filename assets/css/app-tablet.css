@@ -440,7 +440,7 @@ body {
 .progress-indicator > li {
     list-style: none;
     /*text-align: center;*/
-    width: auto;
+    width: 10rem;
     padding: 0 1rem;
     margin: 0;
     position: relative;
@@ -500,15 +500,17 @@ body {
 .progress-indicator > li .label {
   display: inline-block;
   min-width: 3rem;
-  margin-top: -.6rem;
-  margin-left: 1.2rem;
+  margin-top: -.3rem;
+  margin-left: -1.8rem;
+  margin-right: 1.8rem;
   text-align: center;
 }
 .progress-indicator > li.active .label {
-  margin-left: 2rem;
+  margin-top: .3rem;
+  margin-left: -1.8rem;
 }
-.progress-indicator > li:last-child .label {
-  margin-left: -.5rem;
+.progress-indicator > li .label.hd-lg {
+  margin-left: -2.3rem;
 }
 
 .progress-indicator > li .label small {
