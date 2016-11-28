@@ -499,10 +499,10 @@ body {
 }
 .progress-indicator > li .label {
   display: inline-block;
-  min-width: 3rem;
+  min-width: 3.5rem;
   margin-top: -.3rem;
-  margin-left: -1.8rem;
-  margin-right: 1.8rem;
+  margin-left: -2.2rem;
+  margin-right: 2.2rem;
   text-align: center;
 }
 .progress-indicator > li.active .label {
