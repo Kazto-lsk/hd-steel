@@ -727,6 +727,7 @@ body {
   }
 }
 #map .bar-footer .table {
+  table-layout:fixed;
   margin-bottom: 0;
   font-size: .9rem;
   line-height: 1rem;
@@ -737,7 +738,10 @@ body {
   color: #fff;
   border-color: #303840;
   font-weight: normal;
-  font-size: .7rem
+  font-size: .7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #map .bar-footer .table td[rowspan="2"] {
   line-height: 1.6
