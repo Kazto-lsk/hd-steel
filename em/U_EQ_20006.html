@@ -399,10 +399,12 @@
       autosize($('textarea'));
 
       $('#accordion-all-open').on('tap', function () {
-        $('#accordion .collapse').collapse('show');
+        $('#accordion .collapse:not(".in")').each(function(){
+          $(this).collapse('show');
+         });
       });
       $('#accordion-all-close').on('tap', function () {
-        $('#accordion .collapse').collapse('hide');
+        $('#accordion .collapse.in').collapse('hide');
       });
 
     </script>
