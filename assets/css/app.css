@@ -2481,3 +2481,9 @@ input[type="search"] {
   appearance: none;
   border-radius: 0.4rem;
 }
+
+[data-toggle="buttons"] .btn-secondary.active,
+[data-toggle="buttons"] .btn-secondary.focus {
+  background-color: #1C74D5;
+  color: #fff
+}
