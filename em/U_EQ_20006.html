@@ -11,10 +11,12 @@
     <!-- kimsQ RC CSS -->
     <link rel="stylesheet" href="../assets/css/rc.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/rc-button-group.css" >
 
     <!-- jQuery first, then kimsQ RC JS. -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/rc.js"></script>
+    <script src="../assets/js/bs-button.js"></script>
 
   </head>
   <body class="hd-sub">
@@ -105,8 +107,18 @@
            </ul>
         </div>
 
-        <div class="hd-section">
-          <h5 class="hd-heading">점검결과 등록</h5>
+        <div class="hd-section clearfix">
+          <h5 class="hd-heading pull-xs-left">
+            점검결과 등록
+          </h5>
+          <div class="btn-group pull-xs-right" data-toggle="buttons" style="margin-top: .5rem">
+            <label class="btn btn-secondary m-b-0" id="accordion-all-open">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> 전체열기
+            </label>
+            <label class="btn btn-secondary m-b-0"  id="accordion-all-close">
+              <input type="radio" name="options" id="option2" autocomplete="off"> 전체닫기
+            </label>
+          </div>
         </div>
 
         <div id="accordion" class="card-group-collapse" role="group" aria-multiselectable="true">
@@ -385,6 +397,14 @@
 
     <script>
       autosize($('textarea'));
+
+      $('#accordion-all-open').on('tap', function () {
+        $('#accordion .collapse').collapse('show');
+      });
+      $('#accordion-all-close').on('tap', function () {
+        $('#accordion .collapse').collapse('hide');
+      });
+
     </script>
 
   </body>
