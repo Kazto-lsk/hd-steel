@@ -22,6 +22,13 @@ tr[role="button"]:active {
   display: inline-block;
   border: none;
 }
+.table select.form-control.hd-custom {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+  width: 9rem;
+  margin: -.3rem 0 -.3rem -.3rem
+}
+
+
 .table input.form-control {
   min-width: 100px;
   margin: -.3rem -.4rem ;
