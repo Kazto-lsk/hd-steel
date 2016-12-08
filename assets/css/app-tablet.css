@@ -1134,3 +1134,99 @@ body {
 .nav-control.bg-primary .nav-link:active {
   color: #666
 }
+
+.snap-drawer .bar-footer-secondary {
+  bottom: 3.65rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: .6rem;
+}
+.snap-drawer .bar-footer-secondary .list-inline {
+  margin-top: .1rem;
+  margin-bottom: 0;
+  color: #666
+}
+.snap-drawer .bar-footer-secondary .list-inline-item + .list-inline-item {
+  margin-left: .25rem
+}
+.snap-drawer .bar-footer-secondary .legend {
+  display: inline-block;
+  margin-right: .1rem;
+  width: .6rem;
+  height: .6rem;
+  vertical-align: text-top;
+}
+.snap-drawer .bar-footer-secondary .legend-01 {
+   border-radius: 50%;
+   background-color: #de0000
+}
+.snap-drawer .bar-footer-secondary .legend-02 {
+   border-radius: 50%;
+   border: 2px solid #de0000;
+}
+.snap-drawer .bar-footer-secondary .legend-03 {
+   border-radius: 50%;
+   background-color: #e46a06
+}
+.snap-drawer .bar-footer-secondary .legend-04 {
+   border-radius: 50%;
+   border: 2px solid #e46a06;
+}
+.snap-drawer .bar-footer-secondary .legend-05 {
+  border-radius: 2px;
+  background: #333;
+}
+.snap-drawer .bar-footer-secondary .legend-06 {
+  border-radius: 2px;
+  border: 2px solid #333
+}
+.snap-drawer .bar-footer-secondary .legend-07 {
+  position: relative;
+  width: 55px
+}
+.snap-drawer .bar-footer-secondary .legend-07::before {
+  border-top: 4px dotted #de1212;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  margin-top: -2px
+}
+
+.snap-drawer .bar-footer-secondary .legend-08 {
+  position: relative;
+  width: 55px
+}
+.snap-drawer .bar-footer-secondary .legend-08::before {
+  border-top: 4px solid #e46a06;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  margin-top: -2px
+}
+
+.snap-drawer .bar-footer-secondary .legend-09 {
+  position: relative;
+  width: 55px
+}
+.snap-drawer .bar-footer-secondary .legend-09::before {
+  border-top: 4px solid #fabd8a;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  margin-top: -2px
+}
