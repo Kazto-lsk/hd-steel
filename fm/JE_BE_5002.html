@@ -69,515 +69,602 @@
         </a>
       </nav>
 
+
+<style>
+.zui-wrapper {
+  position: relative;
+  margin-top: 10px
+}
+.zui-scroller {
+  margin-left: 198px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 300px;
+}
+.zui-wrapper .hd-sticky-col-1 {
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 80px;
+}
+.zui-wrapper .hd-sticky-col-2 {
+  left: 80px;
+  position: absolute;
+  top: auto;
+  width: 120px;
+  border-left: none
+}
+.zui-wrapper .table {
+  margin-top: 0
+}
+</style>
+
       <!-- main content -->
       <div class="content">
 
-        <div class="table-responsive">
-          <table class="table table-bordered panzoom hd-data">
-            <thead>
-              <tr>
-                <th></th>
-                <th>배합번호</th>
-                <th>2016-01-1</th>
-                <th>2016-02-1</th>
-                <th>2016-03-1</th>
-                <th>2016-04-1</th>
-                <th>2016-05-1</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-xs-center"></th>
-                <th scope="row" class="text-xs-center">변경사유</th>
-                <td class="text-xs-center">원료탄수급</td>
-                <td class="text-xs-center">COKE품질보강</td>
-                <td class="text-xs-center">COKE품질보강</td>
-                <td class="text-xs-center">원료탄수급</td>
-                <td class="text-xs-center">원료탄수급</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center"></th>
-                <th scope="row" class="text-xs-center">지시일시</th>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center"></th>
-                <th scope="row" class="text-xs-center">적용일시</th>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-                <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
-              </tr>
-              <tr>
-                <th scope="row" rowspan="30" class="text-xs-center">배합비</th>
-                <th scope="row" class="text-xs-center">LH0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">CH0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">GY0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">MN0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">TP0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">MA0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">NM0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">GC0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">HC1</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">PD0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">HJ0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">JI0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">WC0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">CU0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">SN0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">TB0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">HR0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">LV0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">BWW</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">DSS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">DWS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">IS0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">RTS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">BB0</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">P8S</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">CGS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">LLS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">MMS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">VSS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">SES</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <!-- /배합비 -->
+        <div class="zui-wrapper">
+          <div class="zui-scroller">
+            <table class="table table-bordered panzoom hd-data">
+              <thead>
+                <tr>
+                  <th class="hd-sticky-col-1">&nbsp;</th>
+                  <th class="hd-sticky-col-2">배합번호</th>
+                  <th>2016-01-1</th>
+                  <th>2016-02-1</th>
+                  <th>2016-03-1</th>
+                  <th>2016-04-1</th>
+                  <th>2016-05-1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">변경사유</th>
+                  <td class="text-xs-center">원료탄수급</td>
+                  <td class="text-xs-center">COKE품질보강</td>
+                  <td class="text-xs-center">COKE품질보강</td>
+                  <td class="text-xs-center">원료탄수급</td>
+                  <td class="text-xs-center">원료탄수급</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">지시일시</th>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">적용일시</th>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                  <td class="text-xs-center"><small>2015.12.30 16:43:00</small></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">배합비</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">LH0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">CH0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">GY0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">MN0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">TP0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">MA0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">NM0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">GC0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">HC1</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">PD0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">HJ0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">JI0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">WC0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">CU0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">SN0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">TB0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">HR0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">LV0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">BWW</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">DSS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">DWS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">IS0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">RTS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">BB0</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">P8S</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">CGS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">LLS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">MMS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">VSS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">SES</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <!-- /배합비 -->
 
-              <tr>
-                <th scope="row" rowspan="11" class="text-xs-center">배합지수</th>
-                <th scope="row" class="text-xs-center">ASH</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">VM</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">배합지수</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">ASH</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">VM</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
 
-              <tr>
-                <th scope="row" class="text-xs-center">TS</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">TD</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">L_MF</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">SI</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">CBI</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">RM</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">TI</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">C.F</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">단가</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <!-- /배합지수 -->
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">TS</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">TD</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">L_MF</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">SI</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">CBI</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">RM</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">TI</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">C.F</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">단가</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <!-- /배합지수 -->
 
-              <tr>
-                <th scope="row" rowspan="11" class="text-xs-center">실적품위</th>
-                <th scope="row" class="text-xs-center">장입탄 TM</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">장입탄 VM</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">실적품위</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">장입탄 TM</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">장입탄 VM</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
 
-              <tr>
-                <th scope="row" class="text-xs-center">장입탄 -3mm</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">수분(W/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">DI 150(W/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">MS(W/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">수분(B/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">DI 150(B/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">CSR(B/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">ASH(B/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">MS(B/F)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <!-- /실적품위 -->
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">장입탄 -3mm</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">수분(W/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">DI 150(W/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">MS(W/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">수분(B/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">DI 150(B/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">CSR(B/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">ASH(B/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">MS(B/F)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <!-- /실적품위 -->
 
-              <tr>
-                <th scope="row" rowspan="4" class="text-xs-center">조업실적</th>
-                <th scope="row" class="text-xs-center">가동율</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">노온</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">소비열량</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-xs-center">문당 장입량(건탄)</th>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-                <td>8.0</td>
-              </tr>
-              <!-- /조업실적 -->
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">조업실적</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">가동율</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">노온</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">소비열량</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-xs-center hd-sticky-col-1">&nbsp;</th>
+                  <th scope="row" class="text-xs-center hd-sticky-col-2">문당 장입량(건탄)</th>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                </tr>
+                <!-- /조업실적 -->
 
-            </tbody>
-          </table>
-        </div>
+              </tbody>
+            </table>
+          </div><!-- /.zui-scroller -->
+        </div><!-- /.zui-wrapper -->
+
+
+
 
       </div><!-- /.content -->
     </div><!-- /.snap-content -->
